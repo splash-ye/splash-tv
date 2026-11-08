@@ -1,7 +1,8 @@
 // Static build for GitHub Pages: copies public/ to dist/ and writes every API response as JSON.
 // Snapshots (weekly marquee lists, daily schedule, found highlights) live in data/ and are
 // committed back to the repo by the workflow so they survive between runs.
-import { cp, mkdir, rm, writeFile } from 'node:fs/promises';
+import { cp, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
 import path from 'node:path';
 import { ROOT, schedule, results, boxscore, news, highlights, refreshSnapshots } from './api.js';
 import { flushHighlights } from './youtube.js';
@@ -18,6 +19,17 @@ async function writeJson(rel, data) {
 await rm(OUT, { recursive: true, force: true });
 await cp(path.join(ROOT, 'public'), OUT, { recursive: true });
 await writeFile(path.join(OUT, '.nojekyll'), '');
+
+// GitHub Pages lets browsers cache assets for 10 minutes; version the asset URLs by content
+// so a fresh index.html never runs a stale app.js / style.css.
+const hash = createHash('sha256');
+for (const f of ['app.js', 'style.css']) hash.update(await readFile(path.join(OUT, f)));
+const v = hash.digest('hex').slice(0, 10);
+const indexFile = path.join(OUT, 'index.html');
+await writeFile(
+  indexFile,
+  (await readFile(indexFile, 'utf8')).replace('href="style.css"', `href="style.css?v=${v}"`).replace('src="app.js"', `src="app.js?v=${v}"`),
+);
 
 await refreshSnapshots();
 const [s, r, n, h] = await Promise.all([schedule(), results(), news(), highlights()]);
