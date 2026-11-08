@@ -1,0 +1,54 @@
+name: Build & deploy
+
+on:
+  schedule:
+    - cron: '*/15 * * * *' # every 15 minutes (GitHub may delay scheduled runs at peak times)
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write # commit data/ snapshots back
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Build static site
+        run: node src/build.js
+
+      # Weekly marquee lists, the daily schedule and found highlights must survive between runs.
+      - name: Persist data snapshots
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if ! git diff --cached --quiet; then
+            git commit -m "Update data snapshots"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - id: deploy
+        uses: actions/deploy-pages@v4

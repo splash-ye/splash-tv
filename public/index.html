@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Splash Sports</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Splash<span>Sports</span></div>
+    <nav class="sections">
+      <a href="#schedule">赛程</a>
+      <a href="#news" id="nav-news" hidden>新闻</a>
+      <a href="#highlights">集锦</a>
+    </nav>
+  </header>
+
+  <main id="app">
+    <section id="schedule" class="block">
+      <div class="grid-2">
+        <div>
+          <h2>赛程 <small id="sched-sub">未来 7 天</small></h2>
+          <article class="card" id="schedule-card"><div class="loading">加载中…</div></article>
+        </div>
+        <div>
+          <h2>战绩 <small id="res-sub">过去 7 天</small></h2>
+          <article class="card" id="results-card"><div class="loading">加载中…</div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="news" class="block" hidden>
+      <h2>新闻</h2>
+      <div class="card" id="news-list"><div class="loading">加载中…</div></div>
+    </section>
+
+    <section id="highlights" class="block">
+      <h2>集锦 <small id="hl-sub">最近 7 天</small></h2>
+      <div id="hl-grid" class="hl-grid"><div class="loading">加载中…</div></div>
+    </section>
+  </main>
+
+  <footer class="foot">数据来源：ESPN · YouTube 官方频道 · <span id="updated"></span></footer>
+  <script src="app.js" type="module"></script>
+</body>
+</html>

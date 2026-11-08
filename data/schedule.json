@@ -1,0 +1,1026 @@
+{
+  "day": "20261108",
+  "generatedAt": "2026-11-08T23:02:17.579Z",
+  "cfgKey": "[{\"id\":\"nba\",\"name\":\"NBA\",\"sport\":\"basketball\",\"league\":\"nba\",\"teams\":[\"gs\"],\"marquee\":{\"type\":\"leagueTop\",\"topN\":5},\"news\":{\"limit\":25},\"highlights\":{\"matcher\":\"nba\",\"channels\":[\"UCWJ2lWNubArHWmf3FIHbfcQ\"]}},{\"id\":\"nfl\",\"name\":\"NFL\",\"sport\":\"football\",\"league\":\"nfl\",\"teams\":[\"sf\",\"kc\",\"phi\"],\"marquee\":{\"type\":\"divisionTop\",\"perDivision\":2,\"winningRecord\":true},\"highlights\":{\"matcher\":\"nfl\",\"channels\":[\"UCDVYQ4Zhbm3S2dlz7P1GBDg\"]}},{\"id\":\"cfb\",\"name\":\"NCAAF\",\"sport\":\"football\",\"league\":\"college-football\",\"teams\":[\"psu\"],\"scoreboardParams\":\"groups=80&limit=300\",\"marquee\":{\"type\":\"poll\",\"topN\":10,\"polls\":[\"cfp\",\"ap\"]},\"highlights\":{\"matcher\":\"cfb\",\"channels\":[\"UCXnslB_TwYqScBRf4bPf3vA\",\"UCpwix-O6ceqMgdxhqIynzFA\"]}},{\"id\":\"soccer\",\"name\":\"足球\",\"sport\":\"soccer\",\"teams\":[],\"competitions\":[{\"league\":\"eng.1\",\"name\":\"英超\"},{\"league\":\"esp.1\",\"name\":\"西甲\"},{\"league\":\"uefa.champions\",\"name\":\"欧冠\"},{\"league\":\"eng.fa\",\"name\":\"足总杯\"},{\"league\":\"esp.copa_del_rey\",\"name\":\"国王杯\"}],\"marquee\":{\"type\":\"fixedList\",\"criteria\":\"豪门对决\",\"clubs\":[\"382\",\"359\",\"364\",\"363\",\"86\",\"83\",\"1068\",\"132\",\"160\"],\"clubNames\":\"曼城 阿森纳 利物浦 切尔西 皇马 巴萨 马竞 拜仁 巴黎圣日耳曼\",\"lookupLeagues\":[\"ger.1\",\"fra.1\"]}}]",
+  "partial": false,
+  "daysAhead": 7,
+  "teams": [
+    {
+      "id": "9",
+      "abbr": "GS",
+      "name": "Golden State Warriors",
+      "short": "Warriors",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png",
+      "record": "7-3",
+      "standing": "2nd in Pacific Division",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      }
+    },
+    {
+      "id": "25",
+      "abbr": "SF",
+      "name": "San Francisco 49ers",
+      "short": "49ers",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/sf.png",
+      "record": "6-1",
+      "standing": "1st in NFC West",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "12",
+      "abbr": "KC",
+      "name": "Kansas City Chiefs",
+      "short": "Chiefs",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
+      "record": "6-2",
+      "standing": "2nd in AFC West",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "21",
+      "abbr": "PHI",
+      "name": "Philadelphia Eagles",
+      "short": "Eagles",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/phi.png",
+      "record": "2-7",
+      "standing": "4th in NFC East",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "213",
+      "abbr": "PSU",
+      "name": "Penn State Nittany Lions",
+      "short": "Penn State",
+      "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/213.png",
+      "record": "5-4",
+      "standing": "11th in Big Ten",
+      "league": {
+        "id": "cfb",
+        "name": "NCAAF"
+      }
+    }
+  ],
+  "qualifiers": [
+    {
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      },
+      "criteria": "联盟战绩前 5",
+      "weekOf": "20261102",
+      "fixed": false,
+      "teams": [
+        {
+          "id": "20",
+          "abbr": "PHI",
+          "name": "Philadelphia 76ers",
+          "short": "76ers",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/phi.png",
+          "record": "8-2",
+          "label": "#1"
+        },
+        {
+          "id": "25",
+          "abbr": "OKC",
+          "name": "Oklahoma City Thunder",
+          "short": "Thunder",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/okc.png",
+          "record": "8-2",
+          "label": "#2"
+        },
+        {
+          "id": "24",
+          "abbr": "SA",
+          "name": "San Antonio Spurs",
+          "short": "Spurs",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/sa.png",
+          "record": "8-2",
+          "label": "#3"
+        },
+        {
+          "id": "13",
+          "abbr": "LAL",
+          "name": "Los Angeles Lakers",
+          "short": "Lakers",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
+          "record": "8-2",
+          "label": "#4"
+        },
+        {
+          "id": "2",
+          "abbr": "BOS",
+          "name": "Boston Celtics",
+          "short": "Celtics",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
+          "record": "7-2",
+          "label": "#5"
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      },
+      "criteria": "各分区前 2且胜多负少",
+      "weekOf": "20261102",
+      "fixed": false,
+      "teams": [
+        {
+          "id": "2",
+          "abbr": "BUF",
+          "name": "Buffalo Bills",
+          "short": "Bills",
+          "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png",
+          "record": "6-1",
+          "label": "AFC东区第1"
+        },
+        {
+          "id": "17",
+          "abbr": "NE",
+          "name": "New England Patriots",
+          "short": "Patriots",
+          "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/ne.png",
+          "record": "5-3",
+          "label": "AFC东区第2"
+        },
+        {
+          "id": "25",
+          "abbr": "SF",
+          "name": "San Francisco 49ers",
+          "short": "49ers",
+          "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/sf.png",
+          "record": "6-1",
+          "label": "NFC西区第1"
+        },
+        {
+          "id": "14",
+          "abbr": "LAR",
+          "name": "Los Angeles Rams",
+          "short": "Rams",
+          "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/lar.png",
+          "record": "5-4",
+          "label": "NFC西区第2"
+        },
+        {
+          "id": "16",
+          "abbr": "MIN",
+          "name": "Minnesota Vikings",
+          "short": "Vikings",
+          "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/min.png",
+          "record": "6-1",
+          "label": "NFC北区第1"
+        },
+        {
+          "id": "8",
+          "abbr": "DET",
+          "name": "Detroit Lions",
+          "short": "Lions",
+          "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/det.png",
+          "record": "6-2",
+          "label": "NFC北区第2"
+        },
+        {
+          "id": "7",
+          "abbr": "DEN",
+          "name": "Denver Broncos",
+          "short": "Broncos",
+          "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/den.png",
+          "record": "7-2",
+          "label": "AFC西区第1"
+        },
+        {
+          "id": "12",
+          "abbr": "KC",
+          "name": "Kansas City Chiefs",
+          "short": "Chiefs",
+          "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
+          "record": "6-2",
+          "label": "AFC西区第2"
+        },
+        {
+          "id": "30",
+          "abbr": "JAX",
+          "name": "Jacksonville Jaguars",
+          "short": "Jaguars",
+          "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/jax.png",
+          "record": "6-2",
+          "label": "AFC南区第1"
+        },
+        {
+          "id": "23",
+          "abbr": "PIT",
+          "name": "Pittsburgh Steelers",
+          "short": "Steelers",
+          "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/pit.png",
+          "record": "6-2",
+          "label": "AFC北区第1"
+        },
+        {
+          "id": "4",
+          "abbr": "CIN",
+          "name": "Cincinnati Bengals",
+          "short": "Bengals",
+          "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/cin.png",
+          "record": "6-2",
+          "label": "AFC北区第2"
+        },
+        {
+          "id": "19",
+          "abbr": "NYG",
+          "name": "New York Giants",
+          "short": "Giants",
+          "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/nyg.png",
+          "record": "5-2-1",
+          "label": "NFC东区第1"
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": "cfb",
+        "name": "NCAAF"
+      },
+      "criteria": "AP Top 25 前 10",
+      "weekOf": "20261102",
+      "fixed": false,
+      "teams": [
+        {
+          "id": "61",
+          "abbr": "UGA",
+          "name": "Georgia Bulldogs",
+          "short": "Georgia",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png",
+          "record": "8-1",
+          "label": "#1"
+        },
+        {
+          "id": "254",
+          "abbr": "UTAH",
+          "name": "Utah Utes",
+          "short": "Utah",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/254.png",
+          "record": "9-0",
+          "label": "#2"
+        },
+        {
+          "id": "87",
+          "abbr": "ND",
+          "name": "Notre Dame Fighting Irish",
+          "short": "Notre Dame",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/87.png",
+          "record": "8-1",
+          "label": "#3"
+        },
+        {
+          "id": "26",
+          "abbr": "UCLA",
+          "name": "UCLA Bruins",
+          "short": "UCLA",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/26.png",
+          "record": "9-0",
+          "label": "#4"
+        },
+        {
+          "id": "2390",
+          "abbr": "MIA",
+          "name": "Miami Hurricanes",
+          "short": "Miami",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2390.png",
+          "record": "8-1",
+          "label": "#5"
+        },
+        {
+          "id": "84",
+          "abbr": "IU",
+          "name": "Indiana Hoosiers",
+          "short": "Indiana",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/84.png",
+          "record": "8-1",
+          "label": "#6"
+        },
+        {
+          "id": "333",
+          "abbr": "ALA",
+          "name": "Alabama Crimson Tide",
+          "short": "Alabama",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/333.png",
+          "record": "7-2",
+          "label": "#7"
+        },
+        {
+          "id": "251",
+          "abbr": "TEX",
+          "name": "Texas Longhorns",
+          "short": "Texas",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png",
+          "record": "7-2",
+          "label": "#8"
+        },
+        {
+          "id": "2633",
+          "abbr": "TENN",
+          "name": "Tennessee Volunteers",
+          "short": "Tennessee",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2633.png",
+          "record": "7-2",
+          "label": "#9"
+        },
+        {
+          "id": "2641",
+          "abbr": "TTU",
+          "name": "Texas Tech Red Raiders",
+          "short": "Texas Tech",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2641.png",
+          "record": "8-1",
+          "label": "#10"
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": "soccer",
+        "name": "足球"
+      },
+      "criteria": "豪门对决",
+      "weekOf": "20261102",
+      "fixed": true,
+      "teams": [
+        {
+          "id": "382",
+          "abbr": "MNC",
+          "name": "Manchester City",
+          "short": "Man City",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png",
+          "label": ""
+        },
+        {
+          "id": "359",
+          "abbr": "ARS",
+          "name": "Arsenal",
+          "short": "Arsenal",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/359.png",
+          "label": ""
+        },
+        {
+          "id": "364",
+          "abbr": "LIV",
+          "name": "Liverpool",
+          "short": "Liverpool",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png",
+          "label": ""
+        },
+        {
+          "id": "363",
+          "abbr": "CHE",
+          "name": "Chelsea",
+          "short": "Chelsea",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png",
+          "label": ""
+        },
+        {
+          "id": "86",
+          "abbr": "RMA",
+          "name": "Real Madrid",
+          "short": "Real Madrid",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png",
+          "label": ""
+        },
+        {
+          "id": "83",
+          "abbr": "BAR",
+          "name": "Barcelona",
+          "short": "Barcelona",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png",
+          "label": ""
+        },
+        {
+          "id": "1068",
+          "abbr": "ATM",
+          "name": "Atlético Madrid",
+          "short": "Atlético",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png",
+          "label": ""
+        },
+        {
+          "id": "132",
+          "abbr": "MUN",
+          "name": "Bayern Munich",
+          "short": "Bayern",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/132.png",
+          "label": ""
+        },
+        {
+          "id": "160",
+          "abbr": "PSG",
+          "name": "Paris Saint-Germain",
+          "short": "PSG",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png",
+          "label": ""
+        }
+      ]
+    }
+  ],
+  "games": [
+    {
+      "id": "401873045",
+      "date": "2026-11-08T18:00Z",
+      "timeValid": true,
+      "name": "New York Jets at Kansas City Chiefs",
+      "shortName": "NYJ @ KC",
+      "seasonYear": 2026,
+      "seasonTypeId": 2,
+      "week": 9,
+      "note": null,
+      "status": {
+        "state": "post",
+        "completed": true,
+        "detail": "Final"
+      },
+      "home": {
+        "side": "home",
+        "id": "12",
+        "abbr": "KC",
+        "name": "Kansas City Chiefs",
+        "short": "Chiefs",
+        "location": "Kansas City",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
+        "score": "35",
+        "winner": true,
+        "record": "6-2",
+        "rank": null
+      },
+      "away": {
+        "side": "away",
+        "id": "20",
+        "abbr": "NYJ",
+        "name": "New York Jets",
+        "short": "Jets",
+        "location": "New York",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/nyj.png",
+        "score": "12",
+        "winner": false,
+        "record": "2-7",
+        "rank": null
+      },
+      "venue": "Arrowhead Stadium",
+      "broadcasts": [
+        "CBS"
+      ],
+      "link": "https://www.espn.com/nfl/game/_/gameId/401873045/jets-chiefs",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      },
+      "focusIds": [
+        "12"
+      ],
+      "tags": [
+        "follow"
+      ],
+      "ranks": null
+    },
+    {
+      "id": "401873044",
+      "date": "2026-11-08T18:00Z",
+      "timeValid": true,
+      "name": "New York Giants at Philadelphia Eagles",
+      "shortName": "NYG @ PHI",
+      "seasonYear": 2026,
+      "seasonTypeId": 2,
+      "week": 9,
+      "note": null,
+      "status": {
+        "state": "post",
+        "completed": true,
+        "detail": "Final"
+      },
+      "home": {
+        "side": "home",
+        "id": "21",
+        "abbr": "PHI",
+        "name": "Philadelphia Eagles",
+        "short": "Eagles",
+        "location": "Philadelphia",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/phi.png",
+        "score": "11",
+        "winner": false,
+        "record": "2-7",
+        "rank": null
+      },
+      "away": {
+        "side": "away",
+        "id": "19",
+        "abbr": "NYG",
+        "name": "New York Giants",
+        "short": "Giants",
+        "location": "New York",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/nyg.png",
+        "score": "19",
+        "winner": true,
+        "record": "5-2-1",
+        "rank": null
+      },
+      "venue": "Lincoln Financial Field",
+      "broadcasts": [
+        "Fox"
+      ],
+      "link": "https://www.espn.com/nfl/game/_/gameId/401873044/giants-eagles",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      },
+      "focusIds": [
+        "21"
+      ],
+      "tags": [
+        "follow"
+      ],
+      "ranks": null
+    },
+    {
+      "id": "401882816",
+      "date": "2026-11-08T20:00Z",
+      "timeValid": true,
+      "name": "Barcelona at Atlético Madrid",
+      "shortName": "BAR @ ATM",
+      "seasonYear": 2026,
+      "seasonTypeId": 14357,
+      "week": null,
+      "note": null,
+      "status": {
+        "state": "post",
+        "completed": true,
+        "detail": "FT"
+      },
+      "home": {
+        "side": "home",
+        "id": "1068",
+        "abbr": "ATM",
+        "name": "Atlético Madrid",
+        "short": "Atlético",
+        "location": "Atlético Madrid",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png",
+        "score": "1",
+        "winner": false,
+        "record": "9-1-2",
+        "rank": null
+      },
+      "away": {
+        "side": "away",
+        "id": "83",
+        "abbr": "BAR",
+        "name": "Barcelona",
+        "short": "Barcelona",
+        "location": "Barcelona",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png",
+        "score": "2",
+        "winner": true,
+        "record": "11-0-1",
+        "rank": null
+      },
+      "venue": "Riyadh Air Metropolitano",
+      "broadcasts": [
+        "ESPN Deportes",
+        "ESPN+"
+      ],
+      "link": "https://www.espn.com/soccer/match/_/gameId/401882816/barcelona-atletico-madrid",
+      "league": {
+        "id": "soccer",
+        "name": "西甲",
+        "comp": "esp.1"
+      },
+      "focusIds": [],
+      "tags": [
+        "marquee"
+      ],
+      "ranks": {
+        "home": "",
+        "away": ""
+      }
+    },
+    {
+      "id": "401873047",
+      "date": "2026-11-08T21:25Z",
+      "timeValid": true,
+      "name": "Las Vegas Raiders at San Francisco 49ers",
+      "shortName": "LV @ SF",
+      "seasonYear": 2026,
+      "seasonTypeId": 2,
+      "week": 9,
+      "note": null,
+      "status": {
+        "state": "in",
+        "completed": false,
+        "detail": "9:29 - 3rd"
+      },
+      "home": {
+        "side": "home",
+        "id": "25",
+        "abbr": "SF",
+        "name": "San Francisco 49ers",
+        "short": "49ers",
+        "location": "San Francisco",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/sf.png",
+        "score": null,
+        "winner": null,
+        "record": null,
+        "rank": null
+      },
+      "away": {
+        "side": "away",
+        "id": "13",
+        "abbr": "LV",
+        "name": "Las Vegas Raiders",
+        "short": "Raiders",
+        "location": "Las Vegas",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/lv.png",
+        "score": null,
+        "winner": null,
+        "record": null,
+        "rank": null
+      },
+      "venue": "Levi's Stadium",
+      "broadcasts": [
+        "Fox"
+      ],
+      "link": "https://www.espn.com/nfl/game?gameId=401873047",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      },
+      "focusIds": [
+        "25"
+      ],
+      "tags": [
+        "follow"
+      ],
+      "ranks": null
+    },
+    {
+      "id": "401873051",
+      "date": "2026-11-10T01:15Z",
+      "timeValid": true,
+      "name": "Buffalo Bills at Minnesota Vikings",
+      "shortName": "BUF @ MIN",
+      "seasonYear": 2026,
+      "seasonTypeId": 2,
+      "week": 9,
+      "note": null,
+      "status": {
+        "state": "pre",
+        "completed": false,
+        "detail": "11/9 - 8:15 PM EST"
+      },
+      "home": {
+        "side": "home",
+        "id": "16",
+        "abbr": "MIN",
+        "name": "Minnesota Vikings",
+        "short": "Vikings",
+        "location": "Minnesota",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png",
+        "score": "0",
+        "winner": null,
+        "record": "6-1",
+        "rank": null
+      },
+      "away": {
+        "side": "away",
+        "id": "2",
+        "abbr": "BUF",
+        "name": "Buffalo Bills",
+        "short": "Bills",
+        "location": "Buffalo",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png",
+        "score": "0",
+        "winner": null,
+        "record": "6-1",
+        "rank": null
+      },
+      "venue": "U.S. Bank Stadium",
+      "broadcasts": [
+        "ESPN",
+        "ABC"
+      ],
+      "link": "https://www.espn.com/nfl/game/_/gameId/401873051/bills-vikings",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      },
+      "focusIds": [],
+      "tags": [
+        "marquee"
+      ],
+      "ranks": {
+        "home": "NFC北区第1",
+        "away": "AFC东区第1"
+      }
+    },
+    {
+      "id": "401909959",
+      "date": "2026-11-10T03:00Z",
+      "timeValid": true,
+      "name": "New Orleans Pelicans at Golden State Warriors",
+      "shortName": "NO @ GS",
+      "seasonYear": 2027,
+      "seasonTypeId": 2,
+      "week": null,
+      "note": null,
+      "status": {
+        "state": "pre",
+        "completed": false,
+        "detail": "11/9 - 10:00 PM EST"
+      },
+      "home": {
+        "side": "home",
+        "id": "9",
+        "abbr": "GS",
+        "name": "Golden State Warriors",
+        "short": "Warriors",
+        "location": "Golden State",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png",
+        "score": null,
+        "winner": null,
+        "record": null,
+        "rank": null
+      },
+      "away": {
+        "side": "away",
+        "id": "3",
+        "abbr": "NO",
+        "name": "New Orleans Pelicans",
+        "short": "Pelicans",
+        "location": "New Orleans",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/no.png",
+        "score": null,
+        "winner": null,
+        "record": null,
+        "rank": null
+      },
+      "venue": "Chase Center",
+      "broadcasts": [
+        "NBA TV",
+        "GCSEN",
+        "Pelicans.com"
+      ],
+      "link": "https://www.espn.com/nba/game/_/gameId/401909959/pelicans-warriors",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      },
+      "focusIds": [
+        "9"
+      ],
+      "tags": [
+        "follow"
+      ],
+      "ranks": null
+    },
+    {
+      "id": "401909961",
+      "date": "2026-11-11T01:00Z",
+      "timeValid": true,
+      "name": "Boston Celtics at Philadelphia 76ers",
+      "shortName": "BOS @ PHI",
+      "seasonYear": 2027,
+      "seasonTypeId": 2,
+      "week": null,
+      "note": null,
+      "status": {
+        "state": "pre",
+        "completed": false,
+        "detail": "11/10 - 8:00 PM EST"
+      },
+      "home": {
+        "side": "home",
+        "id": "20",
+        "abbr": "PHI",
+        "name": "Philadelphia 76ers",
+        "short": "76ers",
+        "location": "Philadelphia",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+        "score": "0",
+        "winner": null,
+        "record": "9-2",
+        "rank": null
+      },
+      "away": {
+        "side": "away",
+        "id": "2",
+        "abbr": "BOS",
+        "name": "Boston Celtics",
+        "short": "Celtics",
+        "location": "Boston",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+        "score": "0",
+        "winner": null,
+        "record": "7-2",
+        "rank": null
+      },
+      "venue": "Xfinity Mobile Arena",
+      "broadcasts": [
+        "NBC"
+      ],
+      "link": "https://www.espn.com/nba/game/_/gameId/401909961/celtics-76ers",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      },
+      "focusIds": [],
+      "tags": [
+        "marquee"
+      ],
+      "ranks": {
+        "home": "#1",
+        "away": "#5"
+      }
+    },
+    {
+      "id": "401909974",
+      "date": "2026-11-12T02:30Z",
+      "timeValid": true,
+      "name": "Golden State Warriors at Houston Rockets",
+      "shortName": "GS @ HOU",
+      "seasonYear": 2027,
+      "seasonTypeId": 2,
+      "week": null,
+      "note": null,
+      "status": {
+        "state": "pre",
+        "completed": false,
+        "detail": "11/11 - 9:30 PM EST"
+      },
+      "home": {
+        "side": "home",
+        "id": "10",
+        "abbr": "HOU",
+        "name": "Houston Rockets",
+        "short": "Rockets",
+        "location": "Houston",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/hou.png",
+        "score": null,
+        "winner": null,
+        "record": null,
+        "rank": null
+      },
+      "away": {
+        "side": "away",
+        "id": "9",
+        "abbr": "GS",
+        "name": "Golden State Warriors",
+        "short": "Warriors",
+        "location": "Golden State",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png",
+        "score": null,
+        "winner": null,
+        "record": null,
+        "rank": null
+      },
+      "venue": "Toyota Center (Houston)",
+      "broadcasts": [
+        "ESPN"
+      ],
+      "link": "https://www.espn.com/nba/game/_/gameId/401909974/warriors-rockets",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      },
+      "focusIds": [
+        "9"
+      ],
+      "tags": [
+        "follow"
+      ],
+      "ranks": null
+    },
+    {
+      "id": "401909302",
+      "date": "2026-11-14T02:30Z",
+      "timeValid": true,
+      "name": "Golden State Warriors at San Antonio Spurs",
+      "shortName": "GS @ SA",
+      "seasonYear": 2027,
+      "seasonTypeId": 2,
+      "week": null,
+      "note": "NBA Cup - Group Play",
+      "status": {
+        "state": "pre",
+        "completed": false,
+        "detail": "11/13 - 9:30 PM EST"
+      },
+      "home": {
+        "side": "home",
+        "id": "24",
+        "abbr": "SA",
+        "name": "San Antonio Spurs",
+        "short": "Spurs",
+        "location": "San Antonio",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/sa.png",
+        "score": null,
+        "winner": null,
+        "record": null,
+        "rank": null
+      },
+      "away": {
+        "side": "away",
+        "id": "9",
+        "abbr": "GS",
+        "name": "Golden State Warriors",
+        "short": "Warriors",
+        "location": "Golden State",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png",
+        "score": null,
+        "winner": null,
+        "record": null,
+        "rank": null
+      },
+      "venue": "Frost Bank Center",
+      "broadcasts": [
+        "Prime Video"
+      ],
+      "link": "https://www.espn.com/nba/game/_/gameId/401909302/warriors-spurs",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      },
+      "focusIds": [
+        "9"
+      ],
+      "tags": [
+        "follow"
+      ],
+      "ranks": null
+    },
+    {
+      "id": "401858524",
+      "date": "2026-11-15T00:00Z",
+      "timeValid": true,
+      "name": "Minnesota Golden Gophers at Penn State Nittany Lions",
+      "shortName": "MINN @ PSU",
+      "seasonYear": 2026,
+      "seasonTypeId": 2,
+      "week": 11,
+      "note": null,
+      "status": {
+        "state": "pre",
+        "completed": false,
+        "detail": "11/14 - 7:00 PM EST"
+      },
+      "home": {
+        "side": "home",
+        "id": "213",
+        "abbr": "PSU",
+        "name": "Penn State Nittany Lions",
+        "short": "Penn State",
+        "location": "Penn State",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/213.png",
+        "score": null,
+        "winner": null,
+        "record": null,
+        "rank": null
+      },
+      "away": {
+        "side": "away",
+        "id": "135",
+        "abbr": "MINN",
+        "name": "Minnesota Golden Gophers",
+        "short": "Minnesota",
+        "location": "Minnesota",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/135.png",
+        "score": null,
+        "winner": null,
+        "record": null,
+        "rank": null
+      },
+      "venue": "Beaver Stadium",
+      "broadcasts": [
+        "FS1"
+      ],
+      "link": "https://www.espn.com/college-football/game/_/gameId/401858524/minnesota-penn-state",
+      "league": {
+        "id": "cfb",
+        "name": "NCAAF"
+      },
+      "focusIds": [
+        "213"
+      ],
+      "tags": [
+        "follow"
+      ],
+      "ranks": null
+    }
+  ],
+  "errors": []
+}

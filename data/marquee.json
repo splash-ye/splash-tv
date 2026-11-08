@@ -1,0 +1,366 @@
+{
+  "nba": {
+    "weeks": {
+      "20261102": {
+        "weekOf": "20261102",
+        "takenAt": "2026-11-08T22:17:34.252Z",
+        "cfgKey": "{\"type\":\"leagueTop\",\"topN\":5}",
+        "criteria": "联盟战绩前 5",
+        "teams": [
+          {
+            "id": "20",
+            "abbr": "PHI",
+            "name": "Philadelphia 76ers",
+            "short": "76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/phi.png",
+            "record": "8-2",
+            "label": "#1"
+          },
+          {
+            "id": "25",
+            "abbr": "OKC",
+            "name": "Oklahoma City Thunder",
+            "short": "Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/okc.png",
+            "record": "8-2",
+            "label": "#2"
+          },
+          {
+            "id": "24",
+            "abbr": "SA",
+            "name": "San Antonio Spurs",
+            "short": "Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/sa.png",
+            "record": "8-2",
+            "label": "#3"
+          },
+          {
+            "id": "13",
+            "abbr": "LAL",
+            "name": "Los Angeles Lakers",
+            "short": "Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
+            "record": "8-2",
+            "label": "#4"
+          },
+          {
+            "id": "2",
+            "abbr": "BOS",
+            "name": "Boston Celtics",
+            "short": "Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
+            "record": "7-2",
+            "label": "#5"
+          }
+        ]
+      }
+    }
+  },
+  "nfl": {
+    "weeks": {
+      "20261102": {
+        "weekOf": "20261102",
+        "takenAt": "2026-11-08T22:17:34.367Z",
+        "cfgKey": "{\"type\":\"divisionTop\",\"perDivision\":2,\"winningRecord\":true}",
+        "criteria": "各分区前 2且胜多负少",
+        "teams": [
+          {
+            "id": "2",
+            "abbr": "BUF",
+            "name": "Buffalo Bills",
+            "short": "Bills",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png",
+            "record": "6-1",
+            "label": "AFC东区第1"
+          },
+          {
+            "id": "17",
+            "abbr": "NE",
+            "name": "New England Patriots",
+            "short": "Patriots",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/ne.png",
+            "record": "5-3",
+            "label": "AFC东区第2"
+          },
+          {
+            "id": "25",
+            "abbr": "SF",
+            "name": "San Francisco 49ers",
+            "short": "49ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/sf.png",
+            "record": "6-1",
+            "label": "NFC西区第1"
+          },
+          {
+            "id": "14",
+            "abbr": "LAR",
+            "name": "Los Angeles Rams",
+            "short": "Rams",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/lar.png",
+            "record": "5-4",
+            "label": "NFC西区第2"
+          },
+          {
+            "id": "16",
+            "abbr": "MIN",
+            "name": "Minnesota Vikings",
+            "short": "Vikings",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/min.png",
+            "record": "6-1",
+            "label": "NFC北区第1"
+          },
+          {
+            "id": "8",
+            "abbr": "DET",
+            "name": "Detroit Lions",
+            "short": "Lions",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/det.png",
+            "record": "6-2",
+            "label": "NFC北区第2"
+          },
+          {
+            "id": "7",
+            "abbr": "DEN",
+            "name": "Denver Broncos",
+            "short": "Broncos",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/den.png",
+            "record": "7-2",
+            "label": "AFC西区第1"
+          },
+          {
+            "id": "12",
+            "abbr": "KC",
+            "name": "Kansas City Chiefs",
+            "short": "Chiefs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
+            "record": "6-2",
+            "label": "AFC西区第2"
+          },
+          {
+            "id": "30",
+            "abbr": "JAX",
+            "name": "Jacksonville Jaguars",
+            "short": "Jaguars",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/jax.png",
+            "record": "6-2",
+            "label": "AFC南区第1"
+          },
+          {
+            "id": "23",
+            "abbr": "PIT",
+            "name": "Pittsburgh Steelers",
+            "short": "Steelers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/pit.png",
+            "record": "6-2",
+            "label": "AFC北区第1"
+          },
+          {
+            "id": "4",
+            "abbr": "CIN",
+            "name": "Cincinnati Bengals",
+            "short": "Bengals",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/cin.png",
+            "record": "6-2",
+            "label": "AFC北区第2"
+          },
+          {
+            "id": "19",
+            "abbr": "NYG",
+            "name": "New York Giants",
+            "short": "Giants",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/nyg.png",
+            "record": "5-2-1",
+            "label": "NFC东区第1"
+          }
+        ]
+      }
+    }
+  },
+  "cfb": {
+    "weeks": {
+      "20261102": {
+        "weekOf": "20261102",
+        "takenAt": "2026-11-08T22:17:34.410Z",
+        "cfgKey": "{\"type\":\"poll\",\"topN\":10,\"polls\":[\"cfp\",\"ap\"]}",
+        "criteria": "AP Top 25 前 10",
+        "teams": [
+          {
+            "id": "61",
+            "abbr": "UGA",
+            "name": "Georgia Bulldogs",
+            "short": "Georgia",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png",
+            "record": "8-1",
+            "label": "#1"
+          },
+          {
+            "id": "254",
+            "abbr": "UTAH",
+            "name": "Utah Utes",
+            "short": "Utah",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/254.png",
+            "record": "9-0",
+            "label": "#2"
+          },
+          {
+            "id": "87",
+            "abbr": "ND",
+            "name": "Notre Dame Fighting Irish",
+            "short": "Notre Dame",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/87.png",
+            "record": "8-1",
+            "label": "#3"
+          },
+          {
+            "id": "26",
+            "abbr": "UCLA",
+            "name": "UCLA Bruins",
+            "short": "UCLA",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/26.png",
+            "record": "9-0",
+            "label": "#4"
+          },
+          {
+            "id": "2390",
+            "abbr": "MIA",
+            "name": "Miami Hurricanes",
+            "short": "Miami",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2390.png",
+            "record": "8-1",
+            "label": "#5"
+          },
+          {
+            "id": "84",
+            "abbr": "IU",
+            "name": "Indiana Hoosiers",
+            "short": "Indiana",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/84.png",
+            "record": "8-1",
+            "label": "#6"
+          },
+          {
+            "id": "333",
+            "abbr": "ALA",
+            "name": "Alabama Crimson Tide",
+            "short": "Alabama",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/333.png",
+            "record": "7-2",
+            "label": "#7"
+          },
+          {
+            "id": "251",
+            "abbr": "TEX",
+            "name": "Texas Longhorns",
+            "short": "Texas",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png",
+            "record": "7-2",
+            "label": "#8"
+          },
+          {
+            "id": "2633",
+            "abbr": "TENN",
+            "name": "Tennessee Volunteers",
+            "short": "Tennessee",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2633.png",
+            "record": "7-2",
+            "label": "#9"
+          },
+          {
+            "id": "2641",
+            "abbr": "TTU",
+            "name": "Texas Tech Red Raiders",
+            "short": "Texas Tech",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2641.png",
+            "record": "8-1",
+            "label": "#10"
+          }
+        ]
+      }
+    }
+  },
+  "soccer": {
+    "weeks": {
+      "20261102": {
+        "weekOf": "20261102",
+        "takenAt": "2026-11-08T22:56:48.988Z",
+        "cfgKey": "{\"type\":\"fixedList\",\"criteria\":\"豪门对决\",\"clubs\":[\"382\",\"359\",\"364\",\"363\",\"86\",\"83\",\"1068\",\"132\",\"160\"],\"clubNames\":\"曼城 阿森纳 利物浦 切尔西 皇马 巴萨 马竞 拜仁 巴黎圣日耳曼\",\"lookupLeagues\":[\"ger.1\",\"fra.1\"]}",
+        "criteria": "豪门对决",
+        "fixed": true,
+        "teams": [
+          {
+            "id": "382",
+            "abbr": "MNC",
+            "name": "Manchester City",
+            "short": "Man City",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png",
+            "label": ""
+          },
+          {
+            "id": "359",
+            "abbr": "ARS",
+            "name": "Arsenal",
+            "short": "Arsenal",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/359.png",
+            "label": ""
+          },
+          {
+            "id": "364",
+            "abbr": "LIV",
+            "name": "Liverpool",
+            "short": "Liverpool",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png",
+            "label": ""
+          },
+          {
+            "id": "363",
+            "abbr": "CHE",
+            "name": "Chelsea",
+            "short": "Chelsea",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png",
+            "label": ""
+          },
+          {
+            "id": "86",
+            "abbr": "RMA",
+            "name": "Real Madrid",
+            "short": "Real Madrid",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png",
+            "label": ""
+          },
+          {
+            "id": "83",
+            "abbr": "BAR",
+            "name": "Barcelona",
+            "short": "Barcelona",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png",
+            "label": ""
+          },
+          {
+            "id": "1068",
+            "abbr": "ATM",
+            "name": "Atlético Madrid",
+            "short": "Atlético",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png",
+            "label": ""
+          },
+          {
+            "id": "132",
+            "abbr": "MUN",
+            "name": "Bayern Munich",
+            "short": "Bayern",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/132.png",
+            "label": ""
+          },
+          {
+            "id": "160",
+            "abbr": "PSG",
+            "name": "Paris Saint-Germain",
+            "short": "PSG",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png",
+            "label": ""
+          }
+        ]
+      }
+    }
+  }
+}
