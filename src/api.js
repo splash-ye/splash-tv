@@ -195,7 +195,7 @@ export async function highlights() {
   const out = await mapLimit(games, 3, async (game) => {
     const lg = config.leagues.find((l) => l.id === game.league.id);
     const h = await findHighlights(game, lg.id, lg.highlights).catch(() => ({ videos: [] }));
-    return { game, videos: h.videos };
+    return { game, videos: h.videos, embed: lg.highlights.embed !== false };
   });
   return { daysBack: HIGHLIGHT_DAYS, games: out, roundups: await roundups() };
 }
@@ -231,7 +231,7 @@ async function roundups() {
   }
   const found = await mapLimit(jobs, 3, async ({ lg, type, p }) => {
     const r = await findRoundup(type, p, lg.id, lg.highlights).catch(() => null);
-    return r && { league: leagueTag(lg), type, label: r.label, period: p, video: r.video };
+    return r && { league: leagueTag(lg), type, label: r.label, period: p, video: r.video, embed: lg.highlights.embed !== false };
   });
   return found.filter(Boolean).sort((a, b) => (b.period.sortDate > a.period.sortDate ? 1 : -1));
 }

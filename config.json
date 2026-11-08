@@ -58,7 +58,8 @@
         ],
         "roundups": [
           "top15"
-        ]
+        ],
+        "embed": false
       }
     },
     {
