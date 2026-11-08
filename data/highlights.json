@@ -136,5 +136,187 @@
     ],
     "source": "channel-search",
     "foundAt": "2026-11-08T22:20:12.205Z"
+  },
+  "roundup:nba:nightly:20261102": {
+    "videos": [
+      {
+        "id": "yvckXUGV8Mo",
+        "title": "NBA's Nightly Recap | November 2, 2026",
+        "channelId": "UCWJ2lWNubArHWmf3FIHbfcQ",
+        "url": "https://www.youtube.com/watch?v=yvckXUGV8Mo",
+        "thumbnail": "https://i.ytimg.com/vi/yvckXUGV8Mo/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-03T23:35:27.229Z"
+      }
+    ],
+    "foundAt": "2026-11-08T23:35:27.230Z"
+  },
+  "roundup:nba:nightly:20261104": {
+    "videos": [
+      {
+        "id": "1aNrzlqRhaY",
+        "title": "NBA's Nightly Recap | November 4, 2026",
+        "channelId": "UCWJ2lWNubArHWmf3FIHbfcQ",
+        "url": "https://www.youtube.com/watch?v=1aNrzlqRhaY",
+        "thumbnail": "https://i.ytimg.com/vi/1aNrzlqRhaY/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-05T23:35:27.298Z"
+      }
+    ],
+    "foundAt": "2026-11-08T23:35:27.298Z"
+  },
+  "roundup:nba:nightly:20261101": {
+    "videos": [
+      {
+        "id": "X3cR-TMPnhc",
+        "title": "NBA's Nightly Recap | November 1, 2026",
+        "channelId": "UCWJ2lWNubArHWmf3FIHbfcQ",
+        "url": "https://www.youtube.com/watch?v=X3cR-TMPnhc",
+        "thumbnail": "https://i.ytimg.com/vi/X3cR-TMPnhc/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-02T23:35:27.326Z"
+      }
+    ],
+    "foundAt": "2026-11-08T23:35:27.326Z"
+  },
+  "roundup:nba:nightly:20261105": {
+    "videos": [
+      {
+        "id": "SZMSvEkxtMs",
+        "title": "NBA's Nightly Recap | November 5, 2026",
+        "channelId": "UCWJ2lWNubArHWmf3FIHbfcQ",
+        "url": "https://www.youtube.com/watch?v=SZMSvEkxtMs",
+        "thumbnail": "https://i.ytimg.com/vi/SZMSvEkxtMs/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-06T23:35:27.710Z"
+      }
+    ],
+    "foundAt": "2026-11-08T23:35:27.710Z"
+  },
+  "roundup:nba:nightly:20261106": {
+    "videos": [
+      {
+        "id": "xb5bhJQE6vw",
+        "title": "NBA's Nightly Recap | November 6, 2026",
+        "channelId": "UCWJ2lWNubArHWmf3FIHbfcQ",
+        "url": "https://www.youtube.com/watch?v=xb5bhJQE6vw",
+        "thumbnail": "https://i.ytimg.com/vi/xb5bhJQE6vw/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-07T23:35:27.964Z"
+      }
+    ],
+    "foundAt": "2026-11-08T23:35:27.964Z"
+  },
+  "roundup:nba:nightly:20261107": {
+    "videos": [
+      {
+        "id": "NAotzr5y2SI",
+        "title": "NBA's Nightly Recap | November 7, 2026",
+        "channelId": "UCWJ2lWNubArHWmf3FIHbfcQ",
+        "url": "https://www.youtube.com/watch?v=NAotzr5y2SI",
+        "thumbnail": "https://i.ytimg.com/vi/NAotzr5y2SI/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-08T07:35:28.023Z"
+      }
+    ],
+    "foundAt": "2026-11-08T23:35:28.023Z"
+  },
+  "roundup:nba:topPlays:20261102": {
+    "videos": [
+      {
+        "id": "LXor_pP78A8",
+        "title": "NBA's Top 10 Plays of the Night | November 2, 2026",
+        "channelId": "UCWJ2lWNubArHWmf3FIHbfcQ",
+        "url": "https://www.youtube.com/watch?v=LXor_pP78A8",
+        "thumbnail": "https://i.ytimg.com/vi/LXor_pP78A8/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-03T23:35:28.525Z"
+      }
+    ],
+    "foundAt": "2026-11-08T23:35:28.525Z"
+  },
+  "roundup:nba:topPlays:20261101": {
+    "videos": [
+      {
+        "id": "WICJbDrybJc",
+        "title": "NBA's Top 5 Plays of the Night | November 1, 2026",
+        "channelId": "UCWJ2lWNubArHWmf3FIHbfcQ",
+        "url": "https://www.youtube.com/watch?v=WICJbDrybJc",
+        "thumbnail": "https://i.ytimg.com/vi/WICJbDrybJc/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-02T23:35:28.636Z"
+      }
+    ],
+    "foundAt": "2026-11-08T23:35:28.636Z"
+  },
+  "roundup:nba:topPlays:20261104": {
+    "videos": [
+      {
+        "id": "Ym71yZsT4V4",
+        "title": "NBA's Top 10 Plays of the Night | November 4, 2026",
+        "channelId": "UCWJ2lWNubArHWmf3FIHbfcQ",
+        "url": "https://www.youtube.com/watch?v=Ym71yZsT4V4",
+        "thumbnail": "https://i.ytimg.com/vi/Ym71yZsT4V4/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-05T23:35:28.788Z"
+      }
+    ],
+    "foundAt": "2026-11-08T23:35:28.788Z"
+  },
+  "roundup:nba:topPlays:20261105": {
+    "videos": [
+      {
+        "id": "zxgN8xTI9ME",
+        "title": "NBA's Top 5 Plays of the Night | November 5, 2026",
+        "channelId": "UCWJ2lWNubArHWmf3FIHbfcQ",
+        "url": "https://www.youtube.com/watch?v=zxgN8xTI9ME",
+        "thumbnail": "https://i.ytimg.com/vi/zxgN8xTI9ME/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-06T23:35:29.090Z"
+      }
+    ],
+    "foundAt": "2026-11-08T23:35:29.090Z"
+  },
+  "roundup:nba:topPlays:20261106": {
+    "videos": [
+      {
+        "id": "0OKpLFirSOQ",
+        "title": "NBA's Top 10 Plays of the Night | November 6, 2026",
+        "channelId": "UCWJ2lWNubArHWmf3FIHbfcQ",
+        "url": "https://www.youtube.com/watch?v=0OKpLFirSOQ",
+        "thumbnail": "https://i.ytimg.com/vi/0OKpLFirSOQ/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-07T23:35:29.418Z"
+      }
+    ],
+    "foundAt": "2026-11-08T23:35:29.418Z"
+  },
+  "roundup:nba:topPlays:20261107": {
+    "videos": [
+      {
+        "id": "y-PKE63m-U8",
+        "title": "NBA's Top 10 Plays of the Night | November 7, 2026",
+        "channelId": "UCWJ2lWNubArHWmf3FIHbfcQ",
+        "url": "https://www.youtube.com/watch?v=y-PKE63m-U8",
+        "thumbnail": "https://i.ytimg.com/vi/y-PKE63m-U8/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-08T07:35:29.463Z"
+      }
+    ],
+    "foundAt": "2026-11-08T23:35:29.463Z"
+  },
+  "roundup:nfl:top15:2026-w8": {
+    "videos": [
+      {
+        "id": "734G0waDRxI",
+        "title": "Top 15 Plays of Week 8! | 2026 NFL Season",
+        "channelId": "UCDVYQ4Zhbm3S2dlz7P1GBDg",
+        "url": "https://www.youtube.com/watch?v=734G0waDRxI",
+        "thumbnail": "https://i.ytimg.com/vi/734G0waDRxI/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-03T23:35:29.935Z"
+      }
+    ],
+    "foundAt": "2026-11-08T23:35:29.935Z"
   }
 }
