@@ -1,7 +1,7 @@
 {
   "day": "20261108",
-  "generatedAt": "2026-11-08T23:35:26.363Z",
-  "cfgKey": "[{\"id\":\"nba\",\"name\":\"NBA\",\"sport\":\"basketball\",\"league\":\"nba\",\"teams\":[\"gs\"],\"marquee\":{\"type\":\"leagueTop\",\"topN\":5},\"news\":{\"limit\":25},\"highlights\":{\"matcher\":\"nba\",\"channels\":[\"UCWJ2lWNubArHWmf3FIHbfcQ\"],\"roundups\":[\"nightly\",\"topPlays\"]}},{\"id\":\"nfl\",\"name\":\"NFL\",\"sport\":\"football\",\"league\":\"nfl\",\"teams\":[\"sf\",\"kc\",\"phi\"],\"marquee\":{\"type\":\"divisionTop\",\"perDivision\":2,\"winningRecord\":true},\"highlights\":{\"matcher\":\"nfl\",\"channels\":[\"UCDVYQ4Zhbm3S2dlz7P1GBDg\"],\"roundups\":[\"top15\"]}},{\"id\":\"cfb\",\"name\":\"NCAAF\",\"sport\":\"football\",\"league\":\"college-football\",\"teams\":[\"psu\"],\"scoreboardParams\":\"groups=80&limit=300\",\"marquee\":{\"type\":\"poll\",\"topN\":10,\"polls\":[\"cfp\",\"ap\"]},\"highlights\":{\"matcher\":\"cfb\",\"channels\":[\"UCXnslB_TwYqScBRf4bPf3vA\",\"UCpwix-O6ceqMgdxhqIynzFA\"]}},{\"id\":\"soccer\",\"name\":\"足球\",\"sport\":\"soccer\",\"teams\":[],\"competitions\":[{\"league\":\"eng.1\",\"name\":\"英超\"},{\"league\":\"esp.1\",\"name\":\"西甲\"},{\"league\":\"uefa.champions\",\"name\":\"欧冠\"},{\"league\":\"eng.fa\",\"name\":\"足总杯\"},{\"league\":\"esp.copa_del_rey\",\"name\":\"国王杯\"}],\"marquee\":{\"type\":\"fixedList\",\"criteria\":\"豪门对决\",\"clubs\":[\"382\",\"359\",\"364\",\"363\",\"86\",\"83\",\"1068\",\"132\",\"160\"],\"clubNames\":\"曼城 阿森纳 利物浦 切尔西 皇马 巴萨 马竞 拜仁 巴黎圣日耳曼\",\"lookupLeagues\":[\"ger.1\",\"fra.1\"]}}]",
+  "generatedAt": "2026-11-08T23:54:53.902Z",
+  "cfgKey": "[{\"id\":\"nba\",\"name\":\"NBA\",\"sport\":\"basketball\",\"league\":\"nba\",\"teams\":[\"gs\"],\"marquee\":{\"type\":\"leagueTop\",\"topN\":5},\"news\":{\"limit\":25},\"highlights\":{\"matcher\":\"nba\",\"channels\":[\"UCWJ2lWNubArHWmf3FIHbfcQ\"],\"roundups\":[\"nightly\",\"topPlays\"]}},{\"id\":\"nfl\",\"name\":\"NFL\",\"sport\":\"football\",\"league\":\"nfl\",\"teams\":[\"sf\",\"kc\",\"phi\"],\"marquee\":{\"type\":\"divisionTop\",\"perDivision\":2,\"winningRecord\":true},\"highlights\":{\"matcher\":\"nfl\",\"channels\":[\"UCDVYQ4Zhbm3S2dlz7P1GBDg\"],\"roundups\":[\"top15\"],\"embed\":false}},{\"id\":\"cfb\",\"name\":\"NCAAF\",\"sport\":\"football\",\"league\":\"college-football\",\"teams\":[\"psu\"],\"scoreboardParams\":\"groups=80&limit=300\",\"marquee\":{\"type\":\"poll\",\"topN\":10,\"polls\":[\"cfp\",\"ap\"]},\"highlights\":{\"matcher\":\"cfb\",\"channels\":[\"UCXnslB_TwYqScBRf4bPf3vA\",\"UCpwix-O6ceqMgdxhqIynzFA\"]}},{\"id\":\"soccer\",\"name\":\"足球\",\"sport\":\"soccer\",\"teams\":[],\"competitions\":[{\"league\":\"eng.1\",\"name\":\"英超\"},{\"league\":\"esp.1\",\"name\":\"西甲\"},{\"league\":\"uefa.champions\",\"name\":\"欧冠\"},{\"league\":\"eng.fa\",\"name\":\"足总杯\"},{\"league\":\"esp.copa_del_rey\",\"name\":\"国王杯\"}],\"marquee\":{\"type\":\"fixedList\",\"criteria\":\"豪门对决\",\"clubs\":[\"382\",\"359\",\"364\",\"363\",\"86\",\"83\",\"1068\",\"132\",\"160\"],\"clubNames\":\"曼城 阿森纳 利物浦 切尔西 皇马 巴萨 马竞 拜仁 巴黎圣日耳曼\",\"lookupLeagues\":[\"ger.1\",\"fra.1\"]}}]",
   "partial": false,
   "daysAhead": 7,
   "teams": [
@@ -623,7 +623,7 @@
       "status": {
         "state": "in",
         "completed": false,
-        "detail": "15:00 - 4th"
+        "detail": "5:21 - 4th"
       },
       "home": {
         "side": "home",
