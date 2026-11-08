@@ -225,3 +225,60 @@ export async function findHighlights(game, leagueId, cfg) {
   scheduleSave();
   return entry;
 }
+
+// ---------- roundups: league-wide compilation videos (not tied to one game) ----------
+// period: { key, dateLong?, week?, year? }  (per-day types use the ET game date, per-week the NFL week)
+export const ROUNDUPS = {
+  // "NBA's Nightly Recap | November 5, 2026"
+  nightly: {
+    per: 'day',
+    label: () => '每日回顾',
+    match: (T, p) => T.includes('NIGHTLY RECAP') && T.includes(p.dateLong.toUpperCase()),
+    queries: (p) => [`NBA's Nightly Recap ${p.dateLong}`],
+  },
+  // "NBA's Top 10 Plays of the Night | November 4, 2026" (light nights only get a Top 5)
+  topPlays: {
+    per: 'day',
+    label: (title) => (/TOP 5 PLAYS/i.test(title) ? '五佳球' : '十佳球'),
+    match: (T, p) => /TOP (5|10) PLAYS OF THE NIGHT/.test(T) && T.includes(p.dateLong.toUpperCase()),
+    queries: (p) => [`NBA's Top 10 Plays of the Night ${p.dateLong}`, `NBA's Top 5 Plays of the Night ${p.dateLong}`],
+  },
+  // "Top 15 Plays of Week 8! | 2026 NFL Season"
+  top15: {
+    per: 'week',
+    label: () => '一周 15 佳球',
+    match: (T, p) => new RegExp(`TOP 15 PLAYS OF WEEK ${p.week}(?!\\d)`).test(T) && T.includes(String(p.year)),
+    queries: (p) => [`Top 15 Plays of Week ${p.week} ${p.year} NFL Season`],
+  },
+};
+
+// Returns { video, label } or null when not (yet) published.
+export async function findRoundup(type, period, leagueId, cfg) {
+  const def = ROUNDUPS[type];
+  if (!def) return null;
+  const channels = cfg.channels ?? [];
+  const key = `roundup:${leagueId}:${type}:${period.key}`;
+  const s = await loadStore();
+  if (s[key]?.videos?.length) return { video: s[key].videos[0], label: def.label(s[key].videos[0].title) };
+  if (s[key] && Date.now() < s[key].retryAt) return null;
+
+  const ok = (v) => channels.includes(v.channelId) && def.match(v.title.toUpperCase(), period);
+  const feeds = await Promise.all(channels.map((c) => getChannelFeed(c).catch(() => [])));
+  let videos = feeds.flat().filter(ok);
+  for (const q of def.queries(period)) {
+    if (videos.length) break;
+    for (const c of channels) {
+      if (videos.length) break;
+      try {
+        videos = (await searchYouTube(q, c)).filter(ok);
+      } catch (err) {
+        console.warn(`[youtube] roundup search failed (${q}): ${err.message}`);
+      }
+    }
+  }
+  s[key] = videos.length
+    ? { videos: [videos[0]], foundAt: new Date().toISOString() }
+    : { videos: [], retryAt: Date.now() + 20 * MIN };
+  scheduleSave();
+  return videos.length ? { video: videos[0], label: def.label(videos[0].title) } : null;
+}

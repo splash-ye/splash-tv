@@ -275,3 +275,6 @@ table.goals { border-collapse: collapse; width: 100%; font-size: 13px; }
 .rules .qh .sub { color: var(--muted); font-size: 12px; margin-left: 4px; }
 .rules .chips { margin-top: 6px; }
 .rules .chip { background: var(--card); }
+.hl-group { font-size: 14px; font-weight: 600; margin: 4px 0 10px; }
+.hl-group small { font-size: 12px; font-weight: 400; color: var(--muted); margin-left: 6px; }
+.hl-grid + .hl-group { margin-top: 24px; }

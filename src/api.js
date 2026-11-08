@@ -3,9 +3,9 @@ import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { getTeamSchedule, getScoreboardDays, getNews, getBoxscore, getSoccerGoals } from './espn.js';
-import { findHighlights } from './youtube.js';
+import { findHighlights, findRoundup, ROUNDUPS } from './youtube.js';
 import { getQualifiers, getQualifiersAt } from './qualifiers.js';
-import { mapLimit, etDateKey, addDays, dayRange, DAY_MS } from './util.js';
+import { mapLimit, etDateKey, etLongDate, addDays, dayRange, keyToDate, DAY_MS } from './util.js';
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DATA_DIR = path.join(ROOT, 'data');
@@ -197,7 +197,42 @@ export async function highlights() {
     const h = await findHighlights(game, lg.id, lg.highlights).catch(() => ({ videos: [] }));
     return { game, videos: h.videos };
   });
-  return { daysBack: HIGHLIGHT_DAYS, games: out };
+  return { daysBack: HIGHLIGHT_DAYS, games: out, roundups: await roundups() };
+}
+
+// League-wide compilations (NBA nightly recap / top plays, NFL top 15 of the week) for every
+// day or week in the window that had completed games.
+async function roundups() {
+  const since = Date.now() - HIGHLIGHT_DAYS * DAY_MS;
+  const today = etDateKey(new Date());
+  const keys = dayRange(addDays(today, -HIGHLIGHT_DAYS), HIGHLIGHT_DAYS + 1);
+  const jobs = [];
+  for (const lg of config.leagues.filter((l) => l.highlights?.roundups?.length)) {
+    const done = (await getScoreboardDays(lg.sport, lg.league, keys).catch(() => [])).filter(
+      (g) => g.status.completed && new Date(g.date).getTime() >= since,
+    );
+    for (const type of lg.highlights.roundups) {
+      const def = ROUNDUPS[type];
+      if (!def) continue;
+      const periods = new Map();
+      for (const g of done) {
+        if (def.per === 'day') {
+          const k = etDateKey(new Date(g.date));
+          periods.set(k, { key: k, dateLong: etLongDate(keyToDate(k)), sortDate: keyToDate(k).toISOString() });
+        } else if (g.week && g.seasonTypeId === 2) {
+          const k = `${g.seasonYear}-w${g.week}`;
+          const prev = periods.get(k);
+          if (!prev || g.date > prev.sortDate) periods.set(k, { key: k, week: g.week, year: g.seasonYear, sortDate: g.date });
+        }
+      }
+      for (const p of periods.values()) jobs.push({ lg, type, p });
+    }
+  }
+  const found = await mapLimit(jobs, 3, async ({ lg, type, p }) => {
+    const r = await findRoundup(type, p, lg.id, lg.highlights).catch(() => null);
+    return r && { league: leagueTag(lg), type, label: r.label, period: p, video: r.video };
+  });
+  return found.filter(Boolean).sort((a, b) => (b.period.sortDate > a.period.sortDate ? 1 : -1));
 }
 
 // Weekly marquee snapshot (Mondays) and daily schedule snapshot.

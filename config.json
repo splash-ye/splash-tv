@@ -29,6 +29,10 @@
         "matcher": "nba",
         "channels": [
           "UCWJ2lWNubArHWmf3FIHbfcQ"
+        ],
+        "roundups": [
+          "nightly",
+          "topPlays"
         ]
       }
     },
@@ -51,6 +55,9 @@
         "matcher": "nfl",
         "channels": [
           "UCDVYQ4Zhbm3S2dlz7P1GBDg"
+        ],
+        "roundups": [
+          "top15"
         ]
       }
     },

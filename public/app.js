@@ -324,12 +324,11 @@ async function renderNews() {
 
 // ---------- highlights ----------
 async function renderHighlights() {
-  const el = $('#hl-grid');
+  const el = $('#hl-wrap');
   try {
-    const { games, daysBack } = await api('highlights');
+    const { games, daysBack, roundups = [] } = await api('highlights');
     $('#hl-sub').textContent = `最近 ${daysBack} 天`;
-    if (!games.length) return (el.innerHTML = `<div class="empty">最近 ${daysBack} 天关注球队没有比赛</div>`);
-    el.innerHTML = games
+    const gameCards = games
       .map(({ game: g, videos }) => {
         const lg = g.league.id;
         const focus = [g.home, g.away].find((t) => g.focusIds.includes(t.id)) ?? g.home;
@@ -354,6 +353,25 @@ async function renderHighlights() {
           </div></div>`;
       })
       .join('');
+    // League-wide compilations: NBA nightly recap / top plays, NFL top 15 of the week.
+    const roundupCards = roundups
+      .map((r) => {
+        const v = r.video;
+        const when = r.period.week
+          ? `第 ${r.period.week} 周`
+          : new Date(r.period.sortDate).toLocaleDateString('zh-CN', { month: 'long', day: 'numeric', weekday: 'short', timeZone: 'America/New_York' });
+        return `<div class="hl">
+          <a class="thumb" href="${esc(v.url)}" target="_blank" rel="noopener" title="${esc(v.title)}"><img src="${esc(v.thumbnail)}" alt="" loading="lazy" /></a>
+          <div class="body">
+            <div class="line1">${badge(r.league)}${esc(r.label)}</div>
+            <div class="line2"><span>${esc(when)}</span></div>
+          </div></div>`;
+      })
+      .join('');
+    el.innerHTML = `
+      <div class="hl-group">关注球队</div>
+      ${gameCards ? `<div class="hl-grid">${gameCards}</div>` : `<div class="empty">最近 ${daysBack} 天关注球队没有比赛</div>`}
+      ${roundupCards ? `<div class="hl-group">精选 <small>每日回顾 · 每晚十佳球 · NFL 每周 15 佳球</small></div><div class="hl-grid">${roundupCards}</div>` : ''}`;
   } catch (err) {
     el.innerHTML = `<div class="error">集锦加载失败：${esc(err.message)}</div>`;
   }
