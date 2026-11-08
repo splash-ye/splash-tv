@@ -313,7 +313,7 @@ async function renderHighlights() {
     const { games, daysBack, roundups = [] } = await api('highlights');
     $('#hl-sub').textContent = `最近 ${daysBack} 天`;
     const gameCards = games
-      .map(({ game: g, videos }) => {
+      .map(({ game: g, videos }) => ({ sort: g.date, html: (() => {
         const lg = g.league.id;
         const focus = [g.home, g.away].find((t) => g.focusIds.includes(t.id)) ?? g.home;
         const opp = focus === g.home ? g.away : g.home;
@@ -335,27 +335,24 @@ async function renderHighlights() {
             </div>
             ${videos.length > 1 ? `<div class="alt">其他版本：${videos.slice(1).map((x, i) => `<a href="${esc(x.url)}" target="_blank" rel="noopener" title="${esc(x.title)}">${x.extended ? '加长版' : `版本${i + 2}`} ↗</a>`).join('')}</div>` : ''}
           </div></div>`;
-      })
-      .join('');
+      })() }));
     // League-wide compilations: NBA nightly recap / top plays, NFL top 15 of the week.
-    const roundupCards = roundups
-      .map((r) => {
+    const roundupCards = roundups.map((r) => {
         const v = r.video;
+        const k = r.period.key;
         const when = r.period.week
           ? `第 ${r.period.week} 周`
-          : new Date(r.period.sortDate).toLocaleDateString('zh-CN', { month: 'long', day: 'numeric', weekday: 'short', timeZone: 'America/New_York' });
-        return `<div class="hl">
+          : new Date(+k.slice(0, 4), +k.slice(4, 6) - 1, +k.slice(6, 8)).toLocaleDateString('zh-CN', { month: 'long', day: 'numeric', weekday: 'short' });
+        return { sort: r.period.sortDate, html: `<div class="hl">
           <a class="thumb" href="${esc(v.url)}" target="_blank" rel="noopener" title="${esc(v.title)}"><img src="${esc(v.thumbnail)}" alt="" loading="lazy" /></a>
           <div class="body">
             <div class="line1">${badge(r.league)}${esc(r.label)}</div>
             <div class="line2"><span>${esc(when)}</span></div>
-          </div></div>`;
-      })
-      .join('');
-    el.innerHTML = `
-      <div class="hl-group">关注球队</div>
-      ${gameCards ? `<div class="hl-grid">${gameCards}</div>` : `<div class="empty">最近 ${daysBack} 天关注球队没有比赛</div>`}
-      ${roundupCards ? `<div class="hl-group">精选 <small>每日回顾 · 每晚十佳球 · NFL 每周 15 佳球</small></div><div class="hl-grid">${roundupCards}</div>` : ''}`;
+          </div></div>` };
+      });
+    // Followed-team games and league roundups in one grid, newest first.
+    const cards = [...gameCards, ...roundupCards].sort((a, b) => (a.sort < b.sort ? 1 : a.sort > b.sort ? -1 : 0));
+    el.innerHTML = cards.length ? `<div class="hl-grid">${cards.map((c) => c.html).join('')}</div>` : `<div class="empty">最近 ${daysBack} 天没有集锦</div>`;
   } catch (err) {
     el.innerHTML = `<div class="error">集锦加载失败：${esc(err.message)}</div>`;
   }

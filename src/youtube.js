@@ -193,25 +193,29 @@ export async function findHighlights(game, leagueId, cfg) {
   const key = `${leagueId}:${game.id}`;
   const s = await loadStore();
   const hit = s[key];
-  if (hit?.videos?.length) return hit;
-  if (hit && Date.now() < hit.retryAt) return hit;
+  // Done once a regular (non-extended) cut is known. If only an EXTENDED cut was found so far,
+  // keep looking for the regular one (at most every 20 minutes).
+  const hasRegular = (vs) => vs.some((v) => !v.extended);
+  if (hit?.videos?.length && (hasRegular(hit.videos) || Date.now() < (hit.regularRetryAt ?? 0))) return hit;
+  if (hit && !hit.videos?.length && Date.now() < hit.retryAt) return hit;
 
   const ok = (v) => channels.includes(v.channelId) && publishedInWindow(v, game) && matcher.match(v.title.toUpperCase(), game);
 
   const feeds = await Promise.all(channels.map((c) => getChannelFeed(c).catch(() => [])));
-  let videos = feeds.flat().filter(ok);
-  let source = videos.length ? 'rss' : null;
+  let videos = [...(hit?.videos ?? []), ...feeds.flat().filter(ok)];
+  let source = hit?.source ?? (videos.length ? 'rss' : null);
 
-  // Fallback: channel-scoped searches first, then a global search; stop at the first hit.
+  // Fallback: channel-scoped searches first, then a global search; stop once a regular cut is found.
   const attempts = [
     ...channels.flatMap((c) => matcher.queries(game).map((q) => [q, c])),
     [matcher.queries(game)[0], null],
   ];
   for (const [q, channelId] of attempts) {
-    if (videos.length) break;
+    if (hasRegular(videos)) break;
     try {
-      videos = (await searchYouTube(q, channelId)).filter(ok);
-      if (videos.length) source = channelId ? 'channel-search' : 'search';
+      const found = (await searchYouTube(q, channelId)).filter(ok);
+      if (found.length && !videos.length) source = channelId ? 'channel-search' : 'search';
+      videos = [...videos, ...found];
     } catch (err) {
       console.warn(`[youtube] search failed for ${game.shortName} (${q}): ${err.message}`);
     }
@@ -219,7 +223,12 @@ export async function findHighlights(game, leagueId, cfg) {
 
   const ageMs = Date.now() - new Date(game.date).getTime();
   const entry = videos.length
-    ? { videos: rank(videos, channels), source, foundAt: new Date().toISOString() }
+    ? {
+        videos: rank(videos, channels),
+        source,
+        foundAt: hit?.foundAt ?? new Date().toISOString(),
+        ...(hasRegular(videos) ? {} : { regularRetryAt: Date.now() + 20 * MIN }),
+      }
     : { videos: [], retryAt: Date.now() + (ageMs < 36 * HOUR ? 20 * MIN : 6 * HOUR) };
   s[key] = entry;
   scheduleSave();

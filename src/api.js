@@ -218,7 +218,8 @@ async function roundups() {
       for (const g of done) {
         if (def.per === 'day') {
           const k = etDateKey(new Date(g.date));
-          periods.set(k, { key: k, dateLong: etLongDate(keyToDate(k)), sortDate: keyToDate(k).toISOString() });
+          const prev = periods.get(k);
+          if (!prev || g.date > prev.sortDate) periods.set(k, { key: k, dateLong: etLongDate(keyToDate(k)), sortDate: g.date });
         } else if (g.week && g.seasonTypeId === 2) {
           const k = `${g.seasonYear}-w${g.week}`;
           const prev = periods.get(k);
