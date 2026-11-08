@@ -264,23 +264,7 @@ async function renderResults() {
     const d = await api('results');
     $('#res-sub').textContent = `过去 ${d.daysBack} 天 · 点开看球员数据`;
     const rows = d.games.map(resultCells);
-    // Followed teams' W-L over the window, shown like the schedule card's record chips.
-    const wl = new Map();
-    for (const g of d.games) {
-      for (const t of [g.away, g.home].filter((x) => g.focusIds.includes(x.id))) {
-        const r = wl.get(t.id) ?? { w: 0, l: 0, t: 0 };
-        if (g.away.score === g.home.score) r.t++;
-        else if (t.winner) r.w++;
-        else r.l++;
-        wl.set(t.id, r);
-      }
-    }
-    const fmt = (t) => {
-      const r = wl.get(t.id) ?? { w: 0, l: 0, t: 0 };
-      return `${r.w}-${r.l}${r.t ? `-${r.t}` : ''}`;
-    };
     el.innerHTML = `
-      ${teamChips(d.teams, fmt)}
       ${errorsHtml(d.errors)}
       ${rows.length ? gameTable(rows, () => '<tr class="box-row" hidden><td colspan="7"><div class="box"></div></td></tr>') : `<div class="empty">过去 ${d.daysBack} 天没有比赛</div>`}
       <div class="foot-note">数据更新于 ${esc(new Date(d.builtAt ?? Date.now()).toLocaleString('zh-CN', { hour12: false }))}</div>`;
