@@ -3,9 +3,9 @@
     "weeks": {
       "20261102": {
         "weekOf": "20261102",
-        "takenAt": "2026-11-08T22:17:34.252Z",
-        "cfgKey": "{\"type\":\"leagueTop\",\"topN\":5}",
-        "criteria": "联盟战绩前 5",
+        "takenAt": "2026-11-09T00:40:30.466Z",
+        "cfgKey": "{\"type\":\"leagueTop\",\"topN\":8}",
+        "criteria": "联盟战绩前 8",
         "teams": [
           {
             "id": "20",
@@ -13,7 +13,7 @@
             "name": "Philadelphia 76ers",
             "short": "76ers",
             "logo": "https://a.espncdn.com/i/teamlogos/nba/500/phi.png",
-            "record": "8-2",
+            "record": "9-2",
             "label": "#1"
           },
           {
@@ -51,6 +51,33 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
             "record": "7-2",
             "label": "#5"
+          },
+          {
+            "id": "8",
+            "abbr": "DET",
+            "name": "Detroit Pistons",
+            "short": "Pistons",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/det.png",
+            "record": "6-2",
+            "label": "#6"
+          },
+          {
+            "id": "9",
+            "abbr": "GS",
+            "name": "Golden State Warriors",
+            "short": "Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png",
+            "record": "7-3",
+            "label": "#7"
+          },
+          {
+            "id": "16",
+            "abbr": "MIN",
+            "name": "Minnesota Timberwolves",
+            "short": "Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
+            "record": "7-3",
+            "label": "#8"
           }
         ]
       }
@@ -180,9 +207,9 @@
     "weeks": {
       "20261102": {
         "weekOf": "20261102",
-        "takenAt": "2026-11-08T22:17:34.410Z",
-        "cfgKey": "{\"type\":\"poll\",\"topN\":10,\"polls\":[\"cfp\",\"ap\"]}",
-        "criteria": "AP Top 25 前 10",
+        "takenAt": "2026-11-09T00:40:30.555Z",
+        "cfgKey": "{\"type\":\"poll\",\"topN\":15,\"polls\":[\"cfp\",\"ap\"]}",
+        "criteria": "AP Top 25 前 15",
         "teams": [
           {
             "id": "61",
@@ -273,6 +300,51 @@
             "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2641.png",
             "record": "8-1",
             "label": "#10"
+          },
+          {
+            "id": "154",
+            "abbr": "WAKE",
+            "name": "Wake Forest Demon Deacons",
+            "short": "Wake Forest",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/154.png",
+            "record": "8-1",
+            "label": "#11"
+          },
+          {
+            "id": "252",
+            "abbr": "BYU",
+            "name": "BYU Cougars",
+            "short": "BYU",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/252.png",
+            "record": "7-2",
+            "label": "#12"
+          },
+          {
+            "id": "96",
+            "abbr": "UK",
+            "name": "Kentucky Wildcats",
+            "short": "Kentucky",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/96.png",
+            "record": "7-2",
+            "label": "#13"
+          },
+          {
+            "id": "248",
+            "abbr": "HOU",
+            "name": "Houston Cougars",
+            "short": "Houston",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/248.png",
+            "record": "7-2",
+            "label": "#14"
+          },
+          {
+            "id": "30",
+            "abbr": "USC",
+            "name": "USC Trojans",
+            "short": "USC",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/30.png",
+            "record": "7-2",
+            "label": "#15"
           }
         ]
       }
