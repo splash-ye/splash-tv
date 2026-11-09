@@ -183,7 +183,6 @@ table.games { width: 100%; border-collapse: collapse; table-layout: fixed; }
 .games col.c-lead { width: 44px; }
 .games col.c-lg { width: 50px; }
 .games col.c-mid { width: 84px; }
-.games col.c-tg { width: 40px; }
 .games col.c-end { width: 24px; }
 .games td { padding: 9px 4px; border-top: 1px solid var(--line); vertical-align: middle; }
 .games tr.day td { border-top: 0; padding: 16px 4px 6px; font-size: 12px; font-weight: 600; color: var(--muted); letter-spacing: .02em; }
@@ -192,8 +191,6 @@ table.games { width: 100%; border-collapse: collapse; table-layout: fixed; }
 .games tr.row:hover td { background: var(--chip); }
 .games tr.row[aria-expanded="true"] td { background: var(--chip); }
 .games td.lead { font-variant-numeric: tabular-nums; color: var(--muted); font-size: 13px; white-space: nowrap; }
-.games td.tg { text-align: center; }
-.games td.tg .tag { margin: 1px 0; }
 .games td.end { text-align: right; color: var(--muted); font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
 .games td.team { overflow: hidden; }
@@ -219,14 +216,16 @@ tr.row[aria-expanded="true"] .chev { transform: rotate(180deg); }
 .games tr.box-row > td { padding: 0 4px; border-top: 0; background: var(--chip); }
 .games tr.box-row .box { background: var(--card); border-radius: 10px; padding: 10px 12px 12px; margin: 0 0 10px; }
 
+/* Phones: logos only (names hidden), league badge kept. */
 @media (max-width: 560px) {
-  /* Keep the cell (so the colgroup still matches) but collapse it. */
-  .games col.c-lg { width: 0; }
-  .games td.lgc { padding: 0; }
-  .games td.lgc .lg { display: none; }
+  .games col.c-lead { width: 42px; }
+  .games col.c-lg { width: 60px; }
   .games col.c-mid { width: 76px; }
   .games col.c-end { width: 24px; }
-  .games col.c-tg { width: 38px; }
+  .games .tx { display: none; }
+  .games .tmx { justify-content: center; }
+  .games .tmx img { width: 28px; height: 28px; }
+  .games td { padding: 10px 3px; }
 }
 .box .seg { margin: 0 0 8px; display: inline-flex; align-items: center; }
 .box .seg img { width: 16px; height: 16px; vertical-align: -3px; margin-right: 4px; }

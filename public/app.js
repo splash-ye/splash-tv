@@ -19,7 +19,6 @@ const ZH = {
   soccer: { MNC: '曼城', ARS: '阿森纳', LIV: '利物浦', CHE: '切尔西', RMA: '皇马', BAR: '巴萨', ATM: '马竞', MUN: '拜仁', PSG: '巴黎' },
 };
 const NEWS_TYPE = { HeadlineNews: '头条', Story: '深度', Recap: '战报', Media: '视频', Preview: '前瞻' };
-const TAG = { follow: '关注', marquee: '强强' };
 const NBA_LABELS = {
   MIN: '时间', PTS: '得分', FG: '投篮', '3PT': '三分', FT: '罚球', REB: '篮板', AST: '助攻', TO: '失误',
   STL: '抢断', BLK: '盖帽', OREB: '前板', DREB: '后板', PF: '犯规',
@@ -28,7 +27,6 @@ const FB_GROUPS = { passing: '传球', rushing: '冲球', receiving: '接球', d
 
 const teamName = (t, lg) => ZH[lg]?.[t.abbr] ?? t.short ?? t.name;
 const badge = (league) => `<span class="lg lg-${esc(league.id)}">${esc(league.name)}</span>`;
-const tagsHtml = (tags) => tags.map((t) => `<span class="tag tag-${t}">${TAG[t]}</span>`).join('');
 
 // Relative paths so the same page works on the local server and under a GitHub Pages subpath.
 async function api(endpoint) {
@@ -56,20 +54,18 @@ function timeAgo(iso) {
   return new Date(iso).toLocaleDateString('zh-CN');
 }
 const weekOfLabel = (k) => `${Number(k.slice(4, 6))}/${Number(k.slice(6, 8))}`;
-const rankOf = (g, side) => g.ranks?.[side] ?? (g[side].rank ? `#${g[side].rank}` : '');
 const errorsHtml = (errs) => (errs?.length ? `<div class="error">部分数据加载失败：${errs.map(esc).join('；')}</div>` : '');
 
 // ---------- shared game table (schedule + results use identical columns) ----------
-const COLGROUP = '<colgroup><col class="c-lead"><col class="c-lg"><col><col class="c-mid"><col><col class="c-tg"><col class="c-end"></colgroup>';
+const COLGROUP = '<colgroup><col class="c-lead"><col class="c-lg"><col><col class="c-mid"><col><col class="c-end"></colgroup>';
 
 const lostSide = (g, side) => g[side === 'away' ? 'home' : 'away'].winner === true;
 
 function teamTd(g, side) {
   const t = g[side];
-  const rk = rankOf(g, side);
   const cls = [side, g.focusIds.includes(t.id) ? 'focus' : '', g.status.completed && lostSide(g, side) ? 'lost' : ''].join(' ');
-  return `<td class="team ${cls}"><div class="tmx"><img src="${esc(t.logo)}" alt="" loading="lazy" />
-    <div class="tx"><span class="nm" title="${esc(t.name)}">${esc(teamName(t, g.league.id))}</span>${rk ? `<span class="rk">${esc(rk)}</span>` : ''}</div></div></td>`;
+  return `<td class="team ${cls}"><div class="tmx"><img src="${esc(t.logo)}" alt="${esc(teamName(t, g.league.id))}" title="${esc(t.name)}" loading="lazy" />
+    <div class="tx"><span class="nm" title="${esc(t.name)}">${esc(teamName(t, g.league.id))}</span></div></div></td>`;
 }
 
 // rows: [{ g, lead, mid, end, attrs }] already sorted; inserts a day header whenever the date changes.
@@ -79,7 +75,7 @@ function gameTable(rows, after = () => '', cls = '') {
     .map((r, i) => {
       const dt = new Date(r.g.date);
       const day = dayKey(dt);
-      const sep = day !== lastDay ? `<tr class="day"><td colspan="7">${esc(dayLabel(dt))}</td></tr>` : '';
+      const sep = day !== lastDay ? `<tr class="day"><td colspan="6">${esc(dayLabel(dt))}</td></tr>` : '';
       lastDay = day;
       return `${sep}<tr class="row" data-i="${i}" ${r.attrs ?? ''}>
         <td class="lead">${r.lead}</td>
@@ -87,7 +83,6 @@ function gameTable(rows, after = () => '', cls = '') {
         ${teamTd(r.g, 'away')}
         <td class="mid">${r.mid}</td>
         ${teamTd(r.g, 'home')}
-        <td class="tg">${tagsHtml(r.g.tags)}</td>
         <td class="end" ${r.endTitle ? `title="${esc(r.endTitle)}"` : ''}>${r.end}</td>
       </tr>${after(r, i)}`;
     })
@@ -266,7 +261,7 @@ async function renderResults() {
     const rows = d.games.map(resultCells);
     el.innerHTML = `
       ${errorsHtml(d.errors)}
-      ${rows.length ? gameTable(rows, () => '<tr class="box-row" hidden><td colspan="7"><div class="box"></div></td></tr>') : `<div class="empty">过去 ${d.daysBack} 天没有比赛</div>`}
+      ${rows.length ? gameTable(rows, () => '<tr class="box-row" hidden><td colspan="6"><div class="box"></div></td></tr>') : `<div class="empty">过去 ${d.daysBack} 天没有比赛</div>`}
       <div class="foot-note">数据更新于 ${esc(new Date(d.builtAt ?? Date.now()).toLocaleString('zh-CN', { hour12: false }))}</div>`;
     el.querySelectorAll('tr.row').forEach((tr) => {
       const g = rows[Number(tr.dataset.i)].g;
@@ -393,10 +388,12 @@ function closePlayer() {
   document.body.classList.remove('no-scroll');
 }
 
+const IS_TOUCH = matchMedia('(hover: none) and (pointer: coarse)').matches;
 document.addEventListener('keydown', (e) => e.key === 'Escape' && closePlayer());
 document.addEventListener('click', (e) => {
   const a = e.target.closest('a[data-vid]');
   if (!a || e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return; // modifier-click: open YouTube tab
+  if (IS_TOUCH) return; // phones/tablets: follow the link → YouTube app (Premium applies there)
   e.preventDefault();
   openPlayer(a.dataset.vid, a.title || a.textContent.trim());
 });
