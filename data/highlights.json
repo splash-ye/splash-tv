@@ -327,5 +327,20 @@
       }
     ],
     "foundAt": "2026-11-08T23:35:29.935Z"
+  },
+  "soccer:401882816": {
+    "videos": [
+      {
+        "id": "3wc9kxNDXTU",
+        "title": "Atlético Madrid vs. Barcelona | LALIGA Highlights | ESPN FC",
+        "channelId": "UC6c1z7bA__85CIWZ_jpCK-Q",
+        "url": "https://www.youtube.com/watch?v=3wc9kxNDXTU",
+        "thumbnail": "https://i.ytimg.com/vi/3wc9kxNDXTU/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-08T22:30:34.214Z"
+      }
+    ],
+    "source": "channel-search",
+    "foundAt": "2026-11-09T00:30:34.215Z"
   }
 }
