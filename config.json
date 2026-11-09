@@ -35,7 +35,12 @@
           "topPlays"
         ]
       },
-      "standings": {}
+      "standings": {
+        "groupOrder": [
+          "Western Conference",
+          "Eastern Conference"
+        ]
+      }
     },
     {
       "id": "nfl",

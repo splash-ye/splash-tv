@@ -268,6 +268,10 @@ export async function standings() {
       const order = (n) => (n.startsWith('NFC') ? 10 : 0) + (DIR[n.split(' ').pop()] ?? 5);
       const list = [...groups.values()];
       if (level === 3) list.sort((a, b) => order(a.name) - order(b.name));
+      // Optional explicit order from config, e.g. NBA West before East.
+      const pref = lg.standings.groupOrder ?? [];
+      const rank = (n) => (pref.includes(n) ? pref.indexOf(n) : pref.length);
+      if (pref.length) list.sort((a, b) => rank(a.name) - rank(b.name));
       leagues.push({ id: lg.id, name: lg.name, kind: level === 3 ? 'division' : 'conference', groups: list });
     } catch (err) {
       console.warn(`[standings] ${lg.id}: ${err.message}`);
