@@ -255,10 +255,22 @@ table.goals { border-collapse: collapse; width: 100%; font-size: 13px; }
 .box-foot { text-align: right; margin-top: 6px; }
 
 /* Schedule: full broadcaster list, one per line. */
-.games.sched col.c-end { width: 150px; }
+.games.sched col.c-end { width: 172px; }
 .games.sched td.end { white-space: normal; overflow: visible; line-height: 1.35; }
 .games.sched td.end .bc { display: block; }
-@media (max-width: 560px) { .games.sched col.c-end { width: 96px; } }
+/* Schedule: × removes a game (stored in this browser). */
+.games.sched .endx { display: flex; align-items: center; justify-content: flex-end; gap: 4px; }
+.games.sched .bcs { min-width: 0; }
+.games .rm {
+  flex: none; width: 20px; height: 20px; padding: 0; border: 0; border-radius: 50%;
+  background: transparent; color: var(--muted); font: inherit; font-size: 15px; line-height: 20px;
+  cursor: pointer; opacity: .35;
+}
+.games tr.row:hover .rm, .games .rm:focus-visible { opacity: 1; }
+.games .rm:hover { background: var(--line); color: var(--text); }
+@media (hover: none) { .games .rm { opacity: .7; } }
+@media (max-width: 560px) { .games.sched col.c-end { width: 116px; } }
+.foot-note .restore { border: 0; background: none; padding: 0; font: inherit; color: var(--accent); cursor: pointer; }
 /* Marquee rules: collapsed behind one toggle. */
 .rules { margin: 2px 0 6px; }
 .rules > summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 2px; font-size: 12px; color: var(--muted); padding: 2px 0; }

@@ -99,12 +99,36 @@ const teamChips = (teams, recordOf) =>
 let scheduleTimer = null;
 // Same rule as the server: hide started games; TBD kickoffs stay until their day is over.
 const notStarted = (g) => (g.timeValid ? new Date(g.date) > Date.now() : dayKey(new Date(g.date)) >= dayKey(new Date()));
+
+// Games the viewer removed with ×; kept in this browser only (the site is static).
+const gameKey = (g) => `${g.league.id}:${g.id}`;
+const hiddenGames = {
+  load() {
+    try {
+      return new Set(JSON.parse(localStorage.getItem('hiddenGames') || '[]'));
+    } catch {
+      return new Set();
+    }
+  },
+  save(set) {
+    try {
+      localStorage.setItem('hiddenGames', JSON.stringify([...set]));
+    } catch {}
+  },
+};
+
 async function renderSchedule() {
   const el = $('#schedule-card');
   clearTimeout(scheduleTimer);
   try {
     const d = await api('schedule');
     d.games = d.games.filter((g) => notStarted(g));
+    // Forget removed games that have left the schedule so the list doesn't grow forever.
+    const hidden = hiddenGames.load();
+    const upcoming = new Set(d.games.map(gameKey));
+    const kept = new Set([...hidden].filter((k) => upcoming.has(k)));
+    if (kept.size !== hidden.size) hiddenGames.save(kept);
+    d.games = d.games.filter((g) => !kept.has(gameKey(g)));
     // Re-render right after the next kickoff so started games drop off while the page stays open.
     const next = d.games.filter((g) => g.timeValid).map((g) => new Date(g.date).getTime()).find((t) => t > Date.now());
     if (next) scheduleTimer = setTimeout(renderSchedule, Math.min(next - Date.now() + 5000, 2 ** 31 - 1));
@@ -113,7 +137,8 @@ async function renderSchedule() {
       g,
       lead: g.timeValid ? esc(hm(new Date(g.date))) : '待定',
       mid: '<span class="at">@</span>',
-      end: g.broadcasts.map((b) => `<span class="bc">${esc(b)}</span>`).join(''),
+      end: `<div class="endx"><div class="bcs">${g.broadcasts.map((b) => `<span class="bc">${esc(b)}</span>`).join('')}</div>
+        <button class="rm" title="移除这场比赛" aria-label="移除这场比赛">×</button></div>`,
       endTitle: [g.broadcasts.join(' / '), g.note].filter(Boolean).join(' · '),
     }));
     el.innerHTML = `
@@ -131,10 +156,19 @@ async function renderSchedule() {
       </details>
       ${errorsHtml(d.errors)}
       ${rows.length ? gameTable(rows, undefined, 'sched') : `<div class="empty">未来 ${d.daysAhead} 天没有比赛</div>`}
-      <div class="foot-note">生成于 ${esc(new Date(d.generatedAt).toLocaleString('zh-CN', { hour12: false }))}</div>`;
+      <div class="foot-note">${kept.size ? `已移除 ${kept.size} 场 · <button class="restore">恢复</button> · ` : ''}生成于 ${esc(new Date(d.generatedAt).toLocaleString('zh-CN', { hour12: false }))}</div>`;
     el.querySelectorAll('tr.row').forEach((tr) => {
       const g = rows[Number(tr.dataset.i)].g;
       if (g.link) tr.addEventListener('click', () => window.open(g.link, '_blank', 'noopener'));
+      tr.querySelector('.rm').addEventListener('click', (e) => {
+        e.stopPropagation();
+        hiddenGames.save(new Set([...kept, gameKey(g)]));
+        renderSchedule();
+      });
+    });
+    el.querySelector('.restore')?.addEventListener('click', () => {
+      hiddenGames.save(new Set());
+      renderSchedule();
     });
   } catch (err) {
     el.innerHTML = `<div class="error">赛程加载失败：${esc(err.message)}</div>`;
