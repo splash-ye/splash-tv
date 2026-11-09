@@ -20,7 +20,7 @@
       ],
       "marquee": {
         "type": "leagueTop",
-        "topN": 5
+        "topN": 8
       },
       "news": {
         "limit": 25
@@ -81,7 +81,7 @@
       "scoreboardParams": "groups=80&limit=300",
       "marquee": {
         "type": "poll",
-        "topN": 10,
+        "topN": 15,
         "polls": [
           "cfp",
           "ap"
