@@ -2,7 +2,9 @@ name: Build & deploy
 
 on:
   schedule:
-    - cron: '*/15 * * * *' # every 15 minutes (GitHub may delay scheduled runs at peak times)
+    # Primary trigger: cron-job.org calls workflow_dispatch at :00/:15/:30/:45.
+    # GitHub's own schedule is unreliable (often skipped), so it's only a fallback, kept off the hour.
+    - cron: '7,22,37,52 * * * *'
   workflow_dispatch:
   push:
     branches: [main]
