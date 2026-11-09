@@ -278,3 +278,20 @@ table.goals { border-collapse: collapse; width: 100%; font-size: 13px; }
 .hl-group small { font-size: 12px; font-weight: 400; color: var(--muted); margin-left: 6px; }
 .hl-grid + .hl-group { margin-top: 24px; }
 .hl .line2 .score { font-weight: 600; font-variant-numeric: tabular-nums; }
+
+/* ---------- results card tabs + standings ---------- */
+.card-tabs { margin: 0 0 10px; display: inline-flex; }
+.card-tabs button { padding: 5px 12px; font-size: 13px; }
+.foot-note.left { text-align: left; }
+.stand-group .grp { margin: 12px 0 4px; }
+table.stand { width: 100%; border-collapse: collapse; font-size: 13px; font-variant-numeric: tabular-nums; }
+.stand th { font-size: 11px; font-weight: 500; color: var(--muted); text-align: right; padding: 4px 5px; white-space: nowrap; }
+.stand td { text-align: right; padding: 6px 5px; border-top: 1px solid var(--line); white-space: nowrap; }
+.stand th.tm, .stand td.tm { text-align: left; width: 100%; }
+.stand td.tm img { width: 18px; height: 18px; vertical-align: -4px; margin-right: 6px; }
+.stand th.n, .stand td.n { text-align: center; width: 22px; color: var(--muted); }
+.stand tr.mine td { background: color-mix(in srgb, var(--accent) 10%, transparent); font-weight: 700; }
+.stand tr.cut td { border-bottom: 2px dashed var(--line); }
+@media (max-width: 560px) {
+  .stand .opt { display: none; }
+}

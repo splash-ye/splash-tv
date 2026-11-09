@@ -150,6 +150,10 @@ export function getStandings(sport, league, level = null) {
         winPercent: num('winPercent'),
         seed: num('playoffSeed') || 99,
         record: stat('overall')?.displayValue ?? `${num('wins')}-${num('losses')}`,
+        gamesBehind: stat('gamesBehind')?.displayValue ?? '-',
+        streak: stat('streak')?.displayValue ?? '',
+        last10: stat('Last Ten Games')?.displayValue ?? '',
+        diff: stat('pointDifferential')?.displayValue ?? stat('differential')?.displayValue ?? '',
       };
     });
     rows.sort((a, b) => b.winPercent - a.winPercent || a.seed - b.seed || b.wins - a.wins);

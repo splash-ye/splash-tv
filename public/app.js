@@ -253,23 +253,83 @@ async function toggleBox(tr, boxRow, g) {
   }
 }
 
+// ---------- results card: tabs (results | NBA standings | NFL standings) ----------
+const CONF_ZH = { 'Eastern Conference': '东部', 'Western Conference': '西部' };
+const DIR_ZH = { East: '东区', West: '西区', North: '北区', South: '南区' };
+const groupZh = (name) => CONF_ZH[name] ?? name.replace(/^(AFC|NFC)\s+(East|West|North|South)$/, (_, c, d) => `${c}${DIR_ZH[d]}`);
+const pct = (x) => x.toFixed(3).replace(/^0/, '');
+const streakZh = (s) => (s?.match(/^([WL])(\d+)$/) ? `${s.slice(1)}连${s[0] === 'W' ? '胜' : '败'}` : s ?? '');
+
+function standingsHtml(lg) {
+  const conf = lg.kind === 'conference';
+  const head = conf
+    ? '<th class="n">#</th><th class="tm">球队</th><th>胜</th><th>负</th><th>胜率</th><th>胜差</th><th class="opt">近10场</th><th class="opt">连胜/败</th>'
+    : '<th class="tm">球队</th><th>胜</th><th>负</th><th>平</th><th>胜率</th><th>净胜分</th><th class="opt">连胜/败</th>';
+  const row = (t, i) => {
+    // NBA: 1-6 direct playoff spots, 7-10 play-in; draw a line under 6 and 10.
+    const cut = conf && (i === 5 || i === 9) ? ' cut' : '';
+    const team = `<td class="tm"><img src="${esc(t.logo)}" alt="" loading="lazy" />${esc(teamName(t, lg.id))}</td>`;
+    const cells = conf
+      ? `<td class="n">${t.seed < 99 ? t.seed : i + 1}</td>${team}<td>${t.wins}</td><td>${t.losses}</td><td>${pct(t.winPercent)}</td><td>${esc(t.gamesBehind)}</td><td class="opt">${esc(t.last10)}</td><td class="opt">${esc(streakZh(t.streak))}</td>`
+      : `${team}<td>${t.wins}</td><td>${t.losses}</td><td>${t.ties}</td><td>${pct(t.winPercent)}</td><td>${esc(t.diff)}</td><td class="opt">${esc(streakZh(t.streak))}</td>`;
+    return `<tr class="${t.followed ? 'mine' : ''}${cut}">${cells}</tr>`;
+  };
+  return `<div class="stand-groups ${lg.kind}">${lg.groups
+    .map((g) => `<div class="stand-group"><div class="grp">${esc(groupZh(g.name))}</div>
+      <table class="stand"><thead><tr>${head}</tr></thead><tbody>${g.teams.map(row).join('')}</tbody></table></div>`)
+    .join('')}</div>${conf ? '<div class="foot-note left">1–6 名直接进季后赛，7–10 名打附加赛</div>' : ''}`;
+}
+
+let resultsTab = (() => {
+  try {
+    return localStorage.getItem('resultsTab') || 'results';
+  } catch {
+    return 'results';
+  }
+})();
+
 async function renderResults() {
   const el = $('#results-card');
-  try {
-    const d = await api('results');
-    $('#res-sub').textContent = `过去 ${d.daysBack} 天 · 点开看球员数据`;
-    const rows = d.games.map(resultCells);
-    el.innerHTML = `
-      ${errorsHtml(d.errors)}
-      ${rows.length ? gameTable(rows, () => '<tr class="box-row" hidden><td colspan="6"><div class="box"></div></td></tr>') : `<div class="empty">过去 ${d.daysBack} 天没有比赛</div>`}
-      <div class="foot-note">数据更新于 ${esc(new Date(d.builtAt ?? Date.now()).toLocaleString('zh-CN', { hour12: false }))}</div>`;
-    el.querySelectorAll('tr.row').forEach((tr) => {
-      const g = rows[Number(tr.dataset.i)].g;
-      tr.addEventListener('click', () => toggleBox(tr, tr.nextElementSibling, g));
-    });
-  } catch (err) {
-    el.innerHTML = `<div class="error">战绩加载失败：${esc(err.message)}</div>`;
-  }
+  const [d, st] = await Promise.all([api('results').catch((err) => ({ err })), api('standings').catch(() => ({ leagues: [] }))]);
+  const tabs = [{ key: 'results', label: '战绩' }, ...st.leagues.map((l) => ({ key: l.id, label: `${l.name} 排名` }))];
+  if (!tabs.some((t) => t.key === resultsTab)) resultsTab = 'results';
+
+  const draw = () => {
+    const seg = `<div class="seg card-tabs">${tabs
+      .map((t) => `<button data-k="${t.key}" class="${t.key === resultsTab ? 'active' : ''}">${esc(t.label)}</button>`)
+      .join('')}</div>`;
+    if (resultsTab === 'results') {
+      $('#res-sub').textContent = d.err ? '' : `过去 ${d.daysBack} 天 · 点开看球员数据`;
+      if (d.err) {
+        el.innerHTML = `${seg}<div class="error">战绩加载失败：${esc(d.err.message)}</div>`;
+      } else {
+        const rows = d.games.map(resultCells);
+        el.innerHTML = `${seg}
+          ${errorsHtml(d.errors)}
+          ${rows.length ? gameTable(rows, () => '<tr class="box-row" hidden><td colspan="6"><div class="box"></div></td></tr>') : `<div class="empty">过去 ${d.daysBack} 天没有比赛</div>`}
+          <div class="foot-note">数据更新于 ${esc(new Date(d.builtAt ?? Date.now()).toLocaleString('zh-CN', { hour12: false }))}</div>`;
+        el.querySelectorAll('tr.row').forEach((tr) => {
+          const g = rows[Number(tr.dataset.i)].g;
+          tr.addEventListener('click', () => toggleBox(tr, tr.nextElementSibling, g));
+        });
+      }
+    } else {
+      const lg = st.leagues.find((l) => l.id === resultsTab);
+      $('#res-sub').textContent = `${lg.name} ${lg.kind === 'conference' ? '东西部' : '分区'}排名`;
+      el.innerHTML = `${seg}${standingsHtml(lg)}
+        <div class="foot-note">数据更新于 ${esc(new Date(st.builtAt ?? Date.now()).toLocaleString('zh-CN', { hour12: false }))}</div>`;
+    }
+    el.querySelectorAll('.card-tabs button').forEach((b) =>
+      b.addEventListener('click', () => {
+        resultsTab = b.dataset.k;
+        try {
+          localStorage.setItem('resultsTab', resultsTab);
+        } catch {}
+        draw();
+      }),
+    );
+  };
+  draw();
 }
 
 // ---------- news ----------

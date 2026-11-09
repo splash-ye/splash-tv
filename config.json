@@ -34,7 +34,8 @@
           "nightly",
           "topPlays"
         ]
-      }
+      },
+      "standings": {}
     },
     {
       "id": "nfl",
@@ -59,6 +60,9 @@
         "roundups": [
           "top15"
         ]
+      },
+      "standings": {
+        "level": 3
       }
     },
     {

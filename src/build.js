@@ -4,7 +4,7 @@
 import { cp, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import path from 'node:path';
-import { ROOT, schedule, results, boxscore, news, highlights, refreshSnapshots } from './api.js';
+import { ROOT, schedule, results, boxscore, news, highlights, standings, refreshSnapshots } from './api.js';
 import { flushHighlights } from './youtube.js';
 
 const OUT = path.join(ROOT, 'dist');
@@ -32,7 +32,8 @@ await writeFile(
 );
 
 await refreshSnapshots();
-const [s, r, n, h] = await Promise.all([schedule(), results(), news(), highlights()]);
+const [s, r, n, h, st] = await Promise.all([schedule(), results(), news(), highlights(), standings()]);
+await writeJson('standings.json', { ...st, builtAt });
 await writeJson('schedule.json', { ...s, builtAt });
 await writeJson('results.json', { ...r, builtAt });
 await writeJson('news.json', { ...n, builtAt });

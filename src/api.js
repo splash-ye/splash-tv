@@ -2,7 +2,7 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { getTeamSchedule, getScoreboardDays, getNews, getBoxscore, getSoccerGoals } from './espn.js';
+import { getTeamSchedule, getScoreboardDays, getNews, getBoxscore, getSoccerGoals, getStandings } from './espn.js';
 import { findHighlights, findRoundup, ROUNDUPS } from './youtube.js';
 import { getQualifiers, getQualifiersAt } from './qualifiers.js';
 import { mapLimit, etDateKey, etLongDate, addDays, dayRange, keyToDate, DAY_MS } from './util.js';
@@ -244,6 +244,36 @@ async function roundups() {
     return r && { league: leagueTag(lg), type, label: r.label, period: p, video: r.video };
   });
   return found.filter(Boolean).sort((a, b) => (b.period.sortDate > a.period.sortDate ? 1 : -1));
+}
+
+// League standings for leagues with `standings` in config (NBA by conference, NFL by division).
+export async function standings() {
+  const leagues = [];
+  for (const lg of config.leagues.filter((l) => l.standings)) {
+    const level = lg.standings.level ?? null;
+    try {
+      const rows = await getStandings(lg.sport, lg.league, level);
+      const followed = new Set(lg.teams.map((t) => t.toLowerCase()));
+      const groups = new Map();
+      for (const r of rows) {
+        if (!groups.has(r.group)) groups.set(r.group, { name: r.group, parent: r.parent, teams: [] });
+        groups.get(r.group).teams.push({ ...r, followed: followed.has(r.abbr.toLowerCase()) });
+      }
+      for (const g of groups.values()) {
+        // Conferences are ordered by playoff seed; divisions by win% (seed breaks ties).
+        g.teams.sort((a, b) => (level === 3 ? b.winPercent - a.winPercent || a.seed - b.seed : a.seed - b.seed));
+      }
+      // Divisions in the usual order: AFC East/North/South/West, then NFC.
+      const DIR = { East: 0, North: 1, South: 2, West: 3 };
+      const order = (n) => (n.startsWith('NFC') ? 10 : 0) + (DIR[n.split(' ').pop()] ?? 5);
+      const list = [...groups.values()];
+      if (level === 3) list.sort((a, b) => order(a.name) - order(b.name));
+      leagues.push({ id: lg.id, name: lg.name, kind: level === 3 ? 'division' : 'conference', groups: list });
+    } catch (err) {
+      console.warn(`[standings] ${lg.id}: ${err.message}`);
+    }
+  }
+  return { leagues };
 }
 
 // Weekly marquee snapshot (Mondays) and daily schedule snapshot.
