@@ -317,10 +317,9 @@ async function renderHighlights() {
         const res = !focusTeam ? null : first.winner === true ? 'W' : second.winner === true ? 'L' : 'T';
         const v = videos[0];
         const d = new Date(g.date);
-        const vid = (x) => (x.embed !== false ? `data-vid="${esc(x.id)}"` : '');
         return `<div class="hl">
           ${v
-            ? `<a class="thumb" href="${esc(v.url)}" target="_blank" rel="noopener" ${vid(v)} title="${esc(v.title)}"><img src="${esc(v.thumbnail)}" alt="" loading="lazy" /></a>`
+            ? `<a class="thumb" href="${esc(v.url)}" target="_blank" rel="noopener" title="${esc(v.title)}"><img src="${esc(v.thumbnail)}" alt="" loading="lazy" /></a>`
             : '<div class="thumb none">集锦暂未上线</div>'}
           <div class="body">
             <div class="line1">${badge(g.league)}
@@ -331,19 +330,18 @@ async function renderHighlights() {
               <span>${d.toLocaleDateString('zh-CN', { month: 'long', day: 'numeric', weekday: 'short' })}${v?.extended ? ' · 加长版' : ''}</span>
               ${res ? `<span class="res ${res}">${{ W: '胜', L: '负', T: '平' }[res]} ${esc(first.score)}-${esc(second.score)}</span>` : `<span class="score">${esc(first.score)}-${esc(second.score)}</span>`}
             </div>
-            ${videos.length > 1 ? `<div class="alt">其他版本：${videos.slice(1).map((x, i) => `<a href="${esc(x.url)}" target="_blank" rel="noopener" ${vid(x)} title="${esc(x.title)}">${x.extended ? '加长版' : `版本${i + 2}`} ↗</a>`).join('')}</div>` : ''}
+            ${videos.length > 1 ? `<div class="alt">其他版本：${videos.slice(1).map((x, i) => `<a href="${esc(x.url)}" target="_blank" rel="noopener" title="${esc(x.title)}">${x.extended ? '加长版' : `版本${i + 2}`} ↗</a>`).join('')}</div>` : ''}
           </div></div>`;
       })() }));
     // League-wide compilations: NBA nightly recap / top plays, NFL top 15 of the week.
     const roundupCards = roundups.map((r) => {
         const v = r.video;
-        const embed = v.embed !== false;
         const k = r.period.key;
         const when = r.period.week
           ? `第 ${r.period.week} 周`
           : new Date(+k.slice(0, 4), +k.slice(4, 6) - 1, +k.slice(6, 8)).toLocaleDateString('zh-CN', { month: 'long', day: 'numeric', weekday: 'short' });
         return { sort: r.period.sortDate, html: `<div class="hl">
-          <a class="thumb" href="${esc(v.url)}" target="_blank" rel="noopener" ${embed ? `data-vid="${esc(v.id)}"` : ''} title="${esc(v.title)}"><img src="${esc(v.thumbnail)}" alt="" loading="lazy" /></a>
+          <a class="thumb" href="${esc(v.url)}" target="_blank" rel="noopener" title="${esc(v.title)}"><img src="${esc(v.thumbnail)}" alt="" loading="lazy" /></a>
           <div class="body">
             <div class="line1">${badge(r.league)}${esc(r.label)}</div>
             <div class="line2"><span>${esc(when)}</span></div>
@@ -356,50 +354,6 @@ async function renderHighlights() {
     el.innerHTML = `<div class="error">集锦加载失败：${esc(err.message)}</div>`;
   }
 }
-
-// ---------- in-page YouTube player (modal) ----------
-// Uses the regular youtube.com embed (not youtube-nocookie) so a signed-in Premium account is
-// recognised where the browser allows it. "在 YouTube 打开" is always there as a fallback
-// (on phones it opens the YouTube app, where Premium always applies).
-function openPlayer(id, title) {
-  closePlayer();
-  const url = `https://www.youtube.com/watch?v=${encodeURIComponent(id)}`;
-  const modal = document.createElement('div');
-  modal.className = 'player-modal';
-  modal.innerHTML = `
-    <div class="player-box" role="dialog" aria-modal="true" aria-label="${esc(title)}">
-      <div class="player-head">
-        <span class="player-title">${esc(title)}</span>
-        <a class="player-yt" href="${esc(url)}" target="_blank" rel="noopener">在 YouTube 打开 ↗</a>
-        <button class="player-close" aria-label="关闭">✕</button>
-      </div>
-      <div class="player-frame">
-        <iframe src="https://www.youtube.com/embed/${encodeURIComponent(id)}?autoplay=1&rel=0&playsinline=1&modestbranding=1"
-          title="${esc(title)}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen
-          referrerpolicy="strict-origin-when-cross-origin"></iframe>
-      </div>
-    </div>`;
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal || e.target.closest('.player-close')) closePlayer();
-  });
-  document.body.appendChild(modal);
-  document.body.classList.add('no-scroll');
-}
-
-function closePlayer() {
-  document.querySelector('.player-modal')?.remove(); // removing the iframe stops playback
-  document.body.classList.remove('no-scroll');
-}
-
-const IS_TOUCH = matchMedia('(hover: none) and (pointer: coarse)').matches;
-document.addEventListener('keydown', (e) => e.key === 'Escape' && closePlayer());
-document.addEventListener('click', (e) => {
-  const a = e.target.closest('a[data-vid]');
-  if (!a || e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return; // modifier-click: open YouTube tab
-  if (IS_TOUCH) return; // phones/tablets: follow the link → YouTube app (Premium applies there)
-  e.preventDefault();
-  openPlayer(a.dataset.vid, a.title || a.textContent.trim());
-});
 
 // ---------- app ----------
 async function loadAll() {

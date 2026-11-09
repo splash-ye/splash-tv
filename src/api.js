@@ -183,9 +183,6 @@ export async function news() {
   return { enabled: jobs.length > 0, articles };
 }
 
-// Can this video play inside the page? (Some rights holders block embeds: NFL, LaLiga's own channel.)
-const embeddable = (cfg, v) => cfg.embed !== false && !(cfg.noEmbed ?? []).includes(v.channelId);
-
 // Highlight config for one game: soccer competitions carry their own broadcaster channels.
 function highlightCfg(lg, game) {
   const comp = competitionsOf(lg).find((c) => c.league === game.league.comp);
@@ -208,7 +205,7 @@ export async function highlights() {
     const lg = config.leagues.find((l) => l.id === game.league.id);
     const cfg = highlightCfg(lg, game);
     const h = await findHighlights(game, lg.id, cfg).catch(() => ({ videos: [] }));
-    return { game, videos: h.videos.map((v) => ({ ...v, embed: embeddable(cfg, v) })) };
+    return { game, videos: h.videos };
   });
   return { daysBack: HIGHLIGHT_DAYS, games: out, roundups: await roundups() };
 }
@@ -244,7 +241,7 @@ async function roundups() {
   }
   const found = await mapLimit(jobs, 3, async ({ lg, type, p }) => {
     const r = await findRoundup(type, p, lg.id, lg.highlights).catch(() => null);
-    return r && { league: leagueTag(lg), type, label: r.label, period: p, video: { ...r.video, embed: embeddable(lg.highlights, r.video) } };
+    return r && { league: leagueTag(lg), type, label: r.label, period: p, video: r.video };
   });
   return found.filter(Boolean).sort((a, b) => (b.period.sortDate > a.period.sortDate ? 1 : -1));
 }
