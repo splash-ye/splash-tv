@@ -183,19 +183,32 @@ export async function news() {
   return { enabled: jobs.length > 0, articles };
 }
 
+// Can this video play inside the page? (Some rights holders block embeds: NFL, LaLiga's own channel.)
+const embeddable = (cfg, v) => cfg.embed !== false && !(cfg.noEmbed ?? []).includes(v.channelId);
+
+// Highlight config for one game: soccer competitions carry their own broadcaster channels.
+function highlightCfg(lg, game) {
+  const comp = competitionsOf(lg).find((c) => c.league === game.league.comp);
+  return comp?.channels ? { ...lg.highlights, channels: comp.channels } : lg.highlights;
+}
+
 export async function highlights() {
   const { teams } = await followedSchedules();
   const since = Date.now() - HIGHLIGHT_DAYS * DAY_MS;
-  const items = teams
+  const recent = (e) => e.status.completed && new Date(e.date).getTime() >= since;
+  const followItems = teams
     .filter(({ lg }) => lg.highlights)
-    .flatMap(({ lg, team, events }) =>
-      events.filter((e) => e.status.completed && new Date(e.date).getTime() >= since).map((event) => ({ lg, event, focusId: team.id })),
-    );
-  const games = mergeEvents(items).reverse();
+    .flatMap(({ lg, team, events }) => events.filter(recent).map((event) => ({ lg, event, focusId: team.id })));
+  // Leagues without followed teams (soccer) can opt in to highlights for their marquee games.
+  const keys = dayRange(addDays(etDateKey(new Date()), -HIGHLIGHT_DAYS), HIGHLIGHT_DAYS + 1);
+  const marqueeItems = (await marqueeGames(keys, (lg, g) => getQualifiersAt(lg, g.date), []))
+    .filter((x) => x.lg.highlights?.marquee && recent(x.event));
+  const games = mergeEvents([...followItems, ...marqueeItems]).reverse();
   const out = await mapLimit(games, 3, async (game) => {
     const lg = config.leagues.find((l) => l.id === game.league.id);
-    const h = await findHighlights(game, lg.id, lg.highlights).catch(() => ({ videos: [] }));
-    return { game, videos: h.videos, embed: lg.highlights.embed !== false };
+    const cfg = highlightCfg(lg, game);
+    const h = await findHighlights(game, lg.id, cfg).catch(() => ({ videos: [] }));
+    return { game, videos: h.videos.map((v) => ({ ...v, embed: embeddable(cfg, v) })) };
   });
   return { daysBack: HIGHLIGHT_DAYS, games: out, roundups: await roundups() };
 }
@@ -231,7 +244,7 @@ async function roundups() {
   }
   const found = await mapLimit(jobs, 3, async ({ lg, type, p }) => {
     const r = await findRoundup(type, p, lg.id, lg.highlights).catch(() => null);
-    return r && { league: leagueTag(lg), type, label: r.label, period: p, video: r.video, embed: lg.highlights.embed !== false };
+    return r && { league: leagueTag(lg), type, label: r.label, period: p, video: { ...r.video, embed: embeddable(lg.highlights, r.video) } };
   });
   return found.filter(Boolean).sort((a, b) => (b.period.sortDate > a.period.sortDate ? 1 : -1));
 }

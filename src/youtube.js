@@ -50,6 +50,9 @@ const decodeXml = (s) =>
   s.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'");
 
 // Whole-word, case-insensitive name match. "WASHINGTON" must not match "WASHINGTON STATE".
+// Uppercase + strip accents so "Atlético" matches "ATLETICO".
+const norm = (s) => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toUpperCase();
+
 function hasName(T, name) {
   const N = name.toUpperCase();
   const notState = /\bSTATE$/.test(N) ? '' : '(?!\\s+(?:STATE|ST\\.))';
@@ -94,6 +97,25 @@ const MATCHERS = {
       if (g.seasonYear && !T.includes(String(g.seasonYear)) && !T.includes(String(g.seasonYear + 1))) return false;
       const wk = T.match(/WEEK\s+(\d+)/);
       return !(wk && g.week && g.seasonTypeId === 2 && Number(wk[1]) !== g.week);
+    },
+  },
+  // Soccer (names vary by broadcaster, so each club can have aliases in config):
+  //   "Crystal Palace v. Liverpool | PREMIER LEAGUE HIGHLIGHTS | 11/8/2026"      (NBC Sports)
+  //   "Atlético Madrid vs. Barcelona | LALIGA Highlights | ESPN FC"              (ESPN FC)
+  //   "Atlético Madrid vs. Bayern Munich: Extended Highlights | UCL ... "        (CBS Sports Golazo)
+  //   "ATLÉTICO DE MADRID 1 - 2 FC BARCELONA | HIGHLIGHTS LALIGA EA SPORTS"     (LaLiga)
+  soccer: {
+    queries: (g) => [`${g.home.name} vs. ${g.away.name} highlights`, `${g.home.short} ${g.away.short} highlights`],
+    match(T, g, cfg) {
+      if (!T.includes('HIGHLIGHT')) return false;
+      const names = (t) => [t.name, t.short, t.location, ...(cfg.aliases?.[t.id] ?? [])].filter(Boolean).map(norm);
+      if (!names(g.home).some((n) => hasName(T, n)) || !names(g.away).some((n) => hasName(T, n))) return false;
+      const d = T.match(/\b(\d{1,2})\/(\d{1,2})\/(\d{4})\b/);
+      if (d) {
+        const e = etParts(new Date(g.date));
+        return Number(d[1]) === e.m && Number(d[2]) === e.d && Number(d[3]) === e.y;
+      }
+      return true;
     },
   },
   // "Penn State at Washington | Highlights | Big Ten Football | 11/07/2026"
@@ -199,7 +221,7 @@ export async function findHighlights(game, leagueId, cfg) {
   if (hit?.videos?.length && (hasRegular(hit.videos) || Date.now() < (hit.regularRetryAt ?? 0))) return hit;
   if (hit && !hit.videos?.length && Date.now() < hit.retryAt) return hit;
 
-  const ok = (v) => channels.includes(v.channelId) && publishedInWindow(v, game) && matcher.match(v.title.toUpperCase(), game);
+  const ok = (v) => channels.includes(v.channelId) && publishedInWindow(v, game) && matcher.match(norm(v.title), game, cfg);
 
   const feeds = await Promise.all(channels.map((c) => getChannelFeed(c).catch(() => [])));
   let videos = [...(hit?.videos ?? []), ...feeds.flat().filter(ok)];

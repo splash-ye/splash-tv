@@ -59,7 +59,9 @@
         "roundups": [
           "top15"
         ],
-        "embed": false
+        "noEmbed": [
+          "UCDVYQ4Zhbm3S2dlz7P1GBDg"
+        ]
       }
     },
     {
@@ -95,23 +97,39 @@
       "competitions": [
         {
           "league": "eng.1",
-          "name": "英超"
+          "name": "英超",
+          "channels": [
+            "UCqZQlzSHbVJrwrn5XvzrzcA"
+          ]
         },
         {
           "league": "esp.1",
-          "name": "西甲"
+          "name": "西甲",
+          "channels": [
+            "UC6c1z7bA__85CIWZ_jpCK-Q",
+            "UCTv-XvfzLX3i4IGWAm4sbmA"
+          ]
         },
         {
           "league": "uefa.champions",
-          "name": "欧冠"
+          "name": "欧冠",
+          "channels": [
+            "UCET00YnetHT7tOpu12v8jxg"
+          ]
         },
         {
           "league": "eng.fa",
-          "name": "足总杯"
+          "name": "足总杯",
+          "channels": [
+            "UC6c1z7bA__85CIWZ_jpCK-Q"
+          ]
         },
         {
           "league": "esp.copa_del_rey",
-          "name": "国王杯"
+          "name": "国王杯",
+          "channels": [
+            "UC6c1z7bA__85CIWZ_jpCK-Q"
+          ]
         }
       ],
       "marquee": {
@@ -133,6 +151,54 @@
           "ger.1",
           "fra.1"
         ]
+      },
+      "highlights": {
+        "matcher": "soccer",
+        "marquee": true,
+        "noEmbed": [
+          "UCTv-XvfzLX3i4IGWAm4sbmA"
+        ],
+        "aliases": {
+          "382": [
+            "Man City",
+            "Manchester City"
+          ],
+          "359": [
+            "Arsenal"
+          ],
+          "364": [
+            "Liverpool"
+          ],
+          "363": [
+            "Chelsea"
+          ],
+          "86": [
+            "Real Madrid"
+          ],
+          "83": [
+            "Barcelona",
+            "Barca",
+            "FC Barcelona"
+          ],
+          "1068": [
+            "Atletico Madrid",
+            "Atletico de Madrid",
+            "Atletico",
+            "Atleti"
+          ],
+          "132": [
+            "Bayern Munich",
+            "Bayern Munchen",
+            "FC Bayern",
+            "Bayern"
+          ],
+          "160": [
+            "Paris Saint-Germain",
+            "Paris Saint Germain",
+            "PSG",
+            "Paris"
+          ]
+        }
       }
     }
   ]

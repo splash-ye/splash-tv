@@ -294,3 +294,4 @@ body.no-scroll { overflow: hidden; }
   .player-modal { padding: 0; align-items: center; }
   .player-box { border-radius: 0; }
 }
+.hl .line2 .score { font-weight: 600; font-variant-numeric: tabular-nums; }

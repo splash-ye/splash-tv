@@ -308,33 +308,36 @@ async function renderHighlights() {
     const { games, daysBack, roundups = [] } = await api('highlights');
     $('#hl-sub').textContent = `最近 ${daysBack} 天`;
     const gameCards = games
-      .map(({ game: g, videos, embed = true }) => ({ sort: g.date, html: (() => {
+      .map(({ game: g, videos }) => ({ sort: g.date, html: (() => {
         const lg = g.league.id;
-        const focus = [g.home, g.away].find((t) => g.focusIds.includes(t.id)) ?? g.home;
-        const opp = focus === g.home ? g.away : g.home;
-        const res = focus.winner === true ? 'W' : focus.winner === false && opp.winner === true ? 'L' : 'T';
+        // Followed team first with W/L; marquee-only games (soccer) show away @ home and the plain score.
+        const focusTeam = [g.home, g.away].find((t) => g.focusIds.includes(t.id));
+        const first = focusTeam ?? g.away;
+        const second = first === g.home ? g.away : g.home;
+        const res = !focusTeam ? null : first.winner === true ? 'W' : second.winner === true ? 'L' : 'T';
         const v = videos[0];
         const d = new Date(g.date);
+        const vid = (x) => (x.embed !== false ? `data-vid="${esc(x.id)}"` : '');
         return `<div class="hl">
           ${v
-            ? `<a class="thumb" href="${esc(v.url)}" target="_blank" rel="noopener" ${embed ? `data-vid="${esc(v.id)}"` : ''} title="${esc(v.title)}"><img src="${esc(v.thumbnail)}" alt="" loading="lazy" /></a>`
+            ? `<a class="thumb" href="${esc(v.url)}" target="_blank" rel="noopener" ${vid(v)} title="${esc(v.title)}"><img src="${esc(v.thumbnail)}" alt="" loading="lazy" /></a>`
             : '<div class="thumb none">集锦暂未上线</div>'}
           <div class="body">
             <div class="line1">${badge(g.league)}
-              <img src="${esc(focus.logo)}" alt="" />${esc(teamName(focus, lg))}
-              <span class="vs">${focus === g.away ? '@' : 'vs'}</span>
-              <img src="${esc(opp.logo)}" alt="" />${esc(teamName(opp, lg))}</div>
+              <img src="${esc(first.logo)}" alt="" />${esc(teamName(first, lg))}
+              <span class="vs">${first === g.away ? '@' : 'vs'}</span>
+              <img src="${esc(second.logo)}" alt="" />${esc(teamName(second, lg))}</div>
             <div class="line2">
               <span>${d.toLocaleDateString('zh-CN', { month: 'long', day: 'numeric', weekday: 'short' })}${v?.extended ? ' · 加长版' : ''}</span>
-              <span class="res ${res}">${{ W: '胜', L: '负', T: '平' }[res]} ${esc(focus.score)}-${esc(opp.score)}</span>
+              ${res ? `<span class="res ${res}">${{ W: '胜', L: '负', T: '平' }[res]} ${esc(first.score)}-${esc(second.score)}</span>` : `<span class="score">${esc(first.score)}-${esc(second.score)}</span>`}
             </div>
-            ${videos.length > 1 ? `<div class="alt">其他版本：${videos.slice(1).map((x, i) => `<a href="${esc(x.url)}" target="_blank" rel="noopener" ${embed ? `data-vid="${esc(x.id)}"` : ''} title="${esc(x.title)}">${x.extended ? '加长版' : `版本${i + 2}`} ↗</a>`).join('')}</div>` : ''}
+            ${videos.length > 1 ? `<div class="alt">其他版本：${videos.slice(1).map((x, i) => `<a href="${esc(x.url)}" target="_blank" rel="noopener" ${vid(x)} title="${esc(x.title)}">${x.extended ? '加长版' : `版本${i + 2}`} ↗</a>`).join('')}</div>` : ''}
           </div></div>`;
       })() }));
     // League-wide compilations: NBA nightly recap / top plays, NFL top 15 of the week.
     const roundupCards = roundups.map((r) => {
         const v = r.video;
-        const embed = r.embed !== false;
+        const embed = v.embed !== false;
         const k = r.period.key;
         const when = r.period.week
           ? `第 ${r.period.week} 周`
