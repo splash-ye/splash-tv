@@ -357,5 +357,33 @@
     ],
     "source": "channel-search",
     "foundAt": "2026-11-09T04:24:09.759Z"
+  },
+  "roundup:nba:nightly:20261108": {
+    "videos": [
+      {
+        "id": "lZ6E7rE7mpw",
+        "title": "NBA's Nightly Recap | November 8, 2026",
+        "channelId": "UCWJ2lWNubArHWmf3FIHbfcQ",
+        "url": "https://www.youtube.com/watch?v=lZ6E7rE7mpw",
+        "thumbnail": "https://i.ytimg.com/vi/lZ6E7rE7mpw/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-09T06:40:50.311Z"
+      }
+    ],
+    "foundAt": "2026-11-09T06:45:50.311Z"
+  },
+  "roundup:nba:topPlays:20261108": {
+    "videos": [
+      {
+        "id": "XD3GA0FazBk",
+        "title": "NBA's Top 10 Plays of the Night | November 8, 2026",
+        "channelId": "UCWJ2lWNubArHWmf3FIHbfcQ",
+        "url": "https://www.youtube.com/watch?v=XD3GA0FazBk",
+        "thumbnail": "https://i.ytimg.com/vi/XD3GA0FazBk/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-09T06:31:50.423Z"
+      }
+    ],
+    "foundAt": "2026-11-09T06:45:50.423Z"
   }
 }
