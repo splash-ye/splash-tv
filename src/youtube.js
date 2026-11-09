@@ -215,9 +215,12 @@ export async function findHighlights(game, leagueId, cfg) {
   const key = `${leagueId}:${game.id}`;
   const s = await loadStore();
   const hit = s[key];
-  // Done once a regular (non-extended) cut is known. If only an EXTENDED cut was found so far,
-  // keep looking for the regular one (at most every 20 minutes).
-  const hasRegular = (vs) => vs.some((v) => !v.extended);
+  // Done once a regular (non-extended) cut is known — and, if any configured channel allows
+  // embedding, one from such a channel (e.g. ESPN FC rather than LaLiga's own, embed-blocked channel).
+  // Until then keep looking, at most every 20 minutes.
+  const blocked = new Set(cfg.noEmbed ?? []);
+  const anyEmbeddable = channels.some((c) => !blocked.has(c));
+  const hasRegular = (vs) => vs.some((v) => !v.extended && (!anyEmbeddable || !blocked.has(v.channelId)));
   if (hit?.videos?.length && (hasRegular(hit.videos) || Date.now() < (hit.regularRetryAt ?? 0))) return hit;
   if (hit && !hit.videos?.length && Date.now() < hit.retryAt) return hit;
 
