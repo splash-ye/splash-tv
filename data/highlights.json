@@ -342,5 +342,20 @@
     ],
     "source": "channel-search",
     "foundAt": "2026-11-09T00:30:34.215Z"
+  },
+  "nfl:401873047": {
+    "videos": [
+      {
+        "id": "sNQJenFh30k",
+        "title": "Las Vegas Raiders vs. San Francisco 49ers Game Highlights | 2026 NFL Season Week 9",
+        "channelId": "UCDVYQ4Zhbm3S2dlz7P1GBDg",
+        "url": "https://www.youtube.com/watch?v=sNQJenFh30k",
+        "thumbnail": "https://i.ytimg.com/vi/sNQJenFh30k/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-09T00:24:09.758Z"
+      }
+    ],
+    "source": "channel-search",
+    "foundAt": "2026-11-09T04:24:09.759Z"
   }
 }
