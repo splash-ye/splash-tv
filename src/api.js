@@ -84,8 +84,12 @@ const SCHEDULE_FILE = path.join(DATA_DIR, 'schedule.json');
 let daily = null;
 let dailyInflight = null;
 
+// Bump when the snapshot's shape or window changes so a same-day snapshot gets rebuilt.
+const SCHEDULE_VERSION = 2;
+
+// Starts at yesterday (ET) so a game still in progress after midnight stays in the snapshot.
 async function buildDailySchedule(day) {
-  const keys = dayRange(day, SCHEDULE_DAYS);
+  const keys = dayRange(addDays(day, -1), SCHEDULE_DAYS + 1);
   const inWindow = (e) => keys.includes(etDateKey(new Date(e.date)));
   const { teams, errors } = await followedSchedules();
   const followItems = teams.flatMap(({ lg, team, events }) =>
@@ -98,6 +102,7 @@ async function buildDailySchedule(day) {
     if (q) qualifiers.push({ league: leagueTag(lg), criteria: q.criteria, weekOf: q.weekOf, fixed: !!q.fixed, teams: q.teams });
   }
   return {
+    version: SCHEDULE_VERSION,
     day,
     generatedAt: new Date().toISOString(),
     cfgKey: JSON.stringify(config.leagues),
@@ -113,7 +118,7 @@ async function buildDailySchedule(day) {
 async function getDailySchedule() {
   const day = etDateKey(new Date());
   if (!daily) daily = await readFile(SCHEDULE_FILE, 'utf8').then(JSON.parse).catch(() => null);
-  if (daily && daily.day === day && !daily.partial && daily.cfgKey === JSON.stringify(config.leagues)) return daily;
+  if (daily && daily.version === SCHEDULE_VERSION && daily.day === day && !daily.partial && daily.cfgKey === JSON.stringify(config.leagues)) return daily;
   dailyInflight ??= (async () => {
     const built = await buildDailySchedule(day);
     daily = built;
@@ -126,14 +131,21 @@ async function getDailySchedule() {
 }
 
 // ---------- handlers ----------
-// The snapshot is built once a day; games that have already started are hidden at read time.
-// TBD kickoffs only have a placeholder time, so those stay until their (ET) day is over.
-const notStarted = (g, now = Date.now()) =>
-  g.timeValid ? new Date(g.date).getTime() > now : etDateKey(new Date(g.date)) >= etDateKey(new Date(now));
+// The snapshot is built once a day. A game stays listed after kickoff until its result shows up
+// (in the results feed, or already final in the snapshot). If the result never comes (feed error,
+// postponement), a timed game drops off LINGER_MS after kickoff; a TBD kickoff after its ET day.
+const LINGER_MS = 12 * 60 * 60 * 1000;
+const gameKey = (g) => `${g.league.id}:${g.id}`;
+const pending = (g, finished, now = Date.now()) =>
+  !finished.has(gameKey(g)) &&
+  !g.status.completed &&
+  (g.timeValid ? new Date(g.date).getTime() > now - LINGER_MS : etDateKey(new Date(g.date)) >= etDateKey(new Date(now)));
 
-export async function schedule() {
-  const snap = await getDailySchedule();
-  return { ...snap, games: snap.games.filter((g) => notStarted(g)) };
+// `res` is a results() response; pass it in when you already have one to avoid refetching.
+export async function schedule(res) {
+  const [snap, r] = await Promise.all([getDailySchedule(), res ?? results().catch(() => ({ games: [] }))]);
+  const finished = new Set(r.games.map(gameKey));
+  return { ...snap, games: snap.games.filter((g) => pending(g, finished)) };
 }
 
 export async function results() {

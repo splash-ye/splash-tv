@@ -211,6 +211,7 @@ table.games { width: 100%; border-collapse: collapse; table-layout: fixed; }
 .mid .ot { display: block; font-size: 10px; color: var(--muted); line-height: 1; margin-top: 2px; }
 .lead .res { font-size: 13px; font-weight: 700; }
 .lead .fin { color: var(--muted); font-size: 12px; }
+.lead .live { color: var(--live); font-size: 12px; font-weight: 700; }
 .chev { color: var(--muted); transition: transform .15s; display: inline-block; }
 tr.row[aria-expanded="true"] .chev { transform: rotate(180deg); }
 .games tr.box-row > td { padding: 0 4px; border-top: 0; background: var(--chip); }

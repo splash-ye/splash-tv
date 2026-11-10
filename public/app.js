@@ -97,8 +97,8 @@ const teamChips = (teams, recordOf) =>
 
 // ---------- schedule (daily snapshot) ----------
 let scheduleTimer = null;
-// Same rule as the server: hide started games; TBD kickoffs stay until their day is over.
-const notStarted = (g) => (g.timeValid ? new Date(g.date) > Date.now() : dayKey(new Date(g.date)) >= dayKey(new Date()));
+// Started games stay listed until the server sees their result; they show 进行中 instead of a time.
+const started = (g) => g.timeValid && new Date(g.date) <= Date.now();
 
 // Games the viewer removed with ×; kept in this browser only (the site is static).
 const gameKey = (g) => `${g.league.id}:${g.id}`;
@@ -122,20 +122,19 @@ async function renderSchedule() {
   clearTimeout(scheduleTimer);
   try {
     const d = await api('schedule');
-    d.games = d.games.filter((g) => notStarted(g));
     // Forget removed games that have left the schedule so the list doesn't grow forever.
     const hidden = hiddenGames.load();
     const upcoming = new Set(d.games.map(gameKey));
     const kept = new Set([...hidden].filter((k) => upcoming.has(k)));
     if (kept.size !== hidden.size) hiddenGames.save(kept);
     d.games = d.games.filter((g) => !kept.has(gameKey(g)));
-    // Re-render right after the next kickoff so started games drop off while the page stays open.
+    // Re-render right after the next kickoff so the game flips to 进行中 while the page stays open.
     const next = d.games.filter((g) => g.timeValid).map((g) => new Date(g.date).getTime()).find((t) => t > Date.now());
     if (next) scheduleTimer = setTimeout(renderSchedule, Math.min(next - Date.now() + 5000, 2 ** 31 - 1));
     $('#sched-sub').textContent = `未来 ${d.daysAhead} 天 · 每天更新`;
     const rows = d.games.map((g) => ({
       g,
-      lead: g.timeValid ? esc(hm(new Date(g.date))) : '待定',
+      lead: started(g) ? `<span class="live" title="${esc(hm(new Date(g.date)))} 开赛">进行中</span>` : g.timeValid ? esc(hm(new Date(g.date))) : '待定',
       mid: '<span class="at">@</span>',
       end: `<div class="endx"><div class="bcs">${g.broadcasts.map((b) => `<span class="bc">${esc(b)}</span>`).join('')}</div>
         <button class="rm" title="移除这场比赛" aria-label="移除这场比赛">×</button></div>`,

@@ -32,7 +32,8 @@ await writeFile(
 );
 
 await refreshSnapshots();
-const [s, r, n, h, st] = await Promise.all([schedule(), results(), news(), highlights(), standings()]);
+const [r, n, h, st] = await Promise.all([results(), news(), highlights(), standings()]);
+const s = await schedule(r); // drops started games once their result is in r
 await writeJson('standings.json', { ...st, builtAt });
 await writeJson('schedule.json', { ...s, builtAt });
 await writeJson('results.json', { ...r, builtAt });
