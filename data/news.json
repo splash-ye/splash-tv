@@ -1,152 +1,217 @@
 {
-  "version": 2,
+  "version": 3,
   "day": "20261110",
-  "generatedAt": "2026-11-10T05:01:19.995Z",
-  "cfgKey": "[[\"nba\",[\"gs\"],{\"limit\":25,\"zhibo8\":{\"type\":\"nba\",\"perTag\":5,\"tags\":[\"勇士\"]}}],[\"nfl\",[\"sf\",\"kc\",\"phi\"],{\"limit\":5}],[\"cfb\",[\"psu\"],{\"limit\":5}],[\"soccer\",[],{\"zhibo8\":{\"type\":\"zuqiu\",\"perTag\":3,\"tags\":[\"巴塞罗那\",\"曼城\"]}}]]",
+  "generatedAt": "2026-11-10T21:24:41.678Z",
+  "cfgKey": "[[\"nba\",[\"gs\"],{\"limit\":5}],[\"nfl\",[\"sf\",\"kc\",\"phi\"],{\"limit\":5}],[\"cfb\",[\"psu\"],{\"limit\":5}],[\"soccer\",[],{\"limit\":3,\"teams\":[{\"league\":\"esp.1\",\"team\":\"83\"},{\"league\":\"eng.1\",\"team\":\"382\"}]}]]",
   "partial": false,
   "articles": [
     {
-      "id": "zb8:6af2a3eabb43fnative",
-      "type": null,
-      "headline": "引起某1米83名宿关注！勇士第三节净胜18分 三节打完领先鹈鹕47分",
-      "description": "",
-      "published": "2026-11-10T04:59:43.000Z",
-      "byline": "直播吧",
-      "image": "https://tu.duoduocdn.com/uploads/day_261104/6aea8910c19da_thumb.jpg",
-      "link": "https://news.zhibo8.com/nba/2026-11-10/6af2a3eabb43fnative.htm",
+      "id": "50445576",
+      "type": "HeadlineNews",
+      "headline": "Sources: Chiefs snag needed help at WR, trade for Colts' Josh Downs",
+      "description": "The Chiefs have obtained needed help at wide receiver, acquiring Josh Downs in a trade with the Colts, sources told ESPN and NFL Network.",
+      "published": "2026-11-10T21:18:15Z",
+      "byline": "Nate Taylor and Stephen Holder",
+      "image": "https://a.espncdn.com/photo/2026/1110/r1743969_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50445576/chiefs-trade-colts-wr-josh-downs",
       "premium": false,
-      "tag": "勇士",
+      "team": "kc",
       "league": {
-        "id": "nba",
-        "name": "NBA"
+        "id": "nfl",
+        "name": "NFL"
       }
     },
     {
-      "id": "zb8:6af2a1533b9d2native",
-      "type": null,
-      "headline": "要下班了！库里第三节16分！再被放空三分轰进&鹈鹕喊停！",
-      "description": "",
-      "published": "2026-11-10T04:46:15.000Z",
-      "byline": "直播吧",
-      "image": "https://tu.duoduocdn.com/uploads/day_261110/202611101245278897_thumb.jpg",
-      "link": "https://news.zhibo8.com/nba/2026-11-10/6af2a1533b9d2native.htm",
+      "id": "50444457",
+      "type": "HeadlineNews",
+      "headline": "49ers trade for Colts' Keenan Allen to bolster injury-plagued WR room",
+      "description": "The 49ers completed a trade with the Colts for Keenan Allen in a move that will bolster their injury-plagued WR corps.",
+      "published": "2026-11-10T21:17:45Z",
+      "byline": "Nick Wagoner",
+      "image": "https://a.espncdn.com/photo/2026/1022/r1734604_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50444457/sources-49ers-acquire-keenan-allen-trade-colts",
       "premium": false,
-      "tag": "勇士",
+      "team": "sf",
       "league": {
-        "id": "nba",
-        "name": "NBA"
+        "id": "nfl",
+        "name": "NFL"
       }
     },
     {
-      "id": "zb8:6af29cd84f572native",
-      "type": null,
-      "headline": "巴埃纳谈小蜘蛛：理解巴萨皇马邀约会让人动摇 他已向全队道了歉",
-      "description": "",
-      "published": "2026-11-10T04:40:12.000Z",
-      "byline": "直播吧",
-      "image": "https://tu.duoduocdn.com/uploads/day_261110/202611101235561691_thumb.jpg",
-      "link": "https://news.zhibo8.com/zuqiu/2026-11-10/6af29cd84f572native.htm",
+      "id": "50445612",
+      "type": "Media",
+      "headline": "Mike Tannenbaum: Chiefs' trade for Josh Downs is a 'no-brainer'",
+      "description": "Mike Tannenbaum: Chiefs' trade for Josh Downs is a 'no-brainer'",
+      "published": "2026-11-10T21:01:18Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1110/ss_20261110_154759419_3735560950/ss_20261110_154759419_3735560950.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50445612/chiefs-trade-josh-downs-no-brainer",
       "premium": false,
-      "tag": "巴塞罗那",
+      "team": "kc",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50444620",
+      "type": "Media",
+      "headline": "'Great move': Rich Eisen reacts to 49ers' trade for Keenan Allen",
+      "description": "'Great move': Rich Eisen reacts to 49ers' trade for Keenan Allen",
+      "published": "2026-11-10T20:52:56Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1110/ss_20261110_140946433_3735435/ss_20261110_140946433_3735435.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50444620/rich-eisen-reacts-49ers-trade-keenan-allen",
+      "premium": false,
+      "team": "sf",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50444816",
+      "type": "HeadlineNews",
+      "headline": "Hall of Famer Ham recovering from medical emergency, Penn State says",
+      "description": "Penn State radio analyst Jack Ham is \"doing really well\" and remains in stable condition after suffering a medical emergency Saturday before the Nittany Lions' game against Washington in Seattle.",
+      "published": "2026-11-10T19:35:50Z",
+      "byline": "Adam Rittenberg",
+      "image": "https://a.espncdn.com/photo/2017/0408/r197865_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/college-football/story/_/id/50444816/hall-famer-jack-ham-recovering-medical-emergency-penn-state-says",
+      "premium": false,
+      "team": "psu",
+      "league": {
+        "id": "cfb",
+        "name": "NCAAF"
+      }
+    },
+    {
+      "id": "50443891",
+      "type": "HeadlineNews",
+      "headline": "Bengals nix agreed-upon trade with Eagles, sources say",
+      "description": "A trade that would've sent Eagles edge rusher Arnold Ebiketie to Cincinnati has been called off, sources told ESPN's Adam Schefter and NFL Network's Ian Rapoport.",
+      "published": "2026-11-10T18:26:09Z",
+      "byline": "Ben Baby",
+      "image": "https://a.espncdn.com/photo/2026/1110/r1744018_2_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50443891/bengals-nix-agreed-trade-eagles-sources-say",
+      "premium": false,
+      "team": "phi",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50443229",
+      "type": "HeadlineNews",
+      "headline": "Bengals trade for Eagles LB Arnold Ebiketie, sources say",
+      "description": "The Bengals have added edge rusher Arnold Ebiketie in a trade with the Eagles, sources told NFL Network's Ian Rapoport.",
+      "published": "2026-11-10T16:41:22Z",
+      "byline": null,
+      "image": "https://a.espncdn.com/photo/2026/1110/r1744010_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50443229/bengals-trade-eagles-lb-arnold-ebiketie-sources-say",
+      "premium": false,
+      "team": "phi",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50442324",
+      "type": "HeadlineNews",
+      "headline": "Vincent Kompany returns to Bayern Munich training for first time since collapse",
+      "description": "Bayern Munich manager Vincent Kompany has made a return to the club's base for the first time since he collapsed in a training session.",
+      "published": "2026-11-10T14:58:06Z",
+      "byline": "PA",
+      "image": "https://a.espncdn.com/photo/2026/0501/r1651851_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/soccer/story/_/id/50442324/vincent-kompany-bayern-munich-illness",
+      "premium": false,
+      "team": "382",
       "league": {
         "id": "soccer",
-        "name": "足球"
+        "name": "足球",
+        "nameEn": "Soccer"
       }
     },
     {
-      "id": "zb8:6af29f407fad4native",
-      "type": null,
-      "headline": "科尔你害怕不？😂巴特勒扮演教练 战术是“传给库里”",
-      "description": "",
-      "published": "2026-11-10T04:37:33.000Z",
-      "byline": "直播吧",
-      "image": "https://tu.duoduocdn.com/uploads/day_261110/202611101243437156_thumb.jpg",
-      "link": "https://news.zhibo8.com/nba/2026-11-10/6af29f407fad4native.htm",
+      "id": "50434799",
+      "type": "Story",
+      "headline": "The historic (and absurd) longevity of Steph Curry and Kevin Durant",
+      "description": "More than 10 years after briefly joining forces, Steph and KD remain near the top of their games at 38. How long can each legend keep this up?",
+      "published": "2026-11-10T12:16:38Z",
+      "byline": "Ben Golliver",
+      "image": "https://a.espncdn.com/photo/2026/0922/r1720560_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/nba/story/_/id/50434799/stephen-curry-kevin-durant-warriors-rockets",
       "premium": false,
-      "tag": "勇士",
+      "team": "gs",
       "league": {
         "id": "nba",
         "name": "NBA"
       }
     },
     {
-      "id": "zb8:6af29e27acc77native",
-      "type": null,
-      "headline": "09双雄！👨‍🍳库里生涯得分超越德罗赞 升至历史第16！",
-      "description": "",
-      "published": "2026-11-10T04:32:57.000Z",
-      "byline": "直播吧",
-      "image": "https://tu.duoduocdn.com/uploads/day_260123/69737a9df07b7_thumb.jpg",
-      "link": "https://news.zhibo8.com/nba/2026-11-10/6af29e27acc77native.htm",
+      "id": "50439821",
+      "type": "HeadlineNews",
+      "headline": "Warriors blow out Pelicans by 51 points for 8th straight win",
+      "description": "Stephen Curry scored 25 points in 20-plus minutes, Yaxel Lendeborg added 23 points, and the Warriors won their eighth straight game by 51 points against the short-handed Pelicans on Monday night.",
+      "published": "2026-11-10T07:45:07Z",
+      "byline": null,
+      "image": "https://a.espncdn.com/photo/2026/1110/r1743878_600x400_3-2.jpg",
+      "link": "https://www.espn.com/nba/story/_/id/50439821/warriors-beat-pelicans-51-points-8th-straight-win",
       "premium": false,
-      "tag": "勇士",
+      "team": "gs",
       "league": {
         "id": "nba",
         "name": "NBA"
       }
     },
     {
-      "id": "zb8:6af296244dc9fnative",
-      "type": null,
-      "headline": "去年3600万镑买进！曼晚：艾特-努里彻底失去机会，他很适合曼联",
-      "description": "",
-      "published": "2026-11-10T04:11:28.000Z",
-      "byline": "直播吧 · 曼彻斯特晚报",
-      "image": "https://tu.duoduocdn.com/uploads/day_250913/68c51a79e5fa5_thumb.jpg",
-      "link": "https://news.zhibo8.com/zuqiu/2026-11-10/6af296244dc9fnative.htm",
+      "id": "50440191",
+      "type": "Preview",
+      "headline": "Warriors take on the Rockets, aim for 9th straight win",
+      "description": "Golden State Warriors (8-3, fourth in the Western Conference) vs. Houston Rockets (8-3, sixth in the Western Conference)",
+      "published": "2026-11-10T07:05:40Z",
+      "byline": null,
+      "image": "https://s.espncdn.com/stitcher/sports/basketball/nba/events/401909974.png?templateId=espn.applewatch.awayhome.1",
+      "link": "http://www.espn.com/nba/preview?gameId=401909974",
       "premium": false,
-      "tag": "曼城",
-      "league": {
-        "id": "soccer",
-        "name": "足球"
-      }
-    },
-    {
-      "id": "zb8:6af295e341af9native",
-      "type": null,
-      "headline": "杰拉德：19岁的亚马尔比同龄梅罗更成熟，他有潜力达到两人的高度",
-      "description": "",
-      "published": "2026-11-10T03:59:36.000Z",
-      "byline": "直播吧 · YouTube",
-      "image": "https://tu.duoduocdn.com/uploads/day_261110/202611101158543771_thumb.jpg",
-      "link": "https://news.zhibo8.com/zuqiu/2026-11-10/6af295e341af9native.htm",
-      "premium": false,
-      "tag": "巴塞罗那",
-      "league": {
-        "id": "soccer",
-        "name": "足球"
-      }
-    },
-    {
-      "id": "zb8:6af295ff97639native",
-      "type": null,
-      "headline": "不经打！鹈鹕落后32分再次喊停 上半场喊了5个暂停！还剩俩",
-      "description": "",
-      "published": "2026-11-10T03:58:28.000Z",
-      "byline": "直播吧",
-      "image": "https://tu.duoduocdn.com/uploads/day_261110/202611101156595137_thumb.jpg",
-      "link": "https://news.zhibo8.com/nba/2026-11-10/6af295ff97639native.htm",
-      "premium": false,
-      "tag": "勇士",
+      "team": "gs",
       "league": {
         "id": "nba",
         "name": "NBA"
       }
     },
     {
-      "id": "zb8:6af28887ddc06native",
-      "type": null,
-      "headline": "多纳鲁马周一缺席意大利国家队训练，记者：因航班延误未按时抵达",
-      "description": "",
-      "published": "2026-11-10T03:06:46.000Z",
-      "byline": "直播吧 · 迪马济奥官网",
-      "image": "https://tu.duoduocdn.com/uploads/day_210709/60e8196275984_thumb.jpg",
-      "link": "https://news.zhibo8.com/zuqiu/2026-11-10/6af28887ddc06native.htm",
+      "id": "50439757",
+      "type": "Recap",
+      "headline": "Stephen Curry, Brandin Podziemski each score 25 as Warriors run away from Pelicans for 138-87 win",
+      "description": "— Stephen Curry scored 25 points in 20-plus minutes, Yaxel Lendeborg had 23 points, seven rebounds and four assists, and the Golden State Warriors won their eighth straight game by running away from the undermanned New Orleans Pelicans early for a...",
+      "published": "2026-11-10T06:32:35Z",
+      "byline": null,
+      "image": "https://s.espncdn.com/stitcher/sports/basketball/nba/events/401909959.png?templateId=espn.applewatch.awayhome.1",
+      "link": "http://www.espn.com/nba/recap?gameId=401909959",
       "premium": false,
-      "tag": "曼城",
+      "team": "gs",
       "league": {
-        "id": "soccer",
-        "name": "足球"
+        "id": "nba",
+        "name": "NBA"
+      }
+    },
+    {
+      "id": "50439744",
+      "type": "Media",
+      "headline": "New Orleans Pelicans vs. Golden State Warriors: Game Highlights",
+      "description": "New Orleans Pelicans vs. Golden State Warriors: Game Highlights",
+      "published": "2026-11-10T06:26:39Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1110/d54cbdd555714824a9ae044cc4513f3c86/d54cbdd555714824a9ae044cc4513f3c86.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50439744/game-highlights",
+      "premium": false,
+      "team": "gs",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
       }
     },
     {
@@ -166,38 +231,6 @@
       }
     },
     {
-      "id": "zb8:6af274a322217native",
-      "type": null,
-      "headline": "每体：本赛季费尔明每90分钟参与1.39球，身价1.1亿欧队内第三",
-      "description": "",
-      "published": "2026-11-10T01:45:53.000Z",
-      "byline": "直播吧 · 每日体育报",
-      "image": "https://tu.duoduocdn.com/uploads/day_261014/6acea26311adc_thumb.jpg",
-      "link": "https://news.zhibo8.com/zuqiu/2026-11-10/6af274a322217native.htm",
-      "premium": false,
-      "tag": "巴塞罗那",
-      "league": {
-        "id": "soccer",
-        "name": "足球"
-      }
-    },
-    {
-      "id": "zb8:6af26d0049b7bnative",
-      "type": null,
-      "headline": "曼晚：马雷斯卡在使用布阿迪方面处境尴尬，球迷呼吁让他踢后腰",
-      "description": "",
-      "published": "2026-11-10T01:12:24.000Z",
-      "byline": "直播吧 · 曼彻斯特晚报",
-      "image": "https://tu.duoduocdn.com/uploads/day_260909/6aa1197b2415d_thumb.jpg",
-      "link": "https://news.zhibo8.com/zuqiu/2026-11-10/6af26d0049b7bnative.htm",
-      "premium": false,
-      "tag": "曼城",
-      "league": {
-        "id": "soccer",
-        "name": "足球"
-      }
-    },
-    {
       "id": "50432490",
       "type": "Story",
       "headline": "Are Jaguars all-in after trades for Bates, Davis? Plus Eagles, Falcons reaction",
@@ -206,22 +239,6 @@
       "byline": "Michael DiRocco, Tim McManus, Marc Raimondi and Jordan Reid",
       "image": "https://a.espncdn.com/photo/2026/1109/r1743759_608x342_16-9.jpg",
       "link": "https://www.espn.com/nfl/story/_/id/50432490/jaguars-trade-jessie-bates-iii-falcons-draft",
-      "premium": false,
-      "team": "phi",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50435639",
-      "type": "HeadlineNews",
-      "headline": "Jaguars acquire Eagles DT Jordan Davis in blockbuster trade",
-      "description": "The Jaguars traded a 2027 first-round pick and a 2029 second-round pick to the Eagles for defensive tackle Jordan Davis on Monday.",
-      "published": "2026-11-10T00:29:00Z",
-      "byline": "Michael Dirocco",
-      "image": "https://a.espncdn.com/photo/2026/1109/r1743754_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50435639/jaguars-get-eagles-jordan-davis-blockbuster-trade",
       "premium": false,
       "team": "phi",
       "league": {
@@ -240,22 +257,6 @@
       "link": "https://www.espn.com/nfl/story/_/id/50435848/49ers-receiver-brandon-aiyuk-reinstated-nfl",
       "premium": false,
       "team": "sf",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50435515",
-      "type": "HeadlineNews",
-      "headline": "Nick Sirianni says he did not give booing Eagles fans middle finger",
-      "description": "A social media video sparked questions about whether Eagles coach Nick Sirianni purposefully lifted his middle finger toward fans after a loss to the Giants.",
-      "published": "2026-11-09T22:25:51Z",
-      "byline": "Tim McManus",
-      "image": "https://a.espncdn.com/photo/2026/1102/r1740218_600x400_3-2.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50435515/sirianni-says-did-not-give-eagles-fans-middle-finger",
-      "premium": false,
-      "team": "phi",
       "league": {
         "id": "nfl",
         "name": "NFL"
@@ -326,19 +327,71 @@
       }
     },
     {
-      "id": "50428583",
+      "id": "50433569",
       "type": "HeadlineNews",
-      "headline": "49ers lose DT Gracen Halton to season-ending ankle fracture",
-      "description": "Gracen Halton suffered a broken left ankle against the Raiders, an injury that will end his rookie season after eight games.",
-      "published": "2026-11-09T05:24:02Z",
-      "byline": "Nick Wagoner",
-      "image": "https://a.espncdn.com/photo/2026/1109/r1743411_600x600_1-1.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50428583/49ers-gracen-halton-season-broken-ankle",
+      "headline": "Barcelona's Pau Cubarsí crowned 2026 Golden Boy",
+      "description": "Barcelona centre-back Pau Cubarsí has won the 2026 Golden Boy award, the prize given to the best U21 men's player in the world.",
+      "published": "2026-11-09T16:48:12Z",
+      "byline": "Sam Marsden",
+      "image": "https://a.espncdn.com/photo/2026/1109/r1743585_3_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/soccer/story/_/id/50433569/barcelona-spain-pau-cubarsi-wins-2026-golden-boy-award",
       "premium": false,
-      "team": "sf",
+      "team": "83",
       "league": {
-        "id": "nfl",
-        "name": "NFL"
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
+      }
+    },
+    {
+      "id": "50428521",
+      "type": "Story",
+      "headline": "Man United shouldn't keep Carrick despite Villa comeback; how Barça beat Atletico",
+      "description": "Man United came back to draw Aston Villa, but that shouldn't save Carrick's job. Plus, Barça escape Atletico with victory, and Man City's defensive woes continue.",
+      "published": "2026-11-09T13:49:14Z",
+      "byline": "Gabriele Marcotti",
+      "image": "https://a.espncdn.com/photo/2026/1109/r1743504_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/soccer/story/_/id/50428521/premier-league-laliga-analysis-marcotti-man-united-carrick-barcelona-atletico",
+      "premium": false,
+      "team": "83",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
+      }
+    },
+    {
+      "id": "50431764",
+      "type": "HeadlineNews",
+      "headline": "Barcelona's Lamine Yamal (knee) to miss next Spain Nations League game",
+      "description": "Barcelona's Lamine Yamal will miss Spain's Nations League game against Czechia on Thursday with a knee injury, the Spanish Federation [RFEF] announced Monday.",
+      "published": "2026-11-09T12:13:14Z",
+      "byline": "Sam Marsden",
+      "image": "https://a.espncdn.com/photo/2026/1108/r1743162_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/soccer/story/_/id/50431764/barcelona-lamine-yamal-knee-nations-league-spain",
+      "premium": false,
+      "team": "83",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
+      }
+    },
+    {
+      "id": "50431707",
+      "type": "HeadlineNews",
+      "headline": "England squad: Dan Burn called up to replace injured Marc Guéhi",
+      "description": "Dan Burn has been called up by England to replace Marc Guéhi, who has withdrawn with an injury.",
+      "published": "2026-11-09T12:10:48Z",
+      "byline": "ESPN",
+      "image": "https://a.espncdn.com/photo/2026/0706/r1685517_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/soccer/story/_/id/50431707/dan-burn-marc-guehi-england-squad",
+      "premium": false,
+      "team": "382",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
       }
     },
     {
@@ -358,38 +411,6 @@
       }
     },
     {
-      "id": "50427266",
-      "type": "HeadlineNews",
-      "headline": "Chiefs' Patrick Mahomes brushes off injury scare during rout of Jets",
-      "description": "Chiefs quarterback Patrick Mahomes was able to play through pain in his right arm after absorbing a massive hit during Sunday's 35-12 victory over the Jets.",
-      "published": "2026-11-09T05:19:49Z",
-      "byline": "Nate Taylor",
-      "image": "https://a.espncdn.com/photo/2026/1108/r1743278_600x600_1-1.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50427266/chiefs-patrick-mahomes-brushes-injury-scare",
-      "premium": false,
-      "team": "kc",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50429191",
-      "type": "Media",
-      "headline": "Takeaways the key for 49ers in win over Raiders",
-      "description": "Nick Wagoner breaks down the 49ers win over the Raiders.",
-      "published": "2026-11-09T03:44:46Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1108/dm_261108_Niners_beat_Raiders_IA/dm_261108_Niners_beat_Raiders_IA.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50429191/takeaways-key-49ers-win-raiders",
-      "premium": false,
-      "team": "sf",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
       "id": "50428850",
       "type": "Media",
       "headline": "Kenneth Walker III comes up huge in Week 9 win",
@@ -398,22 +419,6 @@
       "byline": null,
       "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1108/dm_261108_SC4U_16x9_Chiefs_IA_11-8/dm_261108_SC4U_16x9_Chiefs_IA_11-8.jpg",
       "link": "https://www.espn.com/video/clip/_/id/50428850/kenneth-walker-iii-comes-huge-week-9-win",
-      "premium": false,
-      "team": "kc",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50424764",
-      "type": "Media",
-      "headline": "Chiefs take care of business at home",
-      "description": "Chiefs take care of business at home",
-      "published": "2026-11-08T21:21:50Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1108/4b476b38-b457-4787-b7cc-22cec893ee05/4b476b38-b457-4787-b7cc-22cec893ee05.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50424764/chiefs-take-care-business-home",
       "premium": false,
       "team": "kc",
       "league": {
