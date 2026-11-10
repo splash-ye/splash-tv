@@ -369,10 +369,11 @@ async function renderResults() {
 async function renderNews() {
   const el = $('#news-list');
   try {
-    const { enabled, articles } = await api('news');
+    const { enabled, articles, generatedAt } = await api('news');
     $('#news').hidden = !enabled;
     $('#nav-news').hidden = !enabled;
     if (!enabled) return;
+    $('#news-sub').textContent = `每天更新${generatedAt ? ` · ${new Date(generatedAt).toLocaleString('zh-CN', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false })}` : ''}`;
     const item = (a) => `<div class="news-item">
       <a href="${esc(a.link)}" target="_blank" rel="noopener">${a.image ? `<img src="${esc(a.image)}" alt="" loading="lazy" />` : '<div class="noimg"></div>'}</a>
       <div>

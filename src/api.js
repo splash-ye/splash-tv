@@ -80,13 +80,33 @@ async function marqueeGames(keys, qualifiersFor, errors) {
   return lists.flat();
 }
 
-// ---------- daily schedule snapshot (rebuilt once per ET day) ----------
-const SCHEDULE_FILE = path.join(DATA_DIR, 'schedule.json');
-let daily = null;
-let dailyInflight = null;
+// ---------- daily snapshots (rebuilt once per ET day) ----------
+// Persisted to data/<name>.json. Rebuilt when the ET day, the version or the config changes,
+// or when the last build was partial (some source failed). build(day) → { partial, ...data }.
+function dailySnapshot(name, version, cfgKeyOf, build) {
+  const file = path.join(DATA_DIR, `${name}.json`);
+  let snap = null;
+  let inflight = null;
+  return async () => {
+    const day = etDateKey(new Date());
+    const cfgKey = cfgKeyOf();
+    if (!snap) snap = await readFile(file, 'utf8').then(JSON.parse).catch(() => null);
+    if (snap && snap.version === version && snap.day === day && !snap.partial && snap.cfgKey === cfgKey) return snap;
+    inflight ??= (async () => {
+      const built = { version, day, generatedAt: new Date().toISOString(), cfgKey, ...(await build(day)) };
+      snap = built;
+      await mkdir(DATA_DIR, { recursive: true });
+      await writeFile(file, JSON.stringify(built, null, 2));
+      console.log(`[${name}] built for ${day}${built.partial ? ' (partial)' : ''}`);
+      return built;
+    })().finally(() => (inflight = null));
+    return inflight;
+  };
+}
 
-// Bump when the snapshot's shape or window changes so a same-day snapshot gets rebuilt.
+// Bump when a snapshot's shape or window changes so a same-day snapshot gets rebuilt.
 const SCHEDULE_VERSION = 2;
+const NEWS_VERSION = 2;
 
 // Starts at yesterday (ET) so a game still in progress after midnight stays in the snapshot.
 async function buildDailySchedule(day) {
@@ -103,10 +123,6 @@ async function buildDailySchedule(day) {
     if (q) qualifiers.push({ league: leagueTag(lg), criteria: q.criteria, weekOf: q.weekOf, fixed: !!q.fixed, teams: q.teams });
   }
   return {
-    version: SCHEDULE_VERSION,
-    day,
-    generatedAt: new Date().toISOString(),
-    cfgKey: JSON.stringify(config.leagues),
     partial: errors.length > 0,
     daysAhead: SCHEDULE_DAYS,
     teams: teams.map(({ lg, team }) => ({ ...team, league: leagueTag(lg) })),
@@ -116,20 +132,7 @@ async function buildDailySchedule(day) {
   };
 }
 
-async function getDailySchedule() {
-  const day = etDateKey(new Date());
-  if (!daily) daily = await readFile(SCHEDULE_FILE, 'utf8').then(JSON.parse).catch(() => null);
-  if (daily && daily.version === SCHEDULE_VERSION && daily.day === day && !daily.partial && daily.cfgKey === JSON.stringify(config.leagues)) return daily;
-  dailyInflight ??= (async () => {
-    const built = await buildDailySchedule(day);
-    daily = built;
-    await mkdir(DATA_DIR, { recursive: true });
-    await writeFile(SCHEDULE_FILE, JSON.stringify(built, null, 2));
-    console.log(`[schedule] built for ${day}: ${built.games.length} games${built.partial ? ' (partial)' : ''}`);
-    return built;
-  })().finally(() => (dailyInflight = null));
-  return dailyInflight;
-}
+const getDailySchedule = dailySnapshot('schedule', SCHEDULE_VERSION, () => JSON.stringify(config.leagues), buildDailySchedule);
 
 // ---------- handlers ----------
 // The snapshot is built once a day. A game stays listed after kickoff until its result shows up
@@ -179,13 +182,25 @@ export async function boxscore(leagueId, compCode, event) {
   return getBoxscore(lg.sport, lg.league, event);
 }
 
-// ESPN English news for each followed team of a league.
-async function espnNews(lg) {
+// ESPN English news for each followed team of a league: the latest `limit` stories of the past
+// week that are really about the team. League-wide pieces (betting lines, draft order, power
+// rankings) are tagged with most of the league, so stories tagged with more than 3 teams are skipped.
+const NEWS_MAX_TEAMS = 3;
+const NEWS_DAYS = 7;
+async function espnNews(lg, errors) {
+  const since = Date.now() - NEWS_DAYS * DAY_MS;
   const lists = await Promise.all(
     lg.teams.map((team) =>
-      getNews(lg.sport, lg.league, team, lg.news.limit ?? 25)
-        .then((articles) => articles.filter((a) => a.type !== 'Eticket').map((a) => ({ ...a, team }))) // Eticket = sponsored widget
-        .catch(() => []),
+      getNews(lg.sport, lg.league, team, 50)
+        .then((articles) =>
+          articles
+            .filter((a) => a.type !== 'Eticket') // sponsored widget
+            .filter((a) => a.teams.length <= NEWS_MAX_TEAMS && a.teams.some((t) => t?.toLowerCase() === team.toLowerCase()))
+            .filter((a) => new Date(a.published).getTime() >= since)
+            .slice(0, lg.news.limit ?? 5)
+            .map(({ teams, ...a }) => ({ ...a, team })),
+        )
+        .catch((err) => (errors.push(`${lg.name} ${team} 新闻: ${err.message}`), [])),
     ),
   );
   return lists.flat();
@@ -193,28 +208,43 @@ async function espnNews(lg) {
 
 // news.zhibo8 → Chinese stories from 直播吧 (falls back to ESPN if the feed is unreachable);
 // otherwise ESPN English news for the followed teams.
-async function leagueNews(lg) {
+async function leagueNews(lg, errors) {
   const z = lg.news.zhibo8;
-  if (!z) return espnNews(lg);
+  if (!z) return espnNews(lg, errors);
   try {
     return await getZhibo8News(z.type, z.tags, z.perTag ?? 3);
   } catch (err) {
-    console.warn(`[news] zhibo8 ${lg.id}: ${err.message}`);
-    return lg.teams.length ? espnNews(lg) : [];
+    errors.push(`直播吧 ${lg.name}: ${err.message}`);
+    return lg.teams.length ? espnNews(lg, errors) : [];
   }
 }
 
-export async function news() {
-  const leagues = config.leagues.filter((lg) => lg.news);
+const newsLeagues = () => config.leagues.filter((lg) => lg.news);
+
+// Taken once a day (first build after midnight ET), so 直播吧's ranking covers a full 24 hours.
+async function buildDailyNews() {
+  const errors = [];
   const lists = await Promise.all(
-    leagues.map((lg) => leagueNews(lg).then((articles) => articles.map((a) => ({ ...a, league: leagueTag(lg) })))),
+    newsLeagues().map((lg) => leagueNews(lg, errors).then((articles) => articles.map((a) => ({ ...a, league: leagueTag(lg) })))),
   );
   const seen = new Set();
   const articles = lists
     .flat()
     .filter((a) => !seen.has(a.id) && seen.add(a.id))
     .sort((a, b) => new Date(b.published) - new Date(a.published));
-  return { enabled: leagues.length > 0, articles };
+  return { partial: errors.length > 0, articles, errors };
+}
+
+const getDailyNews = dailySnapshot(
+  'news',
+  NEWS_VERSION,
+  () => JSON.stringify(newsLeagues().map((lg) => [lg.id, lg.teams, lg.news])),
+  buildDailyNews,
+);
+
+export async function news() {
+  const snap = await getDailyNews();
+  return { enabled: newsLeagues().length > 0, generatedAt: snap.generatedAt, articles: snap.articles };
 }
 
 // Highlight config for one game: soccer competitions carry their own broadcaster channels.
@@ -314,12 +344,13 @@ export async function standings() {
   return { leagues };
 }
 
-// Weekly marquee snapshot (Mondays) and daily schedule snapshot.
+// Weekly marquee snapshot (Mondays) and daily schedule + news snapshots.
 export async function refreshSnapshots() {
   for (const lg of marqueeLeagues()) {
     await getQualifiers(lg).catch((err) => console.warn(`[marquee] ${lg.id} snapshot failed: ${err.message}`));
   }
   await getDailySchedule().catch((err) => console.warn(`[schedule] build failed: ${err.message}`));
+  await getDailyNews().catch((err) => console.warn(`[news] build failed: ${err.message}`));
 }
 
 export { config, ROOT };

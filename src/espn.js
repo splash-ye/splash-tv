@@ -182,6 +182,16 @@ export function getRankings(sport, league) {
   });
 }
 
+// Teams a story is tagged with, as abbreviations. College stories tag each team twice (the second
+// time with the school name in the abbreviation field), so keep the first entry per team id.
+function taggedTeams(a) {
+  const byId = new Map();
+  for (const c of a.categories ?? []) {
+    if (c.type === 'team' && c.team && !byId.has(c.teamId)) byId.set(c.teamId, c.team.abbreviation);
+  }
+  return [...byId.values()];
+}
+
 export function getNews(sport, league, team, limit = 25) {
   return cached(`news:${sport}/${league}/${team}/${limit}`, 10 * MIN, async () => {
     const j = await fetchJson(`${SITE}/${sport}/${league}/news?team=${encodeURIComponent(team)}&limit=${limit}`);
@@ -195,6 +205,7 @@ export function getNews(sport, league, team, limit = 25) {
       image: a.images?.[0]?.url ?? null,
       link: a.links?.web?.href ?? a.links?.mobile?.href ?? null,
       premium: !!a.premium,
+      teams: taggedTeams(a),
     }));
   });
 }

@@ -13,7 +13,7 @@ const getFeed = () => cached('zhibo8:24h', 10 * MIN, async () => (await fetchJso
 const parseTime = (s) => new Date(`${s.replace(' ', 'T')}+08:00`).toISOString();
 
 // type: 'nba' | 'zuqiu'. tags: zhibo8 team tags, e.g. ['勇士'] or ['曼城', '皇家马德里', ...].
-// Keeps the `perTag` most-read stories for each tag; a story shared by two tags counts once.
+// Keeps the `perTag` most-read stories (PC page views) for each tag; a story shared by two tags counts once.
 export async function getZhibo8News(type, tags, perTag) {
   const items = (await getFeed())
     .filter((x) => x.type === type && x.url && x.model === 'news')
