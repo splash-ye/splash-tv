@@ -1,0 +1,458 @@
+{
+  "version": 2,
+  "day": "20261109",
+  "generatedAt": "2026-11-10T02:04:38.354Z",
+  "cfgKey": "[[\"nba\",[\"gs\"],{\"limit\":25,\"zhibo8\":{\"type\":\"nba\",\"perTag\":5,\"tags\":[\"勇士\"]}}],[\"nfl\",[\"sf\",\"kc\",\"phi\"],{\"limit\":5}],[\"cfb\",[\"psu\"],{\"limit\":5}],[\"soccer\",[],{\"zhibo8\":{\"type\":\"zuqiu\",\"perTag\":3,\"tags\":[\"巴塞罗那\",\"曼城\"]}}]]",
+  "partial": false,
+  "articles": [
+    {
+      "id": "zb8:6af278b198b8cnative",
+      "type": null,
+      "headline": "每体：2005年梅西以来巴萨5人获得金童奖，近6届4人获奖",
+      "description": "",
+      "published": "2026-11-10T01:58:36.000Z",
+      "byline": "直播吧 · 每日体育报",
+      "image": "https://tu.duoduocdn.com/uploads/day_261109/6af0f282d0913_thumb.jpg",
+      "link": "https://news.zhibo8.com/zuqiu/2026-11-10/6af278b198b8cnative.htm",
+      "premium": false,
+      "tag": "巴塞罗那",
+      "league": {
+        "id": "soccer",
+        "name": "足球"
+      }
+    },
+    {
+      "id": "zb8:6af2761b36b71native",
+      "type": null,
+      "headline": "昔日三冠王门将回家！每体：马西普将重返巴萨担任门将教练",
+      "description": "",
+      "published": "2026-11-10T01:57:01.000Z",
+      "byline": "直播吧 · 每日体育报",
+      "image": "https://tu.duoduocdn.com/uploads/day_190912/5d79386fda581_thumb.jpg",
+      "link": "https://news.zhibo8.com/zuqiu/2026-11-10/6af2761b36b71native.htm",
+      "premium": false,
+      "tag": "巴塞罗那",
+      "league": {
+        "id": "soccer",
+        "name": "足球"
+      }
+    },
+    {
+      "id": "zb8:6af273e2d6c58native",
+      "type": null,
+      "headline": "萨维奥拉：我当然希望梅西能拿下金球奖 亚马尔未来必夺金球",
+      "description": "",
+      "published": "2026-11-10T01:40:05.000Z",
+      "byline": "直播吧 · 马卡报",
+      "image": "https://tu.duoduocdn.com/uploads/day_170926/59c97fdfeb6d8_thumb.png",
+      "link": "https://news.zhibo8.com/zuqiu/2026-11-10/6af273e2d6c58native.htm",
+      "premium": false,
+      "tag": "巴塞罗那",
+      "league": {
+        "id": "soccer",
+        "name": "足球"
+      }
+    },
+    {
+      "id": "zb8:6af2726e3a6e8native",
+      "type": null,
+      "headline": "38岁库里场均29.5分钟轰31.3分！科尔：没法解释 独一无二的存在",
+      "description": "",
+      "published": "2026-11-10T01:28:52.000Z",
+      "byline": "直播吧 · Twitter",
+      "image": "https://tu.duoduocdn.com/uploads/day_261017/6ad3031cbf279_thumb.jpg",
+      "link": "https://news.zhibo8.com/nba/2026-11-10/6af2726e3a6e8native.htm",
+      "premium": false,
+      "tag": "勇士",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      }
+    },
+    {
+      "id": "zb8:6af2711ce384anative",
+      "type": null,
+      "headline": "科尔：理查德需要几天时间消肿 之后将决定手术或者带伤出战",
+      "description": "",
+      "published": "2026-11-10T01:24:29.000Z",
+      "byline": "直播吧 · Twitter",
+      "image": "https://tu.duoduocdn.com/uploads/day_261003/6ac0b950d3648_thumb.jpg",
+      "link": "https://news.zhibo8.com/nba/2026-11-10/6af2711ce384anative.htm",
+      "premium": false,
+      "tag": "勇士",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      }
+    },
+    {
+      "id": "zb8:6af26d0049b7bnative",
+      "type": null,
+      "headline": "曼晚：马雷斯卡在使用布阿迪方面处境尴尬，球迷呼吁让他踢后腰",
+      "description": "",
+      "published": "2026-11-10T01:12:24.000Z",
+      "byline": "直播吧 · 曼彻斯特晚报",
+      "image": "https://tu.duoduocdn.com/uploads/day_260909/6aa1197b2415d_thumb.jpg",
+      "link": "https://news.zhibo8.com/zuqiu/2026-11-10/6af26d0049b7bnative.htm",
+      "premium": false,
+      "tag": "曼城",
+      "league": {
+        "id": "soccer",
+        "name": "足球"
+      }
+    },
+    {
+      "id": "zb8:6af26745dd5a6native",
+      "type": null,
+      "headline": "名记：勇士无意交易巴特勒 对他在交易截止日前复出表示乐观",
+      "description": "",
+      "published": "2026-11-10T00:45:24.000Z",
+      "byline": "直播吧 · ClutchPoints",
+      "image": "https://tu.duoduocdn.com/uploads/day_261017/6ad3032116f17_thumb.jpg",
+      "link": "https://news.zhibo8.com/nba/2026-11-10/6af26745dd5a6native.htm",
+      "premium": false,
+      "tag": "勇士",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      }
+    },
+    {
+      "id": "50432490",
+      "type": "Story",
+      "headline": "Are Jaguars all-in after trades for Bates, Davis? Plus Eagles, Falcons reaction",
+      "description": "Jacksonville made a trio of trades Monday. What it means for Eagles and Falcons ... and the Jaguars' Super Bowl hopes.",
+      "published": "2026-11-10T00:39:55Z",
+      "byline": "Michael DiRocco, Tim McManus, Marc Raimondi and Jordan Reid",
+      "image": "https://a.espncdn.com/photo/2026/1109/r1743759_608x342_16-9.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50432490/jaguars-trade-jessie-bates-iii-falcons-draft",
+      "premium": false,
+      "team": "phi",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "zb8:6af2644a3e8afnative",
+      "type": null,
+      "headline": "过去2场15中1！名记：雄鹿愿用特纳换波津还想要选秀权 勇士否决",
+      "description": "",
+      "published": "2026-11-10T00:34:08.000Z",
+      "byline": "直播吧 · ClutchPoints",
+      "image": "https://tu.duoduocdn.com/uploads/day_261110/202611100833316342_thumb.jpg",
+      "link": "https://news.zhibo8.com/nba/2026-11-10/6af2644a3e8afnative.htm",
+      "premium": false,
+      "tag": "勇士",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      }
+    },
+    {
+      "id": "50435639",
+      "type": "HeadlineNews",
+      "headline": "Jaguars acquire Eagles DT Jordan Davis in blockbuster trade",
+      "description": "The Jaguars traded a 2027 first-round pick and a 2029 second-round pick to the Eagles for defensive tackle Jordan Davis on Monday.",
+      "published": "2026-11-10T00:29:00Z",
+      "byline": "Michael Dirocco",
+      "image": "https://a.espncdn.com/photo/2026/1109/r1743754_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50435639/jaguars-get-eagles-jordan-davis-blockbuster-trade",
+      "premium": false,
+      "team": "phi",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50435848",
+      "type": "HeadlineNews",
+      "headline": "Brandon Aiyuk reinstated by NFL; 49ers have 2-game roster exemption for receiver",
+      "description": "The NFL reinstated San Francisco 49ers wide receiver Brandon Aiyuk on Monday after he reported for a physical, according to the league's transaction wire.",
+      "published": "2026-11-09T23:14:11Z",
+      "byline": "Nick Wagoner",
+      "image": "https://a.espncdn.com/photo/2025/1202/r1583555_600x400_3-2.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50435848/49ers-receiver-brandon-aiyuk-reinstated-nfl",
+      "premium": false,
+      "team": "sf",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50435515",
+      "type": "HeadlineNews",
+      "headline": "Nick Sirianni says he did not give booing Eagles fans middle finger",
+      "description": "A social media video sparked questions about whether Eagles coach Nick Sirianni purposefully lifted his middle finger toward fans after a loss to the Giants.",
+      "published": "2026-11-09T22:25:51Z",
+      "byline": "Tim McManus",
+      "image": "https://a.espncdn.com/photo/2026/1102/r1740218_600x400_3-2.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50435515/sirianni-says-did-not-give-eagles-fans-middle-finger",
+      "premium": false,
+      "team": "phi",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50435954",
+      "type": "Media",
+      "headline": "Nick Sirianni: I did not give fans the middle finger",
+      "description": "Nick Sirianni: I did not give fans the middle finger",
+      "published": "2026-11-09T22:25:48Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1109/dm_261109_nfl_sirianni_presser/dm_261109_nfl_sirianni_presser.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50435954/did-not-give-fans-middle-finger",
+      "premium": false,
+      "team": "phi",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "zb8:6af2475a806danative",
+      "type": null,
+      "headline": "名记：勇士曾想着再交易来一名球星 伦德博格直接改变了球队预期",
+      "description": "",
+      "published": "2026-11-09T22:25:00.000Z",
+      "byline": "直播吧 · YouTube",
+      "image": "https://tu.duoduocdn.com/uploads/day_261028/6ae0d6d09a6a1_thumb.jpg",
+      "link": "https://news.zhibo8.com/nba/2026-11-10/6af2475a806danative.htm",
+      "premium": false,
+      "tag": "勇士",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      }
+    },
+    {
+      "id": "50435727",
+      "type": "Media",
+      "headline": "Dan Orlovsky stunned by Jags' trade for Eagles' Jordan Davis",
+      "description": "Dan Orlovsky stunned by Jags' trade for Eagles' Jordan Davis",
+      "published": "2026-11-09T22:09:26Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1109/ss_20261109_170255265_3734457/ss_20261109_170255265_3734457.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50435727/dan-orlovsky-stunned-jags-trade-eagles-jordan-davis",
+      "premium": false,
+      "team": "phi",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50433470",
+      "type": "Story",
+      "headline": "The key behind 49ers' 7-1 start? Big contributions from the team's youth",
+      "description": "While the 49ers' stars have shown out, Jordan Watkins, Jaden Dugger and Kaelon Black have also led the team to its best start since 2019.",
+      "published": "2026-11-09T21:28:52Z",
+      "byline": "Nick Wagoner",
+      "image": "https://a.espncdn.com/photo/2026/1109/r1743602_608x342_16-9.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50433470/san-francisco-49ers-jaden-dugger-jordan-watkins",
+      "premium": false,
+      "team": "sf",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "zb8:6af229ec9242cnative",
+      "type": null,
+      "headline": "哈兰德荣膺《都灵体育报》“金男足奖”，职业生涯第二次获奖",
+      "description": "",
+      "published": "2026-11-09T20:24:52.000Z",
+      "byline": "直播吧",
+      "image": "https://tu.duoduocdn.com/uploads/news/day_261110/202611100424098410_thumb.jpg",
+      "link": "https://news.zhibo8.com/zuqiu/2026-11-10/6af229ec9242cnative.htm",
+      "premium": false,
+      "tag": "曼城",
+      "league": {
+        "id": "soccer",
+        "name": "足球"
+      }
+    },
+    {
+      "id": "50434564",
+      "type": "HeadlineNews",
+      "headline": "Chiefs QB Patrick Mahomes day-to-day with elbow injury",
+      "description": "Chiefs quarterback Patrick Mahomes is considered day-to-day after suffering an injury to his throwing elbow.",
+      "published": "2026-11-09T19:32:09Z",
+      "byline": "Nate Taylor",
+      "image": "https://a.espncdn.com/photo/2026/1109/r1743644_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50434564/chiefs-qb-patrick-mahomes-day-day-elbow-injury",
+      "premium": false,
+      "team": "kc",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50427438",
+      "type": "Recap",
+      "headline": "49ers capitalize on 5 2nd-half takeaways to cruise past Raiders 38-17",
+      "description": "— Jaden Dugger set the tone for the second half when he returned an interception from Kirk Cousins on the first play for a touchdown.",
+      "published": "2026-11-09T16:24:34Z",
+      "byline": null,
+      "image": "https://s.espncdn.com/stitcher/sports/football/nfl/events/401873047.png?templateId=espn.applewatch.awayhome.1",
+      "link": "http://www.espn.com/nfl/recap?gameId=401873047",
+      "premium": false,
+      "team": "sf",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "zb8:6af1b99047cb0native",
+      "type": null,
+      "headline": "内维尔：曼城有些不对劲，明显受指控影响，球员已身心俱疲？",
+      "description": "",
+      "published": "2026-11-09T12:22:25.000Z",
+      "byline": "直播吧 · 天空体育",
+      "image": "https://tu.duoduocdn.com/uploads/day_261109/6af1ba814d55a_thumb.jpg",
+      "link": "https://news.zhibo8.com/zuqiu/2026-11-09/6af1b99047cb0native.htm",
+      "premium": false,
+      "tag": "曼城",
+      "league": {
+        "id": "soccer",
+        "name": "足球"
+      }
+    },
+    {
+      "id": "50428583",
+      "type": "HeadlineNews",
+      "headline": "49ers lose DT Gracen Halton to season-ending ankle fracture",
+      "description": "Gracen Halton suffered a broken left ankle against the Raiders, an injury that will end his rookie season after eight games.",
+      "published": "2026-11-09T05:24:02Z",
+      "byline": "Nick Wagoner",
+      "image": "https://a.espncdn.com/photo/2026/1109/r1743411_600x600_1-1.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50428583/49ers-gracen-halton-season-broken-ankle",
+      "premium": false,
+      "team": "sf",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50427823",
+      "type": "HeadlineNews",
+      "headline": "Reid: No decision now on Harrison Butker's Chiefs future",
+      "description": "Chiefs coach Andy Reid said he hasn't made a decision on kicker Harrison Butker, who leads the NFL this season with seven missed field goal attempts.",
+      "published": "2026-11-09T05:23:16Z",
+      "byline": "Nate Taylor",
+      "image": "https://a.espncdn.com/photo/2026/1108/r1743294_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50427823/reid-no-decision-harrison-butker-chiefs-future",
+      "premium": false,
+      "team": "kc",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50427266",
+      "type": "HeadlineNews",
+      "headline": "Chiefs' Patrick Mahomes brushes off injury scare during rout of Jets",
+      "description": "Chiefs quarterback Patrick Mahomes was able to play through pain in his right arm after absorbing a massive hit during Sunday's 35-12 victory over the Jets.",
+      "published": "2026-11-09T05:19:49Z",
+      "byline": "Nate Taylor",
+      "image": "https://a.espncdn.com/photo/2026/1108/r1743278_600x600_1-1.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50427266/chiefs-patrick-mahomes-brushes-injury-scare",
+      "premium": false,
+      "team": "kc",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50429191",
+      "type": "Media",
+      "headline": "Takeaways the key for 49ers in win over Raiders",
+      "description": "Nick Wagoner breaks down the 49ers win over the Raiders.",
+      "published": "2026-11-09T03:44:46Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1108/dm_261108_Niners_beat_Raiders_IA/dm_261108_Niners_beat_Raiders_IA.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50429191/takeaways-key-49ers-win-raiders",
+      "premium": false,
+      "team": "sf",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50428850",
+      "type": "Media",
+      "headline": "Kenneth Walker III comes up huge in Week 9 win",
+      "description": "Nate Taylor reports on how Kenneth Walker III helped the Chiefs in Week 9 after Patrick Mahomes' injury.",
+      "published": "2026-11-09T02:51:18Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1108/dm_261108_SC4U_16x9_Chiefs_IA_11-8/dm_261108_SC4U_16x9_Chiefs_IA_11-8.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50428850/kenneth-walker-iii-comes-huge-week-9-win",
+      "premium": false,
+      "team": "kc",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50424764",
+      "type": "Media",
+      "headline": "Chiefs take care of business at home",
+      "description": "Chiefs take care of business at home",
+      "published": "2026-11-08T21:21:50Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1108/4b476b38-b457-4787-b7cc-22cec893ee05/4b476b38-b457-4787-b7cc-22cec893ee05.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50424764/chiefs-take-care-business-home",
+      "premium": false,
+      "team": "kc",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50423966",
+      "type": "Preview",
+      "headline": "Penn State and Minnesota meet in Big Ten action",
+      "description": "Minnesota (5-4) at Penn State (5-4), Nov. 14 at 7 p.m. EST.",
+      "published": "2026-11-08T20:45:35Z",
+      "byline": null,
+      "image": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401858524.png?templateId=espn.applewatch.awayhome.1",
+      "link": "http://www.espn.com/ncf/preview?gameId=401858524",
+      "premium": false,
+      "team": "psu",
+      "league": {
+        "id": "cfb",
+        "name": "NCAAF"
+      }
+    },
+    {
+      "id": "50410839",
+      "type": "HeadlineNews",
+      "headline": "Hall of Famer Jack Ham hospitalized, in stable condition after medical emergency",
+      "description": "Hall of Fame linebacker and Penn State radio analyst Jack Ham experienced a medical emergency Saturday in Seattle and was in stable condition.",
+      "published": "2026-11-08T01:55:42Z",
+      "byline": "Adam Rittenberg",
+      "image": "https://a.espncdn.com/photo/2017/0408/r197865_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/college-football/story/_/id/50410839/hall-famer-jack-ham-hospitalized-medical-emergency",
+      "premium": false,
+      "team": "psu",
+      "league": {
+        "id": "cfb",
+        "name": "NCAAF"
+      }
+    }
+  ],
+  "errors": []
+}
