@@ -263,27 +263,27 @@ export const ROUNDUPS = {
   // "NBA's Nightly Recap | November 5, 2026"
   nightly: {
     per: 'day',
-    label: () => '每日回顾',
+    label: () => ({ zh: '每日回顾', en: 'Nightly Recap' }),
     match: (T, p) => T.includes('NIGHTLY RECAP') && T.includes(p.dateLong.toUpperCase()),
     queries: (p) => [`NBA's Nightly Recap ${p.dateLong}`],
   },
   // "NBA's Top 10 Plays of the Night | November 4, 2026" (light nights only get a Top 5)
   topPlays: {
     per: 'day',
-    label: (title) => (/TOP 5 PLAYS/i.test(title) ? '五佳球' : '十佳球'),
+    label: (title) => (/TOP 5 PLAYS/i.test(title) ? { zh: '五佳球', en: 'Top 5 Plays' } : { zh: '十佳球', en: 'Top 10 Plays' }),
     match: (T, p) => /TOP (5|10) PLAYS OF THE NIGHT/.test(T) && T.includes(p.dateLong.toUpperCase()),
     queries: (p) => [`NBA's Top 10 Plays of the Night ${p.dateLong}`, `NBA's Top 5 Plays of the Night ${p.dateLong}`],
   },
   // "Top 15 Plays of Week 8! | 2026 NFL Season"
   top15: {
     per: 'week',
-    label: () => '一周 15 佳球',
+    label: () => ({ zh: '一周 15 佳球', en: 'Top 15 Plays of the Week' }),
     match: (T, p) => new RegExp(`TOP 15 PLAYS OF WEEK ${p.week}(?!\\d)`).test(T) && T.includes(String(p.year)),
     queries: (p) => [`Top 15 Plays of Week ${p.week} ${p.year} NFL Season`],
   },
 };
 
-// Returns { video, label } or null when not (yet) published.
+// Returns { video, label: { zh, en } } or null when not (yet) published.
 export async function findRoundup(type, period, leagueId, cfg) {
   const def = ROUNDUPS[type];
   if (!def) return null;

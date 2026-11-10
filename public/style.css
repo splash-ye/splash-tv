@@ -41,10 +41,12 @@ a { color: inherit; text-decoration: none; }
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
 }
-.brand { font-weight: 800; font-size: 18px; letter-spacing: -0.02em; }
-.brand span { color: var(--accent); margin-left: 2px; }
+.brand { display: block; flex: none; line-height: 0; }
+.brand img { height: 40px; width: auto; border-radius: 9px; }
 .tabs, .sections { display: flex; gap: 6px; }
 .sections { margin-left: auto; }
+.seg.lang { margin-left: 0; flex: none; }
+.seg.lang button { padding: 4px 9px; }
 .tabs button, .sections a {
   border: 0; background: transparent; color: var(--muted);
   font: inherit; padding: 6px 12px; border-radius: 999px; cursor: pointer;
@@ -135,8 +137,11 @@ main { max-width: 1200px; margin: 0 auto; padding: 8px 24px 40px; }
 .foot { text-align: center; color: var(--muted); font-size: 12px; padding: 20px; }
 
 @media (max-width: 860px) {
-  .grid-2 { grid-template-columns: 1fr; }
-  .topbar { padding: 10px 16px; gap: 12px; flex-wrap: wrap; }
+  .grid-2 { grid-template-columns: minmax(0, 1fr); }
+  .topbar { padding: 10px 16px; gap: 8px; }
+  .brand img { height: 34px; }
+  .sections { gap: 0; }
+  .sections a { padding: 6px 8px; }
   main { padding: 4px 16px 32px; }
   .news-item { grid-template-columns: 96px 1fr; }
   .news-item img, .news-item .noimg { width: 96px; height: 54px; }
@@ -270,7 +275,30 @@ table.goals { border-collapse: collapse; width: 100%; font-size: 13px; }
 .games tr.row:hover .rm, .games .rm:focus-visible { opacity: 1; }
 .games .rm:hover { background: var(--line); color: var(--text); }
 @media (hover: none) { .games .rm { opacity: .7; } }
-@media (max-width: 560px) { .games.sched col.c-end { width: 116px; } }
+/* Phones: the two logo columns get a fixed width and the broadcaster column takes what is left
+   (long names are cut with …), so the logos never get squeezed out on narrow screens. */
+@media (max-width: 560px) {
+  .games.sched col:nth-child(3), .games.sched col:nth-child(5) { width: 40px; }
+  .games.sched col.c-mid { width: 28px; }
+  .games.sched col.c-end { width: auto; }
+  .games.sched .bcs { overflow: hidden; }
+  .games.sched td.end .bc { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+}
+/* Very narrow phones in English: the longer nav labels get their own row under the logo. */
+@media (max-width: 380px) {
+  html:lang(en) .topbar { flex-wrap: wrap; row-gap: 4px; }
+  html:lang(en) .sections { order: 3; width: 100%; margin-left: 0; justify-content: space-between; }
+  html:lang(en) .seg.lang { margin-left: auto; }
+}
+/* Very narrow phones: smaller logos and a tighter badge column (time stays 42px so it clears the badge). */
+@media (max-width: 380px) {
+  .games col.c-lg { width: 54px; }
+  .games col.c-mid { width: 68px; }
+  .games.sched col:nth-child(3), .games.sched col:nth-child(5) { width: 34px; }
+  .games .tmx img { width: 24px; height: 24px; }
+  .mid .sc { font-size: 15px; }
+  .mid .colon { margin: 0 2px; }
+}
 .foot-note .restore { border: 0; background: none; padding: 0; font: inherit; color: var(--accent); cursor: pointer; }
 /* Marquee rules: collapsed behind one toggle. */
 .rules { margin: 2px 0 6px; }
@@ -293,8 +321,9 @@ table.goals { border-collapse: collapse; width: 100%; font-size: 13px; }
 .hl .line2 .score { font-weight: 600; font-variant-numeric: tabular-nums; }
 
 /* ---------- results card tabs + standings ---------- */
-.card-tabs { margin: 0 0 10px; display: inline-flex; }
-.card-tabs button { padding: 5px 12px; font-size: 13px; }
+/* Tabs that don't fit wrap onto a second row rather than hiding behind a sideways scroll. */
+.card-tabs { margin: 0 0 10px; display: inline-flex; flex-wrap: wrap; max-width: 100%; }
+.card-tabs button { padding: 5px 12px; font-size: 13px; white-space: nowrap; }
 .foot-note.left { text-align: left; }
 .stand-group .grp { margin: 12px 0 4px; }
 table.stand { width: 100%; border-collapse: collapse; font-size: 13px; font-variant-numeric: tabular-nums; }
@@ -305,6 +334,14 @@ table.stand { width: 100%; border-collapse: collapse; font-size: 13px; font-vari
 .stand th.n, .stand td.n { text-align: center; width: 22px; color: var(--muted); }
 .stand tr.mine td { background: color-mix(in srgb, var(--accent) 10%, transparent); font-weight: 700; }
 .stand tr.cut td { border-bottom: 2px dashed var(--line); }
+.stand td.tm .conf { color: var(--muted); font-size: 11px; font-weight: 400; margin-left: 6px; }
+.stand .mv { color: var(--muted); font-size: 12px; }
+.stand .mv.up { color: var(--win); }
+.stand .mv.down { color: var(--loss); }
+.stand .mv.new { color: var(--accent); font-weight: 600; }
+.poll-votes { font-size: 13px; padding: 8px 5px; border-top: 1px solid var(--line); font-weight: 600; color: var(--muted); }
+.poll-votes img { width: 18px; height: 18px; vertical-align: -4px; margin-right: 6px; }
+.stand .fpv { color: var(--muted); font-size: 11px; margin-left: 3px; }
 @media (max-width: 560px) {
   .stand .opt { display: none; }
 }

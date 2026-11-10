@@ -68,14 +68,7 @@
         "topN": 8
       },
       "news": {
-        "limit": 25,
-        "zhibo8": {
-          "type": "nba",
-          "perTag": 5,
-          "tags": [
-            "勇士"
-          ]
-        }
+        "limit": 5
       },
       "highlights": {
         "matcher": "nba",
@@ -151,17 +144,25 @@
           "UCXnslB_TwYqScBRf4bPf3vA",
           "UCpwix-O6ceqMgdxhqIynzFA"
         ]
+      },
+      "standings": {
+        "polls": [
+          "cfp",
+          "ap"
+        ]
       }
     },
     {
       "id": "soccer",
       "name": "足球",
+      "nameEn": "Soccer",
       "sport": "soccer",
       "teams": [],
       "competitions": [
         {
           "league": "eng.1",
           "name": "英超",
+          "nameEn": "Premier League",
           "channels": [
             "UCqZQlzSHbVJrwrn5XvzrzcA"
           ]
@@ -169,6 +170,7 @@
         {
           "league": "esp.1",
           "name": "西甲",
+          "nameEn": "LaLiga",
           "channels": [
             "UC6c1z7bA__85CIWZ_jpCK-Q",
             "UCTv-XvfzLX3i4IGWAm4sbmA"
@@ -177,6 +179,7 @@
         {
           "league": "uefa.champions",
           "name": "欧冠",
+          "nameEn": "Champions League",
           "channels": [
             "UCET00YnetHT7tOpu12v8jxg"
           ]
@@ -184,6 +187,7 @@
         {
           "league": "eng.fa",
           "name": "足总杯",
+          "nameEn": "FA Cup",
           "channels": [
             "UC6c1z7bA__85CIWZ_jpCK-Q"
           ]
@@ -191,6 +195,7 @@
         {
           "league": "esp.copa_del_rey",
           "name": "国王杯",
+          "nameEn": "Copa del Rey",
           "channels": [
             "UC6c1z7bA__85CIWZ_jpCK-Q"
           ]
@@ -199,6 +204,7 @@
       "marquee": {
         "type": "fixedList",
         "criteria": "豪门对决",
+        "criteriaEn": "Big clubs",
         "clubs": [
           "382",
           "359",
@@ -217,14 +223,17 @@
         ]
       },
       "news": {
-        "zhibo8": {
-          "type": "zuqiu",
-          "perTag": 3,
-          "tags": [
-            "巴塞罗那",
-            "曼城"
-          ]
-        }
+        "limit": 3,
+        "teams": [
+          {
+            "league": "esp.1",
+            "team": "83"
+          },
+          {
+            "league": "eng.1",
+            "team": "382"
+          }
+        ]
       },
       "highlights": {
         "matcher": "soccer",

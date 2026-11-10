@@ -163,15 +163,33 @@ export function getStandings(sport, league, level = null) {
   });
 }
 
-// College polls. Returns [{ type, name, ranks: [{ rank, id, abbr, name, short, logo, record }] }]
+// College polls. Returns [{ type, name, week, label, date, others, ranks: [{ rank, previous, points, firstPlaceVotes, conf, id, abbr, name, short, logo, record }] }]
+// previous is 0 for a team that was unranked last week. The CFP poll only shows up once the
+// committee starts publishing (early November) and reports 0 points.
 export function getRankings(sport, league) {
   return cached(`rankings:${sport}/${league}`, 30 * MIN, async () => {
     const j = await fetchJson(`${SITE}/${sport}/${league}/rankings`);
     return (j.rankings ?? []).map((p) => ({
       type: p.type,
       name: p.name,
+      week: p.occurrence?.type === 'week' ? p.occurrence.number ?? null : null,
+      label: p.occurrence?.displayValue ?? null,
+      date: p.date ?? null,
+      // Teams outside the top 25 that still received votes (AP / Coaches only).
+      others: (p.others ?? []).map((r) => ({
+        points: r.points ?? 0,
+        id: String(r.team.id),
+        abbr: r.team.abbreviation,
+        short: r.team.location ?? r.team.nickname,
+        logo: r.team.logos?.[0]?.href ?? r.team.logo ?? null,
+        record: r.recordSummary ?? null,
+      })),
       ranks: (p.ranks ?? []).map((r) => ({
         rank: r.current,
+        previous: r.previous ?? 0,
+        points: r.points ?? 0,
+        firstPlaceVotes: r.firstPlaceVotes ?? 0,
+        conf: r.team.groups?.shortName ?? null,
         id: String(r.team.id),
         abbr: r.team.abbreviation,
         name: `${r.team.location} ${r.team.name ?? ''}`.trim(),
@@ -183,12 +201,17 @@ export function getRankings(sport, league) {
   });
 }
 
-// Teams a story is tagged with, as abbreviations. College stories tag each team twice (the second
+// First poll of `wanted` that is published (default: CFP, then AP), else the first poll listed.
+export function pickPoll(polls, wanted = ['cfp', 'ap']) {
+  return wanted.map((w) => polls.find((p) => p.type === w || (w === 'cfp' && /playoff/i.test(p.name)))).find(Boolean) ?? polls[0] ?? null;
+}
+
+// Teams a story is tagged with, as { id, abbr }. College stories tag each team twice (the second
 // time with the school name in the abbreviation field), so keep the first entry per team id.
 function taggedTeams(a) {
   const byId = new Map();
   for (const c of a.categories ?? []) {
-    if (c.type === 'team' && c.team && !byId.has(c.teamId)) byId.set(c.teamId, c.team.abbreviation);
+    if (c.type === 'team' && c.team && !byId.has(c.teamId)) byId.set(c.teamId, { id: String(c.teamId), abbr: c.team.abbreviation });
   }
   return [...byId.values()];
 }

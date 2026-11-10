@@ -2,8 +2,7 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { getTeamSchedule, getScoreboardDays, getNews, getBoxscore, getSoccerGoals, getStandings, getAthlete, getSeasonAverages } from './espn.js';
-import { getZhibo8News } from './zhibo8.js';
+import { getTeamSchedule, getScoreboardDays, getNews, getBoxscore, getSoccerGoals, getStandings, getRankings, pickPoll, getAthlete, getSeasonAverages } from './espn.js';
 import { findHighlights, findRoundup, ROUNDUPS } from './youtube.js';
 import { getQualifiers, getQualifiersAt } from './qualifiers.js';
 import { mapLimit, etDateKey, etLongDate, addDays, dayRange, keyToDate, DAY_MS } from './util.js';
@@ -16,11 +15,12 @@ const SCHEDULE_DAYS = config.schedule?.daysAhead ?? 7;
 const RESULTS_DAYS = config.results?.daysBack ?? 7;
 const HIGHLIGHT_DAYS = config.highlights?.daysBack ?? 7;
 
-const leagueTag = (lg) => ({ id: lg.id, name: lg.name });
+// nameEn: English label for the site's English mode (league names that are already English omit it).
+const leagueTag = (lg) => ({ id: lg.id, name: lg.name, ...(lg.nameEn && { nameEn: lg.nameEn }) });
 const marqueeLeagues = () => config.leagues.filter((lg) => lg.marquee);
 // A league entry may span several ESPN competitions (soccer: leagues + cups + UCL).
 const competitionsOf = (lg) => lg.competitions ?? [{ league: lg.league, name: lg.name }];
-const compTag = (lg, c) => (lg.competitions ? { id: lg.id, name: c.name, comp: c.league } : leagueTag(lg));
+const compTag = (lg, c) => (lg.competitions ? { id: lg.id, name: c.name, nameEn: c.nameEn ?? c.name, comp: c.league } : leagueTag(lg));
 
 // Merge game items from several sources (followed teams, marquee) into one list.
 // item: { lg, event, focusId?, ranks?, tag? }  →  event + { league, focusIds, tags, ranks }
@@ -105,8 +105,8 @@ function dailySnapshot(name, version, cfgKeyOf, build) {
 }
 
 // Bump when a snapshot's shape or window changes so a same-day snapshot gets rebuilt.
-const SCHEDULE_VERSION = 2;
-const NEWS_VERSION = 2;
+const SCHEDULE_VERSION = 3;
+const NEWS_VERSION = 3;
 
 // Starts at yesterday (ET) so a game still in progress after midnight stays in the snapshot.
 async function buildDailySchedule(day) {
@@ -120,7 +120,7 @@ async function buildDailySchedule(day) {
   const qualifiers = [];
   for (const lg of marqueeLeagues()) {
     const q = await getQualifiers(lg).catch(() => null);
-    if (q) qualifiers.push({ league: leagueTag(lg), criteria: q.criteria, weekOf: q.weekOf, fixed: !!q.fixed, teams: q.teams });
+    if (q) qualifiers.push({ league: leagueTag(lg), criteria: q.criteria, criteriaEn: q.criteriaEn, weekOf: q.weekOf, fixed: !!q.fixed, teams: q.teams });
   }
   return {
     partial: errors.length > 0,
@@ -187,15 +187,19 @@ export async function boxscore(leagueId, compCode, event) {
 // rankings) are tagged with most of the league, so stories tagged with more than 3 teams are skipped.
 const NEWS_MAX_TEAMS = 3;
 const NEWS_DAYS = 7;
+// Leagues without followed teams (soccer) list their news teams as news.teams: [{ league, team }],
+// with the ESPN team id.
 async function espnNews(lg, errors) {
   const since = Date.now() - NEWS_DAYS * DAY_MS;
+  const sources = lg.news.teams ?? lg.teams.map((team) => ({ league: lg.league, team }));
+  const about = (t, team) => t.id === team || t.abbr?.toLowerCase() === team.toLowerCase();
   const lists = await Promise.all(
-    lg.teams.map((team) =>
-      getNews(lg.sport, lg.league, team, 50)
+    sources.map(({ league, team }) =>
+      getNews(lg.sport, league, team, 50)
         .then((articles) =>
           articles
             .filter((a) => a.type !== 'Eticket') // sponsored widget
-            .filter((a) => a.teams.length <= NEWS_MAX_TEAMS && a.teams.some((t) => t?.toLowerCase() === team.toLowerCase()))
+            .filter((a) => a.teams.length <= NEWS_MAX_TEAMS && a.teams.some((t) => about(t, team)))
             .filter((a) => new Date(a.published).getTime() >= since)
             .slice(0, lg.news.limit ?? 5)
             .map(({ teams, ...a }) => ({ ...a, team })),
@@ -206,26 +210,13 @@ async function espnNews(lg, errors) {
   return lists.flat();
 }
 
-// news.zhibo8 → Chinese stories from 直播吧 (falls back to ESPN if the feed is unreachable);
-// otherwise ESPN English news for the followed teams.
-async function leagueNews(lg, errors) {
-  const z = lg.news.zhibo8;
-  if (!z) return espnNews(lg, errors);
-  try {
-    return await getZhibo8News(z.type, z.tags, z.perTag ?? 3);
-  } catch (err) {
-    errors.push(`直播吧 ${lg.name}: ${err.message}`);
-    return lg.teams.length ? espnNews(lg, errors) : [];
-  }
-}
-
 const newsLeagues = () => config.leagues.filter((lg) => lg.news);
 
-// Taken once a day (first build after midnight ET), so 直播吧's ranking covers a full 24 hours.
+// Taken once a day (first build after midnight ET).
 async function buildDailyNews() {
   const errors = [];
   const lists = await Promise.all(
-    newsLeagues().map((lg) => leagueNews(lg, errors).then((articles) => articles.map((a) => ({ ...a, league: leagueTag(lg) })))),
+    newsLeagues().map((lg) => espnNews(lg, errors).then((articles) => articles.map((a) => ({ ...a, league: leagueTag(lg) })))),
   );
   const seen = new Set();
   const articles = lists
@@ -305,17 +296,38 @@ async function roundups() {
   }
   const found = await mapLimit(jobs, 3, async ({ lg, type, p }) => {
     const r = await findRoundup(type, p, lg.id, lg.highlights).catch(() => null);
-    return r && { league: leagueTag(lg), type, label: r.label, period: p, video: r.video };
+    return r && { league: leagueTag(lg), type, label: r.label.zh, labelEn: r.label.en, period: p, video: r.video };
   });
   return found.filter(Boolean).sort((a, b) => (b.period.sortDate > a.period.sortDate ? 1 : -1));
 }
 
-// League standings for leagues with `standings` in config (NBA by conference, NFL by division).
+// College poll as a standings table: CFP once the committee publishes, otherwise AP Top 25.
+async function pollStandings(lg) {
+  const poll = pickPoll(await getRankings(lg.sport, lg.league), lg.standings.polls);
+  if (!poll) throw new Error('no poll');
+  const followed = new Set(lg.teams.map((t) => t.toLowerCase()));
+  return {
+    id: lg.id,
+    name: lg.name,
+    kind: 'poll',
+    poll: { type: poll.type, name: poll.name, week: poll.week, label: poll.label, date: poll.date },
+    teams: poll.ranks.map((r) => ({ ...r, followed: followed.has(r.abbr.toLowerCase()) })),
+    // Followed teams just outside the poll, with their vote count.
+    votes: poll.others.filter((r) => followed.has(r.abbr.toLowerCase()) && r.points > 0),
+  };
+}
+
+// League standings for leagues with `standings` in config (NBA by conference, NFL by division,
+// college football by poll).
 export async function standings() {
   const leagues = [];
   for (const lg of config.leagues.filter((l) => l.standings)) {
     const level = lg.standings.level ?? null;
     try {
+      if (lg.standings.polls) {
+        leagues.push(await pollStandings(lg));
+        continue;
+      }
       const rows = await getStandings(lg.sport, lg.league, level);
       const followed = new Set(lg.teams.map((t) => t.toLowerCase()));
       const groups = new Map();

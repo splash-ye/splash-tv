@@ -4,7 +4,7 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { getStandings, getRankings, getTeams } from './espn.js';
+import { getStandings, getRankings, pickPoll, getTeams } from './espn.js';
 import { etDateKey, DAY_MS } from './util.js';
 
 const DATA_DIR = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', 'data');
@@ -13,6 +13,22 @@ const KEEP_WEEKS = 6;
 
 const DIR_ZH = { East: '东区', West: '西区', North: '北区', South: '南区' };
 const divisionZh = (name) => name.replace(/^(AFC|NFC)\s+(East|West|North|South)$/, (_, c, d) => `${c}${DIR_ZH[d]}`);
+const DIR_EN = Object.fromEntries(Object.entries(DIR_ZH).map(([en, zh]) => [zh, en]));
+
+// English criteria / labels for a snapshot. Computed when read (not stored) so snapshots taken
+// before the site had an English mode get them too.
+function withEnglish(lg, snap) {
+  const m = lg.marquee;
+  const pollName = snap.pollName ?? snap.criteria.replace(/ 前 \d+$/, '');
+  const criteriaEn = {
+    leagueTop: () => `League top ${m.topN}`,
+    divisionTop: () => `Top ${m.perDivision} of each division${m.winningRecord ? ' with a winning record' : ''}`,
+    fixedList: () => m.criteriaEn ?? 'Fixed list',
+    poll: () => `Top ${m.topN} in ${pollName}`,
+  }[m.type]();
+  const labelEn = (l) => l?.replace(/^(AFC|NFC)(东区|西区|北区|南区)第(\d+)$/, (_, c, d, n) => `${c} ${DIR_EN[d]} #${n}`) ?? l;
+  return { ...snap, criteriaEn, teams: snap.teams.map((t) => ({ ...t, labelEn: labelEn(t.label) })) };
+}
 
 // Monday (ET) of the week containing `when`, as YYYYMMDD.
 export function weekOf(when = Date.now()) {
@@ -62,13 +78,11 @@ const BUILDERS = {
   },
   // Top N of the first available poll (CFP, then AP) (college).
   async poll(lg, m) {
-    const polls = await getRankings(lg.sport, lg.league);
-    const wanted = m.polls ?? ['cfp', 'ap'];
-    const poll =
-      wanted.map((w) => polls.find((p) => p.type === w || (w === 'cfp' && /playoff/i.test(p.name)))).find(Boolean) ?? polls[0];
+    const poll = pickPoll(await getRankings(lg.sport, lg.league), m.polls);
     if (!poll) return { criteria: `排名前 ${m.topN}`, teams: [] };
     return {
       criteria: `${poll.name} 前 ${m.topN}`,
+      pollName: poll.name,
       teams: poll.ranks.filter((r) => r.rank <= m.topN).map((t) => pick(t, { label: `#${t.rank}` })),
     };
   },
@@ -97,7 +111,7 @@ export async function getQualifiers(lg) {
   const week = weekOf();
   const cfgKey = JSON.stringify(m);
   const hit = s[lg.id]?.weeks?.[week];
-  if (hit && hit.cfgKey === cfgKey) return hit;
+  if (hit && hit.cfgKey === cfgKey) return withEnglish(lg, hit);
 
   if (!inflight.has(lg.id)) {
     inflight.set(
@@ -115,7 +129,7 @@ export async function getQualifiers(lg) {
       })().finally(() => inflight.delete(lg.id)),
     );
   }
-  return inflight.get(lg.id);
+  return withEnglish(lg, await inflight.get(lg.id));
 }
 
 // Qualifiers that were in force when a game was played (falls back to this week's list
@@ -124,5 +138,5 @@ export async function getQualifiersAt(lg, when) {
   const current = await getQualifiers(lg);
   if (!current) return null;
   const snap = store[lg.id]?.weeks?.[weekOf(when)];
-  return snap && snap.cfgKey === current.cfgKey ? snap : current;
+  return snap && snap.cfgKey === current.cfgKey ? withEnglish(lg, snap) : current;
 }
