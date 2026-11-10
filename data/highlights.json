@@ -385,5 +385,19 @@
       }
     ],
     "foundAt": "2026-11-09T06:45:50.423Z"
+  },
+  "roundup:nfl:top15:2026-w9": {
+    "videos": [
+      {
+        "id": "BN_-u78ur0I",
+        "title": "Top 15 Plays of Week 9! | 2026 NFL Season",
+        "channelId": "UCDVYQ4Zhbm3S2dlz7P1GBDg",
+        "url": "https://www.youtube.com/watch?v=BN_-u78ur0I",
+        "thumbnail": "https://i.ytimg.com/vi/BN_-u78ur0I/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-10T04:56:23.202Z"
+      }
+    ],
+    "foundAt": "2026-11-10T05:01:23.202Z"
   }
 }

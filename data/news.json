@@ -1,67 +1,19 @@
 {
   "version": 2,
-  "day": "20261109",
-  "generatedAt": "2026-11-10T02:04:38.354Z",
+  "day": "20261110",
+  "generatedAt": "2026-11-10T05:01:19.995Z",
   "cfgKey": "[[\"nba\",[\"gs\"],{\"limit\":25,\"zhibo8\":{\"type\":\"nba\",\"perTag\":5,\"tags\":[\"勇士\"]}}],[\"nfl\",[\"sf\",\"kc\",\"phi\"],{\"limit\":5}],[\"cfb\",[\"psu\"],{\"limit\":5}],[\"soccer\",[],{\"zhibo8\":{\"type\":\"zuqiu\",\"perTag\":3,\"tags\":[\"巴塞罗那\",\"曼城\"]}}]]",
   "partial": false,
   "articles": [
     {
-      "id": "zb8:6af278b198b8cnative",
+      "id": "zb8:6af2a3eabb43fnative",
       "type": null,
-      "headline": "每体：2005年梅西以来巴萨5人获得金童奖，近6届4人获奖",
+      "headline": "引起某1米83名宿关注！勇士第三节净胜18分 三节打完领先鹈鹕47分",
       "description": "",
-      "published": "2026-11-10T01:58:36.000Z",
-      "byline": "直播吧 · 每日体育报",
-      "image": "https://tu.duoduocdn.com/uploads/day_261109/6af0f282d0913_thumb.jpg",
-      "link": "https://news.zhibo8.com/zuqiu/2026-11-10/6af278b198b8cnative.htm",
-      "premium": false,
-      "tag": "巴塞罗那",
-      "league": {
-        "id": "soccer",
-        "name": "足球"
-      }
-    },
-    {
-      "id": "zb8:6af2761b36b71native",
-      "type": null,
-      "headline": "昔日三冠王门将回家！每体：马西普将重返巴萨担任门将教练",
-      "description": "",
-      "published": "2026-11-10T01:57:01.000Z",
-      "byline": "直播吧 · 每日体育报",
-      "image": "https://tu.duoduocdn.com/uploads/day_190912/5d79386fda581_thumb.jpg",
-      "link": "https://news.zhibo8.com/zuqiu/2026-11-10/6af2761b36b71native.htm",
-      "premium": false,
-      "tag": "巴塞罗那",
-      "league": {
-        "id": "soccer",
-        "name": "足球"
-      }
-    },
-    {
-      "id": "zb8:6af273e2d6c58native",
-      "type": null,
-      "headline": "萨维奥拉：我当然希望梅西能拿下金球奖 亚马尔未来必夺金球",
-      "description": "",
-      "published": "2026-11-10T01:40:05.000Z",
-      "byline": "直播吧 · 马卡报",
-      "image": "https://tu.duoduocdn.com/uploads/day_170926/59c97fdfeb6d8_thumb.png",
-      "link": "https://news.zhibo8.com/zuqiu/2026-11-10/6af273e2d6c58native.htm",
-      "premium": false,
-      "tag": "巴塞罗那",
-      "league": {
-        "id": "soccer",
-        "name": "足球"
-      }
-    },
-    {
-      "id": "zb8:6af2726e3a6e8native",
-      "type": null,
-      "headline": "38岁库里场均29.5分钟轰31.3分！科尔：没法解释 独一无二的存在",
-      "description": "",
-      "published": "2026-11-10T01:28:52.000Z",
-      "byline": "直播吧 · Twitter",
-      "image": "https://tu.duoduocdn.com/uploads/day_261017/6ad3031cbf279_thumb.jpg",
-      "link": "https://news.zhibo8.com/nba/2026-11-10/6af2726e3a6e8native.htm",
+      "published": "2026-11-10T04:59:43.000Z",
+      "byline": "直播吧",
+      "image": "https://tu.duoduocdn.com/uploads/day_261104/6aea8910c19da_thumb.jpg",
+      "link": "https://news.zhibo8.com/nba/2026-11-10/6af2a3eabb43fnative.htm",
       "premium": false,
       "tag": "勇士",
       "league": {
@@ -70,19 +22,163 @@
       }
     },
     {
-      "id": "zb8:6af2711ce384anative",
+      "id": "zb8:6af2a1533b9d2native",
       "type": null,
-      "headline": "科尔：理查德需要几天时间消肿 之后将决定手术或者带伤出战",
+      "headline": "要下班了！库里第三节16分！再被放空三分轰进&鹈鹕喊停！",
       "description": "",
-      "published": "2026-11-10T01:24:29.000Z",
-      "byline": "直播吧 · Twitter",
-      "image": "https://tu.duoduocdn.com/uploads/day_261003/6ac0b950d3648_thumb.jpg",
-      "link": "https://news.zhibo8.com/nba/2026-11-10/6af2711ce384anative.htm",
+      "published": "2026-11-10T04:46:15.000Z",
+      "byline": "直播吧",
+      "image": "https://tu.duoduocdn.com/uploads/day_261110/202611101245278897_thumb.jpg",
+      "link": "https://news.zhibo8.com/nba/2026-11-10/6af2a1533b9d2native.htm",
       "premium": false,
       "tag": "勇士",
       "league": {
         "id": "nba",
         "name": "NBA"
+      }
+    },
+    {
+      "id": "zb8:6af29cd84f572native",
+      "type": null,
+      "headline": "巴埃纳谈小蜘蛛：理解巴萨皇马邀约会让人动摇 他已向全队道了歉",
+      "description": "",
+      "published": "2026-11-10T04:40:12.000Z",
+      "byline": "直播吧",
+      "image": "https://tu.duoduocdn.com/uploads/day_261110/202611101235561691_thumb.jpg",
+      "link": "https://news.zhibo8.com/zuqiu/2026-11-10/6af29cd84f572native.htm",
+      "premium": false,
+      "tag": "巴塞罗那",
+      "league": {
+        "id": "soccer",
+        "name": "足球"
+      }
+    },
+    {
+      "id": "zb8:6af29f407fad4native",
+      "type": null,
+      "headline": "科尔你害怕不？😂巴特勒扮演教练 战术是“传给库里”",
+      "description": "",
+      "published": "2026-11-10T04:37:33.000Z",
+      "byline": "直播吧",
+      "image": "https://tu.duoduocdn.com/uploads/day_261110/202611101243437156_thumb.jpg",
+      "link": "https://news.zhibo8.com/nba/2026-11-10/6af29f407fad4native.htm",
+      "premium": false,
+      "tag": "勇士",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      }
+    },
+    {
+      "id": "zb8:6af29e27acc77native",
+      "type": null,
+      "headline": "09双雄！👨‍🍳库里生涯得分超越德罗赞 升至历史第16！",
+      "description": "",
+      "published": "2026-11-10T04:32:57.000Z",
+      "byline": "直播吧",
+      "image": "https://tu.duoduocdn.com/uploads/day_260123/69737a9df07b7_thumb.jpg",
+      "link": "https://news.zhibo8.com/nba/2026-11-10/6af29e27acc77native.htm",
+      "premium": false,
+      "tag": "勇士",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      }
+    },
+    {
+      "id": "zb8:6af296244dc9fnative",
+      "type": null,
+      "headline": "去年3600万镑买进！曼晚：艾特-努里彻底失去机会，他很适合曼联",
+      "description": "",
+      "published": "2026-11-10T04:11:28.000Z",
+      "byline": "直播吧 · 曼彻斯特晚报",
+      "image": "https://tu.duoduocdn.com/uploads/day_250913/68c51a79e5fa5_thumb.jpg",
+      "link": "https://news.zhibo8.com/zuqiu/2026-11-10/6af296244dc9fnative.htm",
+      "premium": false,
+      "tag": "曼城",
+      "league": {
+        "id": "soccer",
+        "name": "足球"
+      }
+    },
+    {
+      "id": "zb8:6af295e341af9native",
+      "type": null,
+      "headline": "杰拉德：19岁的亚马尔比同龄梅罗更成熟，他有潜力达到两人的高度",
+      "description": "",
+      "published": "2026-11-10T03:59:36.000Z",
+      "byline": "直播吧 · YouTube",
+      "image": "https://tu.duoduocdn.com/uploads/day_261110/202611101158543771_thumb.jpg",
+      "link": "https://news.zhibo8.com/zuqiu/2026-11-10/6af295e341af9native.htm",
+      "premium": false,
+      "tag": "巴塞罗那",
+      "league": {
+        "id": "soccer",
+        "name": "足球"
+      }
+    },
+    {
+      "id": "zb8:6af295ff97639native",
+      "type": null,
+      "headline": "不经打！鹈鹕落后32分再次喊停 上半场喊了5个暂停！还剩俩",
+      "description": "",
+      "published": "2026-11-10T03:58:28.000Z",
+      "byline": "直播吧",
+      "image": "https://tu.duoduocdn.com/uploads/day_261110/202611101156595137_thumb.jpg",
+      "link": "https://news.zhibo8.com/nba/2026-11-10/6af295ff97639native.htm",
+      "premium": false,
+      "tag": "勇士",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      }
+    },
+    {
+      "id": "zb8:6af28887ddc06native",
+      "type": null,
+      "headline": "多纳鲁马周一缺席意大利国家队训练，记者：因航班延误未按时抵达",
+      "description": "",
+      "published": "2026-11-10T03:06:46.000Z",
+      "byline": "直播吧 · 迪马济奥官网",
+      "image": "https://tu.duoduocdn.com/uploads/day_210709/60e8196275984_thumb.jpg",
+      "link": "https://news.zhibo8.com/zuqiu/2026-11-10/6af28887ddc06native.htm",
+      "premium": false,
+      "tag": "曼城",
+      "league": {
+        "id": "soccer",
+        "name": "足球"
+      }
+    },
+    {
+      "id": "50438189",
+      "type": "Media",
+      "headline": "Will the Niners make a trade?",
+      "description": "Nick Wagoner reports on potential moves the 49ers could make before the trade deadline.",
+      "published": "2026-11-10T02:30:45Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1109/dm_261109_Will_the_Niners_make_a_trade/dm_261109_Will_the_Niners_make_a_trade.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50438189/will-niners-make-trade",
+      "premium": false,
+      "team": "sf",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "zb8:6af274a322217native",
+      "type": null,
+      "headline": "每体：本赛季费尔明每90分钟参与1.39球，身价1.1亿欧队内第三",
+      "description": "",
+      "published": "2026-11-10T01:45:53.000Z",
+      "byline": "直播吧 · 每日体育报",
+      "image": "https://tu.duoduocdn.com/uploads/day_261014/6acea26311adc_thumb.jpg",
+      "link": "https://news.zhibo8.com/zuqiu/2026-11-10/6af274a322217native.htm",
+      "premium": false,
+      "tag": "巴塞罗那",
+      "league": {
+        "id": "soccer",
+        "name": "足球"
       }
     },
     {
@@ -102,22 +198,6 @@
       }
     },
     {
-      "id": "zb8:6af26745dd5a6native",
-      "type": null,
-      "headline": "名记：勇士无意交易巴特勒 对他在交易截止日前复出表示乐观",
-      "description": "",
-      "published": "2026-11-10T00:45:24.000Z",
-      "byline": "直播吧 · ClutchPoints",
-      "image": "https://tu.duoduocdn.com/uploads/day_261017/6ad3032116f17_thumb.jpg",
-      "link": "https://news.zhibo8.com/nba/2026-11-10/6af26745dd5a6native.htm",
-      "premium": false,
-      "tag": "勇士",
-      "league": {
-        "id": "nba",
-        "name": "NBA"
-      }
-    },
-    {
       "id": "50432490",
       "type": "Story",
       "headline": "Are Jaguars all-in after trades for Bates, Davis? Plus Eagles, Falcons reaction",
@@ -131,22 +211,6 @@
       "league": {
         "id": "nfl",
         "name": "NFL"
-      }
-    },
-    {
-      "id": "zb8:6af2644a3e8afnative",
-      "type": null,
-      "headline": "过去2场15中1！名记：雄鹿愿用特纳换波津还想要选秀权 勇士否决",
-      "description": "",
-      "published": "2026-11-10T00:34:08.000Z",
-      "byline": "直播吧 · ClutchPoints",
-      "image": "https://tu.duoduocdn.com/uploads/day_261110/202611100833316342_thumb.jpg",
-      "link": "https://news.zhibo8.com/nba/2026-11-10/6af2644a3e8afnative.htm",
-      "premium": false,
-      "tag": "勇士",
-      "league": {
-        "id": "nba",
-        "name": "NBA"
       }
     },
     {
@@ -214,22 +278,6 @@
       }
     },
     {
-      "id": "zb8:6af2475a806danative",
-      "type": null,
-      "headline": "名记：勇士曾想着再交易来一名球星 伦德博格直接改变了球队预期",
-      "description": "",
-      "published": "2026-11-09T22:25:00.000Z",
-      "byline": "直播吧 · YouTube",
-      "image": "https://tu.duoduocdn.com/uploads/day_261028/6ae0d6d09a6a1_thumb.jpg",
-      "link": "https://news.zhibo8.com/nba/2026-11-10/6af2475a806danative.htm",
-      "premium": false,
-      "tag": "勇士",
-      "league": {
-        "id": "nba",
-        "name": "NBA"
-      }
-    },
-    {
       "id": "50435727",
       "type": "Media",
       "headline": "Dan Orlovsky stunned by Jags' trade for Eagles' Jordan Davis",
@@ -262,22 +310,6 @@
       }
     },
     {
-      "id": "zb8:6af229ec9242cnative",
-      "type": null,
-      "headline": "哈兰德荣膺《都灵体育报》“金男足奖”，职业生涯第二次获奖",
-      "description": "",
-      "published": "2026-11-09T20:24:52.000Z",
-      "byline": "直播吧",
-      "image": "https://tu.duoduocdn.com/uploads/news/day_261110/202611100424098410_thumb.jpg",
-      "link": "https://news.zhibo8.com/zuqiu/2026-11-10/6af229ec9242cnative.htm",
-      "premium": false,
-      "tag": "曼城",
-      "league": {
-        "id": "soccer",
-        "name": "足球"
-      }
-    },
-    {
       "id": "50434564",
       "type": "HeadlineNews",
       "headline": "Chiefs QB Patrick Mahomes day-to-day with elbow injury",
@@ -291,38 +323,6 @@
       "league": {
         "id": "nfl",
         "name": "NFL"
-      }
-    },
-    {
-      "id": "50427438",
-      "type": "Recap",
-      "headline": "49ers capitalize on 5 2nd-half takeaways to cruise past Raiders 38-17",
-      "description": "— Jaden Dugger set the tone for the second half when he returned an interception from Kirk Cousins on the first play for a touchdown.",
-      "published": "2026-11-09T16:24:34Z",
-      "byline": null,
-      "image": "https://s.espncdn.com/stitcher/sports/football/nfl/events/401873047.png?templateId=espn.applewatch.awayhome.1",
-      "link": "http://www.espn.com/nfl/recap?gameId=401873047",
-      "premium": false,
-      "team": "sf",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "zb8:6af1b99047cb0native",
-      "type": null,
-      "headline": "内维尔：曼城有些不对劲，明显受指控影响，球员已身心俱疲？",
-      "description": "",
-      "published": "2026-11-09T12:22:25.000Z",
-      "byline": "直播吧 · 天空体育",
-      "image": "https://tu.duoduocdn.com/uploads/day_261109/6af1ba814d55a_thumb.jpg",
-      "link": "https://news.zhibo8.com/zuqiu/2026-11-09/6af1b99047cb0native.htm",
-      "premium": false,
-      "tag": "曼城",
-      "league": {
-        "id": "soccer",
-        "name": "足球"
       }
     },
     {
