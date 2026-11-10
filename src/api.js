@@ -3,6 +3,7 @@ import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { getTeamSchedule, getScoreboardDays, getNews, getBoxscore, getSoccerGoals, getStandings } from './espn.js';
+import { getZhibo8News } from './zhibo8.js';
 import { findHighlights, findRoundup, ROUNDUPS } from './youtube.js';
 import { getQualifiers, getQualifiersAt } from './qualifiers.js';
 import { mapLimit, etDateKey, etLongDate, addDays, dayRange, keyToDate, DAY_MS } from './util.js';
@@ -178,21 +179,42 @@ export async function boxscore(leagueId, compCode, event) {
   return getBoxscore(lg.sport, lg.league, event);
 }
 
-export async function news() {
-  const jobs = config.leagues.filter((lg) => lg.news).flatMap((lg) => lg.teams.map((team) => ({ lg, team })));
+// ESPN English news for each followed team of a league.
+async function espnNews(lg) {
   const lists = await Promise.all(
-    jobs.map(({ lg, team }) =>
+    lg.teams.map((team) =>
       getNews(lg.sport, lg.league, team, lg.news.limit ?? 25)
-        .then((articles) => articles.map((a) => ({ ...a, league: leagueTag(lg), team })))
+        .then((articles) => articles.filter((a) => a.type !== 'Eticket').map((a) => ({ ...a, team }))) // Eticket = sponsored widget
         .catch(() => []),
     ),
+  );
+  return lists.flat();
+}
+
+// news.zhibo8 → Chinese stories from 直播吧 (falls back to ESPN if the feed is unreachable);
+// otherwise ESPN English news for the followed teams.
+async function leagueNews(lg) {
+  const z = lg.news.zhibo8;
+  if (!z) return espnNews(lg);
+  try {
+    return await getZhibo8News(z.type, z.tags, z.perTag ?? 3);
+  } catch (err) {
+    console.warn(`[news] zhibo8 ${lg.id}: ${err.message}`);
+    return lg.teams.length ? espnNews(lg) : [];
+  }
+}
+
+export async function news() {
+  const leagues = config.leagues.filter((lg) => lg.news);
+  const lists = await Promise.all(
+    leagues.map((lg) => leagueNews(lg).then((articles) => articles.map((a) => ({ ...a, league: leagueTag(lg) })))),
   );
   const seen = new Set();
   const articles = lists
     .flat()
     .filter((a) => !seen.has(a.id) && seen.add(a.id))
     .sort((a, b) => new Date(b.published) - new Date(a.published));
-  return { enabled: jobs.length > 0, articles };
+  return { enabled: leagues.length > 0, articles };
 }
 
 // Highlight config for one game: soccer competitions carry their own broadcaster channels.

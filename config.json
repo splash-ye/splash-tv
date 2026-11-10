@@ -23,7 +23,14 @@
         "topN": 8
       },
       "news": {
-        "limit": 25
+        "limit": 25,
+        "zhibo8": {
+          "type": "nba",
+          "perTag": 8,
+          "tags": [
+            "勇士"
+          ]
+        }
       },
       "highlights": {
         "matcher": "nba",
@@ -57,6 +64,9 @@
         "perDivision": 2,
         "winningRecord": true
       },
+      "news": {
+        "limit": 5
+      },
       "highlights": {
         "matcher": "nfl",
         "channels": [
@@ -86,6 +96,9 @@
           "cfp",
           "ap"
         ]
+      },
+      "news": {
+        "limit": 5
       },
       "highlights": {
         "matcher": "cfb",
@@ -157,6 +170,23 @@
           "ger.1",
           "fra.1"
         ]
+      },
+      "news": {
+        "zhibo8": {
+          "type": "zuqiu",
+          "perTag": 2,
+          "tags": [
+            "曼城",
+            "阿森纳",
+            "利物浦",
+            "切尔西",
+            "皇家马德里",
+            "巴塞罗那",
+            "马德里竞技",
+            "拜仁慕尼黑",
+            "巴黎圣日耳曼"
+          ]
+        }
       },
       "highlights": {
         "matcher": "soccer",

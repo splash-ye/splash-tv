@@ -377,8 +377,8 @@ async function renderNews() {
       <a href="${esc(a.link)}" target="_blank" rel="noopener">${a.image ? `<img src="${esc(a.image)}" alt="" loading="lazy" />` : '<div class="noimg"></div>'}</a>
       <div>
         <a href="${esc(a.link)}" target="_blank" rel="noopener"><h4>${esc(a.headline)}</h4></a>
-        <p>${esc(a.description)}</p>
-        <div class="nmeta">${badge(a.league)}<span class="badge ${esc(a.type)}">${esc(NEWS_TYPE[a.type] ?? a.type)}</span>${esc(timeAgo(a.published))}${a.byline ? ` · ${esc(a.byline)}` : ''}</div>
+        ${a.description ? `<p>${esc(a.description)}</p>` : ''}
+        <div class="nmeta">${badge(a.league)}${a.type ? `<span class="badge ${esc(a.type)}">${esc(NEWS_TYPE[a.type] ?? a.type)}</span>` : ''}${esc(timeAgo(a.published))}${a.byline ? ` · ${esc(a.byline)}` : ''}</div>
       </div></div>`;
     const PAGE = 8;
     let shown = PAGE;
