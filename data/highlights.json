@@ -399,5 +399,20 @@
       }
     ],
     "foundAt": "2026-11-10T05:01:23.202Z"
+  },
+  "nba:401909959": {
+    "videos": [
+      {
+        "id": "HUaf_y2R-Jw",
+        "title": "PELICANS at WARRIORS | FULL GAME HIGHLIGHTS | November 9, 2026",
+        "channelId": "UCWJ2lWNubArHWmf3FIHbfcQ",
+        "url": "https://www.youtube.com/watch?v=HUaf_y2R-Jw",
+        "thumbnail": "https://i.ytimg.com/vi/HUaf_y2R-Jw/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-10T05:36:20.193Z"
+      }
+    ],
+    "source": "channel-search",
+    "foundAt": "2026-11-10T06:01:20.194Z"
   }
 }
