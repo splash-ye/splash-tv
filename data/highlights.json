@@ -428,5 +428,19 @@
       }
     ],
     "foundAt": "2026-11-10T06:15:49.020Z"
+  },
+  "roundup:nba:nightly:20261109": {
+    "videos": [
+      {
+        "id": "ETVUBCD7-Bk",
+        "title": "NBA's Nightly Recap | November 9, 2026",
+        "channelId": "UCWJ2lWNubArHWmf3FIHbfcQ",
+        "url": "https://www.youtube.com/watch?v=ETVUBCD7-Bk",
+        "thumbnail": "https://i.ytimg.com/vi/ETVUBCD7-Bk/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-10T07:39:51.048Z"
+      }
+    ],
+    "foundAt": "2026-11-10T07:45:51.049Z"
   }
 }
