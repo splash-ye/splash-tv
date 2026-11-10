@@ -1,7 +1,8 @@
 {
+  "version": 2,
   "day": "20261109",
-  "generatedAt": "2026-11-09T05:22:51.220Z",
-  "cfgKey": "[{\"id\":\"nba\",\"name\":\"NBA\",\"sport\":\"basketball\",\"league\":\"nba\",\"teams\":[\"gs\"],\"marquee\":{\"type\":\"leagueTop\",\"topN\":8},\"news\":{\"limit\":25},\"highlights\":{\"matcher\":\"nba\",\"channels\":[\"UCWJ2lWNubArHWmf3FIHbfcQ\"],\"roundups\":[\"nightly\",\"topPlays\"]},\"standings\":{\"groupOrder\":[\"Western Conference\",\"Eastern Conference\"]}},{\"id\":\"nfl\",\"name\":\"NFL\",\"sport\":\"football\",\"league\":\"nfl\",\"teams\":[\"sf\",\"kc\",\"phi\"],\"marquee\":{\"type\":\"divisionTop\",\"perDivision\":2,\"winningRecord\":true},\"highlights\":{\"matcher\":\"nfl\",\"channels\":[\"UCDVYQ4Zhbm3S2dlz7P1GBDg\"],\"roundups\":[\"top15\"]},\"standings\":{\"level\":3}},{\"id\":\"cfb\",\"name\":\"NCAAF\",\"sport\":\"football\",\"league\":\"college-football\",\"teams\":[\"psu\"],\"scoreboardParams\":\"groups=80&limit=300\",\"marquee\":{\"type\":\"poll\",\"topN\":15,\"polls\":[\"cfp\",\"ap\"]},\"highlights\":{\"matcher\":\"cfb\",\"channels\":[\"UCXnslB_TwYqScBRf4bPf3vA\",\"UCpwix-O6ceqMgdxhqIynzFA\"]}},{\"id\":\"soccer\",\"name\":\"足球\",\"sport\":\"soccer\",\"teams\":[],\"competitions\":[{\"league\":\"eng.1\",\"name\":\"英超\",\"channels\":[\"UCqZQlzSHbVJrwrn5XvzrzcA\"]},{\"league\":\"esp.1\",\"name\":\"西甲\",\"channels\":[\"UC6c1z7bA__85CIWZ_jpCK-Q\",\"UCTv-XvfzLX3i4IGWAm4sbmA\"]},{\"league\":\"uefa.champions\",\"name\":\"欧冠\",\"channels\":[\"UCET00YnetHT7tOpu12v8jxg\"]},{\"league\":\"eng.fa\",\"name\":\"足总杯\",\"channels\":[\"UC6c1z7bA__85CIWZ_jpCK-Q\"]},{\"league\":\"esp.copa_del_rey\",\"name\":\"国王杯\",\"channels\":[\"UC6c1z7bA__85CIWZ_jpCK-Q\"]}],\"marquee\":{\"type\":\"fixedList\",\"criteria\":\"豪门对决\",\"clubs\":[\"382\",\"359\",\"364\",\"363\",\"86\",\"83\",\"1068\",\"132\",\"160\"],\"clubNames\":\"曼城 阿森纳 利物浦 切尔西 皇马 巴萨 马竞 拜仁 巴黎圣日耳曼\",\"lookupLeagues\":[\"ger.1\",\"fra.1\"]},\"highlights\":{\"matcher\":\"soccer\",\"marquee\":true,\"aliases\":{\"83\":[\"Barcelona\",\"Barca\",\"FC Barcelona\"],\"86\":[\"Real Madrid\"],\"132\":[\"Bayern Munich\",\"Bayern Munchen\",\"FC Bayern\",\"Bayern\"],\"160\":[\"Paris Saint-Germain\",\"Paris Saint Germain\",\"PSG\",\"Paris\"],\"359\":[\"Arsenal\"],\"363\":[\"Chelsea\"],\"364\":[\"Liverpool\"],\"382\":[\"Man City\",\"Manchester City\"],\"1068\":[\"Atletico Madrid\",\"Atletico de Madrid\",\"Atletico\",\"Atleti\"]}}}]",
+  "generatedAt": "2026-11-10T01:53:01.963Z",
+  "cfgKey": "[{\"id\":\"nba\",\"name\":\"NBA\",\"sport\":\"basketball\",\"league\":\"nba\",\"teams\":[\"gs\"],\"marquee\":{\"type\":\"leagueTop\",\"topN\":8},\"news\":{\"limit\":25,\"zhibo8\":{\"type\":\"nba\",\"perTag\":8,\"tags\":[\"勇士\"]}},\"highlights\":{\"matcher\":\"nba\",\"channels\":[\"UCWJ2lWNubArHWmf3FIHbfcQ\"],\"roundups\":[\"nightly\",\"topPlays\"]},\"standings\":{\"groupOrder\":[\"Western Conference\",\"Eastern Conference\"]}},{\"id\":\"nfl\",\"name\":\"NFL\",\"sport\":\"football\",\"league\":\"nfl\",\"teams\":[\"sf\",\"kc\",\"phi\"],\"marquee\":{\"type\":\"divisionTop\",\"perDivision\":2,\"winningRecord\":true},\"news\":{\"limit\":5},\"highlights\":{\"matcher\":\"nfl\",\"channels\":[\"UCDVYQ4Zhbm3S2dlz7P1GBDg\"],\"roundups\":[\"top15\"]},\"standings\":{\"level\":3}},{\"id\":\"cfb\",\"name\":\"NCAAF\",\"sport\":\"football\",\"league\":\"college-football\",\"teams\":[\"psu\"],\"scoreboardParams\":\"groups=80&limit=300\",\"marquee\":{\"type\":\"poll\",\"topN\":15,\"polls\":[\"cfp\",\"ap\"]},\"news\":{\"limit\":5},\"highlights\":{\"matcher\":\"cfb\",\"channels\":[\"UCXnslB_TwYqScBRf4bPf3vA\",\"UCpwix-O6ceqMgdxhqIynzFA\"]}},{\"id\":\"soccer\",\"name\":\"足球\",\"sport\":\"soccer\",\"teams\":[],\"competitions\":[{\"league\":\"eng.1\",\"name\":\"英超\",\"channels\":[\"UCqZQlzSHbVJrwrn5XvzrzcA\"]},{\"league\":\"esp.1\",\"name\":\"西甲\",\"channels\":[\"UC6c1z7bA__85CIWZ_jpCK-Q\",\"UCTv-XvfzLX3i4IGWAm4sbmA\"]},{\"league\":\"uefa.champions\",\"name\":\"欧冠\",\"channels\":[\"UCET00YnetHT7tOpu12v8jxg\"]},{\"league\":\"eng.fa\",\"name\":\"足总杯\",\"channels\":[\"UC6c1z7bA__85CIWZ_jpCK-Q\"]},{\"league\":\"esp.copa_del_rey\",\"name\":\"国王杯\",\"channels\":[\"UC6c1z7bA__85CIWZ_jpCK-Q\"]}],\"marquee\":{\"type\":\"fixedList\",\"criteria\":\"豪门对决\",\"clubs\":[\"382\",\"359\",\"364\",\"363\",\"86\",\"83\",\"1068\",\"132\",\"160\"],\"clubNames\":\"曼城 阿森纳 利物浦 切尔西 皇马 巴萨 马竞 拜仁 巴黎圣日耳曼\",\"lookupLeagues\":[\"ger.1\",\"fra.1\"]},\"news\":{\"zhibo8\":{\"type\":\"zuqiu\",\"perTag\":2,\"tags\":[\"曼城\",\"阿森纳\",\"利物浦\",\"切尔西\",\"皇家马德里\",\"巴塞罗那\",\"马德里竞技\",\"拜仁慕尼黑\",\"巴黎圣日耳曼\"]}},\"highlights\":{\"matcher\":\"soccer\",\"marquee\":true,\"aliases\":{\"83\":[\"Barcelona\",\"Barca\",\"FC Barcelona\"],\"86\":[\"Real Madrid\"],\"132\":[\"Bayern Munich\",\"Bayern Munchen\",\"FC Bayern\",\"Bayern\"],\"160\":[\"Paris Saint-Germain\",\"Paris Saint Germain\",\"PSG\",\"Paris\"],\"359\":[\"Arsenal\"],\"363\":[\"Chelsea\"],\"364\":[\"Liverpool\"],\"382\":[\"Man City\",\"Manchester City\"],\"1068\":[\"Atletico Madrid\",\"Atletico de Madrid\",\"Atletico\",\"Atleti\"]}}}]",
   "partial": false,
   "daysAhead": 7,
   "teams": [
@@ -506,6 +507,241 @@
   ],
   "games": [
     {
+      "id": "401873045",
+      "date": "2026-11-08T18:00Z",
+      "timeValid": true,
+      "name": "New York Jets at Kansas City Chiefs",
+      "shortName": "NYJ @ KC",
+      "seasonYear": 2026,
+      "seasonTypeId": 2,
+      "week": 9,
+      "note": null,
+      "status": {
+        "state": "post",
+        "completed": true,
+        "detail": "Final"
+      },
+      "home": {
+        "side": "home",
+        "id": "12",
+        "abbr": "KC",
+        "name": "Kansas City Chiefs",
+        "short": "Chiefs",
+        "location": "Kansas City",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
+        "score": "35",
+        "winner": true,
+        "record": "6-2",
+        "rank": null
+      },
+      "away": {
+        "side": "away",
+        "id": "20",
+        "abbr": "NYJ",
+        "name": "New York Jets",
+        "short": "Jets",
+        "location": "New York",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/nyj.png",
+        "score": "12",
+        "winner": false,
+        "record": "2-7",
+        "rank": null
+      },
+      "venue": "Arrowhead Stadium",
+      "broadcasts": [
+        "CBS"
+      ],
+      "link": "https://www.espn.com/nfl/game/_/gameId/401873045/jets-chiefs",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      },
+      "focusIds": [
+        "12"
+      ],
+      "tags": [
+        "follow"
+      ],
+      "ranks": null
+    },
+    {
+      "id": "401873044",
+      "date": "2026-11-08T18:00Z",
+      "timeValid": true,
+      "name": "New York Giants at Philadelphia Eagles",
+      "shortName": "NYG @ PHI",
+      "seasonYear": 2026,
+      "seasonTypeId": 2,
+      "week": 9,
+      "note": null,
+      "status": {
+        "state": "post",
+        "completed": true,
+        "detail": "Final"
+      },
+      "home": {
+        "side": "home",
+        "id": "21",
+        "abbr": "PHI",
+        "name": "Philadelphia Eagles",
+        "short": "Eagles",
+        "location": "Philadelphia",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/phi.png",
+        "score": "11",
+        "winner": false,
+        "record": "2-7",
+        "rank": null
+      },
+      "away": {
+        "side": "away",
+        "id": "19",
+        "abbr": "NYG",
+        "name": "New York Giants",
+        "short": "Giants",
+        "location": "New York",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/nyg.png",
+        "score": "19",
+        "winner": true,
+        "record": "5-2-1",
+        "rank": null
+      },
+      "venue": "Lincoln Financial Field",
+      "broadcasts": [
+        "Fox"
+      ],
+      "link": "https://www.espn.com/nfl/game/_/gameId/401873044/giants-eagles",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      },
+      "focusIds": [
+        "21"
+      ],
+      "tags": [
+        "follow"
+      ],
+      "ranks": null
+    },
+    {
+      "id": "401882816",
+      "date": "2026-11-08T20:00Z",
+      "timeValid": true,
+      "name": "Barcelona at Atlético Madrid",
+      "shortName": "BAR @ ATM",
+      "seasonYear": 2026,
+      "seasonTypeId": 14357,
+      "week": null,
+      "note": null,
+      "status": {
+        "state": "post",
+        "completed": true,
+        "detail": "FT"
+      },
+      "home": {
+        "side": "home",
+        "id": "1068",
+        "abbr": "ATM",
+        "name": "Atlético Madrid",
+        "short": "Atlético",
+        "location": "Atlético Madrid",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png",
+        "score": "1",
+        "winner": false,
+        "record": "9-1-2",
+        "rank": null
+      },
+      "away": {
+        "side": "away",
+        "id": "83",
+        "abbr": "BAR",
+        "name": "Barcelona",
+        "short": "Barcelona",
+        "location": "Barcelona",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png",
+        "score": "2",
+        "winner": true,
+        "record": "11-0-1",
+        "rank": null
+      },
+      "venue": "Riyadh Air Metropolitano",
+      "broadcasts": [
+        "ESPN Deportes",
+        "ESPN+"
+      ],
+      "link": "https://www.espn.com/soccer/match/_/gameId/401882816/barcelona-atletico-madrid",
+      "league": {
+        "id": "soccer",
+        "name": "西甲",
+        "comp": "esp.1"
+      },
+      "focusIds": [],
+      "tags": [
+        "marquee"
+      ],
+      "ranks": {
+        "home": "",
+        "away": ""
+      }
+    },
+    {
+      "id": "401873047",
+      "date": "2026-11-08T21:25Z",
+      "timeValid": true,
+      "name": "Las Vegas Raiders at San Francisco 49ers",
+      "shortName": "LV @ SF",
+      "seasonYear": 2026,
+      "seasonTypeId": 2,
+      "week": 9,
+      "note": null,
+      "status": {
+        "state": "post",
+        "completed": true,
+        "detail": "Final"
+      },
+      "home": {
+        "side": "home",
+        "id": "25",
+        "abbr": "SF",
+        "name": "San Francisco 49ers",
+        "short": "49ers",
+        "location": "San Francisco",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/sf.png",
+        "score": "38",
+        "winner": true,
+        "record": "7-1",
+        "rank": null
+      },
+      "away": {
+        "side": "away",
+        "id": "13",
+        "abbr": "LV",
+        "name": "Las Vegas Raiders",
+        "short": "Raiders",
+        "location": "Las Vegas",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/lv.png",
+        "score": "17",
+        "winner": false,
+        "record": "4-5",
+        "rank": null
+      },
+      "venue": "Levi's Stadium",
+      "broadcasts": [
+        "Fox"
+      ],
+      "link": "https://www.espn.com/nfl/game/_/gameId/401873047/raiders-49ers",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      },
+      "focusIds": [
+        "25"
+      ],
+      "tags": [
+        "follow"
+      ],
+      "ranks": null
+    },
+    {
       "id": "401873051",
       "date": "2026-11-10T01:15Z",
       "timeValid": true,
@@ -516,9 +752,9 @@
       "week": 9,
       "note": null,
       "status": {
-        "state": "pre",
+        "state": "in",
         "completed": false,
-        "detail": "11/9 - 8:15 PM EST"
+        "detail": "1:13 - 1st"
       },
       "home": {
         "side": "home",
@@ -541,7 +777,7 @@
         "short": "Bills",
         "location": "Buffalo",
         "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png",
-        "score": "0",
+        "score": "3",
         "winner": null,
         "record": "6-1",
         "rank": null
@@ -551,7 +787,7 @@
         "ESPN",
         "ABC"
       ],
-      "link": "https://www.espn.com/nfl/game/_/gameId/401873051/bills-vikings",
+      "link": "https://www.espn.com/nfl/game?gameId=401873051",
       "league": {
         "id": "nfl",
         "name": "NFL"
