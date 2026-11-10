@@ -308,3 +308,25 @@ table.stand { width: 100%; border-collapse: collapse; font-size: 13px; font-vari
 @media (max-width: 560px) {
   .stand .opt { display: none; }
 }
+
+/* ---------- followed players (留洋) ---------- */
+.lg-ncaam { background: #0b6e4f; }
+.pl-card { padding: 12px 0; border-top: 1px solid var(--line); }
+.pl-list .pl-card:first-child { border-top: 0; padding-top: 2px; }
+.pl-head { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+.pl-shot { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; background: var(--chip); flex: none; }
+.pl-name { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 6px; }
+.pl-name b { font-size: 15px; }
+.pl-name .lg { margin-right: 0; }
+.pl-team { color: var(--muted); font-size: 12px; display: inline-flex; align-items: center; gap: 4px; }
+.pl-team img { width: 16px; height: 16px; }
+.pl-avg { color: var(--muted); font-size: 12px; margin-top: 2px; }
+.pl-avg b { color: var(--text); font-variant-numeric: tabular-nums; }
+.pl-games .opp { text-align: left; }
+.pl-games td.opp img { width: 16px; height: 16px; vertical-align: -3px; margin-right: 4px; }
+.pl-games td.opp .at { color: var(--muted); font-size: 11px; margin-right: 4px; }
+.pl-games td .res { font-weight: 700; }
+.pl-games td.pts { font-weight: 700; }
+.pl-games td.dnp-cell { text-align: left; color: var(--muted); }
+.pl-games tr.link { cursor: pointer; }
+.pl-games tr.link:hover td { background: var(--chip); }

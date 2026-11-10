@@ -9,6 +9,51 @@
   "highlights": {
     "daysBack": 3
   },
+  "players": {
+    "games": 3,
+    "list": [
+      {
+        "id": "5217746",
+        "name": "杨瀚森",
+        "sport": "basketball",
+        "league": "nba",
+        "tag": "NBA",
+        "team": "开拓者"
+      },
+      {
+        "id": "5329577",
+        "name": "张博源",
+        "sport": "basketball",
+        "league": "mens-college-basketball",
+        "tag": "NCAA",
+        "team": "路易斯维尔"
+      },
+      {
+        "id": "5210402",
+        "name": "郇斯楠",
+        "sport": "basketball",
+        "league": "mens-college-basketball",
+        "tag": "NCAA",
+        "team": "普渡"
+      },
+      {
+        "id": "5312019",
+        "name": "林葳",
+        "sport": "basketball",
+        "league": "mens-college-basketball",
+        "tag": "NCAA",
+        "team": "俄勒冈"
+      },
+      {
+        "id": "5176426",
+        "name": "王俊杰",
+        "sport": "basketball",
+        "league": "mens-college-basketball",
+        "tag": "NCAA",
+        "team": "麻省大学"
+      }
+    ]
+  },
   "leagues": [
     {
       "id": "nba",

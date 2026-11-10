@@ -4,7 +4,7 @@
 import { cp, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import path from 'node:path';
-import { ROOT, schedule, results, boxscore, news, highlights, standings, refreshSnapshots } from './api.js';
+import { ROOT, schedule, results, boxscore, news, highlights, standings, players, refreshSnapshots } from './api.js';
 import { flushHighlights } from './youtube.js';
 
 const OUT = path.join(ROOT, 'dist');
@@ -32,13 +32,14 @@ await writeFile(
 );
 
 await refreshSnapshots();
-const [r, n, h, st] = await Promise.all([results(), news(), highlights(), standings()]);
+const [r, n, h, st, pl] = await Promise.all([results(), news(), highlights(), standings(), players()]);
 const s = await schedule(r); // drops started games once their result is in r
 await writeJson('standings.json', { ...st, builtAt });
 await writeJson('schedule.json', { ...s, builtAt });
 await writeJson('results.json', { ...r, builtAt });
 await writeJson('news.json', { ...n, builtAt });
 await writeJson('highlights.json', { ...h, builtAt });
+await writeJson('players.json', { ...pl, builtAt });
 
 // Box scores can't be fetched on demand from a static site, so pre-render one per result.
 let boxes = 0;

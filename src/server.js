@@ -1,14 +1,14 @@
 // Local dev / self-hosted server. Serves public/ and the same JSON paths the static build writes:
-//   /api/{schedule,results,news,highlights}.json
+//   /api/{schedule,results,news,highlights,standings,players}.json
 //   /api/boxscore/<league>/<comp or _>/<event>.json
 import http from 'node:http';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
-import { config, ROOT, schedule, results, boxscore, news, highlights, standings, refreshSnapshots } from './api.js';
+import { config, ROOT, schedule, results, boxscore, news, highlights, standings, players, refreshSnapshots } from './api.js';
 
 const PORT = Number(process.env.PORT ?? config.port ?? 3000);
 const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.svg': 'image/svg+xml' };
-const routes = { schedule, results, news, highlights, standings };
+const routes = { schedule, results, news, highlights, standings, players };
 
 function send(res, status, body, type = 'application/json; charset=utf-8') {
   res.writeHead(status, { 'Content-Type': type, 'Cache-Control': 'no-store' });

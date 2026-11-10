@@ -2,7 +2,7 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { getTeamSchedule, getScoreboardDays, getNews, getBoxscore, getSoccerGoals, getStandings } from './espn.js';
+import { getTeamSchedule, getScoreboardDays, getNews, getBoxscore, getSoccerGoals, getStandings, getAthlete, getSeasonAverages } from './espn.js';
 import { getZhibo8News } from './zhibo8.js';
 import { findHighlights, findRoundup, ROUNDUPS } from './youtube.js';
 import { getQualifiers, getQualifiersAt } from './qualifiers.js';
@@ -342,6 +342,51 @@ export async function standings() {
     }
   }
   return { leagues };
+}
+
+// Followed players (config.players): each one's last few team games with his own box-score line
+// (or 未上场), plus season averages. Rows come from the team's box scores
+// rather than the player's game log, which lags behind and leaves out games he sat out.
+export async function players() {
+  const cfg = config.players;
+  if (!cfg?.list?.length) return { enabled: false, players: [] };
+  const n = cfg.games ?? 5;
+  const errors = [];
+  const list = await mapLimit(cfg.list, 3, async (p) => {
+    const tag = { id: p.league === 'nba' ? 'nba' : 'ncaam', name: p.tag ?? p.league };
+    try {
+      const a = await getAthlete(p.sport, p.league, p.id);
+      if (!a.teamId) throw new Error('找不到所属球队');
+      const { team, events } = await getTeamSchedule(p.sport, p.league, a.teamId);
+      const season = events.at(-1)?.seasonYear ?? null;
+      const done = events.filter((e) => e.status.completed).slice(-n).reverse();
+      const games = await mapLimit(done, 3, async (e) => {
+        const box = await getBoxscore(p.sport, p.league, e.id).catch(() => null);
+        const grp = box?.teams.find((t) => t.team.id === team.id)?.groups[0];
+        const me = grp?.players.find((x) => x.id === a.id);
+        // College box scores list unused bench players with 0 minutes and all-zero stats.
+        const played = me && !me.dnp && !me.stats.every((s) => /^0(-0)?$/.test(s));
+        const line = played ? Object.fromEntries(grp.labels.map((l, i) => [l, me.stats[i]])) : null;
+        return { ...e, league: tag, focusIds: [team.id], line, dnp: me ? !played : !!box };
+      });
+      const avg = await getSeasonAverages(p.sport, p.league, p.id, season).catch(() => null);
+      return {
+        id: p.id,
+        name: p.name,
+        league: tag,
+        teamZh: p.team ?? null,
+        athlete: a,
+        team,
+        season: avg && Object.fromEntries(avg.labels.map((l, i) => [l, avg.avg[i]])),
+        seasonGames: avg?.games ?? 0,
+        games,
+      };
+    } catch (err) {
+      errors.push(`${p.name}: ${err.message}`);
+      return { id: p.id, name: p.name, league: tag, teamZh: p.team ?? null, error: err.message, games: [] };
+    }
+  });
+  return { enabled: true, players: list, errors };
 }
 
 // Weekly marquee snapshot (Mondays) and daily schedule + news snapshots.

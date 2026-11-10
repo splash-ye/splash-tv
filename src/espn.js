@@ -4,6 +4,7 @@ import { cached, fetchJson, etDateKey, keyToDate, DAY_MS } from './util.js';
 
 const SITE = 'https://site.api.espn.com/apis/site/v2/sports';
 const STANDINGS = 'https://site.api.espn.com/apis/v2/sports';
+const COMMON = 'https://site.web.api.espn.com/apis/common/v3/sports';
 const MIN = 60 * 1000;
 
 const scoreOf = (s) => (s == null ? null : typeof s === 'object' ? s.displayValue ?? String(s.value) : String(s));
@@ -225,6 +226,7 @@ export function getBoxscore(sport, league, eventId) {
           descriptions: g.descriptions ?? [],
           totals: g.totals ?? [],
           players: (g.athletes ?? []).map((a) => ({
+            id: a.athlete?.id != null ? String(a.athlete.id) : null,
             name: a.athlete?.displayName,
             short: a.athlete?.shortName ?? a.athlete?.displayName,
             pos: a.athlete?.position?.abbreviation ?? null,
@@ -273,6 +275,41 @@ export function getSoccerGoals(league, eventId) {
       ? Object.fromEntries(comps.map((c) => [String(c.id), c.shootoutScore]))
       : null;
     return { goals, shootout };
+  });
+}
+
+// One athlete: current team, headshot, position, jersey.
+export function getAthlete(sport, league, id) {
+  return cached(`athlete:${sport}/${league}/${id}`, 6 * 60 * MIN, async () => {
+    const a = (await fetchJson(`${COMMON}/${sport}/${league}/athletes/${encodeURIComponent(id)}`)).athlete ?? {};
+    return {
+      id: String(a.id ?? id),
+      name: a.displayName,
+      headshot: a.headshot?.href ?? null,
+      pos: a.position?.abbreviation ?? null,
+      jersey: a.jersey ?? null,
+      teamId: a.team?.id != null ? String(a.team.id) : null,
+    };
+  });
+}
+
+// Season averages from an athlete's game log (regular season; preseason/exhibitions skipped).
+// → { labels, avg, games } or null when the player has no games in that season yet.
+// NBA logs carry an averages row; college logs only season totals, so those get divided by games.
+export function getSeasonAverages(sport, league, id, season) {
+  return cached(`gamelog:${sport}/${league}/${id}/${season}`, 30 * MIN, async () => {
+    const j = await fetchJson(`${COMMON}/${sport}/${league}/athletes/${encodeURIComponent(id)}/gamelog${season ? `?season=${season}` : ''}`);
+    const labels = j.labels ?? [];
+    const types = (j.seasonTypes ?? []).filter((t) => !/preseason/i.test(t.displayName ?? ''));
+    const st = types.find((t) => /regular/i.test(t.displayName ?? '')) ?? types[0];
+    const games = (st?.categories ?? []).reduce((n, c) => n + (c.events?.length ?? 0), 0);
+    if (!games) return null;
+    let avg = st.summary?.stats?.find((x) => x.type === 'avg')?.stats;
+    if (!avg && j.totals && j.seasonTypes.length === 1) {
+      const per = (v) => (Number(v) / games).toFixed(1);
+      avg = j.totals.map((v, i) => (/%$/.test(labels[i]) ? v : String(v).split('-').map(per).join('-')));
+    }
+    return avg ? { labels, avg, games } : null;
   });
 }
 

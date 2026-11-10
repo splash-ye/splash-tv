@@ -313,6 +313,50 @@ function standingsHtml(lg) {
     .join('')}</div>${conf ? '<div class="foot-note left">1–6 名直接进季后赛，7–10 名打附加赛</div>' : ''}`;
 }
 
+// ---------- followed players (留洋) ----------
+const PLAYER_COLS = ['MIN', 'PTS', 'REB', 'AST', 'STL', 'BLK', 'FG', '3PT', 'FT', 'TO'];
+
+function playerHtml(p) {
+  const tag = p.league.id;
+  if (p.error) return `<div class="pl-card"><div class="pl-head"><div class="pl-name"><b>${esc(p.name)}</b>${badge(p.league)}</div></div><div class="error">加载失败：${esc(p.error)}</div></div>`;
+  const a = p.athlete;
+  const team = p.teamZh ?? teamName(p.team, tag);
+  const s = p.season;
+  const avgLine = s
+    ? `场均 <b>${esc(s.PTS)}</b> 分 <b>${esc(s.REB)}</b> 板 <b>${esc(s.AST)}</b> 助 · ${esc(s.MIN)} 分钟 · ${p.seasonGames} 场`
+    : '本赛季暂未出场';
+  const head = `<th class="pl">日期</th><th class="opp">对手</th><th>比分</th>${PLAYER_COLS.map((c) => `<th>${esc(NBA_LABELS[c] ?? c)}</th>`).join('')}`;
+  const rows = p.games
+    .map((g, i) => {
+      const home = g.home.id === p.team.id;
+      const [me, opp] = home ? [g.home, g.away] : [g.away, g.home];
+      const res = me.winner === true ? 'W' : opp.winner === true ? 'L' : 'T';
+      const d = new Date(g.date);
+      const lead = `<td class="pl">${esc(`${d.getMonth() + 1}/${d.getDate()}`)}</td>
+        <td class="opp"><span class="at">${home ? 'vs' : '@'}</span><img src="${esc(opp.logo)}" alt="" loading="lazy" />${esc(teamName(opp, tag))}</td>
+        <td><span class="res ${res}">${{ W: '胜', L: '负', T: '平' }[res]}</span> ${esc(me.score)}-${esc(opp.score)}</td>`;
+      const cells = g.line
+        ? PLAYER_COLS.map((c) => `<td class="${c === 'PTS' ? 'pts' : ''}">${esc(g.line[c] ?? '-')}</td>`).join('')
+        : `<td colspan="${PLAYER_COLS.length}" class="dnp-cell">${g.dnp ? '未上场' : '暂无数据'}</td>`;
+      return `<tr class="${g.link ? 'link' : ''}" data-i="${i}">${lead}${cells}</tr>`;
+    })
+    .join('');
+  return `<div class="pl-card">
+    <div class="pl-head">
+      <img class="pl-shot" src="${esc(a.headshot ?? p.team.logo)}" alt="" loading="lazy" />
+      <div>
+        <div class="pl-name"><b>${esc(p.name)}</b>${badge(p.league)}<span class="pl-team"><img src="${esc(p.team.logo)}" alt="" />${esc(team)}${a.pos ? ` · ${esc(a.pos)}` : ''}${a.jersey ? ` · #${esc(a.jersey)}` : ''}</span></div>
+        <div class="pl-avg">${avgLine}</div>
+      </div>
+    </div>
+    ${p.games.length ? `<div class="scroll"><table class="stats pl-games"><thead><tr>${head}</tr></thead><tbody>${rows}</tbody></table></div>` : '<div class="empty">本赛季还没有比赛</div>'}
+  </div>`;
+}
+
+function playersHtml(d) {
+  return `${errorsHtml(d.errors)}<div class="pl-list">${d.players.map(playerHtml).join('')}</div>`;
+}
+
 let resultsTab = (() => {
   try {
     return localStorage.getItem('resultsTab') || 'results';
@@ -323,8 +367,16 @@ let resultsTab = (() => {
 
 async function renderResults() {
   const el = $('#results-card');
-  const [d, st] = await Promise.all([api('results').catch((err) => ({ err })), api('standings').catch(() => ({ leagues: [] }))]);
-  const tabs = [{ key: 'results', label: '战绩' }, ...st.leagues.map((l) => ({ key: l.id, label: `${l.name} 排名` }))];
+  const [d, st, pl] = await Promise.all([
+    api('results').catch((err) => ({ err })),
+    api('standings').catch(() => ({ leagues: [] })),
+    api('players').catch(() => ({ enabled: false })),
+  ]);
+  const tabs = [
+    { key: 'results', label: '战绩' },
+    ...(pl.enabled ? [{ key: 'players', label: '留洋' }] : []),
+    ...st.leagues.map((l) => ({ key: l.id, label: `${l.name} 排名` })),
+  ];
   if (!tabs.some((t) => t.key === resultsTab)) resultsTab = 'results';
 
   const draw = () => {
@@ -346,6 +398,16 @@ async function renderResults() {
           tr.addEventListener('click', () => toggleBox(tr, tr.nextElementSibling, g));
         });
       }
+    } else if (resultsTab === 'players') {
+      $('#res-sub').textContent = '中国留洋球员 · 最近比赛';
+      el.innerHTML = `${seg}${playersHtml(pl)}
+        <div class="foot-note">数据更新于 ${esc(new Date(pl.builtAt ?? Date.now()).toLocaleString('zh-CN', { hour12: false }))}</div>`;
+      el.querySelectorAll('.pl-card').forEach((card, ci) => {
+        const p = pl.players[ci];
+        card.querySelectorAll('tr.link').forEach((tr) =>
+          tr.addEventListener('click', () => window.open(p.games[Number(tr.dataset.i)].link, '_blank', 'noopener')),
+        );
+      });
     } else {
       const lg = st.leagues.find((l) => l.id === resultsTab);
       $('#res-sub').textContent = `${lg.name} ${lg.kind === 'conference' ? '东西部' : '分区'}排名`;
