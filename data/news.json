@@ -1,19 +1,51 @@
 {
   "version": 3,
-  "day": "20261110",
-  "generatedAt": "2026-11-10T21:24:41.678Z",
+  "day": "20261111",
+  "generatedAt": "2026-11-11T05:01:20.452Z",
   "cfgKey": "[[\"nba\",[\"gs\"],{\"limit\":5}],[\"nfl\",[\"sf\",\"kc\",\"phi\"],{\"limit\":5}],[\"cfb\",[\"psu\"],{\"limit\":5}],[\"soccer\",[],{\"limit\":3,\"teams\":[{\"league\":\"esp.1\",\"team\":\"83\"},{\"league\":\"eng.1\",\"team\":\"382\"}]}]]",
   "partial": false,
   "articles": [
     {
-      "id": "50445576",
-      "type": "HeadlineNews",
-      "headline": "Sources: Chiefs snag needed help at WR, trade for Colts' Josh Downs",
-      "description": "The Chiefs have obtained needed help at wide receiver, acquiring Josh Downs in a trade with the Colts, sources told ESPN and NFL Network.",
-      "published": "2026-11-10T21:18:15Z",
-      "byline": "Nate Taylor and Stephen Holder",
-      "image": "https://a.espncdn.com/photo/2026/1110/r1743969_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50445576/chiefs-trade-colts-wr-josh-downs",
+      "id": "50448300",
+      "type": "Story",
+      "headline": "Patrick and Brittany Mahomes announce baby No. 4 on NFL trade deadline day",
+      "description": "The couple shared the news on a busy trade deadline day that also brought receiver Josh Downs to Kansas City.",
+      "published": "2026-11-11T02:17:21Z",
+      "byline": "Brianna Williams",
+      "image": "https://a.espncdn.com/photo/2026/1019/r1732784_608x342_16-9.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50448300/patrick-brittany-mahomes-fourth-child-announcement",
+      "premium": false,
+      "team": "kc",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50447640",
+      "type": "Media",
+      "headline": "49ers make a move at WR",
+      "description": "Nick Wagoner breaks down the 49ers' decision to trade for Keenan Allen.",
+      "published": "2026-11-11T01:02:09Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1110/dm_261110_9ers_trade_ia_1110/dm_261110_9ers_trade_ia_1110.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50447640/49ers-make-move-wr",
+      "premium": false,
+      "team": "sf",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50446669",
+      "type": "Story",
+      "headline": "From 2-7 to 6-2: Josh Downs reacts to Chiefs trade with Vince Carter GIF",
+      "description": "A moment from Vince Carter's retirement ceremony helped Downs sum up his feelings about joining Kansas City.",
+      "published": "2026-11-10T23:17:29Z",
+      "byline": "Brianna Williams",
+      "image": "https://a.espncdn.com/photo/2026/1109/r1743374_608x342_16-9.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50446669/chiefs-josh-downs-trade-reaction-vince-carter-gif",
       "premium": false,
       "team": "kc",
       "league": {
@@ -26,7 +58,7 @@
       "type": "HeadlineNews",
       "headline": "49ers trade for Colts' Keenan Allen to bolster injury-plagued WR room",
       "description": "The 49ers completed a trade with the Colts for Keenan Allen in a move that will bolster their injury-plagued WR corps.",
-      "published": "2026-11-10T21:17:45Z",
+      "published": "2026-11-10T23:03:30Z",
       "byline": "Nick Wagoner",
       "image": "https://a.espncdn.com/photo/2026/1022/r1734604_1296x729_16-9.jpg",
       "link": "https://www.espn.com/nfl/story/_/id/50444457/sources-49ers-acquire-keenan-allen-trade-colts",
@@ -35,6 +67,104 @@
       "league": {
         "id": "nfl",
         "name": "NFL"
+      }
+    },
+    {
+      "id": "50445576",
+      "type": "HeadlineNews",
+      "headline": "Chiefs snag needed help at WR, trade for Colts' Josh Downs",
+      "description": "The Chiefs have obtained needed help at wide receiver, acquiring Josh Downs in a trade with the Colts.",
+      "published": "2026-11-10T23:02:05Z",
+      "byline": "Nate Taylor and Stephen Holder",
+      "image": "https://a.espncdn.com/photo/2026/1110/r1743969_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50445576/chiefs-trade-colts-wr-josh-downs",
+      "premium": false,
+      "team": "kc",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50446131",
+      "type": "HeadlineNews",
+      "headline": "Warriors lose guard Brandon Williams to mild hamstring strain",
+      "description": "The Warriors will be without reserve guard Brandon Williams for at least a week after he strained his left hamstring during Monday night's win, sources told ESPN.",
+      "published": "2026-11-10T22:39:10Z",
+      "byline": "Anthony Slater",
+      "image": "https://a.espncdn.com/photo/2026/1110/r1744188_600x400_3-2.jpg",
+      "link": "https://www.espn.com/nba/story/_/id/50446131/sources-warriors-lose-brandon-williams-hamstring-strain",
+      "premium": false,
+      "team": "gs",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      }
+    },
+    {
+      "id": "50443891",
+      "type": "HeadlineNews",
+      "headline": "Bengals nix agreed-upon trade with Eagles, sources say",
+      "description": "A trade that would've sent Eagles edge rusher Arnold Ebiketie to Cincinnati has been called off, sources told ESPN's Adam Schefter and NFL Network's Ian Rapoport.",
+      "published": "2026-11-10T22:23:26Z",
+      "byline": "Ben Baby",
+      "image": "https://a.espncdn.com/photo/2026/1110/r1744018_2_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50443891/bengals-nix-agreed-trade-eagles-sources-say",
+      "premium": false,
+      "team": "phi",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50440438",
+      "type": "Story",
+      "headline": "Transfer rumors, news: Barcelona eye move for Bayern's Tah",
+      "description": "Barcelona are looking to improve their defense and could look to Bayern Munich's Jonathan Tah as an option. Transfer Talk has the latest.",
+      "published": "2026-11-10T21:50:28Z",
+      "byline": "ESPN",
+      "image": "https://a.espncdn.com/photo/2026/1110/r1744203_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/soccer/story/_/id/50440438/transfer-rumors-news-gossip-arsenal-atletico-madrid",
+      "premium": false,
+      "team": "83",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
+      }
+    },
+    {
+      "id": "50445699",
+      "type": "Story",
+      "headline": "MrBeast, meet Haaland: Man City star puts YouTuber through soccer gauntlet",
+      "description": "Manchester City star Erling Haaland has collaborated with popular YouTuber \"MrBeast\" in a series of various soccer challenges.",
+      "published": "2026-11-10T21:49:29Z",
+      "byline": "Roberto Rojas",
+      "image": "https://a.espncdn.com/photo/2026/1110/r1744159_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/soccer/story/_/id/50445699/mrbeast-meet-erling-haaland-manchester-city-star-puts-youtuber-soccer-gauntlet",
+      "premium": false,
+      "team": "382",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
+      }
+    },
+    {
+      "id": "50439821",
+      "type": "HeadlineNews",
+      "headline": "Warriors blow out Pelicans by 51 points for 8th straight win",
+      "description": "Stephen Curry scored 25 points in 20-plus minutes, Yaxel Lendeborg added 23 points, and the Warriors won their eighth straight game by 51 points against the short-handed Pelicans on Monday night.",
+      "published": "2026-11-10T21:33:03Z",
+      "byline": null,
+      "image": "https://a.espncdn.com/photo/2026/1110/r1743878_600x400_3-2.jpg",
+      "link": "https://www.espn.com/nba/story/_/id/50439821/warriors-beat-pelicans-51-points-8th-straight-win",
+      "premium": false,
+      "team": "gs",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
       }
     },
     {
@@ -83,22 +213,6 @@
       "league": {
         "id": "cfb",
         "name": "NCAAF"
-      }
-    },
-    {
-      "id": "50443891",
-      "type": "HeadlineNews",
-      "headline": "Bengals nix agreed-upon trade with Eagles, sources say",
-      "description": "A trade that would've sent Eagles edge rusher Arnold Ebiketie to Cincinnati has been called off, sources told ESPN's Adam Schefter and NFL Network's Ian Rapoport.",
-      "published": "2026-11-10T18:26:09Z",
-      "byline": "Ben Baby",
-      "image": "https://a.espncdn.com/photo/2026/1110/r1744018_2_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50443891/bengals-nix-agreed-trade-eagles-sources-say",
-      "premium": false,
-      "team": "phi",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
       }
     },
     {
@@ -151,22 +265,6 @@
       }
     },
     {
-      "id": "50439821",
-      "type": "HeadlineNews",
-      "headline": "Warriors blow out Pelicans by 51 points for 8th straight win",
-      "description": "Stephen Curry scored 25 points in 20-plus minutes, Yaxel Lendeborg added 23 points, and the Warriors won their eighth straight game by 51 points against the short-handed Pelicans on Monday night.",
-      "published": "2026-11-10T07:45:07Z",
-      "byline": null,
-      "image": "https://a.espncdn.com/photo/2026/1110/r1743878_600x400_3-2.jpg",
-      "link": "https://www.espn.com/nba/story/_/id/50439821/warriors-beat-pelicans-51-points-8th-straight-win",
-      "premium": false,
-      "team": "gs",
-      "league": {
-        "id": "nba",
-        "name": "NBA"
-      }
-    },
-    {
       "id": "50440191",
       "type": "Preview",
       "headline": "Warriors take on the Rockets, aim for 9th straight win",
@@ -191,22 +289,6 @@
       "byline": null,
       "image": "https://s.espncdn.com/stitcher/sports/basketball/nba/events/401909959.png?templateId=espn.applewatch.awayhome.1",
       "link": "http://www.espn.com/nba/recap?gameId=401909959",
-      "premium": false,
-      "team": "gs",
-      "league": {
-        "id": "nba",
-        "name": "NBA"
-      }
-    },
-    {
-      "id": "50439744",
-      "type": "Media",
-      "headline": "New Orleans Pelicans vs. Golden State Warriors: Game Highlights",
-      "description": "New Orleans Pelicans vs. Golden State Warriors: Game Highlights",
-      "published": "2026-11-10T06:26:39Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1110/d54cbdd555714824a9ae044cc4513f3c86/d54cbdd555714824a9ae044cc4513f3c86.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50439744/game-highlights",
       "premium": false,
       "team": "gs",
       "league": {
@@ -295,22 +377,6 @@
       }
     },
     {
-      "id": "50433470",
-      "type": "Story",
-      "headline": "The key behind 49ers' 7-1 start? Big contributions from the team's youth",
-      "description": "While the 49ers' stars have shown out, Jordan Watkins, Jaden Dugger and Kaelon Black have also led the team to its best start since 2019.",
-      "published": "2026-11-09T21:28:52Z",
-      "byline": "Nick Wagoner",
-      "image": "https://a.espncdn.com/photo/2026/1109/r1743602_608x342_16-9.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50433470/san-francisco-49ers-jaden-dugger-jordan-watkins",
-      "premium": false,
-      "team": "sf",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
       "id": "50434564",
       "type": "HeadlineNews",
       "headline": "Chiefs QB Patrick Mahomes day-to-day with elbow injury",
@@ -358,72 +424,6 @@
         "id": "soccer",
         "name": "足球",
         "nameEn": "Soccer"
-      }
-    },
-    {
-      "id": "50431764",
-      "type": "HeadlineNews",
-      "headline": "Barcelona's Lamine Yamal (knee) to miss next Spain Nations League game",
-      "description": "Barcelona's Lamine Yamal will miss Spain's Nations League game against Czechia on Thursday with a knee injury, the Spanish Federation [RFEF] announced Monday.",
-      "published": "2026-11-09T12:13:14Z",
-      "byline": "Sam Marsden",
-      "image": "https://a.espncdn.com/photo/2026/1108/r1743162_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/soccer/story/_/id/50431764/barcelona-lamine-yamal-knee-nations-league-spain",
-      "premium": false,
-      "team": "83",
-      "league": {
-        "id": "soccer",
-        "name": "足球",
-        "nameEn": "Soccer"
-      }
-    },
-    {
-      "id": "50431707",
-      "type": "HeadlineNews",
-      "headline": "England squad: Dan Burn called up to replace injured Marc Guéhi",
-      "description": "Dan Burn has been called up by England to replace Marc Guéhi, who has withdrawn with an injury.",
-      "published": "2026-11-09T12:10:48Z",
-      "byline": "ESPN",
-      "image": "https://a.espncdn.com/photo/2026/0706/r1685517_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/soccer/story/_/id/50431707/dan-burn-marc-guehi-england-squad",
-      "premium": false,
-      "team": "382",
-      "league": {
-        "id": "soccer",
-        "name": "足球",
-        "nameEn": "Soccer"
-      }
-    },
-    {
-      "id": "50427823",
-      "type": "HeadlineNews",
-      "headline": "Reid: No decision now on Harrison Butker's Chiefs future",
-      "description": "Chiefs coach Andy Reid said he hasn't made a decision on kicker Harrison Butker, who leads the NFL this season with seven missed field goal attempts.",
-      "published": "2026-11-09T05:23:16Z",
-      "byline": "Nate Taylor",
-      "image": "https://a.espncdn.com/photo/2026/1108/r1743294_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50427823/reid-no-decision-harrison-butker-chiefs-future",
-      "premium": false,
-      "team": "kc",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50428850",
-      "type": "Media",
-      "headline": "Kenneth Walker III comes up huge in Week 9 win",
-      "description": "Nate Taylor reports on how Kenneth Walker III helped the Chiefs in Week 9 after Patrick Mahomes' injury.",
-      "published": "2026-11-09T02:51:18Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1108/dm_261108_SC4U_16x9_Chiefs_IA_11-8/dm_261108_SC4U_16x9_Chiefs_IA_11-8.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50428850/kenneth-walker-iii-comes-huge-week-9-win",
-      "premium": false,
-      "team": "kc",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
       }
     },
     {
