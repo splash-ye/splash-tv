@@ -251,7 +251,7 @@ export async function highlights() {
   const followItems = teams
     .filter(({ lg }) => lg.highlights)
     .flatMap(({ lg, team, events }) => events.filter(recent).map((event) => ({ lg, event, focusId: team.id })));
-  // Leagues without followed teams (soccer) can opt in to highlights for their marquee games.
+  // Leagues opt in to highlights for their marquee games with highlights.marquee (all four do).
   const keys = dayRange(addDays(etDateKey(new Date()), -HIGHLIGHT_DAYS), HIGHLIGHT_DAYS + 1);
   const marqueeItems = (await marqueeGames(keys, (lg, g) => getQualifiersAt(lg, g.date), []))
     .filter((x) => x.lg.highlights?.marquee && recent(x.event));

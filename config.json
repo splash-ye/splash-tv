@@ -72,6 +72,7 @@
       },
       "highlights": {
         "matcher": "nba",
+        "marquee": true,
         "channels": [
           "UCWJ2lWNubArHWmf3FIHbfcQ"
         ],
@@ -107,6 +108,7 @@
       },
       "highlights": {
         "matcher": "nfl",
+        "marquee": true,
         "channels": [
           "UCDVYQ4Zhbm3S2dlz7P1GBDg"
         ],
@@ -140,6 +142,7 @@
       },
       "highlights": {
         "matcher": "cfb",
+        "marquee": true,
         "channels": [
           "UCXnslB_TwYqScBRf4bPf3vA",
           "UCpwix-O6ceqMgdxhqIynzFA"

@@ -92,8 +92,11 @@ const MATCHERS = {
       const when = `${g.seasonYear ?? ''} NFL Season${g.week && g.seasonTypeId === 2 ? ` Week ${g.week}` : ''}`;
       return [`${g.away.name} vs. ${g.home.name} Game Highlights ${when}`, `${g.away.short} ${g.home.short} Game Highlights ${when}`];
     },
+    // "Las Vegas Raiders vs. San Francisco 49ers Game Highlights | 2026 NFL Season Week 9"; prime-time
+    // games sometimes drop the "Game": "Buffalo Bills vs Minnesota Vikings Highlights | ...".
     match(T, g) {
-      if (!T.includes('GAME HIGHLIGHTS') || !hasName(T, g.away.name) || !hasName(T, g.home.name)) return false;
+      const highlights = T.includes('GAME HIGHLIGHTS') || /^[^|]+ VS\.? [^|]+ HIGHLIGHTS\s*(\||$)/.test(T);
+      if (!highlights || !hasName(T, g.away.name) || !hasName(T, g.home.name)) return false;
       if (g.seasonYear && !T.includes(String(g.seasonYear)) && !T.includes(String(g.seasonYear + 1))) return false;
       const wk = T.match(/WEEK\s+(\d+)/);
       return !(wk && g.week && g.seasonTypeId === 2 && Number(wk[1]) !== g.week);
