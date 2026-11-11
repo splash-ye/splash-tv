@@ -485,5 +485,29 @@
     ],
     "source": "channel-search",
     "foundAt": "2026-11-11T19:39:31.074Z"
+  },
+  "nba:401909961": {
+    "videos": [
+      {
+        "id": "ecqeLJ32ZhA",
+        "title": "CELTICS at 76ERS | FULL GAME HIGHLIGHTS | November 10, 2026",
+        "channelId": "UCWJ2lWNubArHWmf3FIHbfcQ",
+        "url": "https://www.youtube.com/watch?v=ecqeLJ32ZhA",
+        "thumbnail": "https://i.ytimg.com/vi/ecqeLJ32ZhA/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-11T04:05:32.622Z"
+      },
+      {
+        "id": "FuNJ6VVVQxY",
+        "title": "EXTENDED: CELTICS at 76ERS | FULL GAME HIGHLIGHTS | November 10, 2026",
+        "channelId": "UCWJ2lWNubArHWmf3FIHbfcQ",
+        "url": "https://www.youtube.com/watch?v=FuNJ6VVVQxY",
+        "thumbnail": "https://i.ytimg.com/vi/FuNJ6VVVQxY/hqdefault.jpg",
+        "extended": true,
+        "published": "2026-11-11T06:02:54+00:00"
+      }
+    ],
+    "source": "rss",
+    "foundAt": "2026-11-11T21:05:32.624Z"
   }
 }
