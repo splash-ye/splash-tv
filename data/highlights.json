@@ -470,5 +470,20 @@
       }
     ],
     "foundAt": "2026-11-11T09:15:49.959Z"
+  },
+  "nfl:401873051": {
+    "videos": [
+      {
+        "id": "2_ruHrqYSI4",
+        "title": "Buffalo Bills vs Minnesota Vikings Highlights | 2026 NFL Season Week 9",
+        "channelId": "UCDVYQ4Zhbm3S2dlz7P1GBDg",
+        "url": "https://www.youtube.com/watch?v=2_ruHrqYSI4",
+        "thumbnail": "https://i.ytimg.com/vi/2_ruHrqYSI4/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-10T19:39:31.074Z"
+      }
+    ],
+    "source": "channel-search",
+    "foundAt": "2026-11-11T19:39:31.074Z"
   }
 }
