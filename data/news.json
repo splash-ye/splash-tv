@@ -1,10 +1,188 @@
 {
   "version": 3,
-  "day": "20261111",
-  "generatedAt": "2026-11-11T05:01:20.452Z",
+  "day": "20261112",
+  "generatedAt": "2026-11-12T05:01:18.169Z",
   "cfgKey": "[[\"nba\",[\"gs\"],{\"limit\":5}],[\"nfl\",[\"sf\",\"kc\",\"phi\"],{\"limit\":5}],[\"cfb\",[\"psu\"],{\"limit\":5}],[\"soccer\",[],{\"limit\":3,\"teams\":[{\"league\":\"esp.1\",\"team\":\"83\"},{\"league\":\"eng.1\",\"team\":\"382\"}]}]]",
   "partial": false,
   "articles": [
+    {
+      "id": "50458218",
+      "type": "HeadlineNews",
+      "headline": "Stephen Curry exits vs. Rockets, ruled out with abdominal soreness",
+      "description": "Warriors star Stephen Curry was ruled out of Wednesday's game in Houston after injuring his right abdomen in the first quarter.",
+      "published": "2026-11-12T03:47:05Z",
+      "byline": "Anthony Slater",
+      "image": "https://a.espncdn.com/photo/2026/1112/r1744674_600x400_3-2.jpg",
+      "link": "https://www.espn.com/nba/story/_/id/50458218/curry-exits-vs-rockets-ruled-abdominal-soreness",
+      "premium": false,
+      "team": "gs",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      }
+    },
+    {
+      "id": "50456881",
+      "type": "HeadlineNews",
+      "headline": "Veteran WR Keenan Allen feeling energized by trade to 49ers",
+      "description": "Keenan Allen said while he didn't expect to get traded, landing with a contending team in the 49ers has him feeling energized.",
+      "published": "2026-11-12T01:28:27Z",
+      "byline": "Nick Wagoner",
+      "image": "https://a.espncdn.com/photo/2026/0916/r1717521_600x400_3-2.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50456881/veteran-wr-keenan-allen-feels-energized-trade-49ers",
+      "premium": false,
+      "team": "sf",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50455735",
+      "type": "HeadlineNews",
+      "headline": "Curry confronts critics over comments about wife Ayesha",
+      "description": "Warriors star Stephen Curry took to social media Wednesday to address criticisms of wife Ayesha's acting role in \"Second Chance Holiday.\"",
+      "published": "2026-11-11T22:59:50Z",
+      "byline": "Kalan Hooks",
+      "image": "https://a.espncdn.com/photo/2026/0715/r1689812_600x400_3-2.jpg",
+      "link": "https://www.espn.com/nba/story/_/id/50455735/curry-confronts-critics-comments-wife-ayesha",
+      "premium": false,
+      "team": "gs",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      }
+    },
+    {
+      "id": "50455459",
+      "type": "HeadlineNews",
+      "headline": "Spain's De la Fuente slams 'lying' over Lamine Yamal's 'special privileges'",
+      "description": "Spain coach Luis de la Fuente defended Lamine Yamal against suggestions of preferential treatment after the forward was allowed to join the national team late.",
+      "published": "2026-11-11T22:32:55Z",
+      "byline": "ESPN News Services",
+      "image": "https://a.espncdn.com/photo/2026/1111/r1744573_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/soccer/story/_/id/50455459/spain-lamine-yamal-injury-luis-de-la-fuente-nations-league",
+      "premium": false,
+      "team": "83",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
+      }
+    },
+    {
+      "id": "50454081",
+      "type": "HeadlineNews",
+      "headline": "Chiefs sticking with struggling Harrison Butker as kicker this week",
+      "description": "Harrison Butker will remain the Chiefs' kicker for Sunday's game against the Falcons, coach Andy Reid announced.",
+      "published": "2026-11-11T20:50:47Z",
+      "byline": "Nate Taylor",
+      "image": "https://a.espncdn.com/photo/2026/1111/r1744482_864x1296_2-3.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50454081/chiefs-sticking-harrison-butker-kicker-vs-falcons",
+      "premium": false,
+      "team": "kc",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50454351",
+      "type": "HeadlineNews",
+      "headline": "Bengals' Zac Taylor apologizes for failed trade with Eagles: 'It was on our end'",
+      "description": "Bengals coach Zac Taylor apologized for the failed trade for Eagles edge rusher Arnold Ebiketie ahead of Tuesday's deadline.",
+      "published": "2026-11-11T20:31:41Z",
+      "byline": "Ben Baby",
+      "image": "https://a.espncdn.com/photo/2026/1111/r1744502_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50454351/bengals-zac-taylor-apologizes-failed-trade-eagles",
+      "premium": false,
+      "team": "phi",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50452857",
+      "type": "Media",
+      "headline": "Why Jeff Saturday has 'no hope' for the Cowboys",
+      "description": "Why Jeff Saturday has 'no hope' for the Cowboys",
+      "published": "2026-11-11T14:59:50Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1111/ss_20261111_095210577_3736659/ss_20261111_095210577_3736659.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50452857/why-jeff-saturday-no-hope-cowboys",
+      "premium": false,
+      "team": "sf",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50447827",
+      "type": "Story",
+      "headline": "The Philadelphia Eagles' 2026 trade haul is likely to age well over time",
+      "description": "Whether Philadelphia wants to go after its QB of the future or build up around Jalen Hurts, it has options.",
+      "published": "2026-11-11T13:25:44Z",
+      "byline": "Tim McManus",
+      "image": "https://a.espncdn.com/photo/2026/1111/r1744284_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50447827/philadelphia-eagles-trade-haul-2027-draft-picks",
+      "premium": false,
+      "team": "phi",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50451180",
+      "type": "HeadlineNews",
+      "headline": "Man City charges outcome cannot leave 'room for doubt' - sports integrity chief",
+      "description": "Fans must be patient for the appeal outcome in the Manchester City case because it \"cannot leave room for doubt,\" a sport integrity chief has said.",
+      "published": "2026-11-11T07:53:44Z",
+      "byline": "PA",
+      "image": "https://a.espncdn.com/photo/2026/0929/r1723565_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/soccer/story/_/id/50451180/fans-patient-man-city-outcome-sports-integrity-chief",
+      "premium": false,
+      "team": "382",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
+      }
+    },
+    {
+      "id": "50450203",
+      "type": "Media",
+      "headline": "Chiefs add WR Josh Downs at NFL trade deadline",
+      "description": "Nate Taylor discusses what adding WR Josh Downs could mean for Patrick Mahomes and the Chiefs.",
+      "published": "2026-11-11T04:47:15Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1110/dm_261110_SC4U_16x9_Chiefs_IA_11-10/dm_261110_SC4U_16x9_Chiefs_IA_11-10.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50450203/chiefs-add-wr-josh-downs-nfl-trade-deadline",
+      "premium": false,
+      "team": "kc",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50448000",
+      "type": "Story",
+      "headline": "How Josh Downs fits with Patrick Mahomes and the Chiefs' offense",
+      "description": "Former Colts WR Downs brings speed, route running and big-play ability to a Kansas City offense in need of all three.",
+      "published": "2026-11-11T03:14:53Z",
+      "byline": "Nate Taylor",
+      "image": "https://a.espncdn.com/photo/2026/1111/r1744309_608x342_16-9.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50448000/josh-downs-chiefs-trade-patrick-mahomes-offense-role",
+      "premium": false,
+      "team": "kc",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
     {
       "id": "50448300",
       "type": "Story",
@@ -64,22 +242,6 @@
       "link": "https://www.espn.com/nfl/story/_/id/50444457/sources-49ers-acquire-keenan-allen-trade-colts",
       "premium": false,
       "team": "sf",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50445576",
-      "type": "HeadlineNews",
-      "headline": "Chiefs snag needed help at WR, trade for Colts' Josh Downs",
-      "description": "The Chiefs have obtained needed help at wide receiver, acquiring Josh Downs in a trade with the Colts.",
-      "published": "2026-11-10T23:02:05Z",
-      "byline": "Nate Taylor and Stephen Holder",
-      "image": "https://a.espncdn.com/photo/2026/1110/r1743969_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50445576/chiefs-trade-colts-wr-josh-downs",
-      "premium": false,
-      "team": "kc",
       "league": {
         "id": "nfl",
         "name": "NFL"
@@ -149,38 +311,6 @@
         "id": "soccer",
         "name": "足球",
         "nameEn": "Soccer"
-      }
-    },
-    {
-      "id": "50439821",
-      "type": "HeadlineNews",
-      "headline": "Warriors blow out Pelicans by 51 points for 8th straight win",
-      "description": "Stephen Curry scored 25 points in 20-plus minutes, Yaxel Lendeborg added 23 points, and the Warriors won their eighth straight game by 51 points against the short-handed Pelicans on Monday night.",
-      "published": "2026-11-10T21:33:03Z",
-      "byline": null,
-      "image": "https://a.espncdn.com/photo/2026/1110/r1743878_600x400_3-2.jpg",
-      "link": "https://www.espn.com/nba/story/_/id/50439821/warriors-beat-pelicans-51-points-8th-straight-win",
-      "premium": false,
-      "team": "gs",
-      "league": {
-        "id": "nba",
-        "name": "NBA"
-      }
-    },
-    {
-      "id": "50445612",
-      "type": "Media",
-      "headline": "Mike Tannenbaum: Chiefs' trade for Josh Downs is a 'no-brainer'",
-      "description": "Mike Tannenbaum: Chiefs' trade for Josh Downs is a 'no-brainer'",
-      "published": "2026-11-10T21:01:18Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1110/ss_20261110_154759419_3735560950/ss_20261110_154759419_3735560950.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50445612/chiefs-trade-josh-downs-no-brainer",
-      "premium": false,
-      "team": "kc",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
       }
     },
     {
@@ -281,38 +411,6 @@
       }
     },
     {
-      "id": "50439757",
-      "type": "Recap",
-      "headline": "Stephen Curry, Brandin Podziemski each score 25 as Warriors run away from Pelicans for 138-87 win",
-      "description": "— Stephen Curry scored 25 points in 20-plus minutes, Yaxel Lendeborg had 23 points, seven rebounds and four assists, and the Golden State Warriors won their eighth straight game by running away from the undermanned New Orleans Pelicans early for a...",
-      "published": "2026-11-10T06:32:35Z",
-      "byline": null,
-      "image": "https://s.espncdn.com/stitcher/sports/basketball/nba/events/401909959.png?templateId=espn.applewatch.awayhome.1",
-      "link": "http://www.espn.com/nba/recap?gameId=401909959",
-      "premium": false,
-      "team": "gs",
-      "league": {
-        "id": "nba",
-        "name": "NBA"
-      }
-    },
-    {
-      "id": "50438189",
-      "type": "Media",
-      "headline": "Will the Niners make a trade?",
-      "description": "Nick Wagoner reports on potential moves the 49ers could make before the trade deadline.",
-      "published": "2026-11-10T02:30:45Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1109/dm_261109_Will_the_Niners_make_a_trade/dm_261109_Will_the_Niners_make_a_trade.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50438189/will-niners-make-trade",
-      "premium": false,
-      "team": "sf",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
       "id": "50432490",
       "type": "Story",
       "headline": "Are Jaguars all-in after trades for Bates, Davis? Plus Eagles, Falcons reaction",
@@ -329,70 +427,6 @@
       }
     },
     {
-      "id": "50435848",
-      "type": "HeadlineNews",
-      "headline": "Brandon Aiyuk reinstated by NFL; 49ers have 2-game roster exemption for receiver",
-      "description": "The NFL reinstated San Francisco 49ers wide receiver Brandon Aiyuk on Monday after he reported for a physical, according to the league's transaction wire.",
-      "published": "2026-11-09T23:14:11Z",
-      "byline": "Nick Wagoner",
-      "image": "https://a.espncdn.com/photo/2025/1202/r1583555_600x400_3-2.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50435848/49ers-receiver-brandon-aiyuk-reinstated-nfl",
-      "premium": false,
-      "team": "sf",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50435954",
-      "type": "Media",
-      "headline": "Nick Sirianni: I did not give fans the middle finger",
-      "description": "Nick Sirianni: I did not give fans the middle finger",
-      "published": "2026-11-09T22:25:48Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1109/dm_261109_nfl_sirianni_presser/dm_261109_nfl_sirianni_presser.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50435954/did-not-give-fans-middle-finger",
-      "premium": false,
-      "team": "phi",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50435727",
-      "type": "Media",
-      "headline": "Dan Orlovsky stunned by Jags' trade for Eagles' Jordan Davis",
-      "description": "Dan Orlovsky stunned by Jags' trade for Eagles' Jordan Davis",
-      "published": "2026-11-09T22:09:26Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1109/ss_20261109_170255265_3734457/ss_20261109_170255265_3734457.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50435727/dan-orlovsky-stunned-jags-trade-eagles-jordan-davis",
-      "premium": false,
-      "team": "phi",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50434564",
-      "type": "HeadlineNews",
-      "headline": "Chiefs QB Patrick Mahomes day-to-day with elbow injury",
-      "description": "Chiefs quarterback Patrick Mahomes is considered day-to-day after suffering an injury to his throwing elbow.",
-      "published": "2026-11-09T19:32:09Z",
-      "byline": "Nate Taylor",
-      "image": "https://a.espncdn.com/photo/2026/1109/r1743644_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50434564/chiefs-qb-patrick-mahomes-day-day-elbow-injury",
-      "premium": false,
-      "team": "kc",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
       "id": "50433569",
       "type": "HeadlineNews",
       "headline": "Barcelona's Pau Cubarsí crowned 2026 Golden Boy",
@@ -401,23 +435,6 @@
       "byline": "Sam Marsden",
       "image": "https://a.espncdn.com/photo/2026/1109/r1743585_3_1296x729_16-9.jpg",
       "link": "https://www.espn.com/soccer/story/_/id/50433569/barcelona-spain-pau-cubarsi-wins-2026-golden-boy-award",
-      "premium": false,
-      "team": "83",
-      "league": {
-        "id": "soccer",
-        "name": "足球",
-        "nameEn": "Soccer"
-      }
-    },
-    {
-      "id": "50428521",
-      "type": "Story",
-      "headline": "Man United shouldn't keep Carrick despite Villa comeback; how Barça beat Atletico",
-      "description": "Man United came back to draw Aston Villa, but that shouldn't save Carrick's job. Plus, Barça escape Atletico with victory, and Man City's defensive woes continue.",
-      "published": "2026-11-09T13:49:14Z",
-      "byline": "Gabriele Marcotti",
-      "image": "https://a.espncdn.com/photo/2026/1109/r1743504_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/soccer/story/_/id/50428521/premier-league-laliga-analysis-marcotti-man-united-carrick-barcelona-atletico",
       "premium": false,
       "team": "83",
       "league": {
