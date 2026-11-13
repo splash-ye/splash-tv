@@ -1,24 +1,170 @@
 {
   "version": 3,
-  "day": "20261112",
-  "generatedAt": "2026-11-12T05:01:18.169Z",
+  "day": "20261113",
+  "generatedAt": "2026-11-13T05:01:20.866Z",
   "cfgKey": "[[\"nba\",[\"gs\"],{\"limit\":5}],[\"nfl\",[\"sf\",\"kc\",\"phi\"],{\"limit\":5}],[\"cfb\",[\"psu\"],{\"limit\":5}],[\"soccer\",[],{\"limit\":3,\"teams\":[{\"league\":\"esp.1\",\"team\":\"83\"},{\"league\":\"eng.1\",\"team\":\"382\"}]}]]",
   "partial": false,
   "articles": [
     {
-      "id": "50458218",
+      "id": "50465316",
       "type": "HeadlineNews",
-      "headline": "Stephen Curry exits vs. Rockets, ruled out with abdominal soreness",
-      "description": "Warriors star Stephen Curry was ruled out of Wednesday's game in Houston after injuring his right abdomen in the first quarter.",
-      "published": "2026-11-12T03:47:05Z",
-      "byline": "Anthony Slater",
-      "image": "https://a.espncdn.com/photo/2026/1112/r1744674_600x400_3-2.jpg",
-      "link": "https://www.espn.com/nba/story/_/id/50458218/curry-exits-vs-rockets-ruled-abdominal-soreness",
+      "headline": "Rockets' Marcus Smart suspended three games for punch",
+      "description": "The NBA on Thursday suspended Rockets guard Marcus Smart three games without pay for throwing a punch at Warriors center Charles Bassey.",
+      "published": "2026-11-13T00:10:45Z",
+      "byline": null,
+      "image": "https://a.espncdn.com/photo/2026/1112/r1744704_600x400_3-2.jpg",
+      "link": "https://www.espn.com/nba/story/_/id/50465316/rockets-marcus-smart-suspended-three-games-punch",
       "premium": false,
       "team": "gs",
       "league": {
         "id": "nba",
         "name": "NBA"
+      }
+    },
+    {
+      "id": "50465194",
+      "type": "Preview",
+      "headline": "NFL rushing leaders in spotlight as Kenneth Walker III and Chiefs face Bijan Robinson and Falcons",
+      "description": "— The NFL's rushing leaders will be in the spotlight on Sunday when Bijan Robinson and the Atlanta Falcons face Kenneth Walker III and the Kansas City Chiefs.",
+      "published": "2026-11-12T22:44:35Z",
+      "byline": null,
+      "image": "https://s.espncdn.com/stitcher/sports/football/nfl/events/401873058.png?templateId=espn.applewatch.awayhome.1",
+      "link": "http://www.espn.com/nfl/preview?gameId=401873058",
+      "premium": false,
+      "team": "kc",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50464264",
+      "type": "Media",
+      "headline": "Tim MacMahon: Yaxel Lendeborg needs to be 'go-to guy' with Steph out",
+      "description": "Tim MacMahon: Yaxel Lendeborg needs to be 'go-to guy' with Steph out",
+      "published": "2026-11-12T21:05:22Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1112/ss_20261112_155457408_3738341960/ss_20261112_155457408_3738341960.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50464264/yaxel-lendeborg-needs-go-guy-steph-out",
+      "premium": false,
+      "team": "gs",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      }
+    },
+    {
+      "id": "50463994",
+      "type": "Media",
+      "headline": "Shams: Steph Curry to be sidelined for 2-4 weeks",
+      "description": "Shams: Steph Curry to be sidelined for 2-4 weeks",
+      "published": "2026-11-12T20:42:53Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1112/ss_20261112_151539223_3738294/ss_20261112_151539223_3738294.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50463994/steph-curry-sidelined-2-4-weeks",
+      "premium": false,
+      "team": "gs",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      }
+    },
+    {
+      "id": "50462899",
+      "type": "HeadlineNews",
+      "headline": "Warriors' Stephen Curry out at least 2 weeks with oblique tear",
+      "description": "Stephen Curry will miss at least two weeks with an oblique abdominal tear, but sources told ESPN that the Warriors are bracing for him to be out closer to a month.",
+      "published": "2026-11-12T20:24:51Z",
+      "byline": "Anthony Slater",
+      "image": "https://a.espncdn.com/photo/2026/1112/r1744663_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/nba/story/_/id/50462899/warriors-stephen-curry-least-2-weeks-oblique-tear",
+      "premium": false,
+      "team": "gs",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      }
+    },
+    {
+      "id": "50462761",
+      "type": "Preview",
+      "headline": "Cowboys host NFC-leading 49ers as they seek elusive winning streak under Schottenheimer",
+      "description": "— Winning streaks have been elusive for the Dallas Cowboys in two seasons under coach Brian Schottenheimer, and the next attempt won't be easy.",
+      "published": "2026-11-12T16:52:35Z",
+      "byline": null,
+      "image": "https://s.espncdn.com/stitcher/sports/football/nfl/events/401873063.png?templateId=espn.applewatch.awayhome.1",
+      "link": "http://www.espn.com/nfl/preview?gameId=401873063",
+      "premium": false,
+      "team": "sf",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50460503",
+      "type": "HeadlineNews",
+      "headline": "Barcelona fan for life -- and beyond: Fans can pay to deposit ashes at Camp Nou",
+      "description": "Barcelona are giving their fans the possibility to be part of the club once they pass away by offering from 2027 a columbarium and commemorative plaques at their stadium.",
+      "published": "2026-11-12T11:50:26Z",
+      "byline": "Adriana Garcia",
+      "image": "https://a.espncdn.com/photo/2026/0915/r1716941_2_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/soccer/story/_/id/50460503/barcelona-camp-nou-ashes-fans",
+      "premium": false,
+      "team": "83",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
+      }
+    },
+    {
+      "id": "50455459",
+      "type": "HeadlineNews",
+      "headline": "Spain's De la Fuente slams 'lying' over Lamine Yamal's 'special privileges'",
+      "description": "Spain coach Luis de la Fuente defended Lamine Yamal against suggestions of preferential treatment after the forward was allowed to join the national team late.",
+      "published": "2026-11-12T10:26:04Z",
+      "byline": "ESPN News Services",
+      "image": "https://a.espncdn.com/photo/2026/1111/r1744573_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/soccer/story/_/id/50455459/spain-lamine-yamal-injury-luis-de-la-fuente-nations-league",
+      "premium": false,
+      "team": "83",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
+      }
+    },
+    {
+      "id": "50460434",
+      "type": "Preview",
+      "headline": "Warriors visit Spurs Friday in NBA Cup group stage",
+      "description": "Golden State Warriors (8-4, sixth in the Western Conference) vs. San Antonio Spurs (10-2, second in the Western Conference)",
+      "published": "2026-11-12T10:04:34Z",
+      "byline": null,
+      "image": "https://s.espncdn.com/stitcher/sports/basketball/nba/events/401909302.png?templateId=espn.applewatch.awayhome.1",
+      "link": "http://www.espn.com/nba/preview?gameId=401909302",
+      "premium": false,
+      "team": "gs",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      }
+    },
+    {
+      "id": "50458517",
+      "type": "Media",
+      "headline": "49ers face questions at corner heading into Week 10",
+      "description": "Nick Wagoner details the various injuries the 49ers face at corner ahead of their matchup with the Cowboys.",
+      "published": "2026-11-12T03:55:29Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1111/dm_261111_Niners_corners_IA/dm_261111_Niners_corners_IA.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50458517/49ers-face-questions-corner-heading-week-10",
+      "premium": false,
+      "team": "sf",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
       }
     },
     {
@@ -35,39 +181,6 @@
       "league": {
         "id": "nfl",
         "name": "NFL"
-      }
-    },
-    {
-      "id": "50455735",
-      "type": "HeadlineNews",
-      "headline": "Curry confronts critics over comments about wife Ayesha",
-      "description": "Warriors star Stephen Curry took to social media Wednesday to address criticisms of wife Ayesha's acting role in \"Second Chance Holiday.\"",
-      "published": "2026-11-11T22:59:50Z",
-      "byline": "Kalan Hooks",
-      "image": "https://a.espncdn.com/photo/2026/0715/r1689812_600x400_3-2.jpg",
-      "link": "https://www.espn.com/nba/story/_/id/50455735/curry-confronts-critics-comments-wife-ayesha",
-      "premium": false,
-      "team": "gs",
-      "league": {
-        "id": "nba",
-        "name": "NBA"
-      }
-    },
-    {
-      "id": "50455459",
-      "type": "HeadlineNews",
-      "headline": "Spain's De la Fuente slams 'lying' over Lamine Yamal's 'special privileges'",
-      "description": "Spain coach Luis de la Fuente defended Lamine Yamal against suggestions of preferential treatment after the forward was allowed to join the national team late.",
-      "published": "2026-11-11T22:32:55Z",
-      "byline": "ESPN News Services",
-      "image": "https://a.espncdn.com/photo/2026/1111/r1744573_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/soccer/story/_/id/50455459/spain-lamine-yamal-injury-luis-de-la-fuente-nations-league",
-      "premium": false,
-      "team": "83",
-      "league": {
-        "id": "soccer",
-        "name": "足球",
-        "nameEn": "Soccer"
       }
     },
     {
@@ -216,54 +329,6 @@
       }
     },
     {
-      "id": "50446669",
-      "type": "Story",
-      "headline": "From 2-7 to 6-2: Josh Downs reacts to Chiefs trade with Vince Carter GIF",
-      "description": "A moment from Vince Carter's retirement ceremony helped Downs sum up his feelings about joining Kansas City.",
-      "published": "2026-11-10T23:17:29Z",
-      "byline": "Brianna Williams",
-      "image": "https://a.espncdn.com/photo/2026/1109/r1743374_608x342_16-9.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50446669/chiefs-josh-downs-trade-reaction-vince-carter-gif",
-      "premium": false,
-      "team": "kc",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50444457",
-      "type": "HeadlineNews",
-      "headline": "49ers trade for Colts' Keenan Allen to bolster injury-plagued WR room",
-      "description": "The 49ers completed a trade with the Colts for Keenan Allen in a move that will bolster their injury-plagued WR corps.",
-      "published": "2026-11-10T23:03:30Z",
-      "byline": "Nick Wagoner",
-      "image": "https://a.espncdn.com/photo/2026/1022/r1734604_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50444457/sources-49ers-acquire-keenan-allen-trade-colts",
-      "premium": false,
-      "team": "sf",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50446131",
-      "type": "HeadlineNews",
-      "headline": "Warriors lose guard Brandon Williams to mild hamstring strain",
-      "description": "The Warriors will be without reserve guard Brandon Williams for at least a week after he strained his left hamstring during Monday night's win, sources told ESPN.",
-      "published": "2026-11-10T22:39:10Z",
-      "byline": "Anthony Slater",
-      "image": "https://a.espncdn.com/photo/2026/1110/r1744188_600x400_3-2.jpg",
-      "link": "https://www.espn.com/nba/story/_/id/50446131/sources-warriors-lose-brandon-williams-hamstring-strain",
-      "premium": false,
-      "team": "gs",
-      "league": {
-        "id": "nba",
-        "name": "NBA"
-      }
-    },
-    {
       "id": "50443891",
       "type": "HeadlineNews",
       "headline": "Bengals nix agreed-upon trade with Eagles, sources say",
@@ -311,22 +376,6 @@
         "id": "soccer",
         "name": "足球",
         "nameEn": "Soccer"
-      }
-    },
-    {
-      "id": "50444620",
-      "type": "Media",
-      "headline": "'Great move': Rich Eisen reacts to 49ers' trade for Keenan Allen",
-      "description": "'Great move': Rich Eisen reacts to 49ers' trade for Keenan Allen",
-      "published": "2026-11-10T20:52:56Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1110/ss_20261110_140946433_3735435/ss_20261110_140946433_3735435.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50444620/rich-eisen-reacts-49ers-trade-keenan-allen",
-      "premium": false,
-      "team": "sf",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
       }
     },
     {
@@ -379,38 +428,6 @@
       }
     },
     {
-      "id": "50434799",
-      "type": "Story",
-      "headline": "The historic (and absurd) longevity of Steph Curry and Kevin Durant",
-      "description": "More than 10 years after briefly joining forces, Steph and KD remain near the top of their games at 38. How long can each legend keep this up?",
-      "published": "2026-11-10T12:16:38Z",
-      "byline": "Ben Golliver",
-      "image": "https://a.espncdn.com/photo/2026/0922/r1720560_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/nba/story/_/id/50434799/stephen-curry-kevin-durant-warriors-rockets",
-      "premium": false,
-      "team": "gs",
-      "league": {
-        "id": "nba",
-        "name": "NBA"
-      }
-    },
-    {
-      "id": "50440191",
-      "type": "Preview",
-      "headline": "Warriors take on the Rockets, aim for 9th straight win",
-      "description": "Golden State Warriors (8-3, fourth in the Western Conference) vs. Houston Rockets (8-3, sixth in the Western Conference)",
-      "published": "2026-11-10T07:05:40Z",
-      "byline": null,
-      "image": "https://s.espncdn.com/stitcher/sports/basketball/nba/events/401909974.png?templateId=espn.applewatch.awayhome.1",
-      "link": "http://www.espn.com/nba/preview?gameId=401909974",
-      "premium": false,
-      "team": "gs",
-      "league": {
-        "id": "nba",
-        "name": "NBA"
-      }
-    },
-    {
       "id": "50432490",
       "type": "Story",
       "headline": "Are Jaguars all-in after trades for Bates, Davis? Plus Eagles, Falcons reaction",
@@ -424,23 +441,6 @@
       "league": {
         "id": "nfl",
         "name": "NFL"
-      }
-    },
-    {
-      "id": "50433569",
-      "type": "HeadlineNews",
-      "headline": "Barcelona's Pau Cubarsí crowned 2026 Golden Boy",
-      "description": "Barcelona centre-back Pau Cubarsí has won the 2026 Golden Boy award, the prize given to the best U21 men's player in the world.",
-      "published": "2026-11-09T16:48:12Z",
-      "byline": "Sam Marsden",
-      "image": "https://a.espncdn.com/photo/2026/1109/r1743585_3_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/soccer/story/_/id/50433569/barcelona-spain-pau-cubarsi-wins-2026-golden-boy-award",
-      "premium": false,
-      "team": "83",
-      "league": {
-        "id": "soccer",
-        "name": "足球",
-        "nameEn": "Soccer"
       }
     },
     {

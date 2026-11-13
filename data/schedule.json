@@ -1,7 +1,7 @@
 {
   "version": 3,
-  "day": "20261112",
-  "generatedAt": "2026-11-12T05:01:17.147Z",
+  "day": "20261113",
+  "generatedAt": "2026-11-13T05:01:19.716Z",
   "cfgKey": "[{\"id\":\"nba\",\"name\":\"NBA\",\"sport\":\"basketball\",\"league\":\"nba\",\"teams\":[\"gs\"],\"marquee\":{\"type\":\"leagueTop\",\"topN\":8},\"news\":{\"limit\":5},\"highlights\":{\"matcher\":\"nba\",\"marquee\":true,\"channels\":[\"UCWJ2lWNubArHWmf3FIHbfcQ\"],\"roundups\":[\"nightly\",\"topPlays\"]},\"standings\":{\"groupOrder\":[\"Western Conference\",\"Eastern Conference\"]}},{\"id\":\"nfl\",\"name\":\"NFL\",\"sport\":\"football\",\"league\":\"nfl\",\"teams\":[\"sf\",\"kc\",\"phi\"],\"marquee\":{\"type\":\"divisionTop\",\"perDivision\":2,\"winningRecord\":true},\"news\":{\"limit\":5},\"highlights\":{\"matcher\":\"nfl\",\"marquee\":true,\"channels\":[\"UCDVYQ4Zhbm3S2dlz7P1GBDg\"],\"roundups\":[\"top15\"]},\"standings\":{\"level\":3}},{\"id\":\"cfb\",\"name\":\"NCAAF\",\"sport\":\"football\",\"league\":\"college-football\",\"teams\":[\"psu\"],\"scoreboardParams\":\"groups=80&limit=300\",\"marquee\":{\"type\":\"poll\",\"topN\":15,\"polls\":[\"cfp\",\"ap\"]},\"news\":{\"limit\":5},\"highlights\":{\"matcher\":\"cfb\",\"marquee\":true,\"channels\":[\"UCXnslB_TwYqScBRf4bPf3vA\",\"UCpwix-O6ceqMgdxhqIynzFA\"]},\"standings\":{\"polls\":[\"cfp\",\"ap\"]}},{\"id\":\"soccer\",\"name\":\"足球\",\"nameEn\":\"Soccer\",\"sport\":\"soccer\",\"teams\":[],\"competitions\":[{\"league\":\"eng.1\",\"name\":\"英超\",\"nameEn\":\"Premier League\",\"channels\":[\"UCqZQlzSHbVJrwrn5XvzrzcA\"]},{\"league\":\"esp.1\",\"name\":\"西甲\",\"nameEn\":\"LaLiga\",\"channels\":[\"UC6c1z7bA__85CIWZ_jpCK-Q\",\"UCTv-XvfzLX3i4IGWAm4sbmA\"]},{\"league\":\"uefa.champions\",\"name\":\"欧冠\",\"nameEn\":\"Champions League\",\"channels\":[\"UCET00YnetHT7tOpu12v8jxg\"]},{\"league\":\"eng.fa\",\"name\":\"足总杯\",\"nameEn\":\"FA Cup\",\"channels\":[\"UC6c1z7bA__85CIWZ_jpCK-Q\"]},{\"league\":\"esp.copa_del_rey\",\"name\":\"国王杯\",\"nameEn\":\"Copa del Rey\",\"channels\":[\"UC6c1z7bA__85CIWZ_jpCK-Q\"]}],\"marquee\":{\"type\":\"fixedList\",\"criteria\":\"豪门对决\",\"criteriaEn\":\"Big clubs\",\"clubs\":[\"382\",\"359\",\"364\",\"363\",\"86\",\"83\",\"1068\",\"132\",\"160\"],\"clubNames\":\"曼城 阿森纳 利物浦 切尔西 皇马 巴萨 马竞 拜仁 巴黎圣日耳曼\",\"lookupLeagues\":[\"ger.1\",\"fra.1\"]},\"news\":{\"limit\":3,\"teams\":[{\"league\":\"esp.1\",\"team\":\"83\"},{\"league\":\"eng.1\",\"team\":\"382\"}]},\"highlights\":{\"matcher\":\"soccer\",\"marquee\":true,\"aliases\":{\"83\":[\"Barcelona\",\"Barca\",\"FC Barcelona\"],\"86\":[\"Real Madrid\"],\"132\":[\"Bayern Munich\",\"Bayern Munchen\",\"FC Bayern\",\"Bayern\"],\"160\":[\"Paris Saint-Germain\",\"Paris Saint Germain\",\"PSG\",\"Paris\"],\"359\":[\"Arsenal\"],\"363\":[\"Chelsea\"],\"364\":[\"Liverpool\"],\"382\":[\"Man City\",\"Manchester City\"],\"1068\":[\"Atletico Madrid\",\"Atletico de Madrid\",\"Atletico\",\"Atleti\"]}}}]",
   "partial": false,
   "daysAhead": 7,
@@ -12,7 +12,7 @@
       "name": "Golden State Warriors",
       "short": "Warriors",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png",
-      "record": "8-3",
+      "record": "8-4",
       "standing": "2nd in Pacific Division",
       "league": {
         "id": "nba",
@@ -556,68 +556,6 @@
   ],
   "games": [
     {
-      "id": "401909974",
-      "date": "2026-11-12T02:30Z",
-      "timeValid": true,
-      "name": "Golden State Warriors at Houston Rockets",
-      "shortName": "GS @ HOU",
-      "seasonYear": 2027,
-      "seasonTypeId": 2,
-      "week": null,
-      "note": null,
-      "status": {
-        "state": "in",
-        "completed": false,
-        "detail": "3:31 - 4th"
-      },
-      "home": {
-        "side": "home",
-        "id": "10",
-        "abbr": "HOU",
-        "name": "Houston Rockets",
-        "short": "Rockets",
-        "location": "Houston",
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/hou.png",
-        "score": null,
-        "winner": null,
-        "record": null,
-        "rank": null
-      },
-      "away": {
-        "side": "away",
-        "id": "9",
-        "abbr": "GS",
-        "name": "Golden State Warriors",
-        "short": "Warriors",
-        "location": "Golden State",
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png",
-        "score": null,
-        "winner": null,
-        "record": null,
-        "rank": null
-      },
-      "venue": "Toyota Center (Houston)",
-      "broadcasts": [
-        "ESPN"
-      ],
-      "link": "https://www.espn.com/nba/game?gameId=401909974",
-      "league": {
-        "id": "nba",
-        "name": "NBA"
-      },
-      "focusIds": [
-        "9"
-      ],
-      "tags": [
-        "follow",
-        "marquee"
-      ],
-      "ranks": {
-        "home": "#8",
-        "away": "#7"
-      }
-    },
-    {
       "id": "401909302",
       "date": "2026-11-14T02:30Z",
       "timeValid": true,
@@ -1079,6 +1017,64 @@
         "MavsTV"
       ],
       "link": "https://www.espn.com/nba/game/_/gameId/401910016/warriors-mavericks",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      },
+      "focusIds": [
+        "9"
+      ],
+      "tags": [
+        "follow"
+      ],
+      "ranks": null
+    },
+    {
+      "id": "401910019",
+      "date": "2026-11-20T01:00Z",
+      "timeValid": true,
+      "name": "Golden State Warriors at Memphis Grizzlies",
+      "shortName": "GS @ MEM",
+      "seasonYear": 2027,
+      "seasonTypeId": 2,
+      "week": null,
+      "note": null,
+      "status": {
+        "state": "pre",
+        "completed": false,
+        "detail": "11/19 - 8:00 PM EST"
+      },
+      "home": {
+        "side": "home",
+        "id": "29",
+        "abbr": "MEM",
+        "name": "Memphis Grizzlies",
+        "short": "Grizzlies",
+        "location": "Memphis",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/mem.png",
+        "score": null,
+        "winner": null,
+        "record": null,
+        "rank": null
+      },
+      "away": {
+        "side": "away",
+        "id": "9",
+        "abbr": "GS",
+        "name": "Golden State Warriors",
+        "short": "Warriors",
+        "location": "Golden State",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png",
+        "score": null,
+        "winner": null,
+        "record": null,
+        "rank": null
+      },
+      "venue": "FedExForum",
+      "broadcasts": [
+        "DAZN MEM"
+      ],
+      "link": "https://www.espn.com/nba/game/_/gameId/401910019/warriors-grizzlies",
       "league": {
         "id": "nba",
         "name": "NBA"
