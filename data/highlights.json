@@ -580,5 +580,20 @@
       }
     ],
     "foundAt": "2026-11-13T06:31:06.778Z"
+  },
+  "nba:401909302": {
+    "videos": [
+      {
+        "id": "0cL2tTuLJJk",
+        "title": "WARRIORS AT SPURS | EMIRATES NBA CUP 🏆 | FULL GAME HIGHLIGHTS | November 13, 2026",
+        "channelId": "UCWJ2lWNubArHWmf3FIHbfcQ",
+        "url": "https://www.youtube.com/watch?v=0cL2tTuLJJk",
+        "thumbnail": "https://i.ytimg.com/vi/0cL2tTuLJJk/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-14T05:24:08.084Z"
+      }
+    ],
+    "source": "channel-search",
+    "foundAt": "2026-11-14T05:31:08.086Z"
   }
 }
