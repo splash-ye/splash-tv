@@ -1,10 +1,106 @@
 {
   "version": 3,
-  "day": "20261114",
-  "generatedAt": "2026-11-14T05:01:33.099Z",
+  "day": "20261115",
+  "generatedAt": "2026-11-15T05:01:19.537Z",
   "cfgKey": "[[\"nba\",[\"gs\"],{\"limit\":5}],[\"nfl\",[\"sf\",\"kc\",\"phi\"],{\"limit\":5}],[\"cfb\",[\"psu\"],{\"limit\":5}],[\"soccer\",[],{\"limit\":3,\"teams\":[{\"league\":\"esp.1\",\"team\":\"83\"},{\"league\":\"eng.1\",\"team\":\"382\"}]}]]",
   "partial": false,
   "articles": [
+    {
+      "id": "50486938",
+      "type": "Recap",
+      "headline": "Becht, Hansen combine to push Penn State past Minnesota 42-14",
+      "description": "— Rocco Becht threw three touchdown passes and ran for another score and Penn State pulled away from Minnesota 42-14 on Saturday.",
+      "published": "2026-11-15T04:45:34Z",
+      "byline": null,
+      "image": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401858524.png?templateId=espn.applewatch.awayhome.1",
+      "link": "http://www.espn.com/ncf/recap?gameId=401858524",
+      "premium": false,
+      "team": "psu",
+      "league": {
+        "id": "cfb",
+        "name": "NCAAF"
+      }
+    },
+    {
+      "id": "50486126",
+      "type": "Media",
+      "headline": "How the Chiefs will replace Kenneth Walker",
+      "description": "Nate Taylor breaks down how the Chiefs will function without Kenneth Walker III vs. the Falcons.",
+      "published": "2026-11-15T03:32:49Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1114/dm_261114_Chiefs_Walker_IA/dm_261114_Chiefs_Walker_IA.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50486126/how-chiefs-replace-kenneth-walker",
+      "premium": false,
+      "team": "kc",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50478016",
+      "type": "HeadlineNews",
+      "headline": "Warriors' Yaxel Lendeborg (1-for-13) 'flustered' in blowout loss to Spurs",
+      "description": "In his first game as the primary offensive engine in place of the injured Stephen Curry, Warriors rookie Yaxel Lendeborg went 1-of-13 shooting in a 123-85 blowout loss to the Spurs. \"I was flustered the entire game,\" he said. \"Couldn't make a damn layup.\"",
+      "published": "2026-11-14T19:23:28Z",
+      "byline": "Anthony Slater",
+      "image": "https://a.espncdn.com/photo/2026/1114/r1745582_600x400_3-2.jpg",
+      "link": "https://www.espn.com/nba/story/_/id/50478016/warriors-yaxel-lendeborg-struggles-blowout-loss-spurs-says-was-flustered-entire-game",
+      "premium": false,
+      "team": "gs",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      }
+    },
+    {
+      "id": "50480529",
+      "type": "HeadlineNews",
+      "headline": "Chiefs' Kenneth Walker III (groin) to sit out vs. Falcons",
+      "description": "Chiefs running back Kenneth Walker III will miss Sunday's game due to a groin injury.",
+      "published": "2026-11-14T18:52:47Z",
+      "byline": null,
+      "image": "https://a.espncdn.com/photo/2026/1026/r1736372_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50480529/chiefs-kenneth-walker-iii-groin-sit-sources-say",
+      "premium": false,
+      "team": "kc",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50477506",
+      "type": "Recap",
+      "headline": "Castle scores season-high 32 points as Spurs stop the Warriors 123-85 for 11th straight win",
+      "description": "— Stephon Castle scored a season-high 32 points, Victor Wembanyama had 12 points and 12 rebounds and the San Antonio Spurs won their 11th straight game, rolling past the Golden State Warriors 123-85 Friday night to remain unbeaten in NBA Cup play.",
+      "published": "2026-11-14T05:14:35Z",
+      "byline": null,
+      "image": "https://s.espncdn.com/stitcher/sports/basketball/nba/events/401909302.png?templateId=espn.applewatch.awayhome.1",
+      "link": "http://www.espn.com/nba/recap?gameId=401909302",
+      "premium": false,
+      "team": "gs",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      }
+    },
+    {
+      "id": "50477438",
+      "type": "Media",
+      "headline": "Spurs blowout Curry-less Warriors 123-85",
+      "description": "Spurs blowout Curry-less Warriors 123-85",
+      "published": "2026-11-14T05:07:47Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1114/627f1100-1434-414a-9623-7c73d28f2155/627f1100-1434-414a-9623-7c73d28f2155.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50477438/spurs-blowout-curry-less-warriors-123-85",
+      "premium": false,
+      "team": "gs",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      }
+    },
     {
       "id": "50475938",
       "type": "Media",
@@ -94,22 +190,6 @@
       "byline": null,
       "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1113/ss_20261113_155720389_3739591/ss_20261113_155720389_3739591.jpg",
       "link": "https://www.espn.com/video/clip/_/id/50474246/andy-reid-delivers-injury-update-kenneth-walker-iii",
-      "premium": false,
-      "team": "kc",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50450203",
-      "type": "Media",
-      "headline": "Chiefs add WR Josh Downs at NFL trade deadline",
-      "description": "Nate Taylor discusses what adding WR Josh Downs could mean for Patrick Mahomes and the Chiefs.",
-      "published": "2026-11-13T20:43:01Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1110/dm_261110_SC4U_16x9_Chiefs_IA_11-10/dm_261110_SC4U_16x9_Chiefs_IA_11-10.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50450203/chiefs-add-wr-josh-downs-nfl-trade-deadline",
       "premium": false,
       "team": "kc",
       "league": {
@@ -215,54 +295,6 @@
       }
     },
     {
-      "id": "50464264",
-      "type": "Media",
-      "headline": "Tim MacMahon: Yaxel Lendeborg needs to be 'go-to guy' with Steph out",
-      "description": "Tim MacMahon: Yaxel Lendeborg needs to be 'go-to guy' with Steph out",
-      "published": "2026-11-12T21:05:22Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1112/ss_20261112_155457408_3738341960/ss_20261112_155457408_3738341960.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50464264/yaxel-lendeborg-needs-go-guy-steph-out",
-      "premium": false,
-      "team": "gs",
-      "league": {
-        "id": "nba",
-        "name": "NBA"
-      }
-    },
-    {
-      "id": "50463994",
-      "type": "Media",
-      "headline": "Shams: Steph Curry to be sidelined for 2-4 weeks",
-      "description": "Shams: Steph Curry to be sidelined for 2-4 weeks",
-      "published": "2026-11-12T20:42:53Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1112/ss_20261112_151539223_3738294/ss_20261112_151539223_3738294.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50463994/steph-curry-sidelined-2-4-weeks",
-      "premium": false,
-      "team": "gs",
-      "league": {
-        "id": "nba",
-        "name": "NBA"
-      }
-    },
-    {
-      "id": "50462899",
-      "type": "HeadlineNews",
-      "headline": "Warriors' Stephen Curry out at least 2 weeks with oblique tear",
-      "description": "Stephen Curry will miss at least two weeks with an oblique abdominal tear, but sources told ESPN that the Warriors are bracing for him to be out closer to a month.",
-      "published": "2026-11-12T20:24:51Z",
-      "byline": "Anthony Slater",
-      "image": "https://a.espncdn.com/photo/2026/1112/r1744663_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/nba/story/_/id/50462899/warriors-stephen-curry-least-2-weeks-oblique-tear",
-      "premium": false,
-      "team": "gs",
-      "league": {
-        "id": "nba",
-        "name": "NBA"
-      }
-    },
-    {
       "id": "50462761",
       "type": "Preview",
       "headline": "Cowboys host NFC-leading 49ers as they seek elusive winning streak under Schottenheimer",
@@ -310,22 +342,6 @@
         "id": "soccer",
         "name": "足球",
         "nameEn": "Soccer"
-      }
-    },
-    {
-      "id": "50454081",
-      "type": "HeadlineNews",
-      "headline": "Chiefs sticking with struggling Harrison Butker as kicker this week",
-      "description": "Harrison Butker will remain the Chiefs' kicker for Sunday's game against the Falcons, coach Andy Reid announced.",
-      "published": "2026-11-11T20:50:47Z",
-      "byline": "Nate Taylor",
-      "image": "https://a.espncdn.com/photo/2026/1111/r1744482_864x1296_2-3.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50454081/chiefs-sticking-harrison-butker-kicker-vs-falcons",
-      "premium": false,
-      "team": "kc",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
       }
     },
     {
@@ -452,22 +468,6 @@
       "byline": null,
       "image": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401858524.png?templateId=espn.applewatch.awayhome.1",
       "link": "http://www.espn.com/ncf/preview?gameId=401858524",
-      "premium": false,
-      "team": "psu",
-      "league": {
-        "id": "cfb",
-        "name": "NCAAF"
-      }
-    },
-    {
-      "id": "50410839",
-      "type": "HeadlineNews",
-      "headline": "Hall of Famer Jack Ham hospitalized, in stable condition after medical emergency",
-      "description": "Hall of Fame linebacker and Penn State radio analyst Jack Ham experienced a medical emergency Saturday in Seattle and was in stable condition.",
-      "published": "2026-11-08T01:55:42Z",
-      "byline": "Adam Rittenberg",
-      "image": "https://a.espncdn.com/photo/2017/0408/r197865_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/college-football/story/_/id/50410839/hall-famer-jack-ham-hospitalized-medical-emergency",
       "premium": false,
       "team": "psu",
       "league": {
