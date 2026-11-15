@@ -638,5 +638,20 @@
     ],
     "source": "channel-search",
     "foundAt": "2026-11-15T03:45:49.032Z"
+  },
+  "cfb:401858524": {
+    "videos": [
+      {
+        "id": "qhYNvP06d40",
+        "title": "Minnesota at Penn State | Highlights | Big Ten Football | 11/14/2026",
+        "channelId": "UCXnslB_TwYqScBRf4bPf3vA",
+        "url": "https://www.youtube.com/watch?v=qhYNvP06d40",
+        "thumbnail": "https://i.ytimg.com/vi/qhYNvP06d40/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-15T03:40:18.690Z"
+      }
+    ],
+    "source": "channel-search",
+    "foundAt": "2026-11-15T04:01:18.691Z"
   }
 }
