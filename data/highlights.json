@@ -623,5 +623,20 @@
       }
     ],
     "foundAt": "2026-11-14T07:45:48.661Z"
+  },
+  "cfb:401858518": {
+    "videos": [
+      {
+        "id": "rZQNdK_upuw",
+        "title": "USC at Indiana | Highlights | Big Ten Football | 11/14/2026",
+        "channelId": "UCXnslB_TwYqScBRf4bPf3vA",
+        "url": "https://www.youtube.com/watch?v=rZQNdK_upuw",
+        "thumbnail": "https://i.ytimg.com/vi/rZQNdK_upuw/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-15T00:45:49.032Z"
+      }
+    ],
+    "source": "channel-search",
+    "foundAt": "2026-11-15T03:45:49.032Z"
   }
 }
