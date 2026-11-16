@@ -711,5 +711,20 @@
     ],
     "source": "rss",
     "foundAt": "2026-11-16T02:15:46.260Z"
+  },
+  "nfl:401873064": {
+    "videos": [
+      {
+        "id": "9hbvNzp5qSI",
+        "title": "Pittsburgh Steelers vs Cincinnati Bengals Game Highlights | 2026 NFL Season Week 10",
+        "channelId": "UCDVYQ4Zhbm3S2dlz7P1GBDg",
+        "url": "https://www.youtube.com/watch?v=9hbvNzp5qSI",
+        "thumbnail": "https://i.ytimg.com/vi/9hbvNzp5qSI/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-16T04:42:49.474Z"
+      }
+    ],
+    "source": "channel-search",
+    "foundAt": "2026-11-16T04:45:49.474Z"
   }
 }
