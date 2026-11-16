@@ -696,5 +696,20 @@
     ],
     "source": "channel-search",
     "foundAt": "2026-11-15T23:45:46.618Z"
+  },
+  "nfl:401873063": {
+    "videos": [
+      {
+        "id": "bqEz0JMZhOA",
+        "title": "San Francisco 49ers vs. Dallas Cowboys Highlights | NFL 2026 Season Week 10",
+        "channelId": "UCDVYQ4Zhbm3S2dlz7P1GBDg",
+        "url": "https://www.youtube.com/watch?v=bqEz0JMZhOA",
+        "thumbnail": "https://i.ytimg.com/vi/bqEz0JMZhOA/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-16T00:59:51+00:00"
+      }
+    ],
+    "source": "rss",
+    "foundAt": "2026-11-16T02:15:46.260Z"
   }
 }
