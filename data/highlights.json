@@ -726,5 +726,19 @@
     ],
     "source": "channel-search",
     "foundAt": "2026-11-16T04:45:49.474Z"
+  },
+  "roundup:nba:topPlays:20261115": {
+    "videos": [
+      {
+        "id": "qfVVGVneBXs",
+        "title": "NBA's Top 10 Plays of the Night | November 15, 2026",
+        "channelId": "UCWJ2lWNubArHWmf3FIHbfcQ",
+        "url": "https://www.youtube.com/watch?v=qfVVGVneBXs",
+        "thumbnail": "https://i.ytimg.com/vi/qfVVGVneBXs/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-16T05:07:46.231Z"
+      }
+    ],
+    "foundAt": "2026-11-16T05:15:46.232Z"
   }
 }
