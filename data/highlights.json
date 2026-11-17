@@ -783,5 +783,19 @@
     ],
     "source": "rss",
     "foundAt": "2026-11-17T05:15:50.142Z"
+  },
+  "roundup:nba:topPlays:20261116": {
+    "videos": [
+      {
+        "id": "d-AekDrIGIE",
+        "title": "NBA's Top 10 Plays of the Night | November 16, 2026",
+        "channelId": "UCWJ2lWNubArHWmf3FIHbfcQ",
+        "url": "https://www.youtube.com/watch?v=d-AekDrIGIE",
+        "thumbnail": "https://i.ytimg.com/vi/d-AekDrIGIE/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-17T05:58:44+00:00"
+      }
+    ],
+    "foundAt": "2026-11-17T06:15:59.033Z"
   }
 }
