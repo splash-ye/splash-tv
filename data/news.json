@@ -1,16 +1,80 @@
 {
   "version": 3,
-  "day": "20261116",
-  "generatedAt": "2026-11-16T05:01:19.526Z",
+  "day": "20261117",
+  "generatedAt": "2026-11-17T05:01:20.418Z",
   "cfgKey": "[[\"nba\",[\"gs\"],{\"limit\":5}],[\"nfl\",[\"sf\",\"kc\",\"phi\"],{\"limit\":5}],[\"cfb\",[\"psu\"],{\"limit\":5}],[\"soccer\",[],{\"limit\":3,\"teams\":[{\"league\":\"esp.1\",\"team\":\"83\"},{\"league\":\"eng.1\",\"team\":\"382\"}]}]]",
   "partial": false,
   "articles": [
+    {
+      "id": "50507602",
+      "type": "Recap",
+      "headline": "Fears' first triple-double leads the Pelicans past the Warriors 115-94",
+      "description": "— Jeremiah Fears had 19 points, 10 assists and 10 rebounds for his first career triple-double, and the New Orleans Pelicans snapped a six-game losing streak with a 115-94 victory over the Golden State Warriors on Monday night.",
+      "published": "2026-11-17T03:46:35Z",
+      "byline": null,
+      "image": "https://s.espncdn.com/stitcher/sports/basketball/nba/events/401910000.png?templateId=espn.applewatch.awayhome.1",
+      "link": "http://www.espn.com/nba/recap?gameId=401910000",
+      "premium": false,
+      "team": "gs",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      }
+    },
+    {
+      "id": "50507554",
+      "type": "Media",
+      "headline": "Golden State Warriors vs. New Orleans Pelicans: Game Highlights",
+      "description": "Golden State Warriors vs. New Orleans Pelicans: Game Highlights",
+      "published": "2026-11-17T03:45:41Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1117/104662c7-880d-4832-b199-613858a0c9ce/104662c7-880d-4832-b199-613858a0c9ce.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50507554/game-highlights",
+      "premium": false,
+      "team": "gs",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      }
+    },
+    {
+      "id": "50502440",
+      "type": "Story",
+      "headline": "49ers WR Mike Evans' Achilles tendinitis injury explained",
+      "description": "ESPN spoke with a medical professional for a better understanding of Evans' diagnosis. When could he return? And will the injury completely resolve itself?",
+      "published": "2026-11-17T02:54:01Z",
+      "byline": "Nick Wagoner",
+      "image": "https://a.espncdn.com/photo/2026/1020/r1733349_608x342_16-9.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50502440/san-francisco-49ers-mike-evans-achilles-tendinitis-injury-recovery",
+      "premium": false,
+      "team": "sf",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50504306",
+      "type": "Preview",
+      "headline": "Penn State squares off against Rutgers in Big Ten action",
+      "description": "Rutgers (2-8) at Penn State (6-4), Nov. 21 at 3:30 p.m. EST.",
+      "published": "2026-11-16T20:44:38Z",
+      "byline": null,
+      "image": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401858532.png?templateId=espn.applewatch.awayhome.1",
+      "link": "http://www.espn.com/ncf/preview?gameId=401858532",
+      "premium": false,
+      "team": "psu",
+      "league": {
+        "id": "cfb",
+        "name": "NCAAF"
+      }
+    },
     {
       "id": "50498373",
       "type": "HeadlineNews",
       "headline": "49ers put up big numbers vs. Cowboys, tout 'incredibly dangerous' offense",
       "description": "The 49ers racked up 584 yards against the Cowboys on Sunday in a jaw-dropping offensive display led by Brock Purdy, Christian McCaffrey and Deebo Samuel.",
-      "published": "2026-11-16T04:41:15Z",
+      "published": "2026-11-16T05:29:59Z",
       "byline": "Nick Wagoner",
       "image": "https://a.espncdn.com/photo/2026/1116/r1746494_600x600_1-1.jpg",
       "link": "https://www.espn.com/nfl/story/_/id/50498373/49ers-put-big-numbers-victory-cowboys",
@@ -134,22 +198,6 @@
       }
     },
     {
-      "id": "50477594",
-      "type": "Media",
-      "headline": "Jerry Rice's 'I scored a touchdown' story: SB XXIII",
-      "description": "Jerry Rice's 'I scored a touchdown' story: SB XXIII",
-      "published": "2026-11-15T15:59:14Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1114/a12cd89db2df4cd88781b87420cfae5440/a12cd89db2df4cd88781b87420cfae5440.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50477594/sb-xxiii",
-      "premium": false,
-      "team": "sf",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
       "id": "50490251",
       "type": "HeadlineNews",
       "headline": "Haaland 'incredibly happy' at Man City, not thinking about possible sanctions",
@@ -247,22 +295,6 @@
       }
     },
     {
-      "id": "50477438",
-      "type": "Media",
-      "headline": "Spurs blowout Curry-less Warriors 123-85",
-      "description": "Spurs blowout Curry-less Warriors 123-85",
-      "published": "2026-11-14T05:07:47Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1114/627f1100-1434-414a-9623-7c73d28f2155/627f1100-1434-414a-9623-7c73d28f2155.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50477438/spurs-blowout-curry-less-warriors-123-85",
-      "premium": false,
-      "team": "gs",
-      "league": {
-        "id": "nba",
-        "name": "NBA"
-      }
-    },
-    {
       "id": "50474564",
       "type": "HeadlineNews",
       "headline": "NFL outlines steps in Jalen Hurts investigation in letter to senator",
@@ -292,22 +324,6 @@
       "league": {
         "id": "nfl",
         "name": "NFL"
-      }
-    },
-    {
-      "id": "50472453",
-      "type": "Media",
-      "headline": "Stephen A., Perk debate what Draymond needs to do in Steph's absence",
-      "description": "Stephen A., Perk debate what Draymond needs to do in Steph's absence",
-      "published": "2026-11-13T16:17:49Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1113/ss_20261113_111252745_3739361/ss_20261113_111252745_3739361.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50472453/stephen-perk-debate-draymond-needs-do-steph-absence",
-      "premium": false,
-      "team": "gs",
-      "league": {
-        "id": "nba",
-        "name": "NBA"
       }
     },
     {
