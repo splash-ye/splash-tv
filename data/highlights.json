@@ -797,5 +797,34 @@
       }
     ],
     "foundAt": "2026-11-17T06:15:59.033Z"
+  },
+  "nba:401910000": {
+    "videos": [
+      {
+        "id": "_bk-bs9Tzwo",
+        "title": "WARRIORS at PELICANS | FULL GAME HIGHLIGHTS | November 16, 2026",
+        "channelId": "UCWJ2lWNubArHWmf3FIHbfcQ",
+        "url": "https://www.youtube.com/watch?v=_bk-bs9Tzwo",
+        "thumbnail": "https://i.ytimg.com/vi/_bk-bs9Tzwo/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-17T03:43:24+00:00"
+      }
+    ],
+    "source": "rss",
+    "foundAt": "2026-11-17T07:01:19.522Z"
+  },
+  "roundup:nba:nightly:20261116": {
+    "videos": [
+      {
+        "id": "Iuykco0mBYQ",
+        "title": "NBA's Nightly Recap | November 16, 2026",
+        "channelId": "UCWJ2lWNubArHWmf3FIHbfcQ",
+        "url": "https://www.youtube.com/watch?v=Iuykco0mBYQ",
+        "thumbnail": "https://i.ytimg.com/vi/Iuykco0mBYQ/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-17T06:54:14+00:00"
+      }
+    ],
+    "foundAt": "2026-11-17T07:01:19.525Z"
   }
 }
