@@ -1,10 +1,140 @@
 {
   "version": 3,
-  "day": "20261117",
-  "generatedAt": "2026-11-17T05:01:20.418Z",
+  "day": "20261118",
+  "generatedAt": "2026-11-18T05:01:16.708Z",
   "cfgKey": "[[\"nba\",[\"gs\"],{\"limit\":5}],[\"nfl\",[\"sf\",\"kc\",\"phi\"],{\"limit\":5}],[\"cfb\",[\"psu\"],{\"limit\":5}],[\"soccer\",[],{\"limit\":3,\"teams\":[{\"league\":\"esp.1\",\"team\":\"83\"},{\"league\":\"eng.1\",\"team\":\"382\"}]}]]",
   "partial": false,
   "articles": [
+    {
+      "id": "50517516",
+      "type": "Media",
+      "headline": "Week 11 offers another impressive milestone for Travis Kelce",
+      "description": "Nate Taylor discusses Travis Kelce ahead of his 100th game at Arrowhead Stadium.",
+      "published": "2026-11-18T04:40:52Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1117/dm_261117_SC4U_16x9_Chiefs_IA_11-17/dm_261117_SC4U_16x9_Chiefs_IA_11-17.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50517516/week-11-offers-another-impressive-milestone-travis-kelce",
+      "premium": false,
+      "team": "kc",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50513761",
+      "type": "HeadlineNews",
+      "headline": "Haaland sends Norway to Nations League quarters on last-minute penalty",
+      "description": "Erling Haaland delivered for Norway on one of the last plays of the game to give his team a 3-2 win over Denmark to advance to the Nations League quarterfinals.",
+      "published": "2026-11-18T00:59:27Z",
+      "byline": "ESPN News Services",
+      "image": "https://a.espncdn.com/photo/2026/1117/r1747269_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/soccer/story/_/id/50513761/erling-haaland-sends-norway-nations-league-quarterfinals",
+      "premium": false,
+      "team": "382",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
+      }
+    },
+    {
+      "id": "50514283",
+      "type": "Media",
+      "headline": "Fjørtoft: Haaland is 'Gerd Müller level' for Norway",
+      "description": "Jan Åge Fjørtoft praises Erling Haaland's performance for Norway in their 2-3 win over Denmark to advance to the Nations League quarter-finals.",
+      "published": "2026-11-17T22:27:44Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1117/dm_261117_Fjortoft_Haaland_is_Gerd_Muller_level_for_Norway/dm_261117_Fjortoft_Haaland_is_Gerd_Muller_level_for_Norway.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50514283/haaland-gerd-muller-level-norway",
+      "premium": false,
+      "team": "382",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
+      }
+    },
+    {
+      "id": "50502440",
+      "type": "Story",
+      "headline": "49ers WR Mike Evans' Achilles tendinitis injury explained",
+      "description": "ESPN spoke with a medical professional for a better understanding of Evans' diagnosis. When could he return? And will the injury completely resolve itself?",
+      "published": "2026-11-17T19:24:31Z",
+      "byline": "Nick Wagoner",
+      "image": "https://a.espncdn.com/photo/2026/1020/r1733349_608x342_16-9.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50502440/san-francisco-49ers-mike-evans-achilles-tendinitis-injury-recovery",
+      "premium": false,
+      "team": "sf",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50511400",
+      "type": "Media",
+      "headline": "How Stephen A. is looking at Vikings-49ers matchup",
+      "description": "How Stephen A. is looking at Vikings-49ers matchup",
+      "published": "2026-11-17T17:03:10Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1117/ss_20261117_110022595_3746318/ss_20261117_110022595_3746318.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50511400/how-stephen-looking-vikings-49ers-matchup",
+      "premium": false,
+      "team": "sf",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50503111",
+      "type": "Story",
+      "headline": "The clock is ticking on Steph Curry's final act with the Warriors",
+      "description": "At 38, Curry is still brilliant -- but managing his body has become the biggest battle of his career.",
+      "published": "2026-11-17T16:58:52Z",
+      "byline": "Anthony Slater",
+      "image": "https://a.espncdn.com/photo/2026/1116/r1746718_608x342_16-9.jpg",
+      "link": "https://www.espn.com/nba/story/_/id/50503111/steph-curry-warriors-race-injuries",
+      "premium": false,
+      "team": "gs",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      }
+    },
+    {
+      "id": "50509931",
+      "type": "Story",
+      "headline": "Emmett Johnson, Jaxon Smith-Njigba shine in big offensive week for Africa's NFL stars",
+      "description": "Week 10 in the 2026 NFL season was one of the most noteworthy in terms of standout performances from offensive players in the NFL with known African ties.",
+      "published": "2026-11-17T11:45:40Z",
+      "byline": "Leonard Solms",
+      "image": "https://a.espncdn.com/photo/2026/1117/r1747030_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/espn/story/_/id/50509931/emmett-johnson-jaxon-smith-njigba-shine-big-offensive-week-africa-nfl-stars",
+      "premium": false,
+      "team": "kc",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50508599",
+      "type": "Preview",
+      "headline": "Mavericks take on the Warriors on 3-game slide",
+      "description": "Golden State Warriors (8-6, ninth in the Western Conference) vs. Dallas Mavericks (7-7, 10th in the Western Conference)",
+      "published": "2026-11-17T07:04:34Z",
+      "byline": null,
+      "image": "https://s.espncdn.com/stitcher/sports/basketball/nba/events/401910016.png?templateId=espn.applewatch.awayhome.1",
+      "link": "http://www.espn.com/nba/preview?gameId=401910016",
+      "premium": false,
+      "team": "gs",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      }
+    },
     {
       "id": "50507602",
       "type": "Recap",
@@ -35,22 +165,6 @@
       "league": {
         "id": "nba",
         "name": "NBA"
-      }
-    },
-    {
-      "id": "50502440",
-      "type": "Story",
-      "headline": "49ers WR Mike Evans' Achilles tendinitis injury explained",
-      "description": "ESPN spoke with a medical professional for a better understanding of Evans' diagnosis. When could he return? And will the injury completely resolve itself?",
-      "published": "2026-11-17T02:54:01Z",
-      "byline": "Nick Wagoner",
-      "image": "https://a.espncdn.com/photo/2026/1020/r1733349_608x342_16-9.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50502440/san-francisco-49ers-mike-evans-achilles-tendinitis-injury-recovery",
-      "premium": false,
-      "team": "sf",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
       }
     },
     {
@@ -150,22 +264,6 @@
       }
     },
     {
-      "id": "50496925",
-      "type": "Media",
-      "headline": "49ers outlast Cowboys in back-and-forth thriller",
-      "description": "49ers outlast Cowboys in back-and-forth thriller",
-      "published": "2026-11-16T01:22:37Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1115/c9b222bfcf7142e4b9e7e37d8771eff31222/c9b222bfcf7142e4b9e7e37d8771eff31222.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50496925/49ers-outlast-cowboys-back-forth-thriller",
-      "premium": false,
-      "team": "sf",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
       "id": "50493936",
       "type": "Recap",
       "headline": "Mahomes throws 5 TD passes and rookie Johnson runs for 101 yards as Chiefs overwhelm Falcons 35-13",
@@ -174,22 +272,6 @@
       "byline": null,
       "image": "https://s.espncdn.com/stitcher/sports/football/nfl/events/401873058.png?templateId=espn.applewatch.awayhome.1",
       "link": "http://www.espn.com/nfl/recap?gameId=401873058",
-      "premium": false,
-      "team": "kc",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50493995",
-      "type": "Media",
-      "headline": "Kansas City Chiefs vs. Atlanta Falcons: Game Highlights",
-      "description": "Kansas City Chiefs vs. Atlanta Falcons: Game Highlights",
-      "published": "2026-11-15T21:47:43Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1115/538055ea-4b87-43d8-9be8-828316a9a8e6/538055ea-4b87-43d8-9be8-828316a9a8e6.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50493995/game-highlights",
       "premium": false,
       "team": "kc",
       "league": {
@@ -212,22 +294,6 @@
         "id": "soccer",
         "name": "足球",
         "nameEn": "Soccer"
-      }
-    },
-    {
-      "id": "50481210",
-      "type": "HeadlineNews",
-      "headline": "Sources: Chiefs had renowned baseball doctors weigh in on Patrick Mahomes' elbow",
-      "description": "The Chiefs sought medical opinions from two renowned baseball doctors last week on Patrick Mahomes' injured elbow, sources told ESPN.",
-      "published": "2026-11-15T14:02:01Z",
-      "byline": "Adam Schefter",
-      "image": "https://a.espncdn.com/photo/2026/1108/r1743278_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50481210/sources-baseball-doctors-consulted-patrick-mahomes-elbow",
-      "premium": false,
-      "team": "kc",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
       }
     },
     {
@@ -260,38 +326,6 @@
       "league": {
         "id": "cfb",
         "name": "NCAAF"
-      }
-    },
-    {
-      "id": "50478016",
-      "type": "HeadlineNews",
-      "headline": "Warriors' Yaxel Lendeborg (1-for-13) 'flustered' in blowout loss to Spurs",
-      "description": "In his first game as the primary offensive engine in place of the injured Stephen Curry, Warriors rookie Yaxel Lendeborg went 1-of-13 shooting in a 123-85 blowout loss to the Spurs. \"I was flustered the entire game,\" he said. \"Couldn't make a damn layup.\"",
-      "published": "2026-11-14T19:23:28Z",
-      "byline": "Anthony Slater",
-      "image": "https://a.espncdn.com/photo/2026/1114/r1745582_600x400_3-2.jpg",
-      "link": "https://www.espn.com/nba/story/_/id/50478016/warriors-yaxel-lendeborg-struggles-blowout-loss-spurs-says-was-flustered-entire-game",
-      "premium": false,
-      "team": "gs",
-      "league": {
-        "id": "nba",
-        "name": "NBA"
-      }
-    },
-    {
-      "id": "50477506",
-      "type": "Recap",
-      "headline": "Castle scores season-high 32 points as Spurs stop the Warriors 123-85 for 11th straight win",
-      "description": "— Stephon Castle scored a season-high 32 points, Victor Wembanyama had 12 points and 12 rebounds and the San Antonio Spurs won their 11th straight game, rolling past the Golden State Warriors 123-85 Friday night to remain unbeaten in NBA Cup play.",
-      "published": "2026-11-14T05:14:35Z",
-      "byline": null,
-      "image": "https://s.espncdn.com/stitcher/sports/basketball/nba/events/401909302.png?templateId=espn.applewatch.awayhome.1",
-      "link": "http://www.espn.com/nba/recap?gameId=401909302",
-      "premium": false,
-      "team": "gs",
-      "league": {
-        "id": "nba",
-        "name": "NBA"
       }
     },
     {
@@ -407,72 +441,6 @@
       "league": {
         "id": "nfl",
         "name": "NFL"
-      }
-    },
-    {
-      "id": "50451180",
-      "type": "HeadlineNews",
-      "headline": "Man City charges outcome cannot leave 'room for doubt' - sports integrity chief",
-      "description": "Fans must be patient for the appeal outcome in the Manchester City case because it \"cannot leave room for doubt,\" a sport integrity chief has said.",
-      "published": "2026-11-11T07:53:44Z",
-      "byline": "PA",
-      "image": "https://a.espncdn.com/photo/2026/0929/r1723565_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/soccer/story/_/id/50451180/fans-patient-man-city-outcome-sports-integrity-chief",
-      "premium": false,
-      "team": "382",
-      "league": {
-        "id": "soccer",
-        "name": "足球",
-        "nameEn": "Soccer"
-      }
-    },
-    {
-      "id": "50443891",
-      "type": "HeadlineNews",
-      "headline": "Bengals nix agreed-upon trade with Eagles, sources say",
-      "description": "A trade that would've sent Eagles edge rusher Arnold Ebiketie to Cincinnati has been called off, sources told ESPN's Adam Schefter and NFL Network's Ian Rapoport.",
-      "published": "2026-11-10T22:23:26Z",
-      "byline": "Ben Baby",
-      "image": "https://a.espncdn.com/photo/2026/1110/r1744018_2_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50443891/bengals-nix-agreed-trade-eagles-sources-say",
-      "premium": false,
-      "team": "phi",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50445699",
-      "type": "Story",
-      "headline": "MrBeast, meet Haaland: Man City star puts YouTuber through soccer gauntlet",
-      "description": "Manchester City star Erling Haaland has collaborated with popular YouTuber \"MrBeast\" in a series of various soccer challenges.",
-      "published": "2026-11-10T21:49:29Z",
-      "byline": "Roberto Rojas",
-      "image": "https://a.espncdn.com/photo/2026/1110/r1744159_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/soccer/story/_/id/50445699/mrbeast-meet-erling-haaland-manchester-city-star-puts-youtuber-soccer-gauntlet",
-      "premium": false,
-      "team": "382",
-      "league": {
-        "id": "soccer",
-        "name": "足球",
-        "nameEn": "Soccer"
-      }
-    },
-    {
-      "id": "50444816",
-      "type": "HeadlineNews",
-      "headline": "Hall of Famer Ham recovering from medical emergency, Penn State says",
-      "description": "Penn State radio analyst Jack Ham is \"doing really well\" and remains in stable condition after suffering a medical emergency Saturday before the Nittany Lions' game against Washington in Seattle.",
-      "published": "2026-11-10T19:35:50Z",
-      "byline": "Adam Rittenberg",
-      "image": "https://a.espncdn.com/photo/2017/0408/r197865_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/college-football/story/_/id/50444816/hall-famer-jack-ham-recovering-medical-emergency-penn-state-says",
-      "premium": false,
-      "team": "psu",
-      "league": {
-        "id": "cfb",
-        "name": "NCAAF"
       }
     }
   ],
