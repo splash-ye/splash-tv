@@ -826,5 +826,20 @@
       }
     ],
     "foundAt": "2026-11-17T07:01:19.525Z"
+  },
+  "nba:401910003": {
+    "videos": [
+      {
+        "id": "d91Hd6wz5ls",
+        "title": "TRAIL BLAZERS at TIMBERWOLVES | FULL GAME HIGHLIGHTS | November 17, 2026",
+        "channelId": "UCWJ2lWNubArHWmf3FIHbfcQ",
+        "url": "https://www.youtube.com/watch?v=d91Hd6wz5ls",
+        "thumbnail": "https://i.ytimg.com/vi/d91Hd6wz5ls/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-18T04:18:03+00:00"
+      }
+    ],
+    "source": "rss",
+    "foundAt": "2026-11-18T04:45:48.415Z"
   }
 }
