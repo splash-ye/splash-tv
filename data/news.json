@@ -1,10 +1,188 @@
 {
   "version": 3,
-  "day": "20261118",
-  "generatedAt": "2026-11-18T05:01:16.708Z",
+  "day": "20261119",
+  "generatedAt": "2026-11-19T05:01:18.536Z",
   "cfgKey": "[[\"nba\",[\"gs\"],{\"limit\":5}],[\"nfl\",[\"sf\",\"kc\",\"phi\"],{\"limit\":5}],[\"cfb\",[\"psu\"],{\"limit\":5}],[\"soccer\",[],{\"limit\":3,\"teams\":[{\"league\":\"esp.1\",\"team\":\"83\"},{\"league\":\"eng.1\",\"team\":\"382\"}]}]]",
   "partial": false,
   "articles": [
+    {
+      "id": "50526910",
+      "type": "Media",
+      "headline": "Why the Eagles are sticking with Sean Mannion as playcaller",
+      "description": "Tim McManus explains why keeping Sean Mannion in charge of playcalling gives the Eagles a chance to evaluate their offense.",
+      "published": "2026-11-19T04:23:48Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1118/dm_261118_Watchfolder_Eagles_IAsfsf/dm_261118_Watchfolder_Eagles_IAsfsf.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50526910/why-eagles-sticking-sean-mannion-playcaller",
+      "premium": false,
+      "team": "phi",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50527514",
+      "type": "Media",
+      "headline": "Golden State Warriors vs. Dallas Mavericks: Game Highlights",
+      "description": "Golden State Warriors vs. Dallas Mavericks: Game Highlights",
+      "published": "2026-11-19T03:35:31Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1119/8148e474-6770-4210-8719-28b66debfc88/8148e474-6770-4210-8719-28b66debfc88.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50527514/game-highlights",
+      "premium": false,
+      "team": "gs",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      }
+    },
+    {
+      "id": "50527551",
+      "type": "Recap",
+      "headline": "Cooper Flagg scores 33 as Mavericks keep Warriors winless since Stephen Curry's injury",
+      "description": "— Cooper Flagg scored 33 points, P.J. Washington Jr. added 21 and the Dallas Mavericks stopped a three-game losing streak with a 116-94 victory over the Golden State Warriors on Wednesday night.",
+      "published": "2026-11-19T03:34:35Z",
+      "byline": null,
+      "image": "https://s.espncdn.com/stitcher/sports/basketball/nba/events/401910016.png?templateId=espn.applewatch.awayhome.1",
+      "link": "http://www.espn.com/nba/recap?gameId=401910016",
+      "premium": false,
+      "team": "gs",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      }
+    },
+    {
+      "id": "50526309",
+      "type": "HeadlineNews",
+      "headline": "Niners' Nick Bosa on 4-game sack drought: 'Don't think I'm playing my best'",
+      "description": "Niners star Nick Bosa acknowledged his performance this season, including four straight games with no sacks, hasn't been up to his usual standard.",
+      "published": "2026-11-19T01:47:36Z",
+      "byline": "Nick Wagoner",
+      "image": "https://a.espncdn.com/photo/2026/1119/r1747914_600x400_3-2.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50526309/niners-nick-bosa-says-better-amid-4-game-sack-drought",
+      "premium": false,
+      "team": "sf",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50525602",
+      "type": "Media",
+      "headline": "Why the 49ers are practicing in Colorado before Vikings matchup",
+      "description": "Nick Wagoner breaks down the thought process as to why the 49ers are practicing in Colorado before heading to Mexico City.",
+      "published": "2026-11-19T00:44:41Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1118/dm_261118_Niners_in_Colorado_IA/dm_261118_Niners_in_Colorado_IA.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50525602/why-49ers-practicing-colorado-vikings-matchup",
+      "premium": false,
+      "team": "sf",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50524344",
+      "type": "HeadlineNews",
+      "headline": "Andree Jeglertz hails Man City substitutes after hard-fought Häcken win",
+      "description": "Manchester City boss Andree Jeglertz says his side were made to work hard for their 2-0 victory over Hacken in the Women's Champions League.",
+      "published": "2026-11-18T23:41:27Z",
+      "byline": "PA",
+      "image": "https://a.espncdn.com/photo/2026/1118/r1747747_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/soccer/story/_/id/50524344/andree-jeglertz-man-city-hacken",
+      "premium": false,
+      "team": "382",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
+      }
+    },
+    {
+      "id": "50523042",
+      "type": "Media",
+      "headline": "Nick Sirianni: Joe Milton getting starting QB nod in Week 11",
+      "description": "Nick Sirianni: Joe Milton getting starting QB nod in Week 11",
+      "published": "2026-11-18T21:30:18Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1118/ss_20261118_135001204_3747954/ss_20261118_135001204_3747954.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50523042/joe-milton-getting-starting-qb-nod-week-11",
+      "premium": false,
+      "team": "phi",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50522640",
+      "type": "HeadlineNews",
+      "headline": "Eagles' Sirianni sticking with Milton as QB1, Mannion as offensive playcaller",
+      "description": "QB Joe Milton will start again for the Eagles on Sunday and Sean Mannion will remain as the offensive playcaller against the Steelers, coach Nick Sirianni said.",
+      "published": "2026-11-18T18:57:48Z",
+      "byline": "Tim McManus",
+      "image": "https://a.espncdn.com/photo/2026/1118/r1747744_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50522640/eagles-stick-milton-qb1-mannion-offensive-playcaller",
+      "premium": false,
+      "team": "phi",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50522814",
+      "type": "HeadlineNews",
+      "headline": "Sources: Brandon Aiyuk contacted Jayden Daniels to mend friendship with star QB",
+      "description": "Brandon Aiyuk and Jayden Daniels have patched up their relationship after a falling out earlier this year, sources told ESPN.",
+      "published": "2026-11-18T18:50:43Z",
+      "byline": "Jeremy Fowler",
+      "image": "https://a.espncdn.com/photo/2026/0608/r1669910_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50522814/sources-brandon-aiyuk-mended-friendship-jayden-daniels",
+      "premium": false,
+      "team": "sf",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50512572",
+      "type": "Story",
+      "headline": "How fallen giants and their fans bounce back from scandal, relegation",
+      "description": "Some of Europe's greatest teams have suffered relegation as punishment. So what might lie ahead for Man City?",
+      "published": "2026-11-18T17:00:50Z",
+      "byline": "Tom Hamilton",
+      "image": "https://a.espncdn.com/photo/2026/1117/r1747276_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/soccer/story/_/id/50512572/fallen-giants-scandal-relegation-manchester-city",
+      "premium": false,
+      "team": "382",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
+      }
+    },
+    {
+      "id": "50513358",
+      "type": "Story",
+      "headline": "Kansas City Chiefs tight end Travis Kelce's top moments at Arrowhead Stadium",
+      "description": "Kelce's greatest Arrowhead moments include his first catch, lots of playoff magic, and meeting the love of his life, Taylor Swift.",
+      "published": "2026-11-18T11:00:10Z",
+      "byline": "Nate Taylor",
+      "image": "https://a.espncdn.com/photo/2026/1117/r1747330_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50513358/chiefs-travis-kelce-100-games-arrowhead-taylor-swift",
+      "premium": false,
+      "team": "kc",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
     {
       "id": "50517516",
       "type": "Media",
@@ -19,23 +197,6 @@
       "league": {
         "id": "nfl",
         "name": "NFL"
-      }
-    },
-    {
-      "id": "50513761",
-      "type": "HeadlineNews",
-      "headline": "Haaland sends Norway to Nations League quarters on last-minute penalty",
-      "description": "Erling Haaland delivered for Norway on one of the last plays of the game to give his team a 3-2 win over Denmark to advance to the Nations League quarterfinals.",
-      "published": "2026-11-18T00:59:27Z",
-      "byline": "ESPN News Services",
-      "image": "https://a.espncdn.com/photo/2026/1117/r1747269_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/soccer/story/_/id/50513761/erling-haaland-sends-norway-nations-league-quarterfinals",
-      "premium": false,
-      "team": "382",
-      "league": {
-        "id": "soccer",
-        "name": "足球",
-        "nameEn": "Soccer"
       }
     },
     {
@@ -152,22 +313,6 @@
       }
     },
     {
-      "id": "50507554",
-      "type": "Media",
-      "headline": "Golden State Warriors vs. New Orleans Pelicans: Game Highlights",
-      "description": "Golden State Warriors vs. New Orleans Pelicans: Game Highlights",
-      "published": "2026-11-17T03:45:41Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1117/104662c7-880d-4832-b199-613858a0c9ce/104662c7-880d-4832-b199-613858a0c9ce.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50507554/game-highlights",
-      "premium": false,
-      "team": "gs",
-      "league": {
-        "id": "nba",
-        "name": "NBA"
-      }
-    },
-    {
       "id": "50504306",
       "type": "Preview",
       "headline": "Penn State squares off against Rutgers in Big Ten action",
@@ -181,70 +326,6 @@
       "league": {
         "id": "cfb",
         "name": "NCAAF"
-      }
-    },
-    {
-      "id": "50498373",
-      "type": "HeadlineNews",
-      "headline": "49ers put up big numbers vs. Cowboys, tout 'incredibly dangerous' offense",
-      "description": "The 49ers racked up 584 yards against the Cowboys on Sunday in a jaw-dropping offensive display led by Brock Purdy, Christian McCaffrey and Deebo Samuel.",
-      "published": "2026-11-16T05:29:59Z",
-      "byline": "Nick Wagoner",
-      "image": "https://a.espncdn.com/photo/2026/1116/r1746494_600x600_1-1.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50498373/49ers-put-big-numbers-victory-cowboys",
-      "premium": false,
-      "team": "sf",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50498212",
-      "type": "Media",
-      "headline": "49ers defense left frustrated after win over Cowboys",
-      "description": "Nick Wagoner discusses the poor play from the 49ers defense in their 46-40 win over the Cowboys.",
-      "published": "2026-11-16T03:56:45Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1115/dm_261115_Niners_beat_Cowboys_IA/dm_261115_Niners_beat_Cowboys_IA.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50498212/49ers-defense-left-frustrated-win-cowboys",
-      "premium": false,
-      "team": "sf",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50497971",
-      "type": "Media",
-      "headline": "Emmett Johnson dominates in win over Falcons",
-      "description": "Nate Taylor discusses Chiefs rookie RB Emmett Johnson's standout performance in the win over the Falcons.",
-      "published": "2026-11-16T03:19:47Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1115/dm_261115_IA_Chiefs_16x9/dm_261115_IA_Chiefs_16x9.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50497971/emmett-johnson-dominates-win-falcons",
-      "premium": false,
-      "team": "kc",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50496876",
-      "type": "Recap",
-      "headline": "McCaffrey's TDs of 74 and 66 yards and Samuel's 70-yard score help 49ers beat Cowboys 46-40",
-      "description": "— Christian McCaffrey's first long touchdown catch was straight out of the schoolyard, the second a Kyle Shanahan special for the San Francisco 49ers.",
-      "published": "2026-11-16T02:50:35Z",
-      "byline": null,
-      "image": "https://s.espncdn.com/stitcher/sports/football/nfl/events/401873063.png?templateId=espn.applewatch.awayhome.1",
-      "link": "http://www.espn.com/nfl/recap?gameId=401873063",
-      "premium": false,
-      "team": "sf",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
       }
     },
     {
@@ -277,39 +358,6 @@
       "league": {
         "id": "nfl",
         "name": "NFL"
-      }
-    },
-    {
-      "id": "50490251",
-      "type": "HeadlineNews",
-      "headline": "Haaland 'incredibly happy' at Man City, not thinking about possible sanctions",
-      "description": "Erling Haaland says he is \"incredibly happy\" at Manchester City and his focus is on performing and not on the potential sanctions against the club.",
-      "published": "2026-11-15T14:46:50Z",
-      "byline": "PA",
-      "image": "https://a.espncdn.com/photo/2026/1114/r1745802_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/soccer/story/_/id/50490251/erling-haaland-man-city-premier-league-sanctions",
-      "premium": false,
-      "team": "382",
-      "league": {
-        "id": "soccer",
-        "name": "足球",
-        "nameEn": "Soccer"
-      }
-    },
-    {
-      "id": "50488454",
-      "type": "Preview",
-      "headline": "Pelicans take on the Warriors on 6-game skid",
-      "description": "Golden State Warriors (8-5, eighth in the Western Conference) vs. New Orleans Pelicans (4-10, 12th in the Western Conference)",
-      "published": "2026-11-15T07:04:36Z",
-      "byline": null,
-      "image": "https://s.espncdn.com/stitcher/sports/basketball/nba/events/401910000.png?templateId=espn.applewatch.awayhome.1",
-      "link": "http://www.espn.com/nba/preview?gameId=401910000",
-      "premium": false,
-      "team": "gs",
-      "league": {
-        "id": "nba",
-        "name": "NBA"
       }
     },
     {
@@ -409,38 +457,6 @@
         "id": "soccer",
         "name": "足球",
         "nameEn": "Soccer"
-      }
-    },
-    {
-      "id": "50454351",
-      "type": "HeadlineNews",
-      "headline": "Bengals' Zac Taylor apologizes for failed trade with Eagles: 'It was on our end'",
-      "description": "Bengals coach Zac Taylor apologized for the failed trade for Eagles edge rusher Arnold Ebiketie ahead of Tuesday's deadline.",
-      "published": "2026-11-11T20:31:41Z",
-      "byline": "Ben Baby",
-      "image": "https://a.espncdn.com/photo/2026/1111/r1744502_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50454351/bengals-zac-taylor-apologizes-failed-trade-eagles",
-      "premium": false,
-      "team": "phi",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50447827",
-      "type": "Story",
-      "headline": "The Philadelphia Eagles' 2026 trade haul is likely to age well over time",
-      "description": "Whether Philadelphia wants to go after its QB of the future or build up around Jalen Hurts, it has options.",
-      "published": "2026-11-11T13:25:44Z",
-      "byline": "Tim McManus",
-      "image": "https://a.espncdn.com/photo/2026/1111/r1744284_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50447827/philadelphia-eagles-trade-haul-2027-draft-picks",
-      "premium": false,
-      "team": "phi",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
       }
     }
   ],
