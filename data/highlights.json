@@ -897,5 +897,20 @@
       }
     ],
     "foundAt": "2026-11-19T07:01:26.795Z"
+  },
+  "nba:401910016": {
+    "videos": [
+      {
+        "id": "p9cFxcaPRWQ",
+        "title": "WARRIORS at MAVERICKS | FULL GAME HIGHLIGHTS | November 18, 2026",
+        "channelId": "UCWJ2lWNubArHWmf3FIHbfcQ",
+        "url": "https://www.youtube.com/watch?v=p9cFxcaPRWQ",
+        "thumbnail": "https://i.ytimg.com/vi/p9cFxcaPRWQ/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-19T04:45:55.298Z"
+      }
+    ],
+    "source": "channel-search",
+    "foundAt": "2026-11-19T08:45:55.299Z"
   }
 }
