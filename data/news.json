@@ -1,16 +1,145 @@
 {
   "version": 3,
-  "day": "20261119",
-  "generatedAt": "2026-11-19T05:01:18.536Z",
+  "day": "20261120",
+  "generatedAt": "2026-11-20T05:01:13.506Z",
   "cfgKey": "[[\"nba\",[\"gs\"],{\"limit\":5}],[\"nfl\",[\"sf\",\"kc\",\"phi\"],{\"limit\":5}],[\"cfb\",[\"psu\"],{\"limit\":5}],[\"soccer\",[],{\"limit\":3,\"teams\":[{\"league\":\"esp.1\",\"team\":\"83\"},{\"league\":\"eng.1\",\"team\":\"382\"}]}]]",
   "partial": false,
   "articles": [
+    {
+      "id": "50537250",
+      "type": "Media",
+      "headline": "Golden State Warriors vs. Memphis Grizzlies: Game Highlights",
+      "description": "Golden State Warriors vs. Memphis Grizzlies: Game Highlights",
+      "published": "2026-11-20T04:05:42Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1120/b6dc36c5-a99b-464a-b491-6cc3a4044a9c/b6dc36c5-a99b-464a-b491-6cc3a4044a9c.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50537250/game-highlights",
+      "premium": false,
+      "team": "gs",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      }
+    },
+    {
+      "id": "50537488",
+      "type": "Recap",
+      "headline": "Grizzlies roll past short-handed Warriors 126-98 for a fifth straight win",
+      "description": "— Jaylen Wells had 22 points and Cedric Coward scored 19 to lead the Memphis Grizzlies to their fifth straight win on Thursday night, 126-98 over the short-handed Golden State Warriors.",
+      "published": "2026-11-20T03:58:36Z",
+      "byline": null,
+      "image": "https://s.espncdn.com/stitcher/sports/basketball/nba/events/401910019.png?templateId=espn.applewatch.awayhome.1",
+      "link": "http://www.espn.com/nba/recap?gameId=401910019",
+      "premium": false,
+      "team": "gs",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      }
+    },
+    {
+      "id": "50535532",
+      "type": "Preview",
+      "headline": "The Steelers last won in Philadelphia in 1965. Can they top an Eagles team on 7-game losing streak?",
+      "description": "— Perhaps the Steelers should have stayed attached at the hip pads with the Eagles — as they were when they merged for the 1943 season to form the Steagles — to avoid such an ignominious losing streak in Philadelphia.",
+      "published": "2026-11-20T00:22:33Z",
+      "byline": null,
+      "image": "https://s.espncdn.com/stitcher/sports/football/nfl/events/401873076.png?templateId=espn.applewatch.awayhome.1",
+      "link": "http://www.espn.com/nfl/preview?gameId=401873076",
+      "premium": false,
+      "team": "phi",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50532862",
+      "type": "Preview",
+      "headline": "Vikings-49ers matchup in Mexico features the best defense vs. the best offense",
+      "description": "When Brock Purdy last walked off the field after playing Minnesota in 2024, he sought out Vikings defensive coordinator Brian Flores an complimented him on...",
+      "published": "2026-11-19T21:25:08Z",
+      "byline": null,
+      "image": "https://s.espncdn.com/stitcher/sports/football/nfl/events/401873077.png?templateId=espn.applewatch.awayhome.1",
+      "link": "http://www.espn.com/nfl/preview?gameId=401873077",
+      "premium": false,
+      "team": "sf",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50532863",
+      "type": "Preview",
+      "headline": "Chiefs are flying high but can ill afford to overlook the lowly Cardinals when they meet Sunday",
+      "description": "— If ever there was a time for an NFL team to overlook somebody, it just might be Sunday afternoon at Arrowhead Stadium, where the Kansas City Chiefs will continue their pursuit of another AFC West title against the injured, downtrodden Arizona...",
+      "published": "2026-11-19T21:25:04Z",
+      "byline": null,
+      "image": "https://s.espncdn.com/stitcher/sports/football/nfl/events/401873067.png?templateId=espn.applewatch.awayhome.1",
+      "link": "http://www.espn.com/nfl/preview?gameId=401873067",
+      "premium": false,
+      "team": "kc",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50533036",
+      "type": "HeadlineNews",
+      "headline": "Leader in his own way Haaland making 'natural' progression as City veteran",
+      "description": "Erling Haaland said it is \"natural\" for him to take on more responsibility as one of Manchester City's captains this season, but wants to do it in his own way.",
+      "published": "2026-11-19T20:30:33Z",
+      "byline": "ESPN News Services",
+      "image": "https://a.espncdn.com/photo/2026/1031/r1738986_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/soccer/story/_/id/50533036/erling-haaland-man-city-leader",
+      "premium": false,
+      "team": "382",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
+      }
+    },
+    {
+      "id": "50532925",
+      "type": "HeadlineNews",
+      "headline": "Hall of Famer Jack Ham returning to broadcast booth after health scare",
+      "description": "Hall of Fame linebacker and Penn State radio analyst Jack Ham will return to the broadcast booth on Saturday, just two weeks after suffering a medical emergency.",
+      "published": "2026-11-19T19:37:38Z",
+      "byline": "Adam Rittenberg",
+      "image": "https://a.espncdn.com/photo/2017/0408/r197865_600x400_3-2.jpg",
+      "link": "https://www.espn.com/college-football/story/_/id/50532925/jack-ham-returning-broadcast-booth-health-scare",
+      "premium": false,
+      "team": "psu",
+      "league": {
+        "id": "cfb",
+        "name": "NCAAF"
+      }
+    },
+    {
+      "id": "50531808",
+      "type": "Media",
+      "headline": "Nick Bosa looks to end defensive struggles",
+      "description": "Nick Wagoner reports on Nick Bosa looking to end his 4-game drought of not having a sack in their next matchup vs. the Vikings.",
+      "published": "2026-11-19T16:09:49Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1119/dm_261119_Nick_Bosa_looks_to_end_defensive_struggles/dm_261119_Nick_Bosa_looks_to_end_defensive_struggles.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50531808/nick-bosa-looks-end-defensive-struggles",
+      "premium": false,
+      "team": "sf",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
     {
       "id": "50526910",
       "type": "Media",
       "headline": "Why the Eagles are sticking with Sean Mannion as playcaller",
       "description": "Tim McManus explains why keeping Sean Mannion in charge of playcalling gives the Eagles a chance to evaluate their offense.",
-      "published": "2026-11-19T04:23:48Z",
+      "published": "2026-11-19T14:55:18Z",
       "byline": null,
       "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1118/dm_261118_Watchfolder_Eagles_IAsfsf/dm_261118_Watchfolder_Eagles_IAsfsf.jpg",
       "link": "https://www.espn.com/video/clip/_/id/50526910/why-eagles-sticking-sean-mannion-playcaller",
@@ -19,6 +148,72 @@
       "league": {
         "id": "nfl",
         "name": "NFL"
+      }
+    },
+    {
+      "id": "50530231",
+      "type": "Story",
+      "headline": "Messi vs. Ronaldo, Man Utd hire Moyes: GTA V came out in a different soccer world",
+      "description": "As Grand Theft Auto VI is finally unleashed, here is what was happening in the world of soccer when the previous game was released 13 years ago",
+      "published": "2026-11-19T13:08:47Z",
+      "byline": "Chris Wright",
+      "image": "https://a.espncdn.com/photo/2026/1119/r1748037_2_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/soccer/story/_/id/50530231/gta-vi-messi-ronaldo-manchester-united",
+      "premium": false,
+      "team": "83",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
+      }
+    },
+    {
+      "id": "50530266",
+      "type": "HeadlineNews",
+      "headline": "Barcelona chief Deco keen for Liverpool to make Ronald Araujo loan permanent",
+      "description": "Barcelona sporting director Deco has said the Spanish champions would welcome the money if Liverpool decide to sign Ronald Araújo beyond his loan spell.",
+      "published": "2026-11-19T12:18:13Z",
+      "byline": "Sam Marsden",
+      "image": "https://a.espncdn.com/photo/2026/1119/r1748034_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/soccer/story/_/id/50530266/barcelona-deco-ronald-araujo-liverpool-transfer",
+      "premium": false,
+      "team": "83",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
+      }
+    },
+    {
+      "id": "50522640",
+      "type": "HeadlineNews",
+      "headline": "Eagles' Sirianni sticking with Milton as QB1, Mannion as offensive playcaller",
+      "description": "QB Joe Milton will start again for the Eagles on Sunday and Sean Mannion will remain as the offensive playcaller against the Steelers, coach Nick Sirianni said.",
+      "published": "2026-11-19T11:37:28Z",
+      "byline": "Tim McManus",
+      "image": "https://a.espncdn.com/photo/2026/1118/r1747744_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50522640/eagles-stick-milton-qb1-mannion-offensive-playcaller",
+      "premium": false,
+      "team": "phi",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50528957",
+      "type": "Preview",
+      "headline": "Memphis takes on Golden State, looks for 5th straight victory",
+      "description": "Golden State Warriors (8-7, 10th in the Western Conference) vs. Memphis Grizzlies (11-4, fifth in the Western Conference)",
+      "published": "2026-11-19T07:04:42Z",
+      "byline": null,
+      "image": "https://s.espncdn.com/stitcher/sports/basketball/nba/events/401910019.png?templateId=espn.applewatch.awayhome.1",
+      "link": "http://www.espn.com/nba/preview?gameId=401910019",
+      "premium": false,
+      "team": "gs",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
       }
     },
     {
@@ -119,22 +314,6 @@
       }
     },
     {
-      "id": "50522640",
-      "type": "HeadlineNews",
-      "headline": "Eagles' Sirianni sticking with Milton as QB1, Mannion as offensive playcaller",
-      "description": "QB Joe Milton will start again for the Eagles on Sunday and Sean Mannion will remain as the offensive playcaller against the Steelers, coach Nick Sirianni said.",
-      "published": "2026-11-18T18:57:48Z",
-      "byline": "Tim McManus",
-      "image": "https://a.espncdn.com/photo/2026/1118/r1747744_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50522640/eagles-stick-milton-qb1-mannion-offensive-playcaller",
-      "premium": false,
-      "team": "phi",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
       "id": "50522814",
       "type": "HeadlineNews",
       "headline": "Sources: Brandon Aiyuk contacted Jayden Daniels to mend friendship with star QB",
@@ -200,71 +379,6 @@
       }
     },
     {
-      "id": "50514283",
-      "type": "Media",
-      "headline": "Fjørtoft: Haaland is 'Gerd Müller level' for Norway",
-      "description": "Jan Åge Fjørtoft praises Erling Haaland's performance for Norway in their 2-3 win over Denmark to advance to the Nations League quarter-finals.",
-      "published": "2026-11-17T22:27:44Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1117/dm_261117_Fjortoft_Haaland_is_Gerd_Muller_level_for_Norway/dm_261117_Fjortoft_Haaland_is_Gerd_Muller_level_for_Norway.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50514283/haaland-gerd-muller-level-norway",
-      "premium": false,
-      "team": "382",
-      "league": {
-        "id": "soccer",
-        "name": "足球",
-        "nameEn": "Soccer"
-      }
-    },
-    {
-      "id": "50502440",
-      "type": "Story",
-      "headline": "49ers WR Mike Evans' Achilles tendinitis injury explained",
-      "description": "ESPN spoke with a medical professional for a better understanding of Evans' diagnosis. When could he return? And will the injury completely resolve itself?",
-      "published": "2026-11-17T19:24:31Z",
-      "byline": "Nick Wagoner",
-      "image": "https://a.espncdn.com/photo/2026/1020/r1733349_608x342_16-9.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50502440/san-francisco-49ers-mike-evans-achilles-tendinitis-injury-recovery",
-      "premium": false,
-      "team": "sf",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50511400",
-      "type": "Media",
-      "headline": "How Stephen A. is looking at Vikings-49ers matchup",
-      "description": "How Stephen A. is looking at Vikings-49ers matchup",
-      "published": "2026-11-17T17:03:10Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1117/ss_20261117_110022595_3746318/ss_20261117_110022595_3746318.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50511400/how-stephen-looking-vikings-49ers-matchup",
-      "premium": false,
-      "team": "sf",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50503111",
-      "type": "Story",
-      "headline": "The clock is ticking on Steph Curry's final act with the Warriors",
-      "description": "At 38, Curry is still brilliant -- but managing his body has become the biggest battle of his career.",
-      "published": "2026-11-17T16:58:52Z",
-      "byline": "Anthony Slater",
-      "image": "https://a.espncdn.com/photo/2026/1116/r1746718_608x342_16-9.jpg",
-      "link": "https://www.espn.com/nba/story/_/id/50503111/steph-curry-warriors-race-injuries",
-      "premium": false,
-      "team": "gs",
-      "league": {
-        "id": "nba",
-        "name": "NBA"
-      }
-    },
-    {
       "id": "50509931",
       "type": "Story",
       "headline": "Emmett Johnson, Jaxon Smith-Njigba shine in big offensive week for Africa's NFL stars",
@@ -278,38 +392,6 @@
       "league": {
         "id": "nfl",
         "name": "NFL"
-      }
-    },
-    {
-      "id": "50508599",
-      "type": "Preview",
-      "headline": "Mavericks take on the Warriors on 3-game slide",
-      "description": "Golden State Warriors (8-6, ninth in the Western Conference) vs. Dallas Mavericks (7-7, 10th in the Western Conference)",
-      "published": "2026-11-17T07:04:34Z",
-      "byline": null,
-      "image": "https://s.espncdn.com/stitcher/sports/basketball/nba/events/401910016.png?templateId=espn.applewatch.awayhome.1",
-      "link": "http://www.espn.com/nba/preview?gameId=401910016",
-      "premium": false,
-      "team": "gs",
-      "league": {
-        "id": "nba",
-        "name": "NBA"
-      }
-    },
-    {
-      "id": "50507602",
-      "type": "Recap",
-      "headline": "Fears' first triple-double leads the Pelicans past the Warriors 115-94",
-      "description": "— Jeremiah Fears had 19 points, 10 assists and 10 rebounds for his first career triple-double, and the New Orleans Pelicans snapped a six-game losing streak with a 115-94 victory over the Golden State Warriors on Monday night.",
-      "published": "2026-11-17T03:46:35Z",
-      "byline": null,
-      "image": "https://s.espncdn.com/stitcher/sports/basketball/nba/events/401910000.png?templateId=espn.applewatch.awayhome.1",
-      "link": "http://www.espn.com/nba/recap?gameId=401910000",
-      "premium": false,
-      "team": "gs",
-      "league": {
-        "id": "nba",
-        "name": "NBA"
       }
     },
     {
@@ -337,22 +419,6 @@
       "byline": "Nate Taylor",
       "image": "https://a.espncdn.com/photo/2026/1115/r1746379_2_600x600_1-1.jpg",
       "link": "https://www.espn.com/nfl/story/_/id/50496736/patrick-mahomes-stars-chiefs-sync-josh-downs",
-      "premium": false,
-      "team": "kc",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50493936",
-      "type": "Recap",
-      "headline": "Mahomes throws 5 TD passes and rookie Johnson runs for 101 yards as Chiefs overwhelm Falcons 35-13",
-      "description": "— Some new names had the Kansas City Chiefs looking very young — and very strong.",
-      "published": "2026-11-15T23:11:35Z",
-      "byline": null,
-      "image": "https://s.espncdn.com/stitcher/sports/football/nfl/events/401873058.png?templateId=espn.applewatch.awayhome.1",
-      "link": "http://www.espn.com/nfl/recap?gameId=401873058",
       "premium": false,
       "team": "kc",
       "league": {
@@ -393,22 +459,6 @@
       }
     },
     {
-      "id": "50473514",
-      "type": "HeadlineNews",
-      "headline": "Eagles release wide receiver Hollywood Brown per request",
-      "description": "Receiver Hollywood Brown, who has played sparingly over the first half of the season, has been released by the Eagles upon his request.",
-      "published": "2026-11-13T21:31:47Z",
-      "byline": "Tim McManus",
-      "image": "https://a.espncdn.com/photo/2026/1113/r1745388_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50473514/sources-eagles-release-wr-hollywood-brown-per-request",
-      "premium": false,
-      "team": "phi",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
       "id": "50470476",
       "type": "HeadlineNews",
       "headline": "Raphinha clears up Brazil comments: 'If my body allows it, I will give my best'",
@@ -417,40 +467,6 @@
       "byline": "Adriana Garcia",
       "image": "https://a.espncdn.com/photo/2026/1113/r1745199_1296x729_16-9.jpg",
       "link": "https://www.espn.com/soccer/story/_/id/50470476/raphinha-brazil-international-friendly",
-      "premium": false,
-      "team": "83",
-      "league": {
-        "id": "soccer",
-        "name": "足球",
-        "nameEn": "Soccer"
-      }
-    },
-    {
-      "id": "50460503",
-      "type": "HeadlineNews",
-      "headline": "Barcelona fan for life -- and beyond: Fans can pay to deposit ashes at Camp Nou",
-      "description": "Barcelona are giving their fans the possibility to be part of the club once they pass away by offering from 2027 a columbarium and commemorative plaques at their stadium.",
-      "published": "2026-11-12T11:50:26Z",
-      "byline": "Adriana Garcia",
-      "image": "https://a.espncdn.com/photo/2026/0915/r1716941_2_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/soccer/story/_/id/50460503/barcelona-camp-nou-ashes-fans",
-      "premium": false,
-      "team": "83",
-      "league": {
-        "id": "soccer",
-        "name": "足球",
-        "nameEn": "Soccer"
-      }
-    },
-    {
-      "id": "50455459",
-      "type": "HeadlineNews",
-      "headline": "Spain's De la Fuente slams 'lying' over Lamine Yamal's 'special privileges'",
-      "description": "Spain coach Luis de la Fuente defended Lamine Yamal against suggestions of preferential treatment after the forward was allowed to join the national team late.",
-      "published": "2026-11-12T10:26:04Z",
-      "byline": "ESPN News Services",
-      "image": "https://a.espncdn.com/photo/2026/1111/r1744573_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/soccer/story/_/id/50455459/spain-lamine-yamal-injury-luis-de-la-fuente-nations-league",
       "premium": false,
       "team": "83",
       "league": {
