@@ -969,5 +969,19 @@
       }
     ],
     "foundAt": "2026-11-21T07:15:45.535Z"
+  },
+  "roundup:nba:nightly:20261120": {
+    "videos": [
+      {
+        "id": "Al-EioHioAw",
+        "title": "NBA's Nightly Recap | November 20, 2026",
+        "channelId": "UCWJ2lWNubArHWmf3FIHbfcQ",
+        "url": "https://www.youtube.com/watch?v=Al-EioHioAw",
+        "thumbnail": "https://i.ytimg.com/vi/Al-EioHioAw/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-21T09:07:49.866Z"
+      }
+    ],
+    "foundAt": "2026-11-21T09:15:49.866Z"
   }
 }
