@@ -1,7 +1,7 @@
 {
   "version": 3,
-  "day": "20261120",
-  "generatedAt": "2026-11-20T05:01:12.463Z",
+  "day": "20261121",
+  "generatedAt": "2026-11-21T05:01:20.184Z",
   "cfgKey": "[{\"id\":\"nba\",\"name\":\"NBA\",\"sport\":\"basketball\",\"league\":\"nba\",\"teams\":[\"gs\"],\"marquee\":{\"type\":\"leagueTop\",\"topN\":8},\"news\":{\"limit\":5},\"highlights\":{\"matcher\":\"nba\",\"marquee\":true,\"channels\":[\"UCWJ2lWNubArHWmf3FIHbfcQ\"],\"roundups\":[\"nightly\",\"topPlays\"]},\"standings\":{\"groupOrder\":[\"Western Conference\",\"Eastern Conference\"]}},{\"id\":\"nfl\",\"name\":\"NFL\",\"sport\":\"football\",\"league\":\"nfl\",\"teams\":[\"sf\",\"kc\",\"phi\"],\"marquee\":{\"type\":\"divisionTop\",\"perDivision\":2,\"winningRecord\":true},\"news\":{\"limit\":5},\"highlights\":{\"matcher\":\"nfl\",\"marquee\":true,\"channels\":[\"UCDVYQ4Zhbm3S2dlz7P1GBDg\"],\"roundups\":[\"top15\"]},\"standings\":{\"level\":3}},{\"id\":\"cfb\",\"name\":\"NCAAF\",\"sport\":\"football\",\"league\":\"college-football\",\"teams\":[\"psu\"],\"scoreboardParams\":\"groups=80&limit=300\",\"marquee\":{\"type\":\"poll\",\"topN\":15,\"polls\":[\"cfp\",\"ap\"]},\"news\":{\"limit\":5},\"highlights\":{\"matcher\":\"cfb\",\"marquee\":true,\"channels\":[\"UCXnslB_TwYqScBRf4bPf3vA\",\"UCpwix-O6ceqMgdxhqIynzFA\"]},\"standings\":{\"polls\":[\"cfp\",\"ap\"]}},{\"id\":\"soccer\",\"name\":\"足球\",\"nameEn\":\"Soccer\",\"sport\":\"soccer\",\"teams\":[],\"competitions\":[{\"league\":\"eng.1\",\"name\":\"英超\",\"nameEn\":\"Premier League\",\"channels\":[\"UCqZQlzSHbVJrwrn5XvzrzcA\"]},{\"league\":\"esp.1\",\"name\":\"西甲\",\"nameEn\":\"LaLiga\",\"channels\":[\"UC6c1z7bA__85CIWZ_jpCK-Q\",\"UCTv-XvfzLX3i4IGWAm4sbmA\"]},{\"league\":\"uefa.champions\",\"name\":\"欧冠\",\"nameEn\":\"Champions League\",\"channels\":[\"UCET00YnetHT7tOpu12v8jxg\"]},{\"league\":\"eng.fa\",\"name\":\"足总杯\",\"nameEn\":\"FA Cup\",\"channels\":[\"UC6c1z7bA__85CIWZ_jpCK-Q\"]},{\"league\":\"esp.copa_del_rey\",\"name\":\"国王杯\",\"nameEn\":\"Copa del Rey\",\"channels\":[\"UC6c1z7bA__85CIWZ_jpCK-Q\"]}],\"marquee\":{\"type\":\"fixedList\",\"criteria\":\"豪门对决\",\"criteriaEn\":\"Big clubs\",\"clubs\":[\"382\",\"359\",\"364\",\"363\",\"86\",\"83\",\"1068\",\"132\",\"160\"],\"clubNames\":\"曼城 阿森纳 利物浦 切尔西 皇马 巴萨 马竞 拜仁 巴黎圣日耳曼\",\"lookupLeagues\":[\"ger.1\",\"fra.1\"]},\"news\":{\"limit\":3,\"teams\":[{\"league\":\"esp.1\",\"team\":\"83\"},{\"league\":\"eng.1\",\"team\":\"382\"}]},\"highlights\":{\"matcher\":\"soccer\",\"marquee\":true,\"aliases\":{\"83\":[\"Barcelona\",\"Barca\",\"FC Barcelona\"],\"86\":[\"Real Madrid\"],\"132\":[\"Bayern Munich\",\"Bayern Munchen\",\"FC Bayern\",\"Bayern\"],\"160\":[\"Paris Saint-Germain\",\"Paris Saint Germain\",\"PSG\",\"Paris\"],\"359\":[\"Arsenal\"],\"363\":[\"Chelsea\"],\"364\":[\"Liverpool\"],\"382\":[\"Man City\",\"Manchester City\"],\"1068\":[\"Atletico Madrid\",\"Atletico de Madrid\",\"Atletico\",\"Atleti\"]}}}]",
   "partial": false,
   "daysAhead": 7,
@@ -545,64 +545,6 @@
     }
   ],
   "games": [
-    {
-      "id": "401910019",
-      "date": "2026-11-20T01:00Z",
-      "timeValid": true,
-      "name": "Golden State Warriors at Memphis Grizzlies",
-      "shortName": "GS @ MEM",
-      "seasonYear": 2027,
-      "seasonTypeId": 2,
-      "week": null,
-      "note": null,
-      "status": {
-        "state": "post",
-        "completed": true,
-        "detail": "Final"
-      },
-      "home": {
-        "side": "home",
-        "id": "29",
-        "abbr": "MEM",
-        "name": "Memphis Grizzlies",
-        "short": "Grizzlies",
-        "location": "Memphis",
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/mem.png",
-        "score": "126",
-        "winner": true,
-        "record": "12-4",
-        "rank": null
-      },
-      "away": {
-        "side": "away",
-        "id": "9",
-        "abbr": "GS",
-        "name": "Golden State Warriors",
-        "short": "Warriors",
-        "location": "Golden State",
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png",
-        "score": "98",
-        "winner": false,
-        "record": "8-8",
-        "rank": null
-      },
-      "venue": "FedExForum",
-      "broadcasts": [
-        "DAZN MEM"
-      ],
-      "link": "https://www.espn.com/nba/game/_/gameId/401910019/warriors-grizzlies",
-      "league": {
-        "id": "nba",
-        "name": "NBA"
-      },
-      "focusIds": [
-        "9"
-      ],
-      "tags": [
-        "follow"
-      ],
-      "ranks": null
-    },
     {
       "id": "401858532",
       "date": "2026-11-21T20:30Z",
@@ -1308,6 +1250,243 @@
       "ranks": {
         "home": "AFC东区第1",
         "away": "AFC西区第1"
+      }
+    },
+    {
+      "id": "401873083",
+      "date": "2026-11-27T20:00Z",
+      "timeValid": true,
+      "name": "Denver Broncos at Pittsburgh Steelers",
+      "shortName": "DEN @ PIT",
+      "seasonYear": 2026,
+      "seasonTypeId": 2,
+      "week": 12,
+      "note": null,
+      "status": {
+        "state": "pre",
+        "completed": false,
+        "detail": "11/27 - 3:00 PM EST"
+      },
+      "home": {
+        "side": "home",
+        "id": "23",
+        "abbr": "PIT",
+        "name": "Pittsburgh Steelers",
+        "short": "Steelers",
+        "location": "Pittsburgh",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png",
+        "score": "0",
+        "winner": null,
+        "record": "6-3",
+        "rank": null
+      },
+      "away": {
+        "side": "away",
+        "id": "7",
+        "abbr": "DEN",
+        "name": "Denver Broncos",
+        "short": "Broncos",
+        "location": "Denver",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png",
+        "score": "0",
+        "winner": null,
+        "record": "7-2",
+        "rank": null
+      },
+      "venue": "Acrisure Stadium",
+      "broadcasts": [
+        "Prime Video"
+      ],
+      "link": "https://www.espn.com/nfl/game/_/gameId/401873083/broncos-steelers",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      },
+      "focusIds": [],
+      "tags": [
+        "marquee"
+      ],
+      "ranks": {
+        "home": "AFC北区第2",
+        "away": "AFC西区第2"
+      }
+    },
+    {
+      "id": "401909331",
+      "date": "2026-11-28T01:30Z",
+      "timeValid": true,
+      "name": "Memphis Grizzlies at Minnesota Timberwolves",
+      "shortName": "MEM @ MIN",
+      "seasonYear": 2027,
+      "seasonTypeId": 2,
+      "week": null,
+      "note": "NBA Cup - Group Play",
+      "status": {
+        "state": "pre",
+        "completed": false,
+        "detail": "11/27 - 8:30 PM EST"
+      },
+      "home": {
+        "side": "home",
+        "id": "16",
+        "abbr": "MIN",
+        "name": "Minnesota Timberwolves",
+        "short": "Timberwolves",
+        "location": "Minnesota",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+        "score": "0",
+        "winner": null,
+        "record": "11-5",
+        "rank": null
+      },
+      "away": {
+        "side": "away",
+        "id": "29",
+        "abbr": "MEM",
+        "name": "Memphis Grizzlies",
+        "short": "Grizzlies",
+        "location": "Memphis",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+        "score": "0",
+        "winner": null,
+        "record": "12-4",
+        "rank": null
+      },
+      "venue": "Target Center",
+      "broadcasts": [
+        "DAZN MIN",
+        "DAZN MEM"
+      ],
+      "link": "https://www.espn.com/nba/game/_/gameId/401909331/grizzlies-timberwolves",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      },
+      "focusIds": [],
+      "tags": [
+        "marquee"
+      ],
+      "ranks": {
+        "home": "#7",
+        "away": "#8"
+      }
+    },
+    {
+      "id": "401909336",
+      "date": "2026-11-28T02:30Z",
+      "timeValid": true,
+      "name": "Golden State Warriors at Portland Trail Blazers",
+      "shortName": "GS @ POR",
+      "seasonYear": 2027,
+      "seasonTypeId": 2,
+      "week": null,
+      "note": "NBA Cup - Group Play",
+      "status": {
+        "state": "pre",
+        "completed": false,
+        "detail": "11/27 - 9:30 PM EST"
+      },
+      "home": {
+        "side": "home",
+        "id": "22",
+        "abbr": "POR",
+        "name": "Portland Trail Blazers",
+        "short": "Trail Blazers",
+        "location": "Portland",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/por.png",
+        "score": null,
+        "winner": null,
+        "record": null,
+        "rank": null
+      },
+      "away": {
+        "side": "away",
+        "id": "9",
+        "abbr": "GS",
+        "name": "Golden State Warriors",
+        "short": "Warriors",
+        "location": "Golden State",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png",
+        "score": null,
+        "winner": null,
+        "record": null,
+        "rank": null
+      },
+      "venue": "Moda Center",
+      "broadcasts": [
+        "KUNP 16",
+        "BlazerVision"
+      ],
+      "link": "https://www.espn.com/nba/game/_/gameId/401909336/warriors-trail-blazers",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      },
+      "focusIds": [
+        "9"
+      ],
+      "tags": [
+        "follow"
+      ],
+      "ranks": null
+    },
+    {
+      "id": "401909333",
+      "date": "2026-11-28T02:30Z",
+      "timeValid": true,
+      "name": "Los Angeles Lakers at San Antonio Spurs",
+      "shortName": "LAL @ SA",
+      "seasonYear": 2027,
+      "seasonTypeId": 2,
+      "week": null,
+      "note": "NBA Cup - Group Play",
+      "status": {
+        "state": "pre",
+        "completed": false,
+        "detail": "11/27 - 9:30 PM EST"
+      },
+      "home": {
+        "side": "home",
+        "id": "24",
+        "abbr": "SA",
+        "name": "San Antonio Spurs",
+        "short": "Spurs",
+        "location": "San Antonio",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+        "score": "0",
+        "winner": null,
+        "record": "13-3",
+        "rank": null
+      },
+      "away": {
+        "side": "away",
+        "id": "13",
+        "abbr": "LAL",
+        "name": "Los Angeles Lakers",
+        "short": "Lakers",
+        "location": "Los Angeles",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+        "score": "0",
+        "winner": null,
+        "record": "13-3",
+        "rank": null
+      },
+      "venue": "Frost Bank Center",
+      "broadcasts": [
+        "Prime Video"
+      ],
+      "link": "https://www.espn.com/nba/game/_/gameId/401909333/lakers-spurs",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      },
+      "focusIds": [],
+      "tags": [
+        "marquee"
+      ],
+      "ranks": {
+        "home": "#1",
+        "away": "#2"
       }
     }
   ],
