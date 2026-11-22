@@ -983,5 +983,29 @@
       }
     ],
     "foundAt": "2026-11-21T09:15:49.866Z"
+  },
+  "cfb:401858532": {
+    "videos": [
+      {
+        "id": "Bup8MjSr-DY",
+        "title": "Rutgers at Penn State | Highlights | Big Ten Football | 11/21/2026",
+        "channelId": "UCXnslB_TwYqScBRf4bPf3vA",
+        "url": "https://www.youtube.com/watch?v=Bup8MjSr-DY",
+        "thumbnail": "https://i.ytimg.com/vi/Bup8MjSr-DY/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-22T00:29:45+00:00"
+      },
+      {
+        "id": "JzCTtnX5kKw",
+        "title": "Rutgers Scarlet Knights vs Penn State Nittany Lions Highlights | FOX College Football",
+        "channelId": "UCpwix-O6ceqMgdxhqIynzFA",
+        "url": "https://www.youtube.com/watch?v=JzCTtnX5kKw",
+        "thumbnail": "https://i.ytimg.com/vi/JzCTtnX5kKw/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-22T00:53:42+00:00"
+      }
+    ],
+    "source": "rss",
+    "foundAt": "2026-11-22T02:01:18.170Z"
   }
 }
