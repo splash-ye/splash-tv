@@ -1050,5 +1050,20 @@
       }
     ],
     "foundAt": "2026-11-22T07:31:03.509Z"
+  },
+  "nfl:401873067": {
+    "videos": [
+      {
+        "id": "WwsNx--B79g",
+        "title": "Arizona Cardinals vs Kansas City Chiefs Game Highlights | 2026 NFL Season Week 11",
+        "channelId": "UCDVYQ4Zhbm3S2dlz7P1GBDg",
+        "url": "https://www.youtube.com/watch?v=WwsNx--B79g",
+        "thumbnail": "https://i.ytimg.com/vi/WwsNx--B79g/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-22T21:29:55+00:00"
+      }
+    ],
+    "source": "rss",
+    "foundAt": "2026-11-22T21:45:48.776Z"
   }
 }
