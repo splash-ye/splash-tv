@@ -1,10 +1,142 @@
 {
   "version": 3,
-  "day": "20261121",
-  "generatedAt": "2026-11-21T05:01:23.277Z",
+  "day": "20261122",
+  "generatedAt": "2026-11-22T05:01:15.322Z",
   "cfgKey": "[[\"nba\",[\"gs\"],{\"limit\":5}],[\"nfl\",[\"sf\",\"kc\",\"phi\"],{\"limit\":5}],[\"cfb\",[\"psu\"],{\"limit\":5}],[\"soccer\",[],{\"limit\":3,\"teams\":[{\"league\":\"esp.1\",\"team\":\"83\"},{\"league\":\"eng.1\",\"team\":\"382\"}]}]]",
   "partial": false,
   "articles": [
+    {
+      "id": "50557043",
+      "type": "Recap",
+      "headline": "Raymond's heads-up pitch helps Rutgers beat Penn State 25-24, ending 38-year losing streak in series",
+      "description": "—",
+      "published": "2026-11-22T03:42:32Z",
+      "byline": null,
+      "image": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401858532.png?templateId=espn.applewatch.awayhome.1",
+      "link": "http://www.espn.com/ncf/recap?gameId=401858532",
+      "premium": false,
+      "team": "psu",
+      "league": {
+        "id": "cfb",
+        "name": "NCAAF"
+      }
+    },
+    {
+      "id": "50557643",
+      "type": "HeadlineNews",
+      "headline": "Emotional Greg Schiano authors 'special' win, Rutgers' first at PSU since 1988",
+      "description": "Less than two weeks after Rutgers announced embattled Greg Schiano would return as coach for a 19th season, the Scarlet Knights stunned Penn State 25-24 on Saturday, their first win over the Nittany Lions since 1988, and just their third this year.",
+      "published": "2026-11-22T02:56:26Z",
+      "byline": null,
+      "image": "https://a.espncdn.com/photo/2026/1122/r1749403_600x600_1-1.jpg",
+      "link": "https://www.espn.com/college-football/story/_/id/50557643/rutgers-authors-special-win-1st-penn-state-1988",
+      "premium": false,
+      "team": "psu",
+      "league": {
+        "id": "cfb",
+        "name": "NCAAF"
+      }
+    },
+    {
+      "id": "50551332",
+      "type": "HeadlineNews",
+      "headline": "Enzo Maresca: Man City denied 'clear' goal in draw with Fulham",
+      "description": "Enzo Maresca said Manchester City were denied a \"clear\" goal in their 1-1 draw with Fulham after Erling Haaland was judged to have fouled goalkeeper Bernd Leno.",
+      "published": "2026-11-21T18:49:18Z",
+      "byline": "Rob Dawson",
+      "image": "https://a.espncdn.com/photo/2026/1121/r1749036_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/soccer/story/_/id/50551332/man-city-fulham-haaland-disallowed-goal-premier-league",
+      "premium": false,
+      "team": "382",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
+      }
+    },
+    {
+      "id": "50550244",
+      "type": "Story",
+      "headline": "Man City, Enzo Maresca at a crossroads after Premier League stumble",
+      "description": "When Man City can't beat Fulham -- a team they had beaten 20 times in a row entering Saturday -- you know they're struggling.",
+      "published": "2026-11-21T16:43:57Z",
+      "byline": "Rob Dawson",
+      "image": "https://a.espncdn.com/photo/2026/1121/r1748950_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/soccer/story/_/id/50550244/man-city-fulham-premier-league-erling-haaland-maresca",
+      "premium": false,
+      "team": "382",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
+      }
+    },
+    {
+      "id": "50550455",
+      "type": "Media",
+      "headline": "Dawson: Things don't get any easier for Man City after Fulham draw",
+      "description": "Rob Dawson reacts to a 1-1 draw between Manchester City and Fulham in the Premier League.",
+      "published": "2026-11-21T16:28:10Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1121/dm_261121_Dawson_Things_dont_get_any_easier_for_Man_City_after_Fulham_draw/dm_261121_Dawson_Things_dont_get_any_easier_for_Man_City_after_Fulham_draw.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50550455/things-get-easier-man-city-fulham-draw",
+      "premium": false,
+      "team": "382",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
+      }
+    },
+    {
+      "id": "50549701",
+      "type": "HeadlineNews",
+      "headline": "Andreas Christensen, Pau Cubarsí injuries leave Barcelona with defensive crisis",
+      "description": "Injuries to Andreas Christensen and Pau Cubarsí have left Barcelona coach Hansi Flick with a defensive headache ahead of Sunday's LaLiga game against Villarreal at Spotify Camp Nou.",
+      "published": "2026-11-21T14:36:50Z",
+      "byline": "Sam Marsden",
+      "image": "https://a.espncdn.com/photo/2026/1121/r1748925_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/soccer/story/_/id/50549701/barcelona-injuries-team-news-christensen-cubarsi",
+      "premium": false,
+      "team": "83",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
+      }
+    },
+    {
+      "id": "50535108",
+      "type": "Story",
+      "headline": "In Mexico City, 49ers' Fred Warner can represent his heritage and boost DPOY case",
+      "description": "Warner will represent his heritage again Sunday in Mexico City. This time while in the middle of the best Defensive Player of the Year campaign of his career.",
+      "published": "2026-11-21T11:57:44Z",
+      "byline": "Nick Wagoner",
+      "image": "https://a.espncdn.com/photo/2026/1120/r1748531_608x342_16-9.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50535108/san-francisco-49ers-fred-warner-mexican-heritage-dpoy",
+      "premium": false,
+      "team": "sf",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50541401",
+      "type": "Story",
+      "headline": "Edge Jonathan Greenard loves to makes plays, despite Eagles' standing",
+      "description": "Greenard speaks on his injury-filled season and outlook for the second half of the year.",
+      "published": "2026-11-21T11:00:15Z",
+      "byline": "Tim McManus",
+      "image": "https://a.espncdn.com/photo/2026/1120/r1748553_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50541401/eagles-jonathan-greenard-loves-make-plays-record",
+      "premium": false,
+      "team": "phi",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
     {
       "id": "50546590",
       "type": "Media",
@@ -83,40 +215,6 @@
       "league": {
         "id": "nfl",
         "name": "NFL"
-      }
-    },
-    {
-      "id": "50541591",
-      "type": "HeadlineNews",
-      "headline": "Man City slump not due to 'noise' around financial scandal - Maresca",
-      "description": "Manchester City boss Enzo Maresca said on Friday the controversy surrounding the club is not the reason for their recent slump.",
-      "published": "2026-11-20T16:14:20Z",
-      "byline": null,
-      "image": "https://a.espncdn.com/photo/2026/1013/r1730084_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/soccer/story/_/id/50541591/maresca-man-city-slump-not-noise-financial-scandal",
-      "premium": false,
-      "team": "382",
-      "league": {
-        "id": "soccer",
-        "name": "足球",
-        "nameEn": "Soccer"
-      }
-    },
-    {
-      "id": "50440438",
-      "type": "Story",
-      "headline": "Transfer rumors, news: Barcelona eye move for Bayern's Tah",
-      "description": "Barcelona are looking to improve their defense and could look to Bayern Munich's Jonathan Tah as an option. Transfer Talk has the latest.",
-      "published": "2026-11-20T15:51:46Z",
-      "byline": "ESPN",
-      "image": "https://a.espncdn.com/photo/2026/1110/r1744203_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/soccer/story/_/id/50440438/transfer-rumors-news-gossip-arsenal-atletico-madrid",
-      "premium": false,
-      "team": "83",
-      "league": {
-        "id": "soccer",
-        "name": "足球",
-        "nameEn": "Soccer"
       }
     },
     {
@@ -217,23 +315,6 @@
       }
     },
     {
-      "id": "50533036",
-      "type": "HeadlineNews",
-      "headline": "Leader in his own way Haaland making 'natural' progression as City veteran",
-      "description": "Erling Haaland said it is \"natural\" for him to take on more responsibility as one of Manchester City's captains this season, but wants to do it in his own way.",
-      "published": "2026-11-19T20:30:33Z",
-      "byline": "ESPN News Services",
-      "image": "https://a.espncdn.com/photo/2026/1031/r1738986_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/soccer/story/_/id/50533036/erling-haaland-man-city-leader",
-      "premium": false,
-      "team": "382",
-      "league": {
-        "id": "soccer",
-        "name": "足球",
-        "nameEn": "Soccer"
-      }
-    },
-    {
       "id": "50532925",
       "type": "HeadlineNews",
       "headline": "Hall of Famer Jack Ham returning to broadcast booth after health scare",
@@ -260,22 +341,6 @@
       "link": "https://www.espn.com/video/clip/_/id/50531808/nick-bosa-looks-end-defensive-struggles",
       "premium": false,
       "team": "sf",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50526910",
-      "type": "Media",
-      "headline": "Why the Eagles are sticking with Sean Mannion as playcaller",
-      "description": "Tim McManus explains why keeping Sean Mannion in charge of playcalling gives the Eagles a chance to evaluate their offense.",
-      "published": "2026-11-19T14:55:18Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1118/dm_261118_Watchfolder_Eagles_IAsfsf/dm_261118_Watchfolder_Eagles_IAsfsf.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50526910/why-eagles-sticking-sean-mannion-playcaller",
-      "premium": false,
-      "team": "phi",
       "league": {
         "id": "nfl",
         "name": "NFL"
@@ -363,39 +428,6 @@
       }
     },
     {
-      "id": "50526309",
-      "type": "HeadlineNews",
-      "headline": "Niners' Nick Bosa on 4-game sack drought: 'Don't think I'm playing my best'",
-      "description": "Niners star Nick Bosa acknowledged his performance this season, including four straight games with no sacks, hasn't been up to his usual standard.",
-      "published": "2026-11-19T01:47:36Z",
-      "byline": "Nick Wagoner",
-      "image": "https://a.espncdn.com/photo/2026/1119/r1747914_600x400_3-2.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50526309/niners-nick-bosa-says-better-amid-4-game-sack-drought",
-      "premium": false,
-      "team": "sf",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50524344",
-      "type": "HeadlineNews",
-      "headline": "Andree Jeglertz hails Man City substitutes after hard-fought Häcken win",
-      "description": "Manchester City boss Andree Jeglertz says his side were made to work hard for their 2-0 victory over Hacken in the Women's Champions League.",
-      "published": "2026-11-18T23:41:27Z",
-      "byline": "PA",
-      "image": "https://a.espncdn.com/photo/2026/1118/r1747747_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/soccer/story/_/id/50524344/andree-jeglertz-man-city-hacken",
-      "premium": false,
-      "team": "382",
-      "league": {
-        "id": "soccer",
-        "name": "足球",
-        "nameEn": "Soccer"
-      }
-    },
-    {
       "id": "50513358",
       "type": "Story",
       "headline": "Kansas City Chiefs tight end Travis Kelce's top moments at Arrowhead Stadium",
@@ -436,22 +468,6 @@
       "byline": null,
       "image": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401858532.png?templateId=espn.applewatch.awayhome.1",
       "link": "http://www.espn.com/ncf/preview?gameId=401858532",
-      "premium": false,
-      "team": "psu",
-      "league": {
-        "id": "cfb",
-        "name": "NCAAF"
-      }
-    },
-    {
-      "id": "50486938",
-      "type": "Recap",
-      "headline": "Becht, Hansen combine to push Penn State past Minnesota 42-14",
-      "description": "— Rocco Becht threw three touchdown passes and ran for another score and Penn State pulled away from Minnesota 42-14 on Saturday.",
-      "published": "2026-11-15T04:45:34Z",
-      "byline": null,
-      "image": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401858524.png?templateId=espn.applewatch.awayhome.1",
-      "link": "http://www.espn.com/ncf/recap?gameId=401858524",
       "premium": false,
       "team": "psu",
       "league": {

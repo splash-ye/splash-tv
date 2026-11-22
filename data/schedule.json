@@ -1,7 +1,7 @@
 {
   "version": 3,
-  "day": "20261121",
-  "generatedAt": "2026-11-21T05:01:20.184Z",
+  "day": "20261122",
+  "generatedAt": "2026-11-22T05:01:14.564Z",
   "cfgKey": "[{\"id\":\"nba\",\"name\":\"NBA\",\"sport\":\"basketball\",\"league\":\"nba\",\"teams\":[\"gs\"],\"marquee\":{\"type\":\"leagueTop\",\"topN\":8},\"news\":{\"limit\":5},\"highlights\":{\"matcher\":\"nba\",\"marquee\":true,\"channels\":[\"UCWJ2lWNubArHWmf3FIHbfcQ\"],\"roundups\":[\"nightly\",\"topPlays\"]},\"standings\":{\"groupOrder\":[\"Western Conference\",\"Eastern Conference\"]}},{\"id\":\"nfl\",\"name\":\"NFL\",\"sport\":\"football\",\"league\":\"nfl\",\"teams\":[\"sf\",\"kc\",\"phi\"],\"marquee\":{\"type\":\"divisionTop\",\"perDivision\":2,\"winningRecord\":true},\"news\":{\"limit\":5},\"highlights\":{\"matcher\":\"nfl\",\"marquee\":true,\"channels\":[\"UCDVYQ4Zhbm3S2dlz7P1GBDg\"],\"roundups\":[\"top15\"]},\"standings\":{\"level\":3}},{\"id\":\"cfb\",\"name\":\"NCAAF\",\"sport\":\"football\",\"league\":\"college-football\",\"teams\":[\"psu\"],\"scoreboardParams\":\"groups=80&limit=300\",\"marquee\":{\"type\":\"poll\",\"topN\":15,\"polls\":[\"cfp\",\"ap\"]},\"news\":{\"limit\":5},\"highlights\":{\"matcher\":\"cfb\",\"marquee\":true,\"channels\":[\"UCXnslB_TwYqScBRf4bPf3vA\",\"UCpwix-O6ceqMgdxhqIynzFA\"]},\"standings\":{\"polls\":[\"cfp\",\"ap\"]}},{\"id\":\"soccer\",\"name\":\"足球\",\"nameEn\":\"Soccer\",\"sport\":\"soccer\",\"teams\":[],\"competitions\":[{\"league\":\"eng.1\",\"name\":\"英超\",\"nameEn\":\"Premier League\",\"channels\":[\"UCqZQlzSHbVJrwrn5XvzrzcA\"]},{\"league\":\"esp.1\",\"name\":\"西甲\",\"nameEn\":\"LaLiga\",\"channels\":[\"UC6c1z7bA__85CIWZ_jpCK-Q\",\"UCTv-XvfzLX3i4IGWAm4sbmA\"]},{\"league\":\"uefa.champions\",\"name\":\"欧冠\",\"nameEn\":\"Champions League\",\"channels\":[\"UCET00YnetHT7tOpu12v8jxg\"]},{\"league\":\"eng.fa\",\"name\":\"足总杯\",\"nameEn\":\"FA Cup\",\"channels\":[\"UC6c1z7bA__85CIWZ_jpCK-Q\"]},{\"league\":\"esp.copa_del_rey\",\"name\":\"国王杯\",\"nameEn\":\"Copa del Rey\",\"channels\":[\"UC6c1z7bA__85CIWZ_jpCK-Q\"]}],\"marquee\":{\"type\":\"fixedList\",\"criteria\":\"豪门对决\",\"criteriaEn\":\"Big clubs\",\"clubs\":[\"382\",\"359\",\"364\",\"363\",\"86\",\"83\",\"1068\",\"132\",\"160\"],\"clubNames\":\"曼城 阿森纳 利物浦 切尔西 皇马 巴萨 马竞 拜仁 巴黎圣日耳曼\",\"lookupLeagues\":[\"ger.1\",\"fra.1\"]},\"news\":{\"limit\":3,\"teams\":[{\"league\":\"esp.1\",\"team\":\"83\"},{\"league\":\"eng.1\",\"team\":\"382\"}]},\"highlights\":{\"matcher\":\"soccer\",\"marquee\":true,\"aliases\":{\"83\":[\"Barcelona\",\"Barca\",\"FC Barcelona\"],\"86\":[\"Real Madrid\"],\"132\":[\"Bayern Munich\",\"Bayern Munchen\",\"FC Bayern\",\"Bayern\"],\"160\":[\"Paris Saint-Germain\",\"Paris Saint Germain\",\"PSG\",\"Paris\"],\"359\":[\"Arsenal\"],\"363\":[\"Chelsea\"],\"364\":[\"Liverpool\"],\"382\":[\"Man City\",\"Manchester City\"],\"1068\":[\"Atletico Madrid\",\"Atletico de Madrid\",\"Atletico\",\"Atleti\"]}}}]",
   "partial": false,
   "daysAhead": 7,
@@ -13,7 +13,7 @@
       "short": "Warriors",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png",
       "record": "8-8",
-      "standing": "2nd in Pacific Division",
+      "standing": "3rd in Pacific Division",
       "league": {
         "id": "nba",
         "name": "NBA"
@@ -64,8 +64,8 @@
       "name": "Penn State Nittany Lions",
       "short": "Penn State",
       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/213.png",
-      "record": "6-4",
-      "standing": "9th in Big Ten",
+      "record": "6-5",
+      "standing": "12th in Big Ten",
       "league": {
         "id": "cfb",
         "name": "NCAAF"
@@ -556,9 +556,9 @@
       "week": 12,
       "note": null,
       "status": {
-        "state": "pre",
-        "completed": false,
-        "detail": "11/21 - 3:30 PM EST"
+        "state": "post",
+        "completed": true,
+        "detail": "Final"
       },
       "home": {
         "side": "home",
@@ -568,9 +568,9 @@
         "short": "Penn State",
         "location": "Penn State",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/213.png",
-        "score": null,
-        "winner": null,
-        "record": null,
+        "score": "24",
+        "winner": false,
+        "record": "6-5",
         "rank": null
       },
       "away": {
@@ -581,9 +581,9 @@
         "short": "Rutgers",
         "location": "Rutgers",
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/164.png",
-        "score": null,
-        "winner": null,
-        "record": null,
+        "score": "25",
+        "winner": true,
+        "record": "3-8",
         "rank": null
       },
       "venue": "Beaver Stadium",
@@ -614,9 +614,9 @@
       "week": null,
       "note": null,
       "status": {
-        "state": "pre",
-        "completed": false,
-        "detail": "11/21 - 8:00 PM EST"
+        "state": "post",
+        "completed": true,
+        "detail": "Final"
       },
       "home": {
         "side": "home",
@@ -626,9 +626,9 @@
         "short": "Timberwolves",
         "location": "Minnesota",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
-        "score": "0",
-        "winner": null,
-        "record": "11-5",
+        "score": "104",
+        "winner": true,
+        "record": "12-5",
         "rank": null
       },
       "away": {
@@ -639,9 +639,9 @@
         "short": "Grizzlies",
         "location": "Memphis",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
-        "score": "0",
-        "winner": null,
-        "record": "12-4",
+        "score": "95",
+        "winner": false,
+        "record": "12-5",
         "rank": null
       },
       "venue": "Target Center",
@@ -981,7 +981,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
         "score": "0",
         "winner": null,
-        "record": "13-3",
+        "record": "14-3",
         "rank": null
       },
       "away": {
@@ -994,7 +994,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
         "score": "0",
         "winner": null,
-        "record": "10-5",
+        "record": "10-6",
         "rank": null
       },
       "venue": "Xfinity Mobile Arena",
@@ -1096,7 +1096,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
         "score": "0",
         "winner": null,
-        "record": "10-5",
+        "record": "10-6",
         "rank": null
       },
       "away": {
@@ -1109,7 +1109,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
         "score": "0",
         "winner": null,
-        "record": "13-3",
+        "record": "14-3",
         "rank": null
       },
       "venue": "Moda Center",
@@ -1336,7 +1336,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
         "score": "0",
         "winner": null,
-        "record": "11-5",
+        "record": "12-5",
         "rank": null
       },
       "away": {
@@ -1349,7 +1349,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
         "score": "0",
         "winner": null,
-        "record": "12-4",
+        "record": "12-5",
         "rank": null
       },
       "venue": "Target Center",
@@ -1455,7 +1455,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
         "score": "0",
         "winner": null,
-        "record": "13-3",
+        "record": "14-3",
         "rank": null
       },
       "away": {
@@ -1468,7 +1468,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
         "score": "0",
         "winner": null,
-        "record": "13-3",
+        "record": "14-3",
         "rank": null
       },
       "venue": "Frost Bank Center",
@@ -1487,6 +1487,123 @@
       "ranks": {
         "home": "#1",
         "away": "#2"
+      }
+    },
+    {
+      "id": "401858539",
+      "date": "2026-11-28T20:30Z",
+      "timeValid": true,
+      "name": "Penn State Nittany Lions at Maryland Terrapins",
+      "shortName": "PSU @ MD",
+      "seasonYear": 2026,
+      "seasonTypeId": 2,
+      "week": 13,
+      "note": null,
+      "status": {
+        "state": "pre",
+        "completed": false,
+        "detail": "11/28 - 3:30 PM EST"
+      },
+      "home": {
+        "side": "home",
+        "id": "120",
+        "abbr": "MD",
+        "name": "Maryland Terrapins",
+        "short": "Maryland",
+        "location": "Maryland",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/120.png",
+        "score": null,
+        "winner": null,
+        "record": null,
+        "rank": null
+      },
+      "away": {
+        "side": "away",
+        "id": "213",
+        "abbr": "PSU",
+        "name": "Penn State Nittany Lions",
+        "short": "Penn State",
+        "location": "Penn State",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/213.png",
+        "score": null,
+        "winner": null,
+        "record": null,
+        "rank": null
+      },
+      "venue": "SECU Stadium",
+      "broadcasts": [
+        "FS1"
+      ],
+      "link": "https://www.espn.com/college-football/game/_/gameId/401858539/penn-state-maryland",
+      "league": {
+        "id": "cfb",
+        "name": "NCAAF"
+      },
+      "focusIds": [
+        "213"
+      ],
+      "tags": [
+        "follow"
+      ],
+      "ranks": null
+    },
+    {
+      "id": "401910050",
+      "date": "2026-11-29T01:30Z",
+      "timeValid": true,
+      "name": "Philadelphia 76ers at Houston Rockets",
+      "shortName": "PHI @ HOU",
+      "seasonYear": 2027,
+      "seasonTypeId": 2,
+      "week": null,
+      "note": null,
+      "status": {
+        "state": "pre",
+        "completed": false,
+        "detail": "11/28 - 8:30 PM EST"
+      },
+      "home": {
+        "side": "home",
+        "id": "10",
+        "abbr": "HOU",
+        "name": "Houston Rockets",
+        "short": "Rockets",
+        "location": "Houston",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+        "score": "0",
+        "winner": null,
+        "record": "12-5",
+        "rank": null
+      },
+      "away": {
+        "side": "away",
+        "id": "20",
+        "abbr": "PHI",
+        "name": "Philadelphia 76ers",
+        "short": "76ers",
+        "location": "Philadelphia",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+        "score": "0",
+        "winner": null,
+        "record": "14-3",
+        "rank": null
+      },
+      "venue": "Toyota Center (Houston)",
+      "broadcasts": [
+        "NBA TV"
+      ],
+      "link": "https://www.espn.com/nba/game/_/gameId/401910050/76ers-rockets",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      },
+      "focusIds": [],
+      "tags": [
+        "marquee"
+      ],
+      "ranks": {
+        "home": "#5",
+        "away": "#4"
       }
     }
   ],
