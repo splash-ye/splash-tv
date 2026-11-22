@@ -1065,5 +1065,20 @@
     ],
     "source": "rss",
     "foundAt": "2026-11-22T21:45:48.776Z"
+  },
+  "nfl:401873076": {
+    "videos": [
+      {
+        "id": "9ORFm2xTKNs",
+        "title": "Pittsburgh Steelers vs. Philadelphia Eagles Game Highlights | 2026 NFL Season Week 11",
+        "channelId": "UCDVYQ4Zhbm3S2dlz7P1GBDg",
+        "url": "https://www.youtube.com/watch?v=9ORFm2xTKNs",
+        "thumbnail": "https://i.ytimg.com/vi/9ORFm2xTKNs/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-22T21:26:43+00:00"
+      }
+    ],
+    "source": "rss",
+    "foundAt": "2026-11-22T22:15:47.431Z"
   }
 }
