@@ -1139,5 +1139,19 @@
     ],
     "source": "rss",
     "foundAt": "2026-11-23T05:15:47.362Z"
+  },
+  "roundup:nba:nightly:20261122": {
+    "videos": [
+      {
+        "id": "vm3YVrO_ug4",
+        "title": "NBA's Nightly Recap | November 22, 2026",
+        "channelId": "UCWJ2lWNubArHWmf3FIHbfcQ",
+        "url": "https://www.youtube.com/watch?v=vm3YVrO_ug4",
+        "thumbnail": "https://i.ytimg.com/vi/vm3YVrO_ug4/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-23T05:37:50.475Z"
+      }
+    ],
+    "foundAt": "2026-11-23T05:45:50.476Z"
   }
 }
