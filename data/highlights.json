@@ -1080,5 +1080,20 @@
     ],
     "source": "rss",
     "foundAt": "2026-11-22T22:15:47.431Z"
+  },
+  "nfl:401873069": {
+    "videos": [
+      {
+        "id": "VFJ5DTTNN9A",
+        "title": "Jacksonville Jaguars vs. New York Giants Game Highlights | NFL 2026 Season Week 11",
+        "channelId": "UCDVYQ4Zhbm3S2dlz7P1GBDg",
+        "url": "https://www.youtube.com/watch?v=VFJ5DTTNN9A",
+        "thumbnail": "https://i.ytimg.com/vi/VFJ5DTTNN9A/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-23T01:31:35.453Z"
+      }
+    ],
+    "source": "channel-search",
+    "foundAt": "2026-11-23T01:35:35.453Z"
   }
 }
