@@ -1095,5 +1095,20 @@
     ],
     "source": "channel-search",
     "foundAt": "2026-11-23T01:35:35.453Z"
+  },
+  "nba:401910035": {
+    "videos": [
+      {
+        "id": "CheW6PwsdoU",
+        "title": "CELTICS at WARRIORS | FULL GAME HIGHLIGHTS | November 22, 2026",
+        "channelId": "UCWJ2lWNubArHWmf3FIHbfcQ",
+        "url": "https://www.youtube.com/watch?v=CheW6PwsdoU",
+        "thumbnail": "https://i.ytimg.com/vi/CheW6PwsdoU/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-23T04:14:21+00:00"
+      }
+    ],
+    "source": "rss",
+    "foundAt": "2026-11-23T04:31:12.432Z"
   }
 }
