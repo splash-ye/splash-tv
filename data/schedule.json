@@ -1,7 +1,7 @@
 {
   "version": 3,
-  "day": "20261122",
-  "generatedAt": "2026-11-22T05:01:14.564Z",
+  "day": "20261123",
+  "generatedAt": "2026-11-23T05:01:21.793Z",
   "cfgKey": "[{\"id\":\"nba\",\"name\":\"NBA\",\"sport\":\"basketball\",\"league\":\"nba\",\"teams\":[\"gs\"],\"marquee\":{\"type\":\"leagueTop\",\"topN\":8},\"news\":{\"limit\":5},\"highlights\":{\"matcher\":\"nba\",\"marquee\":true,\"channels\":[\"UCWJ2lWNubArHWmf3FIHbfcQ\"],\"roundups\":[\"nightly\",\"topPlays\"]},\"standings\":{\"groupOrder\":[\"Western Conference\",\"Eastern Conference\"]}},{\"id\":\"nfl\",\"name\":\"NFL\",\"sport\":\"football\",\"league\":\"nfl\",\"teams\":[\"sf\",\"kc\",\"phi\"],\"marquee\":{\"type\":\"divisionTop\",\"perDivision\":2,\"winningRecord\":true},\"news\":{\"limit\":5},\"highlights\":{\"matcher\":\"nfl\",\"marquee\":true,\"channels\":[\"UCDVYQ4Zhbm3S2dlz7P1GBDg\"],\"roundups\":[\"top15\"]},\"standings\":{\"level\":3}},{\"id\":\"cfb\",\"name\":\"NCAAF\",\"sport\":\"football\",\"league\":\"college-football\",\"teams\":[\"psu\"],\"scoreboardParams\":\"groups=80&limit=300\",\"marquee\":{\"type\":\"poll\",\"topN\":15,\"polls\":[\"cfp\",\"ap\"]},\"news\":{\"limit\":5},\"highlights\":{\"matcher\":\"cfb\",\"marquee\":true,\"channels\":[\"UCXnslB_TwYqScBRf4bPf3vA\",\"UCpwix-O6ceqMgdxhqIynzFA\"]},\"standings\":{\"polls\":[\"cfp\",\"ap\"]}},{\"id\":\"soccer\",\"name\":\"足球\",\"nameEn\":\"Soccer\",\"sport\":\"soccer\",\"teams\":[],\"competitions\":[{\"league\":\"eng.1\",\"name\":\"英超\",\"nameEn\":\"Premier League\",\"channels\":[\"UCqZQlzSHbVJrwrn5XvzrzcA\"]},{\"league\":\"esp.1\",\"name\":\"西甲\",\"nameEn\":\"LaLiga\",\"channels\":[\"UC6c1z7bA__85CIWZ_jpCK-Q\",\"UCTv-XvfzLX3i4IGWAm4sbmA\"]},{\"league\":\"uefa.champions\",\"name\":\"欧冠\",\"nameEn\":\"Champions League\",\"channels\":[\"UCET00YnetHT7tOpu12v8jxg\"]},{\"league\":\"eng.fa\",\"name\":\"足总杯\",\"nameEn\":\"FA Cup\",\"channels\":[\"UC6c1z7bA__85CIWZ_jpCK-Q\"]},{\"league\":\"esp.copa_del_rey\",\"name\":\"国王杯\",\"nameEn\":\"Copa del Rey\",\"channels\":[\"UC6c1z7bA__85CIWZ_jpCK-Q\"]}],\"marquee\":{\"type\":\"fixedList\",\"criteria\":\"豪门对决\",\"criteriaEn\":\"Big clubs\",\"clubs\":[\"382\",\"359\",\"364\",\"363\",\"86\",\"83\",\"1068\",\"132\",\"160\"],\"clubNames\":\"曼城 阿森纳 利物浦 切尔西 皇马 巴萨 马竞 拜仁 巴黎圣日耳曼\",\"lookupLeagues\":[\"ger.1\",\"fra.1\"]},\"news\":{\"limit\":3,\"teams\":[{\"league\":\"esp.1\",\"team\":\"83\"},{\"league\":\"eng.1\",\"team\":\"382\"}]},\"highlights\":{\"matcher\":\"soccer\",\"marquee\":true,\"aliases\":{\"83\":[\"Barcelona\",\"Barca\",\"FC Barcelona\"],\"86\":[\"Real Madrid\"],\"132\":[\"Bayern Munich\",\"Bayern Munchen\",\"FC Bayern\",\"Bayern\"],\"160\":[\"Paris Saint-Germain\",\"Paris Saint Germain\",\"PSG\",\"Paris\"],\"359\":[\"Arsenal\"],\"363\":[\"Chelsea\"],\"364\":[\"Liverpool\"],\"382\":[\"Man City\",\"Manchester City\"],\"1068\":[\"Atletico Madrid\",\"Atletico de Madrid\",\"Atletico\",\"Atleti\"]}}}]",
   "partial": false,
   "daysAhead": 7,
@@ -12,8 +12,8 @@
       "name": "Golden State Warriors",
       "short": "Warriors",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png",
-      "record": "8-8",
-      "standing": "3rd in Pacific Division",
+      "record": "9-8",
+      "standing": "2nd in Pacific Division",
       "league": {
         "id": "nba",
         "name": "NBA"
@@ -25,7 +25,7 @@
       "name": "San Francisco 49ers",
       "short": "49ers",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/sf.png",
-      "record": "8-1",
+      "record": "9-1",
       "standing": "1st in NFC West",
       "league": {
         "id": "nfl",
@@ -38,7 +38,7 @@
       "name": "Kansas City Chiefs",
       "short": "Chiefs",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
-      "record": "7-2",
+      "record": "8-2",
       "standing": "1st in AFC West",
       "league": {
         "id": "nfl",
@@ -51,7 +51,7 @@
       "name": "Philadelphia Eagles",
       "short": "Eagles",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/phi.png",
-      "record": "2-7",
+      "record": "3-7",
       "standing": "4th in NFC East",
       "league": {
         "id": "nfl",
@@ -80,18 +80,28 @@
       },
       "criteria": "联盟战绩前 8",
       "criteriaEn": "League top 8",
-      "weekOf": "20261116",
+      "weekOf": "20261123",
       "fixed": false,
       "teams": [
+        {
+          "id": "20",
+          "abbr": "PHI",
+          "name": "Philadelphia 76ers",
+          "short": "76ers",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/phi.png",
+          "record": "14-3",
+          "label": "#1",
+          "labelEn": "#1"
+        },
         {
           "id": "24",
           "abbr": "SA",
           "name": "San Antonio Spurs",
           "short": "Spurs",
           "logo": "https://a.espncdn.com/i/teamlogos/nba/500/sa.png",
-          "record": "12-2",
-          "label": "#1",
-          "labelEn": "#1"
+          "record": "14-3",
+          "label": "#2",
+          "labelEn": "#2"
         },
         {
           "id": "13",
@@ -99,27 +109,17 @@
           "name": "Los Angeles Lakers",
           "short": "Lakers",
           "logo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
-          "record": "12-2",
-          "label": "#2",
-          "labelEn": "#2"
-        },
-        {
-          "id": "2",
-          "abbr": "BOS",
-          "name": "Boston Celtics",
-          "short": "Celtics",
-          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
-          "record": "11-2",
+          "record": "14-3",
           "label": "#3",
           "labelEn": "#3"
         },
         {
-          "id": "20",
-          "abbr": "PHI",
-          "name": "Philadelphia 76ers",
-          "short": "76ers",
-          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/phi.png",
-          "record": "11-3",
+          "id": "16",
+          "abbr": "MIN",
+          "name": "Minnesota Timberwolves",
+          "short": "Timberwolves",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
+          "record": "12-5",
           "label": "#4",
           "labelEn": "#4"
         },
@@ -129,29 +129,9 @@
           "name": "Houston Rockets",
           "short": "Rockets",
           "logo": "https://a.espncdn.com/i/teamlogos/nba/500/hou.png",
-          "record": "11-3",
+          "record": "12-5",
           "label": "#5",
           "labelEn": "#5"
-        },
-        {
-          "id": "22",
-          "abbr": "POR",
-          "name": "Portland Trail Blazers",
-          "short": "Trail Blazers",
-          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/por.png",
-          "record": "9-3",
-          "label": "#6",
-          "labelEn": "#6"
-        },
-        {
-          "id": "16",
-          "abbr": "MIN",
-          "name": "Minnesota Timberwolves",
-          "short": "Timberwolves",
-          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
-          "record": "9-4",
-          "label": "#7",
-          "labelEn": "#7"
         },
         {
           "id": "29",
@@ -159,7 +139,27 @@
           "name": "Memphis Grizzlies",
           "short": "Grizzlies",
           "logo": "https://a.espncdn.com/i/teamlogos/nba/500/mem.png",
-          "record": "9-4",
+          "record": "12-5",
+          "label": "#6",
+          "labelEn": "#6"
+        },
+        {
+          "id": "7",
+          "abbr": "DEN",
+          "name": "Denver Nuggets",
+          "short": "Nuggets",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/den.png",
+          "record": "10-5",
+          "label": "#7",
+          "labelEn": "#7"
+        },
+        {
+          "id": "1",
+          "abbr": "ATL",
+          "name": "Atlanta Hawks",
+          "short": "Hawks",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/atl.png",
+          "record": "11-6",
           "label": "#8",
           "labelEn": "#8"
         }
@@ -172,7 +172,7 @@
       },
       "criteria": "各分区前 2且胜多负少",
       "criteriaEn": "Top 2 of each division with a winning record",
-      "weekOf": "20261116",
+      "weekOf": "20261123",
       "fixed": false,
       "teams": [
         {
@@ -181,7 +181,7 @@
           "name": "Buffalo Bills",
           "short": "Bills",
           "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png",
-          "record": "8-1",
+          "record": "9-1",
           "label": "AFC东区第1",
           "labelEn": "AFC East #1"
         },
@@ -191,7 +191,7 @@
           "name": "San Francisco 49ers",
           "short": "49ers",
           "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/sf.png",
-          "record": "8-1",
+          "record": "9-1",
           "label": "NFC西区第1",
           "labelEn": "NFC West #1"
         },
@@ -206,22 +206,22 @@
           "labelEn": "NFC West #2"
         },
         {
-          "id": "12",
-          "abbr": "KC",
-          "name": "Kansas City Chiefs",
-          "short": "Chiefs",
-          "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
-          "record": "7-2",
-          "label": "AFC西区第1",
-          "labelEn": "AFC West #1"
-        },
-        {
           "id": "7",
           "abbr": "DEN",
           "name": "Denver Broncos",
           "short": "Broncos",
           "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/den.png",
-          "record": "7-2",
+          "record": "8-2",
+          "label": "AFC西区第1",
+          "labelEn": "AFC West #1"
+        },
+        {
+          "id": "12",
+          "abbr": "KC",
+          "name": "Kansas City Chiefs",
+          "short": "Chiefs",
+          "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
+          "record": "8-2",
           "label": "AFC西区第2",
           "labelEn": "AFC West #2"
         },
@@ -231,29 +231,19 @@
           "name": "Detroit Lions",
           "short": "Lions",
           "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/det.png",
-          "record": "7-2",
+          "record": "8-2",
           "label": "NFC北区第1",
           "labelEn": "NFC North #1"
         },
         {
-          "id": "16",
-          "abbr": "MIN",
-          "name": "Minnesota Vikings",
-          "short": "Vikings",
-          "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/min.png",
-          "record": "7-2",
+          "id": "3",
+          "abbr": "CHI",
+          "name": "Chicago Bears",
+          "short": "Bears",
+          "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/chi.png",
+          "record": "8-2",
           "label": "NFC北区第2",
           "labelEn": "NFC North #2"
-        },
-        {
-          "id": "30",
-          "abbr": "JAX",
-          "name": "Jacksonville Jaguars",
-          "short": "Jaguars",
-          "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/jax.png",
-          "record": "7-2",
-          "label": "AFC南区第1",
-          "labelEn": "AFC South #1"
         },
         {
           "id": "4",
@@ -266,14 +256,24 @@
           "labelEn": "AFC North #1"
         },
         {
-          "id": "23",
-          "abbr": "PIT",
-          "name": "Pittsburgh Steelers",
-          "short": "Steelers",
-          "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/pit.png",
-          "record": "6-3",
+          "id": "5",
+          "abbr": "CLE",
+          "name": "Cleveland Browns",
+          "short": "Browns",
+          "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/cle.png",
+          "record": "6-4",
           "label": "AFC北区第2",
           "labelEn": "AFC North #2"
+        },
+        {
+          "id": "30",
+          "abbr": "JAX",
+          "name": "Jacksonville Jaguars",
+          "short": "Jaguars",
+          "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/jax.png",
+          "record": "7-3",
+          "label": "AFC南区第1",
+          "labelEn": "AFC South #1"
         },
         {
           "id": "19",
@@ -281,7 +281,7 @@
           "name": "New York Giants",
           "short": "Giants",
           "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/nyg.png",
-          "record": "5-3-1",
+          "record": "6-3-1",
           "label": "NFC东区第1",
           "labelEn": "NFC East #1"
         }
@@ -292,9 +292,9 @@
         "id": "cfb",
         "name": "NCAAF"
       },
-      "criteria": "AFCA Coaches Poll 前 15",
-      "criteriaEn": "Top 15 in AFCA Coaches Poll",
-      "weekOf": "20261116",
+      "criteria": "AP Top 25 前 15",
+      "criteriaEn": "Top 15 in AP Top 25",
+      "weekOf": "20261123",
       "fixed": false,
       "teams": [
         {
@@ -303,7 +303,7 @@
           "name": "Georgia Bulldogs",
           "short": "Georgia",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png",
-          "record": "9-1",
+          "record": "10-1",
           "label": "#1",
           "labelEn": "#1"
         },
@@ -313,7 +313,7 @@
           "name": "Utah Utes",
           "short": "Utah",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/254.png",
-          "record": "10-0",
+          "record": "11-0",
           "label": "#2",
           "labelEn": "#2"
         },
@@ -323,29 +323,9 @@
           "name": "Notre Dame Fighting Irish",
           "short": "Notre Dame",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/87.png",
-          "record": "9-1",
+          "record": "10-1",
           "label": "#3",
           "labelEn": "#3"
-        },
-        {
-          "id": "26",
-          "abbr": "UCLA",
-          "name": "UCLA Bruins",
-          "short": "UCLA",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/26.png",
-          "record": "10-0",
-          "label": "#4",
-          "labelEn": "#4"
-        },
-        {
-          "id": "84",
-          "abbr": "IU",
-          "name": "Indiana Hoosiers",
-          "short": "Indiana",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/84.png",
-          "record": "9-1",
-          "label": "#5",
-          "labelEn": "#5"
         },
         {
           "id": "2390",
@@ -353,19 +333,9 @@
           "name": "Miami Hurricanes",
           "short": "Miami",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2390.png",
-          "record": "9-1",
-          "label": "#6",
-          "labelEn": "#6"
-        },
-        {
-          "id": "333",
-          "abbr": "ALA",
-          "name": "Alabama Crimson Tide",
-          "short": "Alabama",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/333.png",
-          "record": "8-2",
-          "label": "#7",
-          "labelEn": "#7"
+          "record": "10-1",
+          "label": "#4",
+          "labelEn": "#4"
         },
         {
           "id": "251",
@@ -373,9 +343,19 @@
           "name": "Texas Longhorns",
           "short": "Texas",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png",
-          "record": "8-2",
-          "label": "#8",
-          "labelEn": "#8"
+          "record": "9-2",
+          "label": "#5",
+          "labelEn": "#5"
+        },
+        {
+          "id": "333",
+          "abbr": "ALA",
+          "name": "Alabama Crimson Tide",
+          "short": "Alabama",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/333.png",
+          "record": "9-2",
+          "label": "#6",
+          "labelEn": "#6"
         },
         {
           "id": "2633",
@@ -383,9 +363,9 @@
           "name": "Tennessee Volunteers",
           "short": "Tennessee",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2633.png",
-          "record": "8-2",
-          "label": "#9",
-          "labelEn": "#9"
+          "record": "9-2",
+          "label": "#7",
+          "labelEn": "#7"
         },
         {
           "id": "154",
@@ -393,9 +373,9 @@
           "name": "Wake Forest Demon Deacons",
           "short": "Wake Forest",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/154.png",
-          "record": "9-1",
-          "label": "#10",
-          "labelEn": "#10"
+          "record": "10-1",
+          "label": "#8",
+          "labelEn": "#8"
         },
         {
           "id": "2641",
@@ -403,9 +383,19 @@
           "name": "Texas Tech Red Raiders",
           "short": "Texas Tech",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2641.png",
-          "record": "9-1",
-          "label": "#11",
-          "labelEn": "#11"
+          "record": "10-1",
+          "label": "#9",
+          "labelEn": "#9"
+        },
+        {
+          "id": "26",
+          "abbr": "UCLA",
+          "name": "UCLA Bruins",
+          "short": "UCLA",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/26.png",
+          "record": "10-1",
+          "label": "#10",
+          "labelEn": "#10"
         },
         {
           "id": "252",
@@ -413,7 +403,17 @@
           "name": "BYU Cougars",
           "short": "BYU",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/252.png",
-          "record": "8-2",
+          "record": "9-2",
+          "label": "#11",
+          "labelEn": "#11"
+        },
+        {
+          "id": "84",
+          "abbr": "IU",
+          "name": "Indiana Hoosiers",
+          "short": "Indiana",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/84.png",
+          "record": "9-2",
           "label": "#12",
           "labelEn": "#12"
         },
@@ -423,7 +423,7 @@
           "name": "Iowa Hawkeyes",
           "short": "Iowa",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2294.png",
-          "record": "8-2",
+          "record": "9-2",
           "label": "#13",
           "labelEn": "#13"
         },
@@ -433,17 +433,17 @@
           "name": "Oregon Ducks",
           "short": "Oregon",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2483.png",
-          "record": "7-3",
+          "record": "8-3",
           "label": "#14",
           "labelEn": "#14"
         },
         {
-          "id": "68",
-          "abbr": "BOIS",
-          "name": "Boise State Broncos",
-          "short": "Boise State",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/68.png",
-          "record": "9-1",
+          "id": "30",
+          "abbr": "USC",
+          "name": "USC Trojans",
+          "short": "USC",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/30.png",
+          "record": "8-3",
           "label": "#15",
           "labelEn": "#15"
         }
@@ -457,7 +457,7 @@
       },
       "criteria": "豪门对决",
       "criteriaEn": "Big clubs",
-      "weekOf": "20261116",
+      "weekOf": "20261123",
       "fixed": true,
       "teams": [
         {
@@ -546,124 +546,6 @@
   ],
   "games": [
     {
-      "id": "401858532",
-      "date": "2026-11-21T20:30Z",
-      "timeValid": true,
-      "name": "Rutgers Scarlet Knights at Penn State Nittany Lions",
-      "shortName": "RUTG @ PSU",
-      "seasonYear": 2026,
-      "seasonTypeId": 2,
-      "week": 12,
-      "note": null,
-      "status": {
-        "state": "post",
-        "completed": true,
-        "detail": "Final"
-      },
-      "home": {
-        "side": "home",
-        "id": "213",
-        "abbr": "PSU",
-        "name": "Penn State Nittany Lions",
-        "short": "Penn State",
-        "location": "Penn State",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/213.png",
-        "score": "24",
-        "winner": false,
-        "record": "6-5",
-        "rank": null
-      },
-      "away": {
-        "side": "away",
-        "id": "164",
-        "abbr": "RUTG",
-        "name": "Rutgers Scarlet Knights",
-        "short": "Rutgers",
-        "location": "Rutgers",
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/164.png",
-        "score": "25",
-        "winner": true,
-        "record": "3-8",
-        "rank": null
-      },
-      "venue": "Beaver Stadium",
-      "broadcasts": [
-        "FS1"
-      ],
-      "link": "https://www.espn.com/college-football/game/_/gameId/401858532/rutgers-penn-state",
-      "league": {
-        "id": "cfb",
-        "name": "NCAAF"
-      },
-      "focusIds": [
-        "213"
-      ],
-      "tags": [
-        "follow"
-      ],
-      "ranks": null
-    },
-    {
-      "id": "401910026",
-      "date": "2026-11-22T01:00Z",
-      "timeValid": true,
-      "name": "Memphis Grizzlies at Minnesota Timberwolves",
-      "shortName": "MEM @ MIN",
-      "seasonYear": 2027,
-      "seasonTypeId": 2,
-      "week": null,
-      "note": null,
-      "status": {
-        "state": "post",
-        "completed": true,
-        "detail": "Final"
-      },
-      "home": {
-        "side": "home",
-        "id": "16",
-        "abbr": "MIN",
-        "name": "Minnesota Timberwolves",
-        "short": "Timberwolves",
-        "location": "Minnesota",
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
-        "score": "104",
-        "winner": true,
-        "record": "12-5",
-        "rank": null
-      },
-      "away": {
-        "side": "away",
-        "id": "29",
-        "abbr": "MEM",
-        "name": "Memphis Grizzlies",
-        "short": "Grizzlies",
-        "location": "Memphis",
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
-        "score": "95",
-        "winner": false,
-        "record": "12-5",
-        "rank": null
-      },
-      "venue": "Target Center",
-      "broadcasts": [
-        "DAZN MIN",
-        "DAZN MEM"
-      ],
-      "link": "https://www.espn.com/nba/game/_/gameId/401910026/grizzlies-timberwolves",
-      "league": {
-        "id": "nba",
-        "name": "NBA"
-      },
-      "focusIds": [],
-      "tags": [
-        "marquee"
-      ],
-      "ranks": {
-        "home": "#7",
-        "away": "#8"
-      }
-    },
-    {
       "id": "401873067",
       "date": "2026-11-22T18:00Z",
       "timeValid": true,
@@ -674,9 +556,9 @@
       "week": 11,
       "note": null,
       "status": {
-        "state": "pre",
-        "completed": false,
-        "detail": "11/22 - 1:00 PM EST"
+        "state": "post",
+        "completed": true,
+        "detail": "Final"
       },
       "home": {
         "side": "home",
@@ -686,9 +568,9 @@
         "short": "Chiefs",
         "location": "Kansas City",
         "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
-        "score": null,
-        "winner": null,
-        "record": null,
+        "score": "34",
+        "winner": true,
+        "record": "8-2",
         "rank": null
       },
       "away": {
@@ -699,9 +581,9 @@
         "short": "Cardinals",
         "location": "Arizona",
         "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/ari.png",
-        "score": null,
-        "winner": null,
-        "record": null,
+        "score": "7",
+        "winner": false,
+        "record": "3-8",
         "rank": null
       },
       "venue": "Arrowhead Stadium",
@@ -732,9 +614,9 @@
       "week": 11,
       "note": null,
       "status": {
-        "state": "pre",
-        "completed": false,
-        "detail": "11/22 - 1:00 PM EST"
+        "state": "post",
+        "completed": true,
+        "detail": "Final"
       },
       "home": {
         "side": "home",
@@ -744,9 +626,9 @@
         "short": "Eagles",
         "location": "Philadelphia",
         "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/phi.png",
-        "score": null,
-        "winner": null,
-        "record": null,
+        "score": "19",
+        "winner": true,
+        "record": "3-7",
         "rank": null
       },
       "away": {
@@ -757,9 +639,9 @@
         "short": "Steelers",
         "location": "Pittsburgh",
         "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/pit.png",
-        "score": null,
-        "winner": null,
-        "record": null,
+        "score": "16",
+        "winner": false,
+        "record": "6-4",
         "rank": null
       },
       "venue": "Lincoln Financial Field",
@@ -790,9 +672,9 @@
       "week": 11,
       "note": null,
       "status": {
-        "state": "pre",
-        "completed": false,
-        "detail": "11/22 - 4:25 PM EST"
+        "state": "post",
+        "completed": true,
+        "detail": "Final"
       },
       "home": {
         "side": "home",
@@ -802,9 +684,9 @@
         "short": "Giants",
         "location": "New York",
         "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png",
-        "score": "0",
-        "winner": null,
-        "record": "5-3-1",
+        "score": "23",
+        "winner": true,
+        "record": "6-3-1",
         "rank": null
       },
       "away": {
@@ -815,9 +697,9 @@
         "short": "Jaguars",
         "location": "Jacksonville",
         "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png",
-        "score": "0",
-        "winner": null,
-        "record": "7-2",
+        "score": "18",
+        "winner": false,
+        "record": "7-3",
         "rank": null
       },
       "venue": "MetLife Stadium",
@@ -849,9 +731,9 @@
       "week": 11,
       "note": "NFL Mexico City Game",
       "status": {
-        "state": "pre",
-        "completed": false,
-        "detail": "11/22 - 8:20 PM EST"
+        "state": "post",
+        "completed": true,
+        "detail": "Final"
       },
       "home": {
         "side": "home",
@@ -861,9 +743,9 @@
         "short": "49ers",
         "location": "San Francisco",
         "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/sf.png",
-        "score": null,
-        "winner": null,
-        "record": null,
+        "score": "35",
+        "winner": true,
+        "record": "9-1",
         "rank": null
       },
       "away": {
@@ -874,9 +756,9 @@
         "short": "Vikings",
         "location": "Minnesota",
         "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/min.png",
-        "score": null,
-        "winner": null,
-        "record": null,
+        "score": "10",
+        "winner": false,
+        "record": "7-3",
         "rank": null
       },
       "venue": "Estadio Banorte",
@@ -892,13 +774,9 @@
         "25"
       ],
       "tags": [
-        "follow",
-        "marquee"
+        "follow"
       ],
-      "ranks": {
-        "home": "NFC西区第1",
-        "away": "NFC北区第2"
-      }
+      "ranks": null
     },
     {
       "id": "401910035",
@@ -911,9 +789,9 @@
       "week": null,
       "note": null,
       "status": {
-        "state": "pre",
-        "completed": false,
-        "detail": "11/22 - 8:30 PM EST"
+        "state": "post",
+        "completed": true,
+        "detail": "Final"
       },
       "home": {
         "side": "home",
@@ -923,9 +801,9 @@
         "short": "Warriors",
         "location": "Golden State",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png",
-        "score": null,
-        "winner": null,
-        "record": null,
+        "score": "88",
+        "winner": true,
+        "record": "9-8",
         "rank": null
       },
       "away": {
@@ -936,9 +814,9 @@
         "short": "Celtics",
         "location": "Boston",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
-        "score": null,
-        "winner": null,
-        "record": null,
+        "score": "87",
+        "winner": false,
+        "record": "11-6",
         "rank": null
       },
       "venue": "Chase Center",
@@ -955,65 +833,6 @@
         "follow"
       ],
       "ranks": null
-    },
-    {
-      "id": "401910037",
-      "date": "2026-11-24T00:00Z",
-      "timeValid": true,
-      "name": "Portland Trail Blazers at Philadelphia 76ers",
-      "shortName": "POR @ PHI",
-      "seasonYear": 2027,
-      "seasonTypeId": 2,
-      "week": null,
-      "note": null,
-      "status": {
-        "state": "pre",
-        "completed": false,
-        "detail": "11/23 - 7:00 PM EST"
-      },
-      "home": {
-        "side": "home",
-        "id": "20",
-        "abbr": "PHI",
-        "name": "Philadelphia 76ers",
-        "short": "76ers",
-        "location": "Philadelphia",
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
-        "score": "0",
-        "winner": null,
-        "record": "14-3",
-        "rank": null
-      },
-      "away": {
-        "side": "away",
-        "id": "22",
-        "abbr": "POR",
-        "name": "Portland Trail Blazers",
-        "short": "Trail Blazers",
-        "location": "Portland",
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
-        "score": "0",
-        "winner": null,
-        "record": "10-6",
-        "rank": null
-      },
-      "venue": "Xfinity Mobile Arena",
-      "broadcasts": [
-        "BlazerVision"
-      ],
-      "link": "https://www.espn.com/nba/game/_/gameId/401910037/trail-blazers-76ers",
-      "league": {
-        "id": "nba",
-        "name": "NBA"
-      },
-      "focusIds": [],
-      "tags": [
-        "marquee"
-      ],
-      "ranks": {
-        "home": "#4",
-        "away": "#6"
-      }
     },
     {
       "id": "401909324",
@@ -1072,64 +891,62 @@
       "ranks": null
     },
     {
-      "id": "401909325",
-      "date": "2026-11-26T03:00Z",
+      "id": "401873081",
+      "date": "2026-11-26T18:00Z",
       "timeValid": true,
-      "name": "San Antonio Spurs at Portland Trail Blazers",
-      "shortName": "SA @ POR",
-      "seasonYear": 2027,
+      "name": "Chicago Bears at Detroit Lions",
+      "shortName": "CHI @ DET",
+      "seasonYear": 2026,
       "seasonTypeId": 2,
-      "week": null,
-      "note": "NBA Cup - Group Play",
+      "week": 12,
+      "note": null,
       "status": {
         "state": "pre",
         "completed": false,
-        "detail": "11/25 - 10:00 PM EST"
+        "detail": "11/26 - 1:00 PM EST"
       },
       "home": {
         "side": "home",
-        "id": "22",
-        "abbr": "POR",
-        "name": "Portland Trail Blazers",
-        "short": "Trail Blazers",
-        "location": "Portland",
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+        "id": "8",
+        "abbr": "DET",
+        "name": "Detroit Lions",
+        "short": "Lions",
+        "location": "Detroit",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png",
         "score": "0",
         "winner": null,
-        "record": "10-6",
+        "record": "8-2",
         "rank": null
       },
       "away": {
         "side": "away",
-        "id": "24",
-        "abbr": "SA",
-        "name": "San Antonio Spurs",
-        "short": "Spurs",
-        "location": "San Antonio",
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+        "id": "3",
+        "abbr": "CHI",
+        "name": "Chicago Bears",
+        "short": "Bears",
+        "location": "Chicago",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png",
         "score": "0",
         "winner": null,
-        "record": "14-3",
+        "record": "8-2",
         "rank": null
       },
-      "venue": "Moda Center",
+      "venue": "Ford Field",
       "broadcasts": [
-        "ESPN",
-        "KUNP 16",
-        "BlazerVision"
+        "CBS"
       ],
-      "link": "https://www.espn.com/nba/game/_/gameId/401909325/spurs-trail-blazers",
+      "link": "https://www.espn.com/nfl/game/_/gameId/401873081/bears-lions",
       "league": {
-        "id": "nba",
-        "name": "NBA"
+        "id": "nfl",
+        "name": "NFL"
       },
       "focusIds": [],
       "tags": [
         "marquee"
       ],
       "ranks": {
-        "home": "#6",
-        "away": "#1"
+        "home": "NFC北区第1",
+        "away": "NFC北区第2"
       }
     },
     {
@@ -1249,65 +1066,6 @@
       ],
       "ranks": {
         "home": "AFC东区第1",
-        "away": "AFC西区第1"
-      }
-    },
-    {
-      "id": "401873083",
-      "date": "2026-11-27T20:00Z",
-      "timeValid": true,
-      "name": "Denver Broncos at Pittsburgh Steelers",
-      "shortName": "DEN @ PIT",
-      "seasonYear": 2026,
-      "seasonTypeId": 2,
-      "week": 12,
-      "note": null,
-      "status": {
-        "state": "pre",
-        "completed": false,
-        "detail": "11/27 - 3:00 PM EST"
-      },
-      "home": {
-        "side": "home",
-        "id": "23",
-        "abbr": "PIT",
-        "name": "Pittsburgh Steelers",
-        "short": "Steelers",
-        "location": "Pittsburgh",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png",
-        "score": "0",
-        "winner": null,
-        "record": "6-3",
-        "rank": null
-      },
-      "away": {
-        "side": "away",
-        "id": "7",
-        "abbr": "DEN",
-        "name": "Denver Broncos",
-        "short": "Broncos",
-        "location": "Denver",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png",
-        "score": "0",
-        "winner": null,
-        "record": "7-2",
-        "rank": null
-      },
-      "venue": "Acrisure Stadium",
-      "broadcasts": [
-        "Prime Video"
-      ],
-      "link": "https://www.espn.com/nfl/game/_/gameId/401873083/broncos-steelers",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      },
-      "focusIds": [],
-      "tags": [
-        "marquee"
-      ],
-      "ranks": {
-        "home": "AFC北区第2",
         "away": "AFC西区第2"
       }
     },
@@ -1367,8 +1125,8 @@
         "marquee"
       ],
       "ranks": {
-        "home": "#7",
-        "away": "#8"
+        "home": "#4",
+        "away": "#6"
       }
     },
     {
@@ -1485,8 +1243,8 @@
         "marquee"
       ],
       "ranks": {
-        "home": "#1",
-        "away": "#2"
+        "home": "#2",
+        "away": "#3"
       }
     },
     {
@@ -1548,6 +1306,65 @@
       "ranks": null
     },
     {
+      "id": "401858543",
+      "date": "2026-11-28T20:30Z",
+      "timeValid": true,
+      "name": "USC Trojans at UCLA Bruins",
+      "shortName": "USC @ UCLA",
+      "seasonYear": 2026,
+      "seasonTypeId": 2,
+      "week": 13,
+      "note": null,
+      "status": {
+        "state": "pre",
+        "completed": false,
+        "detail": "11/28 - 3:30 PM EST"
+      },
+      "home": {
+        "side": "home",
+        "id": "26",
+        "abbr": "UCLA",
+        "name": "UCLA Bruins",
+        "short": "UCLA",
+        "location": "UCLA",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/26.png",
+        "score": "0",
+        "winner": null,
+        "record": "10-1",
+        "rank": 4
+      },
+      "away": {
+        "side": "away",
+        "id": "30",
+        "abbr": "USC",
+        "name": "USC Trojans",
+        "short": "USC",
+        "location": "USC",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/30.png",
+        "score": "0",
+        "winner": null,
+        "record": "8-3",
+        "rank": 18
+      },
+      "venue": "Rose Bowl",
+      "broadcasts": [
+        "CBS"
+      ],
+      "link": "https://www.espn.com/college-football/game/_/gameId/401858543/usc-ucla",
+      "league": {
+        "id": "cfb",
+        "name": "NCAAF"
+      },
+      "focusIds": [],
+      "tags": [
+        "marquee"
+      ],
+      "ranks": {
+        "home": "#10",
+        "away": "#15"
+      }
+    },
+    {
       "id": "401910050",
       "date": "2026-11-29T01:30Z",
       "timeValid": true,
@@ -1603,8 +1420,248 @@
       ],
       "ranks": {
         "home": "#5",
-        "away": "#4"
+        "away": "#1"
       }
+    },
+    {
+      "id": "401878753",
+      "date": "2026-11-29T16:30Z",
+      "timeValid": true,
+      "name": "Manchester City at Arsenal",
+      "shortName": "MNC @ ARS",
+      "seasonYear": 2026,
+      "seasonTypeId": 14308,
+      "week": null,
+      "note": null,
+      "status": {
+        "state": "pre",
+        "completed": false,
+        "detail": "Scheduled"
+      },
+      "home": {
+        "side": "home",
+        "id": "359",
+        "abbr": "ARS",
+        "name": "Arsenal",
+        "short": "Arsenal",
+        "location": "Arsenal",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/359.png",
+        "score": "0",
+        "winner": false,
+        "record": "9-1-1",
+        "rank": null
+      },
+      "away": {
+        "side": "away",
+        "id": "382",
+        "abbr": "MNC",
+        "name": "Manchester City",
+        "short": "Man City",
+        "location": "Manchester City",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png",
+        "score": "0",
+        "winner": false,
+        "record": "7-1-3",
+        "rank": null
+      },
+      "venue": "Emirates Stadium",
+      "broadcasts": [],
+      "link": "https://www.espn.com/soccer/match/_/gameId/401878753/manchester-city-arsenal",
+      "league": {
+        "id": "soccer",
+        "name": "英超",
+        "nameEn": "Premier League",
+        "comp": "eng.1"
+      },
+      "focusIds": [],
+      "tags": [
+        "marquee"
+      ],
+      "ranks": {
+        "home": "",
+        "away": ""
+      }
+    },
+    {
+      "id": "401910051",
+      "date": "2026-11-29T21:00Z",
+      "timeValid": true,
+      "name": "Los Angeles Lakers at Memphis Grizzlies",
+      "shortName": "LAL @ MEM",
+      "seasonYear": 2027,
+      "seasonTypeId": 2,
+      "week": null,
+      "note": null,
+      "status": {
+        "state": "pre",
+        "completed": false,
+        "detail": "11/29 - 4:00 PM EST"
+      },
+      "home": {
+        "side": "home",
+        "id": "29",
+        "abbr": "MEM",
+        "name": "Memphis Grizzlies",
+        "short": "Grizzlies",
+        "location": "Memphis",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+        "score": "0",
+        "winner": null,
+        "record": "12-5",
+        "rank": null
+      },
+      "away": {
+        "side": "away",
+        "id": "13",
+        "abbr": "LAL",
+        "name": "Los Angeles Lakers",
+        "short": "Lakers",
+        "location": "Los Angeles",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+        "score": "0",
+        "winner": null,
+        "record": "14-3",
+        "rank": null
+      },
+      "venue": "FedExForum",
+      "broadcasts": [
+        "Spectrum Sports Net",
+        "Spectrum Sports Net +",
+        "DAZN MEM"
+      ],
+      "link": "https://www.espn.com/nba/game/_/gameId/401910051/lakers-grizzlies",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      },
+      "focusIds": [],
+      "tags": [
+        "marquee"
+      ],
+      "ranks": {
+        "home": "#6",
+        "away": "#3"
+      }
+    },
+    {
+      "id": "401873091",
+      "date": "2026-11-29T21:25Z",
+      "timeValid": true,
+      "name": "Seattle Seahawks at San Francisco 49ers",
+      "shortName": "SEA @ SF",
+      "seasonYear": 2026,
+      "seasonTypeId": 2,
+      "week": 12,
+      "note": null,
+      "status": {
+        "state": "pre",
+        "completed": false,
+        "detail": "11/29 - 4:25 PM EST"
+      },
+      "home": {
+        "side": "home",
+        "id": "25",
+        "abbr": "SF",
+        "name": "San Francisco 49ers",
+        "short": "49ers",
+        "location": "San Francisco",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/sf.png",
+        "score": null,
+        "winner": null,
+        "record": null,
+        "rank": null
+      },
+      "away": {
+        "side": "away",
+        "id": "26",
+        "abbr": "SEA",
+        "name": "Seattle Seahawks",
+        "short": "Seahawks",
+        "location": "Seattle",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/sea.png",
+        "score": null,
+        "winner": null,
+        "record": null,
+        "rank": null
+      },
+      "venue": "Levi's Stadium",
+      "broadcasts": [
+        "Fox"
+      ],
+      "link": "https://www.espn.com/nfl/game/_/gameId/401873091/seahawks-49ers",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      },
+      "focusIds": [
+        "25"
+      ],
+      "tags": [
+        "follow",
+        "marquee"
+      ],
+      "ranks": {
+        "home": "NFC西区第1",
+        "away": "NFC西区第2"
+      }
+    },
+    {
+      "id": "401910059",
+      "date": "2026-11-30T01:30Z",
+      "timeValid": true,
+      "name": "LA Clippers at Golden State Warriors",
+      "shortName": "LAC @ GS",
+      "seasonYear": 2027,
+      "seasonTypeId": 2,
+      "week": null,
+      "note": null,
+      "status": {
+        "state": "pre",
+        "completed": false,
+        "detail": "11/29 - 8:30 PM EST"
+      },
+      "home": {
+        "side": "home",
+        "id": "9",
+        "abbr": "GS",
+        "name": "Golden State Warriors",
+        "short": "Warriors",
+        "location": "Golden State",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png",
+        "score": null,
+        "winner": null,
+        "record": null,
+        "rank": null
+      },
+      "away": {
+        "side": "away",
+        "id": "12",
+        "abbr": "LAC",
+        "name": "LA Clippers",
+        "short": "Clippers",
+        "location": "LA",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png",
+        "score": null,
+        "winner": null,
+        "record": null,
+        "rank": null
+      },
+      "venue": "Chase Center",
+      "broadcasts": [
+        "ClipperVision"
+      ],
+      "link": "https://www.espn.com/nba/game/_/gameId/401910059/clippers-warriors",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      },
+      "focusIds": [
+        "9"
+      ],
+      "tags": [
+        "follow"
+      ],
+      "ranks": null
     }
   ],
   "errors": []
