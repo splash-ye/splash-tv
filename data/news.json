@@ -1,19 +1,35 @@
 {
   "version": 3,
-  "day": "20261123",
-  "generatedAt": "2026-11-23T05:01:24.240Z",
+  "day": "20261124",
+  "generatedAt": "2026-11-24T05:01:19.255Z",
   "cfgKey": "[[\"nba\",[\"gs\"],{\"limit\":5}],[\"nfl\",[\"sf\",\"kc\",\"phi\"],{\"limit\":5}],[\"cfb\",[\"psu\"],{\"limit\":5}],[\"soccer\",[],{\"limit\":3,\"teams\":[{\"league\":\"esp.1\",\"team\":\"83\"},{\"league\":\"eng.1\",\"team\":\"382\"}]}]]",
   "partial": false,
   "articles": [
     {
-      "id": "50568995",
+      "id": "50578357",
       "type": "HeadlineNews",
-      "headline": "49ers' Colton McKivitz exits win vs. Vikings with lower leg injury",
-      "description": "49ers right tackle Colton McKivitz departed Sunday night's game against the Vikings midway through the second quarter because of what appeared to be a serious injury to his lower left leg.",
-      "published": "2026-11-23T04:50:02Z",
+      "headline": "Seahawks to monitor Sam Darnold status this week before final call vs. 49ers",
+      "description": "The Seahawks still plan to start Sam Darnold against the 49ers but will wait to see how the QB looks in practice Wednesday before making a final call.",
+      "published": "2026-11-24T02:21:45Z",
+      "byline": "Brady Henderson",
+      "image": "https://a.espncdn.com/photo/2026/1103/r1740370_600x600_1-1.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50578357/seahawks-holding-final-sam-darnold-call-vs-49ers",
+      "premium": false,
+      "team": "sf",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50575346",
+      "type": "HeadlineNews",
+      "headline": "49ers release WR Brandon Aiyuk with roster exemption ending",
+      "description": "The 49ers released wide receiver Brandon Aiyuk on Monday.",
+      "published": "2026-11-23T22:15:11Z",
       "byline": "Nick Wagoner",
-      "image": "https://a.espncdn.com/photo/2026/1123/r1749987_600x400_3-2.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50568995/49ers-colton-mckivitz-exits-game-vs-vikings-injuring-lower-leg",
+      "image": "https://a.espncdn.com/photo/2026/1105/r1741725_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50575346/sources-49ers-releasing-wr-brandon-aiyuk",
       "premium": false,
       "team": "sf",
       "league": {
@@ -22,14 +38,63 @@
       }
     },
     {
-      "id": "50569860",
+      "id": "50573989",
+      "type": "HeadlineNews",
+      "headline": "Steelers' Metcalf denies trying to poke DeJean in eye; WR won't be suspended",
+      "description": "Steelers wide receiver DK Metcalf on Monday denied trying to poke Eagles cornerback Cooper DeJean in the eye before he was ejected Sunday.",
+      "published": "2026-11-23T21:38:02Z",
+      "byline": "Brooke Pryor",
+      "image": "https://a.espncdn.com/photo/2026/1123/r1750197_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50573989/steelers-metcalf-denies-trying-poke-eagles-dejean-eye",
+      "premium": false,
+      "team": "phi",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50576304",
+      "type": "HeadlineNews",
+      "headline": "Kevin De Bruyne: Man City achievements will not be tainted if appeal fails",
+      "description": "Kevin De Bruyne insists his achievements will not be tainted if Manchester City are stripped of any titles.",
+      "published": "2026-11-23T21:18:52Z",
+      "byline": "PA",
+      "image": "https://a.espncdn.com/photo/2026/1123/r1750337_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/soccer/story/_/id/50576304/kevin-de-bruyne-man-city",
+      "premium": false,
+      "team": "382",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
+      }
+    },
+    {
+      "id": "50576302",
       "type": "Media",
-      "headline": "49ers blow out Vikings 35-10 in Mexico City ",
-      "description": "49ers blow out Vikings 35-10 in Mexico City ",
-      "published": "2026-11-23T04:46:56Z",
+      "headline": "Adam Schefter: Cardinals fire defensive coordinator after loss to Chiefs",
+      "description": "Adam Schefter: Cardinals fire defensive coordinator after loss to Chiefs ",
+      "published": "2026-11-23T21:09:00Z",
       "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1122/766abe7e79a1408cad5940275e06616d1426/766abe7e79a1408cad5940275e06616d1426.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50569860/49ers-blow-vikings-35-10-mexico-city",
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1123/ss_20261123_160430730_3758238/ss_20261123_160430730_3758238.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50576302/cardinals-fire-defensive-coordinator-loss-chiefs",
+      "premium": false,
+      "team": "kc",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50575458",
+      "type": "Media",
+      "headline": "What's next for Brandon Aiyuk after release by 49ers?",
+      "description": "What's next for Brandon Aiyuk after release by 49ers?",
+      "published": "2026-11-23T19:29:43Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1123/ss_20261123_142342858_3758130/ss_20261123_142342858_3758130.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50575458/next-brandon-aiyuk-release-49ers",
       "premium": false,
       "team": "sf",
       "league": {
@@ -38,14 +103,30 @@
       }
     },
     {
-      "id": "50525677",
+      "id": "50575248",
+      "type": "HeadlineNews",
+      "headline": "Source: 49ers, GM John Lynch agree to contract extension",
+      "description": "The 49ers and general manager John Lynch have agreed to a multiyear contract extension, a team source confirmed to NFL Network's Ian Rapoport.",
+      "published": "2026-11-23T19:05:14Z",
+      "byline": null,
+      "image": "https://a.espncdn.com/photo/2026/1123/r1750254_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50575248/source-49ers-gm-john-lynch-agree-contract-extension",
+      "premium": false,
+      "team": "sf",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50570945",
       "type": "Story",
-      "headline": "49ers make bold statement with blowout win over Vikings, keep NFC's No. 1 seed",
-      "description": "The 49ers used a late second-quarter burst to take control of Sunday's game in Mexico City and move to 9-1 on the season.",
-      "published": "2026-11-23T04:35:43Z",
-      "byline": "Nick Wagoner and Kevin Seifert",
-      "image": "https://a.espncdn.com/photo/2026/1123/r1750011_608x342_16-9.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50525677/49ers-beat-vikings-sunday-night-football-mexico-city-kittle",
+      "headline": "Early betting for Week 12: Will Seahawks slow down 49ers?",
+      "description": "Which Week 12 lines offered immediate value once odds came out? Matt Bowen found one he's jumping on now.",
+      "published": "2026-11-23T17:59:25Z",
+      "byline": "ESPN",
+      "image": "https://a.espncdn.com/photo/2026/1123/r1750191_608x342_16-9.jpg",
+      "link": "https://www.espn.com/espn/betting/story/_/id/50570945/nfl-week-12-betting-odds-props-early-picks-predictions",
       "premium": false,
       "team": "sf",
       "league": {
@@ -54,19 +135,119 @@
       }
     },
     {
-      "id": "50569894",
-      "type": "Recap",
-      "headline": "Brock Purdy carves up the Vikings' D with 3 TD passes in the 49ers' 35-10 win in Mexico City",
-      "description": "— Brock Purdy carved up the NFL's stingiest defense with three touchdown passes in the first half and the San Francisco 49ers beat the ",
-      "published": "2026-11-23T04:26:32Z",
-      "byline": null,
-      "image": "https://s.espncdn.com/stitcher/sports/football/nfl/events/401873077.png?templateId=espn.applewatch.awayhome.1",
-      "link": "http://www.espn.com/nfl/recap?gameId=401873077",
+      "id": "50573261",
+      "type": "HeadlineNews",
+      "headline": "Maresca calls Man City's league slump 'a shame' before De Bruyne reunion",
+      "description": "Manchester City boss Enzo Maresca has said his side's four-game winless run in the Premier League has been \"a shame\" as they prepare to face club great Kevin De Bruyne in Tuesday's Champions League clash with Napoli.",
+      "published": "2026-11-23T15:30:32Z",
+      "byline": "PA",
+      "image": "https://a.espncdn.com/photo/2026/1123/r1750162_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/soccer/story/_/id/50573261/kevin-de-bruyne-man-city-napoli",
       "premium": false,
-      "team": "sf",
+      "team": "382",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
+      }
+    },
+    {
+      "id": "50565313",
+      "type": "Recap",
+      "headline": "Eagles snap 7-game losing streak and keep Steelers winless in Philly since 1965 with 19-16 victory",
+      "description": "— Joe Milton made a perfect throw to DeVonta Smith and the wide receiver rolled out of bounds to get the first down that closed out the Philadelphia Eagles' first win since September.",
+      "published": "2026-11-23T15:25:32Z",
+      "byline": null,
+      "image": "https://s.espncdn.com/stitcher/sports/football/nfl/events/401873076.png?templateId=espn.applewatch.awayhome.1",
+      "link": "http://www.espn.com/nfl/recap?gameId=401873076",
+      "premium": false,
+      "team": "phi",
       "league": {
         "id": "nfl",
         "name": "NFL"
+      }
+    },
+    {
+      "id": "50568399",
+      "type": "Story",
+      "headline": "Man United's heavy Liverpool loss didn't tell us anything new; epic Barça comeback",
+      "description": "Pochettino's debut as Man United manager didn't tell us anything we didn't already know when it came to the scale of rebuild required.",
+      "published": "2026-11-23T15:15:07Z",
+      "byline": "Gab Marcotti",
+      "image": "https://a.espncdn.com/photo/2026/1123/r1750121_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/soccer/story/_/id/50568399/man-united-liverpool-pochettino-barcelona-man-city",
+      "premium": false,
+      "team": "83",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
+      }
+    },
+    {
+      "id": "50572252",
+      "type": "Recap",
+      "headline": "Brandin Podziemski scores 18 points as Warriors hold of Celtics 88-87 to snap five-game losing skid",
+      "description": "— Brandin Podziemski had 18 points and seven rebounds and the Golden State Warriors snapped a five-game losing streak by holding off Boston for an 88-87 win Sunday night, sending the Celtics to their first four-game skid in five years.",
+      "published": "2026-11-23T11:57:04Z",
+      "byline": null,
+      "image": "https://s.espncdn.com/stitcher/sports/basketball/nba/events/401910035.png?templateId=espn.applewatch.awayhome.1",
+      "link": "http://www.espn.com/nba/recap?gameId=401910035",
+      "premium": false,
+      "team": "gs",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      }
+    },
+    {
+      "id": "50571569",
+      "type": "HeadlineNews",
+      "headline": "Lamine Yamal out of Barcelona's Champions League game at Sabah",
+      "description": "Lamine Yamal will miss Barcelona's Champions League game in Azerbaijan against Sabah this week with an ankle injury, the Spanish champions have confirmed.",
+      "published": "2026-11-23T09:46:24Z",
+      "byline": "Sam Marsden",
+      "image": "https://a.espncdn.com/photo/2026/1031/r1739203_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/soccer/story/_/id/50571569/lamine-yamal-barcelona-champions-league-sabah",
+      "premium": false,
+      "team": "83",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
+      }
+    },
+    {
+      "id": "50571230",
+      "type": "Media",
+      "headline": "Barcelona stun Villarreal after second-half comeback",
+      "description": "Barcelona come from 2-0 down to defeat Villarreal 3-2 in LaLiga.",
+      "published": "2026-11-23T08:31:24Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1123/dm_261123_COM_SOC_Highlight_Barcelona_stun_Villarreal_after_second_half_comeback_20261123_UK_IRE/dm_261123_COM_SOC_Highlight_Barcelona_stun_Villarreal_after_second_half_comeback_20261123_UK_IRE.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50571230/barcelona-stun-villarreal-second-half-comeback",
+      "premium": false,
+      "team": "83",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
+      }
+    },
+    {
+      "id": "50570668",
+      "type": "HeadlineNews",
+      "headline": "Draymond Green swats back at online critics, fuels Warriors' win over Celtics",
+      "description": "After reinforcing his career​ accolades earlier in the day on social media, Golden State Warriors forward Draymond Green closed out an 88-87 win over the Boston Celtics on Sunday with a last-second defensive stop and rousing celebration from the veteran.",
+      "published": "2026-11-23T07:58:53Z",
+      "byline": "Anthony Slater",
+      "image": "https://a.espncdn.com/photo/2026/1123/r1750046_600x400_3-2.jpg",
+      "link": "https://www.espn.com/nba/story/_/id/50570668/vocal-green-defensive-stop-buzzer-fuels-warriors-win",
+      "premium": false,
+      "team": "gs",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
       }
     },
     {
@@ -74,7 +255,7 @@
       "type": "Media",
       "headline": "Wariors down the Celtics at home",
       "description": "Wariors down the Celtics at home",
-      "published": "2026-11-23T04:09:25Z",
+      "published": "2026-11-23T05:04:59Z",
       "byline": null,
       "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1122/e056091cf0dc454cb22755ae8e95a6221389/e056091cf0dc454cb22755ae8e95a6221389.jpg",
       "link": "https://www.espn.com/video/clip/_/id/50569693/wariors-celtics-home",
@@ -86,46 +267,14 @@
       }
     },
     {
-      "id": "50569074",
+      "id": "50570086",
       "type": "Media",
-      "headline": "Eagles snap 7-game slide with win over Steelers",
-      "description": "Tim McManus on the Eagles' 19-16 Week 11 win over the Steelers.",
-      "published": "2026-11-23T03:07:04Z",
+      "headline": "How Travis Kelce made Chiefs and NFL history in win",
+      "description": "Nate Taylor breaks down Travis Kelce's stellar performance vs. the Cardinals in Week 11.",
+      "published": "2026-11-23T04:52:08Z",
       "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1122/dm_261122_IA_Eagles_16x9/dm_261122_IA_Eagles_16x9.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50569074/eagles-snap-7-game-slide-win-steelers",
-      "premium": false,
-      "team": "phi",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50568613",
-      "type": "HeadlineNews",
-      "headline": "49ers' Nick Bosa booed heavily in Mexico after remarks about fans' cheering",
-      "description": "49ers defensive end Nick Bosa was heavily booed on Sunday night by fans at Estadio Azteca, a few days after his comments about Mexican crowd behavior during a 2022 game sparked outrage in the country.",
-      "published": "2026-11-23T02:39:14Z",
-      "byline": null,
-      "image": "https://a.espncdn.com/photo/2026/1123/r1749971_600x600_1-1.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50568613/49ers-nick-bosa-booed-heavily-mexico-fan-comments",
-      "premium": false,
-      "team": "sf",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50563590",
-      "type": "HeadlineNews",
-      "headline": "Travis Kelce pads Hall of Fame résumé with two first-half TDs in Chiefs' win",
-      "description": "Travis Kelce passed Rob Gronkowski for third place for the most total touchdowns, including playoffs, by a tight end in league history.",
-      "published": "2026-11-23T01:00:12Z",
-      "byline": "Nate Taylor",
-      "image": "https://a.espncdn.com/photo/2026/1122/r1749703_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50563590/kelce-passes-gronkowski-most-tds-te-including-playoffs",
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1122/dm_261122_Chiefs_beat_Cardinals_IA/dm_261122_Chiefs_beat_Cardinals_IA.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50570086/how-travis-kelce-made-chiefs-nfl-history-win",
       "premium": false,
       "team": "kc",
       "league": {
@@ -134,14 +283,14 @@
       }
     },
     {
-      "id": "50564475",
-      "type": "HeadlineNews",
-      "headline": "Steelers' DK Metcalf ejected for trying to poke Eagles' Cooper DeJean in eye",
-      "description": "Steelers wide receiver DK Metcalf was ejected in the third quarter of Sunday's game against the Eagles for unsportsmanlike conduct.",
-      "published": "2026-11-23T00:43:19Z",
-      "byline": "Brooke Pryor",
-      "image": "https://a.espncdn.com/photo/2026/1122/r1749752_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50564475/steelers-wr-dk-metcalf-ejected-game-eagles",
+      "id": "50569074",
+      "type": "Media",
+      "headline": "Eagles snap 7-game slide with win over Steelers",
+      "description": "Tim McManus on the Eagles' 19-16 Week 11 win over the Steelers.",
+      "published": "2026-11-23T03:07:04Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1122/dm_261122_IA_Eagles_16x9/dm_261122_IA_Eagles_16x9.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50569074/eagles-snap-7-game-slide-win-steelers",
       "premium": false,
       "team": "phi",
       "league": {
@@ -166,22 +315,6 @@
       }
     },
     {
-      "id": "50565313",
-      "type": "Recap",
-      "headline": "Eagles snap 7-game losing streak and keep Steelers winless in Philly since 1965 with 19-16 victory",
-      "description": "— Joe Milton made a perfect throw to DeVonta Smith and the wide receiver rolled out of bounds to get the first down that closed out the Philadelphia Eagles' first win since September.",
-      "published": "2026-11-22T22:54:32Z",
-      "byline": null,
-      "image": "https://s.espncdn.com/stitcher/sports/football/nfl/events/401873076.png?templateId=espn.applewatch.awayhome.1",
-      "link": "http://www.espn.com/nfl/recap?gameId=401873076",
-      "premium": false,
-      "team": "phi",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
       "id": "50564874",
       "type": "Recap",
       "headline": "Mahomes throws 3 TD passes, Kelce catches 2 of them, as KC routs Cardinals 34-7 for 3rd straight win",
@@ -195,23 +328,6 @@
       "league": {
         "id": "nfl",
         "name": "NFL"
-      }
-    },
-    {
-      "id": "50565423",
-      "type": "Media",
-      "headline": "Pedri leads Barça's comeback win over Villarreal",
-      "description": "Sam Marsden recaps Barcelona's 3-2 comeback win over Villarreal.",
-      "published": "2026-11-22T22:06:04Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1122/dm_261122_Pedri_leads_Barcas_comeback_win_over_Villarreal/dm_261122_Pedri_leads_Barcas_comeback_win_over_Villarreal.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50565423/pedri-leads-barca-comeback-win-villarreal",
-      "premium": false,
-      "team": "83",
-      "league": {
-        "id": "soccer",
-        "name": "足球",
-        "nameEn": "Soccer"
       }
     },
     {
@@ -279,40 +395,6 @@
       }
     },
     {
-      "id": "50562953",
-      "type": "HeadlineNews",
-      "headline": "Flick: Barcelona comeback against Villarreal 'unbelievable' but not happy with ref",
-      "description": "Barcelona coach Hansi Flick praised his side's \"unbelievable\" comeback from two goals down to beat Villarreal 3-2 in LaLiga on Sunday, but was left far from happy with referee Alejandro Hernández Hernández.",
-      "published": "2026-11-22T17:25:33Z",
-      "byline": "Sam Marsden",
-      "image": "https://a.espncdn.com/photo/2026/1122/r1749666_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/soccer/story/_/id/50562953/barcelona-villarreal-la-liga-hansi-flick-refereeing",
-      "premium": false,
-      "team": "83",
-      "league": {
-        "id": "soccer",
-        "name": "足球",
-        "nameEn": "Soccer"
-      }
-    },
-    {
-      "id": "50562307",
-      "type": "Media",
-      "headline": "Garcia: Barcelona's comeback reflective of title mentality",
-      "description": "Luis Garcia and Shaka Hislop talk about Barcelona's LaLiga title chances following a spirited second half performance to defeat Villarreal 3-2.",
-      "published": "2026-11-22T15:48:36Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1122/dm_261122_COM_SOC_Analysis_Garcia_Barcelonas_comeback_reflective_of_title_mentality_20261122_GLOBAL/dm_261122_COM_SOC_Analysis_Garcia_Barcelonas_comeback_reflective_of_title_mentality_20261122_GLOBAL.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50562307/barcelona-comeback-reflective-title-mentality",
-      "premium": false,
-      "team": "83",
-      "league": {
-        "id": "soccer",
-        "name": "足球",
-        "nameEn": "Soccer"
-      }
-    },
-    {
       "id": "50557643",
       "type": "HeadlineNews",
       "headline": "Emotional Greg Schiano authors 'special' win, Rutgers' first at PSU since 1988",
@@ -343,56 +425,6 @@
         "id": "soccer",
         "name": "足球",
         "nameEn": "Soccer"
-      }
-    },
-    {
-      "id": "50550244",
-      "type": "Story",
-      "headline": "Man City, Enzo Maresca at a crossroads after Premier League stumble",
-      "description": "When Man City can't beat Fulham -- a team they had beaten 20 times in a row entering Saturday -- you know they're struggling.",
-      "published": "2026-11-21T16:43:57Z",
-      "byline": "Rob Dawson",
-      "image": "https://a.espncdn.com/photo/2026/1121/r1748950_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/soccer/story/_/id/50550244/man-city-fulham-premier-league-erling-haaland-maresca",
-      "premium": false,
-      "team": "382",
-      "league": {
-        "id": "soccer",
-        "name": "足球",
-        "nameEn": "Soccer"
-      }
-    },
-    {
-      "id": "50550455",
-      "type": "Media",
-      "headline": "Dawson: Things don't get any easier for Man City after Fulham draw",
-      "description": "Rob Dawson reacts to a 1-1 draw between Manchester City and Fulham in the Premier League.",
-      "published": "2026-11-21T16:28:10Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1121/dm_261121_Dawson_Things_dont_get_any_easier_for_Man_City_after_Fulham_draw/dm_261121_Dawson_Things_dont_get_any_easier_for_Man_City_after_Fulham_draw.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50550455/things-get-easier-man-city-fulham-draw",
-      "premium": false,
-      "team": "382",
-      "league": {
-        "id": "soccer",
-        "name": "足球",
-        "nameEn": "Soccer"
-      }
-    },
-    {
-      "id": "50546590",
-      "type": "Media",
-      "headline": "Josh Downs prepares for second game as a Chief",
-      "description": "Nate Taylor reports on WR Josh Downs ahead of Week 11.",
-      "published": "2026-11-21T04:05:49Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1120/dm_261120_SC4U_16x9_Chiefs_IA_11-20/dm_261120_SC4U_16x9_Chiefs_IA_11-20.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50546590/josh-downs-prepares-second-game-chief",
-      "premium": false,
-      "team": "kc",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
       }
     },
     {
@@ -436,54 +468,6 @@
       "byline": "Adam Rittenberg",
       "image": "https://a.espncdn.com/photo/2017/0408/r197865_600x400_3-2.jpg",
       "link": "https://www.espn.com/college-football/story/_/id/50532925/jack-ham-returning-broadcast-booth-health-scare",
-      "premium": false,
-      "team": "psu",
-      "league": {
-        "id": "cfb",
-        "name": "NCAAF"
-      }
-    },
-    {
-      "id": "50528957",
-      "type": "Preview",
-      "headline": "Memphis takes on Golden State, looks for 5th straight victory",
-      "description": "Golden State Warriors (8-7, 10th in the Western Conference) vs. Memphis Grizzlies (11-4, fifth in the Western Conference)",
-      "published": "2026-11-19T07:04:42Z",
-      "byline": null,
-      "image": "https://s.espncdn.com/stitcher/sports/basketball/nba/events/401910019.png?templateId=espn.applewatch.awayhome.1",
-      "link": "http://www.espn.com/nba/preview?gameId=401910019",
-      "premium": false,
-      "team": "gs",
-      "league": {
-        "id": "nba",
-        "name": "NBA"
-      }
-    },
-    {
-      "id": "50527551",
-      "type": "Recap",
-      "headline": "Cooper Flagg scores 33 as Mavericks keep Warriors winless since Stephen Curry's injury",
-      "description": "— Cooper Flagg scored 33 points, P.J. Washington Jr. added 21 and the Dallas Mavericks stopped a three-game losing streak with a 116-94 victory over the Golden State Warriors on Wednesday night.",
-      "published": "2026-11-19T03:34:35Z",
-      "byline": null,
-      "image": "https://s.espncdn.com/stitcher/sports/basketball/nba/events/401910016.png?templateId=espn.applewatch.awayhome.1",
-      "link": "http://www.espn.com/nba/recap?gameId=401910016",
-      "premium": false,
-      "team": "gs",
-      "league": {
-        "id": "nba",
-        "name": "NBA"
-      }
-    },
-    {
-      "id": "50504306",
-      "type": "Preview",
-      "headline": "Penn State squares off against Rutgers in Big Ten action",
-      "description": "Rutgers (2-8) at Penn State (6-4), Nov. 21 at 3:30 p.m. EST.",
-      "published": "2026-11-16T20:44:38Z",
-      "byline": null,
-      "image": "https://s.espncdn.com/stitcher/sports/football/college-football/events/401858532.png?templateId=espn.applewatch.awayhome.1",
-      "link": "http://www.espn.com/ncf/preview?gameId=401858532",
       "premium": false,
       "team": "psu",
       "league": {
