@@ -1195,5 +1195,19 @@
       }
     ],
     "foundAt": "2026-11-24T07:15:50.119Z"
+  },
+  "roundup:nba:nightly:20261124": {
+    "videos": [
+      {
+        "id": "fSyi8WmaoY0",
+        "title": "NBA's Nightly Recap | November 24, 2026",
+        "channelId": "UCWJ2lWNubArHWmf3FIHbfcQ",
+        "url": "https://www.youtube.com/watch?v=fSyi8WmaoY0",
+        "thumbnail": "https://i.ytimg.com/vi/fSyi8WmaoY0/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-25T07:09:24+00:00"
+      }
+    ],
+    "foundAt": "2026-11-25T07:15:47.800Z"
   }
 }
