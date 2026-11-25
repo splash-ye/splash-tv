@@ -1,24 +1,75 @@
 {
   "version": 3,
-  "day": "20261124",
-  "generatedAt": "2026-11-24T05:01:19.255Z",
+  "day": "20261125",
+  "generatedAt": "2026-11-25T05:01:30.549Z",
   "cfgKey": "[[\"nba\",[\"gs\"],{\"limit\":5}],[\"nfl\",[\"sf\",\"kc\",\"phi\"],{\"limit\":5}],[\"cfb\",[\"psu\"],{\"limit\":5}],[\"soccer\",[],{\"limit\":3,\"teams\":[{\"league\":\"esp.1\",\"team\":\"83\"},{\"league\":\"eng.1\",\"team\":\"382\"}]}]]",
   "partial": false,
   "articles": [
     {
-      "id": "50578357",
-      "type": "HeadlineNews",
-      "headline": "Seahawks to monitor Sam Darnold status this week before final call vs. 49ers",
-      "description": "The Seahawks still plan to start Sam Darnold against the 49ers but will wait to see how the QB looks in practice Wednesday before making a final call.",
-      "published": "2026-11-24T02:21:45Z",
-      "byline": "Brady Henderson",
-      "image": "https://a.espncdn.com/photo/2026/1103/r1740370_600x600_1-1.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50578357/seahawks-holding-final-sam-darnold-call-vs-49ers",
+      "id": "50565318",
+      "type": "Media",
+      "headline": "Pittsburgh Steelers vs. Philadelphia Eagles: Game Highlights",
+      "description": "Pittsburgh Steelers vs. Philadelphia Eagles: Game Highlights",
+      "published": "2026-11-25T04:36:01Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1122/a64030ba-32d6-4958-a7a8-19757868d95a/a64030ba-32d6-4958-a7a8-19757868d95a.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50565318/game-highlights",
       "premium": false,
-      "team": "sf",
+      "team": "phi",
       "league": {
         "id": "nfl",
         "name": "NFL"
+      }
+    },
+    {
+      "id": "50586567",
+      "type": "HeadlineNews",
+      "headline": "Rayan Cherki unhappy despite salvaging Man City draw: 'Don't care about my goal'",
+      "description": "Rayan Cherki was in no mood for celebrating after rescuing a 2-2 draw for Manchester City at home to Napoli in the Champions League on Tuesday.",
+      "published": "2026-11-24T23:52:03Z",
+      "byline": "ESPN News Services",
+      "image": "https://a.espncdn.com/photo/2026/1124/r1750831_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/soccer/story/_/id/50586567/rayan-cherki-man-city-goal-napoli-champions-league",
+      "premium": false,
+      "team": "382",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
+      }
+    },
+    {
+      "id": "50587028",
+      "type": "HeadlineNews",
+      "headline": "Rasmus Højlund on aiming Man United dig at Man City fans: 'Some good banter'",
+      "description": "Former United striker Rasmus Hojlund confirmed he shouted \"there's only one team in Manchester\" towards the City fans after scoring for Napoli.",
+      "published": "2026-11-24T23:52:02Z",
+      "byline": "ESPN",
+      "image": "https://a.espncdn.com/photo/2026/1124/r1750857_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/soccer/story/_/id/50587028/rasmus-hojlund-man-united-man-city-napoli-champions-league",
+      "premium": false,
+      "team": "382",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
+      }
+    },
+    {
+      "id": "50586756",
+      "type": "Media",
+      "headline": "Can Erling Haaland only score from crosses for Man City?",
+      "description": "The ESPN FC crew react to Manchester City's 2-2 draw with Napoli in the UEFA Champions League.",
+      "published": "2026-11-24T23:04:51Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1124/dm_261124_COM_SOC_Analysis_Can_Erling_Haaland_only_score_from_crosses_for_Man_City_20261124_GLOBAL/dm_261124_COM_SOC_Analysis_Can_Erling_Haaland_only_score_from_crosses_for_Man_City_20261124_GLOBAL.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50586756/can-erling-haaland-only-score-crosses-man-city",
+      "premium": false,
+      "team": "382",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
       }
     },
     {
@@ -26,7 +77,7 @@
       "type": "HeadlineNews",
       "headline": "49ers release WR Brandon Aiyuk with roster exemption ending",
       "description": "The 49ers released wide receiver Brandon Aiyuk on Monday.",
-      "published": "2026-11-23T22:15:11Z",
+      "published": "2026-11-24T21:54:34Z",
       "byline": "Nick Wagoner",
       "image": "https://a.espncdn.com/photo/2026/1105/r1741725_1296x729_16-9.jpg",
       "link": "https://www.espn.com/nfl/story/_/id/50575346/sources-49ers-releasing-wr-brandon-aiyuk",
@@ -42,7 +93,7 @@
       "type": "HeadlineNews",
       "headline": "Steelers' Metcalf denies trying to poke DeJean in eye; WR won't be suspended",
       "description": "Steelers wide receiver DK Metcalf on Monday denied trying to poke Eagles cornerback Cooper DeJean in the eye before he was ejected Sunday.",
-      "published": "2026-11-23T21:38:02Z",
+      "published": "2026-11-24T21:11:31Z",
       "byline": "Brooke Pryor",
       "image": "https://a.espncdn.com/photo/2026/1123/r1750197_1296x729_16-9.jpg",
       "link": "https://www.espn.com/nfl/story/_/id/50573989/steelers-metcalf-denies-trying-poke-eagles-dejean-eye",
@@ -54,20 +105,84 @@
       }
     },
     {
-      "id": "50576304",
-      "type": "HeadlineNews",
-      "headline": "Kevin De Bruyne: Man City achievements will not be tainted if appeal fails",
-      "description": "Kevin De Bruyne insists his achievements will not be tainted if Manchester City are stripped of any titles.",
-      "published": "2026-11-23T21:18:52Z",
-      "byline": "PA",
-      "image": "https://a.espncdn.com/photo/2026/1123/r1750337_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/soccer/story/_/id/50576304/kevin-de-bruyne-man-city",
+      "id": "48476156",
+      "type": "Story",
+      "headline": "2026 NFL awards tracker: Odds for MVP, Rookie of the Year and more",
+      "description": "Who are the favorites to win seasonlong honors? Here are the odds for MVP, Rookie of the Year and more.",
+      "published": "2026-11-24T17:41:04Z",
+      "byline": "Doug Greenberg",
+      "image": "https://a.espncdn.com/photo/2026/1124/r1750666_2_608x342_16-9.jpg",
+      "link": "https://www.espn.com/espn/betting/story/_/id/48476156/2026-nfl-awards-betting-odds-mvp-rookie-year-offensive-defensive-player-coach",
       "premium": false,
-      "team": "382",
+      "team": "sf",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50583885",
+      "type": "HeadlineNews",
+      "headline": "Hansi Flick on Barcelona with no Lamine Yamal: 'We can win without him'",
+      "description": "Barcelona head coach Hansi Flick has said the Spanish champions know how to cope without Lamine Yamal.",
+      "published": "2026-11-24T17:12:36Z",
+      "byline": "Sam Marsden",
+      "image": "https://a.espncdn.com/photo/2026/1124/r1750659_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/soccer/story/_/id/50583885/lamine-yamal-hansi-flick-barcelona-champions-league-sabah",
+      "premium": false,
+      "team": "83",
       "league": {
         "id": "soccer",
         "name": "足球",
         "nameEn": "Soccer"
+      }
+    },
+    {
+      "id": "50573226",
+      "type": "Story",
+      "headline": "NFL's international plan: More games, new TV deal incoming",
+      "description": "The NFL intends to play 10 international games next year, the maximum allowed under the CBA. It wants more.",
+      "published": "2026-11-24T14:04:19Z",
+      "byline": "Judy Battista",
+      "image": "https://a.espncdn.com/photo/2026/1123/r1750167_800x450_16-9.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50573226/nfl-international-expansion-turf-players",
+      "premium": false,
+      "team": "sf",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50572252",
+      "type": "Recap",
+      "headline": "Brandin Podziemski scores 18 points as Warriors hold of Celtics 88-87 to snap five-game losing skid",
+      "description": "— Brandin Podziemski had 18 points and seven rebounds and the Golden State Warriors snapped a five-game losing streak by holding off Boston for an 88-87 win Sunday night, sending the Celtics to their first four-game skid in five years.",
+      "published": "2026-11-24T09:15:35Z",
+      "byline": null,
+      "image": "https://s.espncdn.com/stitcher/sports/basketball/nba/events/401910035.png?templateId=espn.applewatch.awayhome.1",
+      "link": "http://www.espn.com/nba/recap?gameId=401910035",
+      "premium": false,
+      "team": "gs",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      }
+    },
+    {
+      "id": "50578357",
+      "type": "HeadlineNews",
+      "headline": "Seahawks to monitor Sam Darnold status this week before final call vs. 49ers",
+      "description": "The Seahawks still plan to start Sam Darnold against the 49ers but will wait to see how the QB looks in practice Wednesday before making a final call.",
+      "published": "2026-11-24T02:21:45Z",
+      "byline": "Brady Henderson",
+      "image": "https://a.espncdn.com/photo/2026/1103/r1740370_600x600_1-1.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50578357/seahawks-holding-final-sam-darnold-call-vs-49ers",
+      "premium": false,
+      "team": "sf",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
       }
     },
     {
@@ -100,55 +215,6 @@
       "league": {
         "id": "nfl",
         "name": "NFL"
-      }
-    },
-    {
-      "id": "50575248",
-      "type": "HeadlineNews",
-      "headline": "Source: 49ers, GM John Lynch agree to contract extension",
-      "description": "The 49ers and general manager John Lynch have agreed to a multiyear contract extension, a team source confirmed to NFL Network's Ian Rapoport.",
-      "published": "2026-11-23T19:05:14Z",
-      "byline": null,
-      "image": "https://a.espncdn.com/photo/2026/1123/r1750254_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50575248/source-49ers-gm-john-lynch-agree-contract-extension",
-      "premium": false,
-      "team": "sf",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50570945",
-      "type": "Story",
-      "headline": "Early betting for Week 12: Will Seahawks slow down 49ers?",
-      "description": "Which Week 12 lines offered immediate value once odds came out? Matt Bowen found one he's jumping on now.",
-      "published": "2026-11-23T17:59:25Z",
-      "byline": "ESPN",
-      "image": "https://a.espncdn.com/photo/2026/1123/r1750191_608x342_16-9.jpg",
-      "link": "https://www.espn.com/espn/betting/story/_/id/50570945/nfl-week-12-betting-odds-props-early-picks-predictions",
-      "premium": false,
-      "team": "sf",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50573261",
-      "type": "HeadlineNews",
-      "headline": "Maresca calls Man City's league slump 'a shame' before De Bruyne reunion",
-      "description": "Manchester City boss Enzo Maresca has said his side's four-game winless run in the Premier League has been \"a shame\" as they prepare to face club great Kevin De Bruyne in Tuesday's Champions League clash with Napoli.",
-      "published": "2026-11-23T15:30:32Z",
-      "byline": "PA",
-      "image": "https://a.espncdn.com/photo/2026/1123/r1750162_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/soccer/story/_/id/50573261/kevin-de-bruyne-man-city-napoli",
-      "premium": false,
-      "team": "382",
-      "league": {
-        "id": "soccer",
-        "name": "足球",
-        "nameEn": "Soccer"
       }
     },
     {
@@ -185,22 +251,6 @@
       }
     },
     {
-      "id": "50572252",
-      "type": "Recap",
-      "headline": "Brandin Podziemski scores 18 points as Warriors hold of Celtics 88-87 to snap five-game losing skid",
-      "description": "— Brandin Podziemski had 18 points and seven rebounds and the Golden State Warriors snapped a five-game losing streak by holding off Boston for an 88-87 win Sunday night, sending the Celtics to their first four-game skid in five years.",
-      "published": "2026-11-23T11:57:04Z",
-      "byline": null,
-      "image": "https://s.espncdn.com/stitcher/sports/basketball/nba/events/401910035.png?templateId=espn.applewatch.awayhome.1",
-      "link": "http://www.espn.com/nba/recap?gameId=401910035",
-      "premium": false,
-      "team": "gs",
-      "league": {
-        "id": "nba",
-        "name": "NBA"
-      }
-    },
-    {
       "id": "50571569",
       "type": "HeadlineNews",
       "headline": "Lamine Yamal out of Barcelona's Champions League game at Sabah",
@@ -209,23 +259,6 @@
       "byline": "Sam Marsden",
       "image": "https://a.espncdn.com/photo/2026/1031/r1739203_1296x729_16-9.jpg",
       "link": "https://www.espn.com/soccer/story/_/id/50571569/lamine-yamal-barcelona-champions-league-sabah",
-      "premium": false,
-      "team": "83",
-      "league": {
-        "id": "soccer",
-        "name": "足球",
-        "nameEn": "Soccer"
-      }
-    },
-    {
-      "id": "50571230",
-      "type": "Media",
-      "headline": "Barcelona stun Villarreal after second-half comeback",
-      "description": "Barcelona come from 2-0 down to defeat Villarreal 3-2 in LaLiga.",
-      "published": "2026-11-23T08:31:24Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1123/dm_261123_COM_SOC_Highlight_Barcelona_stun_Villarreal_after_second_half_comeback_20261123_UK_IRE/dm_261123_COM_SOC_Highlight_Barcelona_stun_Villarreal_after_second_half_comeback_20261123_UK_IRE.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50571230/barcelona-stun-villarreal-second-half-comeback",
       "premium": false,
       "team": "83",
       "league": {
@@ -299,6 +332,22 @@
       }
     },
     {
+      "id": "50563590",
+      "type": "HeadlineNews",
+      "headline": "Travis Kelce pads Hall of Fame résumé with two first-half TDs in Chiefs' win",
+      "description": "Travis Kelce passed Rob Gronkowski for third place for the most total touchdowns, including playoffs, by a tight end in league history.",
+      "published": "2026-11-23T01:00:12Z",
+      "byline": "Nate Taylor",
+      "image": "https://a.espncdn.com/photo/2026/1122/r1749703_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50563590/kelce-passes-gronkowski-most-tds-te-including-playoffs",
+      "premium": false,
+      "team": "kc",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
       "id": "50567158",
       "type": "HeadlineNews",
       "headline": "Eagles' Riq Woolen benched after missed tackles vs. Steelers",
@@ -347,38 +396,6 @@
       }
     },
     {
-      "id": "50565318",
-      "type": "Media",
-      "headline": "Pittsburgh Steelers vs. Philadelphia Eagles: Game Highlights",
-      "description": "Pittsburgh Steelers vs. Philadelphia Eagles: Game Highlights",
-      "published": "2026-11-22T21:33:40Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1122/a64030ba-32d6-4958-a7a8-19757868d95a/a64030ba-32d6-4958-a7a8-19757868d95a.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50565318/game-highlights",
-      "premium": false,
-      "team": "phi",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50564550",
-      "type": "Media",
-      "headline": "Arizona Cardinals vs. Kansas City Chiefs: Game Highlights",
-      "description": "Arizona Cardinals vs. Kansas City Chiefs: Game Highlights",
-      "published": "2026-11-22T20:45:56Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1122/f870fbd9-2404-4e9d-aed7-daf8fc4f5748/f870fbd9-2404-4e9d-aed7-daf8fc4f5748.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50564550/game-highlights",
-      "premium": false,
-      "team": "kc",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
       "id": "50513358",
       "type": "Story",
       "headline": "Kansas City Chiefs tight end Travis Kelce's top moments at Arrowhead Stadium",
@@ -408,23 +425,6 @@
       "league": {
         "id": "cfb",
         "name": "NCAAF"
-      }
-    },
-    {
-      "id": "50551332",
-      "type": "HeadlineNews",
-      "headline": "Enzo Maresca: Man City denied 'clear' goal in draw with Fulham",
-      "description": "Enzo Maresca said Manchester City were denied a \"clear\" goal in their 1-1 draw with Fulham after Erling Haaland was judged to have fouled goalkeeper Bernd Leno.",
-      "published": "2026-11-21T18:49:18Z",
-      "byline": "Rob Dawson",
-      "image": "https://a.espncdn.com/photo/2026/1121/r1749036_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/soccer/story/_/id/50551332/man-city-fulham-haaland-disallowed-goal-premier-league",
-      "premium": false,
-      "team": "382",
-      "league": {
-        "id": "soccer",
-        "name": "足球",
-        "nameEn": "Soccer"
       }
     },
     {
