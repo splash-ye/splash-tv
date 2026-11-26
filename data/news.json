@@ -1,10 +1,256 @@
 {
   "version": 3,
-  "day": "20261125",
-  "generatedAt": "2026-11-25T05:01:30.549Z",
+  "day": "20261126",
+  "generatedAt": "2026-11-26T05:01:22.668Z",
   "cfgKey": "[[\"nba\",[\"gs\"],{\"limit\":5}],[\"nfl\",[\"sf\",\"kc\",\"phi\"],{\"limit\":5}],[\"cfb\",[\"psu\"],{\"limit\":5}],[\"soccer\",[],{\"limit\":3,\"teams\":[{\"league\":\"esp.1\",\"team\":\"83\"},{\"league\":\"eng.1\",\"team\":\"382\"}]}]]",
   "partial": false,
   "articles": [
+    {
+      "id": "50599955",
+      "type": "Media",
+      "headline": "Will Brock Purdy suit up for the Niners?",
+      "description": "Nick Wagoner explains Brock Purdy's injury status and what it means for the 49ers.",
+      "published": "2026-11-26T01:30:49Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1125/dm_261125_niners_purdy_ia/dm_261125_niners_purdy_ia.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50599955/will-brock-purdy-suit-niners",
+      "premium": false,
+      "team": "sf",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50599333",
+      "type": "Preview",
+      "headline": "Purdy and the 49ers prepare for another tough test against Seahawks' stout defense",
+      "description": "— The San Francisco 49ers passed the first of back-to-back tests against two of the NFL's top defenses with flying colors as Brock Prudy ",
+      "published": "2026-11-26T00:25:33Z",
+      "byline": null,
+      "image": "https://s.espncdn.com/stitcher/sports/football/nfl/events/401873091.png?templateId=espn.applewatch.awayhome.1",
+      "link": "http://www.espn.com/nfl/preview?gameId=401873091",
+      "premium": false,
+      "team": "sf",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50596930",
+      "type": "HeadlineNews",
+      "headline": "49ers QB Brock Purdy has ankle injury, sits out practice Wednesday",
+      "description": "49ers quarterback Brock Purdy did not practice Wednesday as he deals with an ankle injury suffered in Sunday night's game against the Vikings.",
+      "published": "2026-11-26T00:16:10Z",
+      "byline": "Nick Wagoner",
+      "image": "https://a.espncdn.com/photo/2026/1125/r1751271_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50596930/49ers-brock-purdy-ankle-injury-practice-wednesday",
+      "premium": false,
+      "team": "sf",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50598435",
+      "type": "Preview",
+      "headline": "Allen and Mahomes renew their thrilling rivalry as the Bills host the Chiefs on Thanksgiving night",
+      "description": "— Sorry, Steve Spagnuolo. Josh Allen has no plans of going anywhere, any time soon.",
+      "published": "2026-11-25T23:03:41Z",
+      "byline": null,
+      "image": "https://s.espncdn.com/stitcher/sports/football/nfl/events/401873082.png?templateId=espn.applewatch.awayhome.1",
+      "link": "http://www.espn.com/nfl/preview?gameId=401873082",
+      "premium": false,
+      "team": "kc",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50598228",
+      "type": "Preview",
+      "headline": "Cowboys really need back-to-back wins this time with rival Eagles visiting on Thanksgiving",
+      "description": "— If the Dallas Cowboys don't solve a puzzling inability to win consecutive games when NFC East rival Philadelphia visits on Thanksgiving, they'll have to accept that they're probably going to miss the playoffs for the third year in a row.",
+      "published": "2026-11-25T22:47:45Z",
+      "byline": null,
+      "image": "https://s.espncdn.com/stitcher/sports/football/nfl/events/401873080.png?templateId=espn.applewatch.awayhome.1",
+      "link": "http://www.espn.com/nfl/preview?gameId=401873080",
+      "premium": false,
+      "team": "phi",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50597280",
+      "type": "HeadlineNews",
+      "headline": "Anthony Gordon enjoys 'very special' Baku again to lead Barcelona rout",
+      "description": "Baku brought the best out of Anthony Gordon once again as the England forward netted twice in Barcelona's 4-1 Champions League victory over Sabah.",
+      "published": "2026-11-25T21:38:56Z",
+      "byline": "Sam Marsden",
+      "image": "https://a.espncdn.com/photo/2026/1125/r1751301_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/soccer/story/_/id/50597280/anthony-gordon-barcelona-baku-sabah-fk-champions-league",
+      "premium": false,
+      "team": "83",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
+      }
+    },
+    {
+      "id": "50557484",
+      "type": "Recap",
+      "headline": "Gordon scores twice as Barcelona cruise in Azerbaijan",
+      "description": "Anthony Gordon struck twice as Barcelona swept past Azerbaijan side Sabah FK with a 4-1 victory in Baku on Wednesday.",
+      "published": "2026-11-25T20:19:56Z",
+      "byline": "ESPN News Services",
+      "image": "https://a.espncdn.com/photo/2026/1125/r1751214_1296x729_16-9.jpg",
+      "link": "http://www.espn.com/soccer/report/_/gameId/401915378",
+      "premium": false,
+      "team": "83",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
+      }
+    },
+    {
+      "id": "50594342",
+      "type": "Media",
+      "headline": "Why Stephen A. is taking Josh Allen over Patrick Mahomes ... right now",
+      "description": "Why Stephen A. is taking Josh Allen over Patrick Mahomes ... right now",
+      "published": "2026-11-25T19:58:01Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1125/ss_20261125_111232337_3760709/ss_20261125_111232337_3760709.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50594342/why-stephen-taking-josh-allen-patrick-mahomes-right-now",
+      "premium": false,
+      "team": "kc",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50594656",
+      "type": "HeadlineNews",
+      "headline": "Chiefs rule RB Kenneth Walker III (groin) out for showdown vs. Bills",
+      "description": "Chiefs running back Kenneth Walker III (groin) has been ruled out for Thursday's showdown against the Bills, the team announced Wednesday",
+      "published": "2026-11-25T17:22:59Z",
+      "byline": "Nate Taylor",
+      "image": "https://a.espncdn.com/photo/2026/1119/r1747957_576x324_16-9.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50594656/chiefs-rb-kenneth-walker-iii-groin-thursday-vs-bills",
+      "premium": false,
+      "team": "kc",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50592869",
+      "type": "HeadlineNews",
+      "headline": "Erling Haaland relishing battle with rival Gabriel as Man City go to Arsenal",
+      "description": "Erling Haaland is relishing another showdown with Gabriel but knows Manchester City must improve to get anything out of Sunday's clash with Arsenal.",
+      "published": "2026-11-25T17:15:48Z",
+      "byline": "PA",
+      "image": "https://a.espncdn.com/photo/2025/0203/r1446867_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/soccer/story/_/id/50592869/erling-haaland-gabriel-arsenal-manchester-city",
+      "premium": false,
+      "team": "382",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
+      }
+    },
+    {
+      "id": "50591588",
+      "type": "HeadlineNews",
+      "headline": "Barcelona to appeal Fermín López's two-match ban - sources",
+      "description": "Fermín López has been hit with a two-match suspension after getting sent off in Barcelona's comeback win against Villarreal last weekend.",
+      "published": "2026-11-25T15:32:36Z",
+      "byline": "Sam Marsden",
+      "image": "https://a.espncdn.com/photo/2026/1125/r1751001_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/soccer/story/_/id/50591588/fermin-lopez-barcelona-ban-appeal-sources",
+      "premium": false,
+      "team": "83",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
+      }
+    },
+    {
+      "id": "50592983",
+      "type": "HeadlineNews",
+      "headline": "Man City told regulator 'has the stomach' to challenge owners after charges",
+      "description": "The chair of the Independent Football Regulator says his organisation \"has the stomach\" to take on Manchester City's owners should it need to.",
+      "published": "2026-11-25T14:41:01Z",
+      "byline": "PA",
+      "image": "https://a.espncdn.com/photo/2026/1125/r1751067_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/soccer/story/_/id/50592983/man-city-charges-independent-regulator",
+      "premium": false,
+      "team": "382",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
+      }
+    },
+    {
+      "id": "50583319",
+      "type": "Story",
+      "headline": "From practice squad to prime time: A look at Milton's big chance on Thanksgiving",
+      "description": "Ex-Cowboys QB Milton is set to headline the Eagles' Thanksgiving game, can he make the most of it?",
+      "published": "2026-11-25T14:40:29Z",
+      "byline": "Tim McManus",
+      "image": "https://a.espncdn.com/photo/2026/1124/r1750637_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50583319/joe-milton-build-momentum-thanksgiving-start-dallas-cowboys",
+      "premium": false,
+      "team": "phi",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50570668",
+      "type": "HeadlineNews",
+      "headline": "Draymond Green swats back at online critics, fuels Warriors' win over Celtics",
+      "description": "After reinforcing his career​ accolades earlier in the day on social media, Golden State Warriors forward Draymond Green closed out an 88-87 win over the Boston Celtics on Sunday with a last-second defensive stop and rousing celebration from the veteran.",
+      "published": "2026-11-25T12:42:41Z",
+      "byline": "Anthony Slater",
+      "image": "https://a.espncdn.com/photo/2026/1123/r1750046_600x400_3-2.jpg",
+      "link": "https://www.espn.com/nba/story/_/id/50570668/vocal-green-defensive-stop-buzzer-fuels-warriors-win",
+      "premium": false,
+      "team": "gs",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      }
+    },
+    {
+      "id": "50591753",
+      "type": "HeadlineNews",
+      "headline": "Raheem Sterling avoids jail for dangerous driving",
+      "description": "Former England footballer Raheem Sterling has avoided jail after admitting dangerously driving his Lamborghini while inhaling from a balloon on a motorway during rush hour before crashing into a metal gate.",
+      "published": "2026-11-25T11:53:55Z",
+      "byline": "PA",
+      "image": "https://a.espncdn.com/photo/2026/1125/r1751007_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/soccer/story/_/id/50591753/raheem-sterling-court-england-manchester-city-liverpool-chelsea",
+      "premium": false,
+      "team": "382",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
+      }
+    },
     {
       "id": "50565318",
       "type": "Media",
@@ -16,73 +262,6 @@
       "link": "https://www.espn.com/video/clip/_/id/50565318/game-highlights",
       "premium": false,
       "team": "phi",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50586567",
-      "type": "HeadlineNews",
-      "headline": "Rayan Cherki unhappy despite salvaging Man City draw: 'Don't care about my goal'",
-      "description": "Rayan Cherki was in no mood for celebrating after rescuing a 2-2 draw for Manchester City at home to Napoli in the Champions League on Tuesday.",
-      "published": "2026-11-24T23:52:03Z",
-      "byline": "ESPN News Services",
-      "image": "https://a.espncdn.com/photo/2026/1124/r1750831_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/soccer/story/_/id/50586567/rayan-cherki-man-city-goal-napoli-champions-league",
-      "premium": false,
-      "team": "382",
-      "league": {
-        "id": "soccer",
-        "name": "足球",
-        "nameEn": "Soccer"
-      }
-    },
-    {
-      "id": "50587028",
-      "type": "HeadlineNews",
-      "headline": "Rasmus Højlund on aiming Man United dig at Man City fans: 'Some good banter'",
-      "description": "Former United striker Rasmus Hojlund confirmed he shouted \"there's only one team in Manchester\" towards the City fans after scoring for Napoli.",
-      "published": "2026-11-24T23:52:02Z",
-      "byline": "ESPN",
-      "image": "https://a.espncdn.com/photo/2026/1124/r1750857_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/soccer/story/_/id/50587028/rasmus-hojlund-man-united-man-city-napoli-champions-league",
-      "premium": false,
-      "team": "382",
-      "league": {
-        "id": "soccer",
-        "name": "足球",
-        "nameEn": "Soccer"
-      }
-    },
-    {
-      "id": "50586756",
-      "type": "Media",
-      "headline": "Can Erling Haaland only score from crosses for Man City?",
-      "description": "The ESPN FC crew react to Manchester City's 2-2 draw with Napoli in the UEFA Champions League.",
-      "published": "2026-11-24T23:04:51Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1124/dm_261124_COM_SOC_Analysis_Can_Erling_Haaland_only_score_from_crosses_for_Man_City_20261124_GLOBAL/dm_261124_COM_SOC_Analysis_Can_Erling_Haaland_only_score_from_crosses_for_Man_City_20261124_GLOBAL.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50586756/can-erling-haaland-only-score-crosses-man-city",
-      "premium": false,
-      "team": "382",
-      "league": {
-        "id": "soccer",
-        "name": "足球",
-        "nameEn": "Soccer"
-      }
-    },
-    {
-      "id": "50575346",
-      "type": "HeadlineNews",
-      "headline": "49ers release WR Brandon Aiyuk with roster exemption ending",
-      "description": "The 49ers released wide receiver Brandon Aiyuk on Monday.",
-      "published": "2026-11-24T21:54:34Z",
-      "byline": "Nick Wagoner",
-      "image": "https://a.espncdn.com/photo/2026/1105/r1741725_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50575346/sources-49ers-releasing-wr-brandon-aiyuk",
-      "premium": false,
-      "team": "sf",
       "league": {
         "id": "nfl",
         "name": "NFL"
@@ -121,23 +300,6 @@
       }
     },
     {
-      "id": "50583885",
-      "type": "HeadlineNews",
-      "headline": "Hansi Flick on Barcelona with no Lamine Yamal: 'We can win without him'",
-      "description": "Barcelona head coach Hansi Flick has said the Spanish champions know how to cope without Lamine Yamal.",
-      "published": "2026-11-24T17:12:36Z",
-      "byline": "Sam Marsden",
-      "image": "https://a.espncdn.com/photo/2026/1124/r1750659_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/soccer/story/_/id/50583885/lamine-yamal-hansi-flick-barcelona-champions-league-sabah",
-      "premium": false,
-      "team": "83",
-      "league": {
-        "id": "soccer",
-        "name": "足球",
-        "nameEn": "Soccer"
-      }
-    },
-    {
       "id": "50573226",
       "type": "Story",
       "headline": "NFL's international plan: More games, new TV deal incoming",
@@ -170,120 +332,6 @@
       }
     },
     {
-      "id": "50578357",
-      "type": "HeadlineNews",
-      "headline": "Seahawks to monitor Sam Darnold status this week before final call vs. 49ers",
-      "description": "The Seahawks still plan to start Sam Darnold against the 49ers but will wait to see how the QB looks in practice Wednesday before making a final call.",
-      "published": "2026-11-24T02:21:45Z",
-      "byline": "Brady Henderson",
-      "image": "https://a.espncdn.com/photo/2026/1103/r1740370_600x600_1-1.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50578357/seahawks-holding-final-sam-darnold-call-vs-49ers",
-      "premium": false,
-      "team": "sf",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50576302",
-      "type": "Media",
-      "headline": "Adam Schefter: Cardinals fire defensive coordinator after loss to Chiefs",
-      "description": "Adam Schefter: Cardinals fire defensive coordinator after loss to Chiefs ",
-      "published": "2026-11-23T21:09:00Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1123/ss_20261123_160430730_3758238/ss_20261123_160430730_3758238.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50576302/cardinals-fire-defensive-coordinator-loss-chiefs",
-      "premium": false,
-      "team": "kc",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50575458",
-      "type": "Media",
-      "headline": "What's next for Brandon Aiyuk after release by 49ers?",
-      "description": "What's next for Brandon Aiyuk after release by 49ers?",
-      "published": "2026-11-23T19:29:43Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1123/ss_20261123_142342858_3758130/ss_20261123_142342858_3758130.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50575458/next-brandon-aiyuk-release-49ers",
-      "premium": false,
-      "team": "sf",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50565313",
-      "type": "Recap",
-      "headline": "Eagles snap 7-game losing streak and keep Steelers winless in Philly since 1965 with 19-16 victory",
-      "description": "— Joe Milton made a perfect throw to DeVonta Smith and the wide receiver rolled out of bounds to get the first down that closed out the Philadelphia Eagles' first win since September.",
-      "published": "2026-11-23T15:25:32Z",
-      "byline": null,
-      "image": "https://s.espncdn.com/stitcher/sports/football/nfl/events/401873076.png?templateId=espn.applewatch.awayhome.1",
-      "link": "http://www.espn.com/nfl/recap?gameId=401873076",
-      "premium": false,
-      "team": "phi",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50568399",
-      "type": "Story",
-      "headline": "Man United's heavy Liverpool loss didn't tell us anything new; epic Barça comeback",
-      "description": "Pochettino's debut as Man United manager didn't tell us anything we didn't already know when it came to the scale of rebuild required.",
-      "published": "2026-11-23T15:15:07Z",
-      "byline": "Gab Marcotti",
-      "image": "https://a.espncdn.com/photo/2026/1123/r1750121_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/soccer/story/_/id/50568399/man-united-liverpool-pochettino-barcelona-man-city",
-      "premium": false,
-      "team": "83",
-      "league": {
-        "id": "soccer",
-        "name": "足球",
-        "nameEn": "Soccer"
-      }
-    },
-    {
-      "id": "50571569",
-      "type": "HeadlineNews",
-      "headline": "Lamine Yamal out of Barcelona's Champions League game at Sabah",
-      "description": "Lamine Yamal will miss Barcelona's Champions League game in Azerbaijan against Sabah this week with an ankle injury, the Spanish champions have confirmed.",
-      "published": "2026-11-23T09:46:24Z",
-      "byline": "Sam Marsden",
-      "image": "https://a.espncdn.com/photo/2026/1031/r1739203_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/soccer/story/_/id/50571569/lamine-yamal-barcelona-champions-league-sabah",
-      "premium": false,
-      "team": "83",
-      "league": {
-        "id": "soccer",
-        "name": "足球",
-        "nameEn": "Soccer"
-      }
-    },
-    {
-      "id": "50570668",
-      "type": "HeadlineNews",
-      "headline": "Draymond Green swats back at online critics, fuels Warriors' win over Celtics",
-      "description": "After reinforcing his career​ accolades earlier in the day on social media, Golden State Warriors forward Draymond Green closed out an 88-87 win over the Boston Celtics on Sunday with a last-second defensive stop and rousing celebration from the veteran.",
-      "published": "2026-11-23T07:58:53Z",
-      "byline": "Anthony Slater",
-      "image": "https://a.espncdn.com/photo/2026/1123/r1750046_600x400_3-2.jpg",
-      "link": "https://www.espn.com/nba/story/_/id/50570668/vocal-green-defensive-stop-buzzer-fuels-warriors-win",
-      "premium": false,
-      "team": "gs",
-      "league": {
-        "id": "nba",
-        "name": "NBA"
-      }
-    },
-    {
       "id": "50569693",
       "type": "Media",
       "headline": "Wariors down the Celtics at home",
@@ -297,54 +345,6 @@
       "league": {
         "id": "nba",
         "name": "NBA"
-      }
-    },
-    {
-      "id": "50570086",
-      "type": "Media",
-      "headline": "How Travis Kelce made Chiefs and NFL history in win",
-      "description": "Nate Taylor breaks down Travis Kelce's stellar performance vs. the Cardinals in Week 11.",
-      "published": "2026-11-23T04:52:08Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1122/dm_261122_Chiefs_beat_Cardinals_IA/dm_261122_Chiefs_beat_Cardinals_IA.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50570086/how-travis-kelce-made-chiefs-nfl-history-win",
-      "premium": false,
-      "team": "kc",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50569074",
-      "type": "Media",
-      "headline": "Eagles snap 7-game slide with win over Steelers",
-      "description": "Tim McManus on the Eagles' 19-16 Week 11 win over the Steelers.",
-      "published": "2026-11-23T03:07:04Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1122/dm_261122_IA_Eagles_16x9/dm_261122_IA_Eagles_16x9.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50569074/eagles-snap-7-game-slide-win-steelers",
-      "premium": false,
-      "team": "phi",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50563590",
-      "type": "HeadlineNews",
-      "headline": "Travis Kelce pads Hall of Fame résumé with two first-half TDs in Chiefs' win",
-      "description": "Travis Kelce passed Rob Gronkowski for third place for the most total touchdowns, including playoffs, by a tight end in league history.",
-      "published": "2026-11-23T01:00:12Z",
-      "byline": "Nate Taylor",
-      "image": "https://a.espncdn.com/photo/2026/1122/r1749703_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50563590/kelce-passes-gronkowski-most-tds-te-including-playoffs",
-      "premium": false,
-      "team": "kc",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
       }
     },
     {
