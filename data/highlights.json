@@ -1252,5 +1252,19 @@
       }
     ],
     "foundAt": "2026-11-26T07:31:20.265Z"
+  },
+  "roundup:nba:nightly:20261125": {
+    "videos": [
+      {
+        "id": "SEhz3l_hehc",
+        "title": "NBA's Nightly Recap | November 25, 2026",
+        "channelId": "UCWJ2lWNubArHWmf3FIHbfcQ",
+        "url": "https://www.youtube.com/watch?v=SEhz3l_hehc",
+        "thumbnail": "https://i.ytimg.com/vi/SEhz3l_hehc/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-26T07:36:54.364Z"
+      }
+    ],
+    "foundAt": "2026-11-26T07:45:54.364Z"
   }
 }
