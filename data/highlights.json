@@ -1266,5 +1266,20 @@
       }
     ],
     "foundAt": "2026-11-26T07:45:54.364Z"
+  },
+  "nfl:401873081": {
+    "videos": [
+      {
+        "id": "6mDrkExeNSY",
+        "title": "Chicago Bears vs. Detroit Lions Game Highlights | 2026 NFL Season Week 12",
+        "channelId": "UCDVYQ4Zhbm3S2dlz7P1GBDg",
+        "url": "https://www.youtube.com/watch?v=6mDrkExeNSY",
+        "thumbnail": "https://i.ytimg.com/vi/6mDrkExeNSY/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-26T21:44:26+00:00"
+      }
+    ],
+    "source": "rss",
+    "foundAt": "2026-11-26T22:01:35.144Z"
   }
 }
