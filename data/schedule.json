@@ -1,7 +1,7 @@
 {
   "version": 3,
-  "day": "20261126",
-  "generatedAt": "2026-11-26T05:01:21.857Z",
+  "day": "20261127",
+  "generatedAt": "2026-11-27T05:01:23.097Z",
   "cfgKey": "[{\"id\":\"nba\",\"name\":\"NBA\",\"sport\":\"basketball\",\"league\":\"nba\",\"teams\":[\"gs\"],\"marquee\":{\"type\":\"leagueTop\",\"topN\":8},\"news\":{\"limit\":5},\"highlights\":{\"matcher\":\"nba\",\"marquee\":true,\"channels\":[\"UCWJ2lWNubArHWmf3FIHbfcQ\"],\"roundups\":[\"nightly\",\"topPlays\"]},\"standings\":{\"groupOrder\":[\"Western Conference\",\"Eastern Conference\"]}},{\"id\":\"nfl\",\"name\":\"NFL\",\"sport\":\"football\",\"league\":\"nfl\",\"teams\":[\"sf\",\"kc\",\"phi\"],\"marquee\":{\"type\":\"divisionTop\",\"perDivision\":2,\"winningRecord\":true},\"news\":{\"limit\":5},\"highlights\":{\"matcher\":\"nfl\",\"marquee\":true,\"channels\":[\"UCDVYQ4Zhbm3S2dlz7P1GBDg\"],\"roundups\":[\"top15\"]},\"standings\":{\"level\":3}},{\"id\":\"cfb\",\"name\":\"NCAAF\",\"sport\":\"football\",\"league\":\"college-football\",\"teams\":[\"psu\"],\"scoreboardParams\":\"groups=80&limit=300\",\"marquee\":{\"type\":\"poll\",\"topN\":15,\"polls\":[\"cfp\",\"ap\"]},\"news\":{\"limit\":5},\"highlights\":{\"matcher\":\"cfb\",\"marquee\":true,\"channels\":[\"UCXnslB_TwYqScBRf4bPf3vA\",\"UCpwix-O6ceqMgdxhqIynzFA\"]},\"standings\":{\"polls\":[\"cfp\",\"ap\"]}},{\"id\":\"soccer\",\"name\":\"足球\",\"nameEn\":\"Soccer\",\"sport\":\"soccer\",\"teams\":[],\"competitions\":[{\"league\":\"eng.1\",\"name\":\"英超\",\"nameEn\":\"Premier League\",\"channels\":[\"UCqZQlzSHbVJrwrn5XvzrzcA\"]},{\"league\":\"esp.1\",\"name\":\"西甲\",\"nameEn\":\"LaLiga\",\"channels\":[\"UC6c1z7bA__85CIWZ_jpCK-Q\",\"UCTv-XvfzLX3i4IGWAm4sbmA\"]},{\"league\":\"uefa.champions\",\"name\":\"欧冠\",\"nameEn\":\"Champions League\",\"channels\":[\"UCET00YnetHT7tOpu12v8jxg\"]},{\"league\":\"eng.fa\",\"name\":\"足总杯\",\"nameEn\":\"FA Cup\",\"channels\":[\"UC6c1z7bA__85CIWZ_jpCK-Q\"]},{\"league\":\"esp.copa_del_rey\",\"name\":\"国王杯\",\"nameEn\":\"Copa del Rey\",\"channels\":[\"UC6c1z7bA__85CIWZ_jpCK-Q\"]}],\"marquee\":{\"type\":\"fixedList\",\"criteria\":\"豪门对决\",\"criteriaEn\":\"Big clubs\",\"clubs\":[\"382\",\"359\",\"364\",\"363\",\"86\",\"83\",\"1068\",\"132\",\"160\"],\"clubNames\":\"曼城 阿森纳 利物浦 切尔西 皇马 巴萨 马竞 拜仁 巴黎圣日耳曼\",\"lookupLeagues\":[\"ger.1\",\"fra.1\"]},\"news\":{\"limit\":3,\"teams\":[{\"league\":\"esp.1\",\"team\":\"83\"},{\"league\":\"eng.1\",\"team\":\"382\"}]},\"highlights\":{\"matcher\":\"soccer\",\"marquee\":true,\"aliases\":{\"83\":[\"Barcelona\",\"Barca\",\"FC Barcelona\"],\"86\":[\"Real Madrid\"],\"132\":[\"Bayern Munich\",\"Bayern Munchen\",\"FC Bayern\",\"Bayern\"],\"160\":[\"Paris Saint-Germain\",\"Paris Saint Germain\",\"PSG\",\"Paris\"],\"359\":[\"Arsenal\"],\"363\":[\"Chelsea\"],\"364\":[\"Liverpool\"],\"382\":[\"Man City\",\"Manchester City\"],\"1068\":[\"Atletico Madrid\",\"Atletico de Madrid\",\"Atletico\",\"Atleti\"]}}}]",
   "partial": false,
   "daysAhead": 7,
@@ -12,7 +12,7 @@
       "name": "Golden State Warriors",
       "short": "Warriors",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png",
-      "record": "9-8",
+      "record": "10-8",
       "standing": "2nd in Pacific Division",
       "league": {
         "id": "nba",
@@ -38,8 +38,8 @@
       "name": "Kansas City Chiefs",
       "short": "Chiefs",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
-      "record": "8-2",
-      "standing": "1st in AFC West",
+      "record": "8-3",
+      "standing": "2nd in AFC West",
       "league": {
         "id": "nfl",
         "name": "NFL"
@@ -51,7 +51,7 @@
       "name": "Philadelphia Eagles",
       "short": "Eagles",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/phi.png",
-      "record": "3-7",
+      "record": "4-7",
       "standing": "4th in NFC East",
       "league": {
         "id": "nfl",
@@ -546,62 +546,6 @@
   ],
   "games": [
     {
-      "id": "401909324",
-      "date": "2026-11-26T03:00Z",
-      "timeValid": true,
-      "name": "Sacramento Kings at Golden State Warriors",
-      "shortName": "SAC @ GS",
-      "seasonYear": 2027,
-      "seasonTypeId": 2,
-      "week": null,
-      "note": "NBA Cup - Group Play",
-      "status": {
-        "state": "in",
-        "completed": false,
-        "detail": "8:53 - 4th"
-      },
-      "home": {
-        "side": "home",
-        "id": "9",
-        "abbr": "GS",
-        "name": "Golden State Warriors",
-        "short": "Warriors",
-        "location": "Golden State",
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png",
-        "score": null,
-        "winner": null,
-        "record": null,
-        "rank": null
-      },
-      "away": {
-        "side": "away",
-        "id": "23",
-        "abbr": "SAC",
-        "name": "Sacramento Kings",
-        "short": "Kings",
-        "location": "Sacramento",
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/sac.png",
-        "score": null,
-        "winner": null,
-        "record": null,
-        "rank": null
-      },
-      "venue": "Chase Center",
-      "broadcasts": [],
-      "link": "https://www.espn.com/nba/game?gameId=401909324",
-      "league": {
-        "id": "nba",
-        "name": "NBA"
-      },
-      "focusIds": [
-        "9"
-      ],
-      "tags": [
-        "follow"
-      ],
-      "ranks": null
-    },
-    {
       "id": "401873081",
       "date": "2026-11-26T18:00Z",
       "timeValid": true,
@@ -612,9 +556,9 @@
       "week": 12,
       "note": null,
       "status": {
-        "state": "pre",
-        "completed": false,
-        "detail": "11/26 - 1:00 PM EST"
+        "state": "post",
+        "completed": true,
+        "detail": "Final"
       },
       "home": {
         "side": "home",
@@ -624,9 +568,9 @@
         "short": "Lions",
         "location": "Detroit",
         "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png",
-        "score": "0",
-        "winner": null,
-        "record": "8-2",
+        "score": "35",
+        "winner": false,
+        "record": "8-3",
         "rank": null
       },
       "away": {
@@ -637,9 +581,9 @@
         "short": "Bears",
         "location": "Chicago",
         "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png",
-        "score": "0",
-        "winner": null,
-        "record": "8-2",
+        "score": "39",
+        "winner": true,
+        "record": "9-2",
         "rank": null
       },
       "venue": "Ford Field",
@@ -671,9 +615,9 @@
       "week": 12,
       "note": null,
       "status": {
-        "state": "pre",
-        "completed": false,
-        "detail": "11/26 - 4:30 PM EST"
+        "state": "post",
+        "completed": true,
+        "detail": "Final"
       },
       "home": {
         "side": "home",
@@ -683,9 +627,9 @@
         "short": "Cowboys",
         "location": "Dallas",
         "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/dal.png",
-        "score": null,
-        "winner": null,
-        "record": null,
+        "score": "38",
+        "winner": false,
+        "record": "5-7",
         "rank": null
       },
       "away": {
@@ -696,9 +640,9 @@
         "short": "Eagles",
         "location": "Philadelphia",
         "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/phi.png",
-        "score": null,
-        "winner": null,
-        "record": null,
+        "score": "39",
+        "winner": true,
+        "record": "4-7",
         "rank": null
       },
       "venue": "AT&T Stadium",
@@ -729,9 +673,9 @@
       "week": 12,
       "note": null,
       "status": {
-        "state": "pre",
-        "completed": false,
-        "detail": "11/26 - 8:20 PM EST"
+        "state": "post",
+        "completed": true,
+        "detail": "Final"
       },
       "home": {
         "side": "home",
@@ -741,9 +685,9 @@
         "short": "Bills",
         "location": "Buffalo",
         "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png",
-        "score": null,
-        "winner": null,
-        "record": null,
+        "score": "13",
+        "winner": true,
+        "record": "10-1",
         "rank": null
       },
       "away": {
@@ -754,9 +698,9 @@
         "short": "Chiefs",
         "location": "Kansas City",
         "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
-        "score": null,
-        "winner": null,
-        "record": null,
+        "score": "10",
+        "winner": false,
+        "record": "8-3",
         "rank": null
       },
       "venue": "Highmark Stadium",
@@ -924,7 +868,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
         "score": "0",
         "winner": null,
-        "record": "15-3",
+        "record": "15-4",
         "rank": null
       },
       "away": {
@@ -1675,6 +1619,64 @@
         "home": "#1",
         "away": "#7"
       }
+    },
+    {
+      "id": "401873096",
+      "date": "2026-12-04T01:15Z",
+      "timeValid": true,
+      "name": "Kansas City Chiefs at Los Angeles Rams",
+      "shortName": "KC @ LAR",
+      "seasonYear": 2026,
+      "seasonTypeId": 2,
+      "week": 13,
+      "note": null,
+      "status": {
+        "state": "pre",
+        "completed": false,
+        "detail": "12/3 - 8:15 PM EST"
+      },
+      "home": {
+        "side": "home",
+        "id": "14",
+        "abbr": "LAR",
+        "name": "Los Angeles Rams",
+        "short": "Rams",
+        "location": "Los Angeles",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/lar.png",
+        "score": null,
+        "winner": null,
+        "record": null,
+        "rank": null
+      },
+      "away": {
+        "side": "away",
+        "id": "12",
+        "abbr": "KC",
+        "name": "Kansas City Chiefs",
+        "short": "Chiefs",
+        "location": "Kansas City",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
+        "score": null,
+        "winner": null,
+        "record": null,
+        "rank": null
+      },
+      "venue": "SoFi Stadium",
+      "broadcasts": [
+        "Prime Video"
+      ],
+      "link": "https://www.espn.com/nfl/game/_/gameId/401873096/chiefs-rams",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      },
+      "focusIds": [
+        "12"
+      ],
+      "tags": [
+        "follow"
+      ],
+      "ranks": null
     }
   ],
   "errors": []

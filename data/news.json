@@ -1,10 +1,254 @@
 {
   "version": 3,
-  "day": "20261126",
-  "generatedAt": "2026-11-26T05:01:22.668Z",
+  "day": "20261127",
+  "generatedAt": "2026-11-27T05:01:23.638Z",
   "cfgKey": "[[\"nba\",[\"gs\"],{\"limit\":5}],[\"nfl\",[\"sf\",\"kc\",\"phi\"],{\"limit\":5}],[\"cfb\",[\"psu\"],{\"limit\":5}],[\"soccer\",[],{\"limit\":3,\"teams\":[{\"league\":\"esp.1\",\"team\":\"83\"},{\"league\":\"eng.1\",\"team\":\"382\"}]}]]",
   "partial": false,
   "articles": [
+    {
+      "id": "50608884",
+      "type": "HeadlineNews",
+      "headline": "Will Shipley brushes off argument with coach Nick Sirianni: 'Emotions were running high'",
+      "description": "RB Will Shipley likened his sideline argument with coach Nick Sirianni to a Thanksgiving family spat in the wake of the Eagles' dramatic comeback win at Dallas.",
+      "published": "2026-11-27T04:54:00Z",
+      "byline": "Tim McManus",
+      "image": "https://a.espncdn.com/photo/2026/1127/r1751933_600x400_3-2.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50608884/will-shipley-brushes-argument-coach-nick-sirianni",
+      "premium": false,
+      "team": "phi",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50609081",
+      "type": "HeadlineNews",
+      "headline": "Eagles QB Joe Milton wows teammates with breakout game in Dallas",
+      "description": "Eagles QB Joe Milton had a breakout game on the national stage, accounting for four touchdowns in a wild 39-38 come-from-behind win over the Cowboys.",
+      "published": "2026-11-27T04:53:39Z",
+      "byline": "Tim McManus",
+      "image": "https://a.espncdn.com/photo/2026/1127/r1751939_600x400_3-2.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50609081/eagles-qb-joe-milton-wows-teammates-breakout-game-dallas",
+      "premium": false,
+      "team": "phi",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50609140",
+      "type": "Recap",
+      "headline": "Tyler Bass hits 57-yard field goal as time expires to lift Bills past Chiefs, 13-10",
+      "description": "— Tyler Bass hit a 57-yard field goal as time expired and the Buffalo Bills improved their AFC-leading record to 10-1 with a 13-10 victory over the rival Kansas City Chiefs on a rainy, windy and chilly Thursday night.",
+      "published": "2026-11-27T04:39:33Z",
+      "byline": null,
+      "image": "https://s.espncdn.com/stitcher/sports/football/nfl/events/401873082.png?templateId=espn.applewatch.awayhome.1",
+      "link": "http://www.espn.com/nfl/recap?gameId=401873082",
+      "premium": false,
+      "team": "kc",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50607960",
+      "type": "Story",
+      "headline": "Eagles' comeback against Cowboys stuns Jason Kelce, Caitlin Clark and more",
+      "description": "The Philadelphia Eagles pulled off the largest Thanksgiving Day comeback in NFL history.",
+      "published": "2026-11-27T02:36:42Z",
+      "byline": "ESPN staff",
+      "image": "https://a.espncdn.com/photo/2026/1126/r1751821_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50607960/eagles-cowboys-thanksgiving-social-reaction",
+      "premium": false,
+      "team": "phi",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50608117",
+      "type": "Media",
+      "headline": "Stephen A. can't stop laughing at Cowboys after Thanksgiving collapse",
+      "description": "Stephen A. can't stop laughing at Cowboys after Thanksgiving collapse",
+      "published": "2026-11-27T02:21:34Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1126/ss_20261126_211651365_3762692/ss_20261126_211651365_3762692.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50608117/stephen-stop-laughing-cowboys-thanksgiving-collapse",
+      "premium": false,
+      "team": "phi",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50607884",
+      "type": "Media",
+      "headline": "Eagles stun Cowboys with largest-ever Thanksgiving game comeback",
+      "description": "Eagles stun Cowboys with largest-ever Thanksgiving game comeback",
+      "published": "2026-11-27T01:58:17Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1127/452c2dab-cd99-4b19-a7b6-f7dfeb3668e1/452c2dab-cd99-4b19-a7b6-f7dfeb3668e1.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50607884/eagles-stun-cowboys-largest-ever-thanksgiving-game-comeback",
+      "premium": false,
+      "team": "phi",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50607436",
+      "type": "Media",
+      "headline": "49ers turn to Vederian Lowe after Colton McKivitz injury",
+      "description": "Nick Wagoner on who the 49ers will turn to after Colton McKivitz suffered a season-ending injury.",
+      "published": "2026-11-27T00:28:13Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1126/dm_261126_IA_49ers_16x9/dm_261126_IA_49ers_16x9.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50607436/49ers-turn-vederian-lowe-colton-mckivitz-injury",
+      "premium": false,
+      "team": "sf",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50602698",
+      "type": "Story",
+      "headline": "Transfer rumors, news: Barça, Madrid jockey for position in Erling Haaland chase",
+      "description": "Barcelona and Real Madrid are positioning themselves for a move for Man City striker Erling Haaland. Transfer Talk has the latest.",
+      "published": "2026-11-26T18:35:42Z",
+      "byline": "ESPN",
+      "image": "https://a.espncdn.com/photo/2026/1017/r1731964_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/soccer/story/_/id/50602698/transfer-rumors-news-manchester-united-barcelona-heaven",
+      "premium": false,
+      "team": "83",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
+      }
+    },
+    {
+      "id": "50604322",
+      "type": "HeadlineNews",
+      "headline": "Viktor Gyökeres should lead the line for Arsenal against Man City - Paul Merson",
+      "description": "Viktor Gyökeres should be handed just his second Premier League start of the season for the visit of Manchester City, Paul Merson has claimed.",
+      "published": "2026-11-26T14:52:25Z",
+      "byline": "PA",
+      "image": "https://a.espncdn.com/photo/2026/1126/r1751637_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/soccer/story/_/id/50604322/viktor-gyokeres-paul-merson-arsenal-man-city",
+      "premium": false,
+      "team": "382",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
+      }
+    },
+    {
+      "id": "50603870",
+      "type": "HeadlineNews",
+      "headline": "Cesc Fàbregas plays down Barcelona links, pledges immediate future to Como",
+      "description": "Cesc Fabregas has pledged his immediate future to Como amid speculation that he could one day succeed Hansi Flick at Barcelona.",
+      "published": "2026-11-26T13:07:29Z",
+      "byline": "Adriana Garcia",
+      "image": "https://a.espncdn.com/photo/2026/1126/r1751604_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/soccer/story/_/id/50603870/cesc-fabregas-barcelona-como-hansi-flick",
+      "premium": false,
+      "team": "83",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
+      }
+    },
+    {
+      "id": "50511931",
+      "type": "Story",
+      "headline": "Why the Chiefs and Bills can give thanks to 2017 trade that landed Mahomes in KC",
+      "description": "Kansas City traded up for Patrick Mahomes, while Buffalo got a franchise left tackle and several Pro Bowlers.",
+      "published": "2026-11-26T11:00:03Z",
+      "byline": "Nick Suss",
+      "image": "https://a.espncdn.com/photo/2026/1116/nfl_chiefs-bills-trades_16x9.jpg",
+      "link": "https://www.espn.com/nfl/story/_/id/50511931/bills-chiefs-2017-trade-no-10-pat-mahomes",
+      "premium": false,
+      "team": "kc",
+      "league": {
+        "id": "nfl",
+        "name": "NFL"
+      }
+    },
+    {
+      "id": "50592994",
+      "type": "HeadlineNews",
+      "headline": "Viktor Gyökeres: Arsenal not wasting energy on Man City's possible sanctions",
+      "description": "Viktor Gyökeres said Arsenal cannot afford to waste any energy on Manchester City's possible sanctions -- as he vowed to deliver back-to-back Premier League titles for the Gunners.",
+      "published": "2026-11-26T07:22:52Z",
+      "byline": "PA",
+      "image": "https://a.espncdn.com/photo/2026/1125/r1751068_1296x729_16-9.jpg",
+      "link": "https://www.espn.com/soccer/story/_/id/50592994/viktor-gyokeres-arsenal-premier-league-manchester-city",
+      "premium": false,
+      "team": "382",
+      "league": {
+        "id": "soccer",
+        "name": "足球",
+        "nameEn": "Soccer"
+      }
+    },
+    {
+      "id": "50602494",
+      "type": "Preview",
+      "headline": "Warriors visit Trail Blazers Friday in NBA Cup group stage",
+      "description": "Golden State Warriors (10-8, ninth in the Western Conference) vs. Portland Trail Blazers (11-6, sixth in the Western Conference)",
+      "published": "2026-11-26T07:03:40Z",
+      "byline": null,
+      "image": "https://s.espncdn.com/stitcher/sports/basketball/nba/events/401909336.png?templateId=espn.applewatch.awayhome.1",
+      "link": "http://www.espn.com/nba/preview?gameId=401909336",
+      "premium": false,
+      "team": "gs",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      }
+    },
+    {
+      "id": "50601997",
+      "type": "Media",
+      "headline": "Sacramento Kings vs. Golden State Warriors: Game Highlights",
+      "description": "Sacramento Kings vs. Golden State Warriors: Game Highlights",
+      "published": "2026-11-26T05:42:37Z",
+      "byline": null,
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1126/199974c2-5a34-42dc-a1a2-40ad23a67985/199974c2-5a34-42dc-a1a2-40ad23a67985.jpg",
+      "link": "https://www.espn.com/video/clip/_/id/50601997/game-highlights",
+      "premium": false,
+      "team": "gs",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      }
+    },
+    {
+      "id": "50601999",
+      "type": "Recap",
+      "headline": "De'Anthony Melton scores 24 points, matches career high with eight 3s as Warriors beat Kings 129-110",
+      "description": "— De'Anthony Melton scored 24 points and matched his career high with eight 3-pointers and the Golden State Warriors made 20 total 3s on the way to a 129-110 win over the Sacramento Kings in an NBA Cup game on Wednesday night.",
+      "published": "2026-11-26T05:33:42Z",
+      "byline": null,
+      "image": "https://s.espncdn.com/stitcher/sports/basketball/nba/events/401909324.png?templateId=espn.applewatch.awayhome.1",
+      "link": "http://www.espn.com/nba/recap?gameId=401909324",
+      "premium": false,
+      "team": "gs",
+      "league": {
+        "id": "nba",
+        "name": "NBA"
+      }
+    },
     {
       "id": "50599955",
       "type": "Media",
@@ -70,22 +314,6 @@
       }
     },
     {
-      "id": "50598228",
-      "type": "Preview",
-      "headline": "Cowboys really need back-to-back wins this time with rival Eagles visiting on Thanksgiving",
-      "description": "— If the Dallas Cowboys don't solve a puzzling inability to win consecutive games when NFC East rival Philadelphia visits on Thanksgiving, they'll have to accept that they're probably going to miss the playoffs for the third year in a row.",
-      "published": "2026-11-25T22:47:45Z",
-      "byline": null,
-      "image": "https://s.espncdn.com/stitcher/sports/football/nfl/events/401873080.png?templateId=espn.applewatch.awayhome.1",
-      "link": "http://www.espn.com/nfl/preview?gameId=401873080",
-      "premium": false,
-      "team": "phi",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
       "id": "50597280",
       "type": "HeadlineNews",
       "headline": "Anthony Gordon enjoys 'very special' Baku again to lead Barcelona rout",
@@ -103,39 +331,6 @@
       }
     },
     {
-      "id": "50557484",
-      "type": "Recap",
-      "headline": "Gordon scores twice as Barcelona cruise in Azerbaijan",
-      "description": "Anthony Gordon struck twice as Barcelona swept past Azerbaijan side Sabah FK with a 4-1 victory in Baku on Wednesday.",
-      "published": "2026-11-25T20:19:56Z",
-      "byline": "ESPN News Services",
-      "image": "https://a.espncdn.com/photo/2026/1125/r1751214_1296x729_16-9.jpg",
-      "link": "http://www.espn.com/soccer/report/_/gameId/401915378",
-      "premium": false,
-      "team": "83",
-      "league": {
-        "id": "soccer",
-        "name": "足球",
-        "nameEn": "Soccer"
-      }
-    },
-    {
-      "id": "50594342",
-      "type": "Media",
-      "headline": "Why Stephen A. is taking Josh Allen over Patrick Mahomes ... right now",
-      "description": "Why Stephen A. is taking Josh Allen over Patrick Mahomes ... right now",
-      "published": "2026-11-25T19:58:01Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1125/ss_20261125_111232337_3760709/ss_20261125_111232337_3760709.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50594342/why-stephen-taking-josh-allen-patrick-mahomes-right-now",
-      "premium": false,
-      "team": "kc",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
       "id": "50594656",
       "type": "HeadlineNews",
       "headline": "Chiefs rule RB Kenneth Walker III (groin) out for showdown vs. Bills",
@@ -146,73 +341,6 @@
       "link": "https://www.espn.com/nfl/story/_/id/50594656/chiefs-rb-kenneth-walker-iii-groin-thursday-vs-bills",
       "premium": false,
       "team": "kc",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50592869",
-      "type": "HeadlineNews",
-      "headline": "Erling Haaland relishing battle with rival Gabriel as Man City go to Arsenal",
-      "description": "Erling Haaland is relishing another showdown with Gabriel but knows Manchester City must improve to get anything out of Sunday's clash with Arsenal.",
-      "published": "2026-11-25T17:15:48Z",
-      "byline": "PA",
-      "image": "https://a.espncdn.com/photo/2025/0203/r1446867_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/soccer/story/_/id/50592869/erling-haaland-gabriel-arsenal-manchester-city",
-      "premium": false,
-      "team": "382",
-      "league": {
-        "id": "soccer",
-        "name": "足球",
-        "nameEn": "Soccer"
-      }
-    },
-    {
-      "id": "50591588",
-      "type": "HeadlineNews",
-      "headline": "Barcelona to appeal Fermín López's two-match ban - sources",
-      "description": "Fermín López has been hit with a two-match suspension after getting sent off in Barcelona's comeback win against Villarreal last weekend.",
-      "published": "2026-11-25T15:32:36Z",
-      "byline": "Sam Marsden",
-      "image": "https://a.espncdn.com/photo/2026/1125/r1751001_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/soccer/story/_/id/50591588/fermin-lopez-barcelona-ban-appeal-sources",
-      "premium": false,
-      "team": "83",
-      "league": {
-        "id": "soccer",
-        "name": "足球",
-        "nameEn": "Soccer"
-      }
-    },
-    {
-      "id": "50592983",
-      "type": "HeadlineNews",
-      "headline": "Man City told regulator 'has the stomach' to challenge owners after charges",
-      "description": "The chair of the Independent Football Regulator says his organisation \"has the stomach\" to take on Manchester City's owners should it need to.",
-      "published": "2026-11-25T14:41:01Z",
-      "byline": "PA",
-      "image": "https://a.espncdn.com/photo/2026/1125/r1751067_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/soccer/story/_/id/50592983/man-city-charges-independent-regulator",
-      "premium": false,
-      "team": "382",
-      "league": {
-        "id": "soccer",
-        "name": "足球",
-        "nameEn": "Soccer"
-      }
-    },
-    {
-      "id": "50583319",
-      "type": "Story",
-      "headline": "From practice squad to prime time: A look at Milton's big chance on Thanksgiving",
-      "description": "Ex-Cowboys QB Milton is set to headline the Eagles' Thanksgiving game, can he make the most of it?",
-      "published": "2026-11-25T14:40:29Z",
-      "byline": "Tim McManus",
-      "image": "https://a.espncdn.com/photo/2026/1124/r1750637_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50583319/joe-milton-build-momentum-thanksgiving-start-dallas-cowboys",
-      "premium": false,
-      "team": "phi",
       "league": {
         "id": "nfl",
         "name": "NFL"
@@ -235,55 +363,6 @@
       }
     },
     {
-      "id": "50591753",
-      "type": "HeadlineNews",
-      "headline": "Raheem Sterling avoids jail for dangerous driving",
-      "description": "Former England footballer Raheem Sterling has avoided jail after admitting dangerously driving his Lamborghini while inhaling from a balloon on a motorway during rush hour before crashing into a metal gate.",
-      "published": "2026-11-25T11:53:55Z",
-      "byline": "PA",
-      "image": "https://a.espncdn.com/photo/2026/1125/r1751007_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/soccer/story/_/id/50591753/raheem-sterling-court-england-manchester-city-liverpool-chelsea",
-      "premium": false,
-      "team": "382",
-      "league": {
-        "id": "soccer",
-        "name": "足球",
-        "nameEn": "Soccer"
-      }
-    },
-    {
-      "id": "50565318",
-      "type": "Media",
-      "headline": "Pittsburgh Steelers vs. Philadelphia Eagles: Game Highlights",
-      "description": "Pittsburgh Steelers vs. Philadelphia Eagles: Game Highlights",
-      "published": "2026-11-25T04:36:01Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1122/a64030ba-32d6-4958-a7a8-19757868d95a/a64030ba-32d6-4958-a7a8-19757868d95a.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50565318/game-highlights",
-      "premium": false,
-      "team": "phi",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50573989",
-      "type": "HeadlineNews",
-      "headline": "Steelers' Metcalf denies trying to poke DeJean in eye; WR won't be suspended",
-      "description": "Steelers wide receiver DK Metcalf on Monday denied trying to poke Eagles cornerback Cooper DeJean in the eye before he was ejected Sunday.",
-      "published": "2026-11-24T21:11:31Z",
-      "byline": "Brooke Pryor",
-      "image": "https://a.espncdn.com/photo/2026/1123/r1750197_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50573989/steelers-metcalf-denies-trying-poke-eagles-dejean-eye",
-      "premium": false,
-      "team": "phi",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
       "id": "48476156",
       "type": "Story",
       "headline": "2026 NFL awards tracker: Odds for MVP, Rookie of the Year and more",
@@ -292,22 +371,6 @@
       "byline": "Doug Greenberg",
       "image": "https://a.espncdn.com/photo/2026/1124/r1750666_2_608x342_16-9.jpg",
       "link": "https://www.espn.com/espn/betting/story/_/id/48476156/2026-nfl-awards-betting-odds-mvp-rookie-year-offensive-defensive-player-coach",
-      "premium": false,
-      "team": "sf",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
-      "id": "50573226",
-      "type": "Story",
-      "headline": "NFL's international plan: More games, new TV deal incoming",
-      "description": "The NFL intends to play 10 international games next year, the maximum allowed under the CBA. It wants more.",
-      "published": "2026-11-24T14:04:19Z",
-      "byline": "Judy Battista",
-      "image": "https://a.espncdn.com/photo/2026/1123/r1750167_800x450_16-9.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50573226/nfl-international-expansion-turf-players",
       "premium": false,
       "team": "sf",
       "league": {
@@ -329,38 +392,6 @@
       "league": {
         "id": "nba",
         "name": "NBA"
-      }
-    },
-    {
-      "id": "50569693",
-      "type": "Media",
-      "headline": "Wariors down the Celtics at home",
-      "description": "Wariors down the Celtics at home",
-      "published": "2026-11-23T05:04:59Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1122/e056091cf0dc454cb22755ae8e95a6221389/e056091cf0dc454cb22755ae8e95a6221389.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50569693/wariors-celtics-home",
-      "premium": false,
-      "team": "gs",
-      "league": {
-        "id": "nba",
-        "name": "NBA"
-      }
-    },
-    {
-      "id": "50567158",
-      "type": "HeadlineNews",
-      "headline": "Eagles' Riq Woolen benched after missed tackles vs. Steelers",
-      "description": "Eagles cornerback Riq Woolen was benched in favor of veteran Jonathan Jones late in the first half of Sunday's 19-16 win over the Steelers.",
-      "published": "2026-11-23T00:14:53Z",
-      "byline": "Tim McManus",
-      "image": "https://a.espncdn.com/photo/2026/1122/r1749902_600x400_3-2.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50567158/eagles-riq-woolen-benched-missed-tackles-vs-steelers",
-      "premium": false,
-      "team": "phi",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
       }
     },
     {
@@ -396,22 +427,6 @@
       }
     },
     {
-      "id": "50513358",
-      "type": "Story",
-      "headline": "Kansas City Chiefs tight end Travis Kelce's top moments at Arrowhead Stadium",
-      "description": "Kelce's greatest Arrowhead moments include his first catch, lots of playoff magic, and meeting the love of his life, Taylor Swift.",
-      "published": "2026-11-22T20:33:07Z",
-      "byline": "Nate Taylor",
-      "image": "https://a.espncdn.com/photo/2026/1117/r1747330_1296x729_16-9.jpg",
-      "link": "https://www.espn.com/nfl/story/_/id/50513358/chiefs-travis-kelce-100-games-arrowhead-taylor-swift",
-      "premium": false,
-      "team": "kc",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      }
-    },
-    {
       "id": "50557643",
       "type": "HeadlineNews",
       "headline": "Emotional Greg Schiano authors 'special' win, Rutgers' first at PSU since 1988",
@@ -420,54 +435,6 @@
       "byline": null,
       "image": "https://a.espncdn.com/photo/2026/1122/r1749403_600x600_1-1.jpg",
       "link": "https://www.espn.com/college-football/story/_/id/50557643/rutgers-authors-special-win-1st-penn-state-1988",
-      "premium": false,
-      "team": "psu",
-      "league": {
-        "id": "cfb",
-        "name": "NCAAF"
-      }
-    },
-    {
-      "id": "50537250",
-      "type": "Media",
-      "headline": "Golden State Warriors vs. Memphis Grizzlies: Game Highlights",
-      "description": "Golden State Warriors vs. Memphis Grizzlies: Game Highlights",
-      "published": "2026-11-20T04:05:42Z",
-      "byline": null,
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1120/b6dc36c5-a99b-464a-b491-6cc3a4044a9c/b6dc36c5-a99b-464a-b491-6cc3a4044a9c.jpg",
-      "link": "https://www.espn.com/video/clip/_/id/50537250/game-highlights",
-      "premium": false,
-      "team": "gs",
-      "league": {
-        "id": "nba",
-        "name": "NBA"
-      }
-    },
-    {
-      "id": "50537488",
-      "type": "Recap",
-      "headline": "Grizzlies roll past short-handed Warriors 126-98 for a fifth straight win",
-      "description": "— Jaylen Wells had 22 points and Cedric Coward scored 19 to lead the Memphis Grizzlies to their fifth straight win on Thursday night, 126-98 over the short-handed Golden State Warriors.",
-      "published": "2026-11-20T03:58:36Z",
-      "byline": null,
-      "image": "https://s.espncdn.com/stitcher/sports/basketball/nba/events/401910019.png?templateId=espn.applewatch.awayhome.1",
-      "link": "http://www.espn.com/nba/recap?gameId=401910019",
-      "premium": false,
-      "team": "gs",
-      "league": {
-        "id": "nba",
-        "name": "NBA"
-      }
-    },
-    {
-      "id": "50532925",
-      "type": "HeadlineNews",
-      "headline": "Hall of Famer Jack Ham returning to broadcast booth after health scare",
-      "description": "Hall of Fame linebacker and Penn State radio analyst Jack Ham will return to the broadcast booth on Saturday, just two weeks after suffering a medical emergency.",
-      "published": "2026-11-19T19:37:38Z",
-      "byline": "Adam Rittenberg",
-      "image": "https://a.espncdn.com/photo/2017/0408/r197865_600x400_3-2.jpg",
-      "link": "https://www.espn.com/college-football/story/_/id/50532925/jack-ham-returning-broadcast-booth-health-scare",
       "premium": false,
       "team": "psu",
       "league": {
