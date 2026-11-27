@@ -1281,5 +1281,20 @@
     ],
     "source": "rss",
     "foundAt": "2026-11-26T22:01:35.144Z"
+  },
+  "nfl:401873082": {
+    "videos": [
+      {
+        "id": "WDYynoHb2Bs",
+        "title": "Kansas City Chiefs vs Buffalo Bills Thanksgiving Day Game Highlights | 2026 NFL Season Week 12",
+        "channelId": "UCDVYQ4Zhbm3S2dlz7P1GBDg",
+        "url": "https://www.youtube.com/watch?v=WDYynoHb2Bs",
+        "thumbnail": "https://i.ytimg.com/vi/WDYynoHb2Bs/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-27T04:48:47+00:00"
+      }
+    ],
+    "source": "rss",
+    "foundAt": "2026-11-27T05:31:06.536Z"
   }
 }
