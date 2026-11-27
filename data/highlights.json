@@ -1296,5 +1296,20 @@
     ],
     "source": "rss",
     "foundAt": "2026-11-27T05:31:06.536Z"
+  },
+  "nfl:401873080": {
+    "videos": [
+      {
+        "id": "jXmdND-z0_8",
+        "title": "Philadelphia Eagles vs. Dallas Cowboys Thanksgiving Day Game Highlights | 2026 NFL Season Week 12",
+        "channelId": "UCDVYQ4Zhbm3S2dlz7P1GBDg",
+        "url": "https://www.youtube.com/watch?v=jXmdND-z0_8",
+        "thumbnail": "https://i.ytimg.com/vi/jXmdND-z0_8/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-27T02:45:49.282Z"
+      }
+    ],
+    "source": "channel-search",
+    "foundAt": "2026-11-27T06:45:49.283Z"
   }
 }
