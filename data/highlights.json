@@ -1326,5 +1326,48 @@
     ],
     "source": "channel-search",
     "foundAt": "2026-11-28T05:45:53.575Z"
+  },
+  "nba:401909333": {
+    "videos": [
+      {
+        "id": "L_lhywuFSXs",
+        "title": "LAKERS at SPURS | EMIRATES NBA CUP 🏆 | FULL GAME HIGHLIGHTS | November 27, 2026",
+        "channelId": "UCWJ2lWNubArHWmf3FIHbfcQ",
+        "url": "https://www.youtube.com/watch?v=L_lhywuFSXs",
+        "thumbnail": "https://i.ytimg.com/vi/L_lhywuFSXs/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-28T06:01:28.892Z"
+      }
+    ],
+    "source": "channel-search",
+    "foundAt": "2026-11-28T07:01:28.893Z"
+  },
+  "roundup:nba:nightly:20261127": {
+    "videos": [
+      {
+        "id": "WR7bu4PP1hs",
+        "title": "NBA's Nightly Recap | November 27, 2026",
+        "channelId": "UCWJ2lWNubArHWmf3FIHbfcQ",
+        "url": "https://www.youtube.com/watch?v=WR7bu4PP1hs",
+        "thumbnail": "https://i.ytimg.com/vi/WR7bu4PP1hs/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-28T06:58:29.269Z"
+      }
+    ],
+    "foundAt": "2026-11-28T07:01:29.269Z"
+  },
+  "roundup:nba:topPlays:20261127": {
+    "videos": [
+      {
+        "id": "3MD13x7vU-A",
+        "title": "NBA's Top 10 Plays of the Night | November 27, 2026",
+        "channelId": "UCWJ2lWNubArHWmf3FIHbfcQ",
+        "url": "https://www.youtube.com/watch?v=3MD13x7vU-A",
+        "thumbnail": "https://i.ytimg.com/vi/3MD13x7vU-A/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-28T06:51:29.378Z"
+      }
+    ],
+    "foundAt": "2026-11-28T07:01:29.378Z"
   }
 }
