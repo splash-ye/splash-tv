@@ -1311,5 +1311,20 @@
     ],
     "source": "channel-search",
     "foundAt": "2026-11-27T06:45:49.283Z"
+  },
+  "nba:401909331": {
+    "videos": [
+      {
+        "id": "Z5Jc0Cri6AI",
+        "title": "GRIZZLIES at TIMBERWOLVES | EMIRATES NBA CUP 🏆 | FULL GAME HIGHLIGHTS | November 27, 2026",
+        "channelId": "UCWJ2lWNubArHWmf3FIHbfcQ",
+        "url": "https://www.youtube.com/watch?v=Z5Jc0Cri6AI",
+        "thumbnail": "https://i.ytimg.com/vi/Z5Jc0Cri6AI/hqdefault.jpg",
+        "extended": false,
+        "published": "2026-11-28T04:45:53.574Z"
+      }
+    ],
+    "source": "channel-search",
+    "foundAt": "2026-11-28T05:45:53.575Z"
   }
 }
