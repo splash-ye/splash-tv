@@ -1,7 +1,7 @@
 {
   "version": 3,
-  "day": "20261127",
-  "generatedAt": "2026-11-27T05:01:23.097Z",
+  "day": "20261128",
+  "generatedAt": "2026-11-28T05:01:24.308Z",
   "cfgKey": "[{\"id\":\"nba\",\"name\":\"NBA\",\"sport\":\"basketball\",\"league\":\"nba\",\"teams\":[\"gs\"],\"marquee\":{\"type\":\"leagueTop\",\"topN\":8},\"news\":{\"limit\":5},\"highlights\":{\"matcher\":\"nba\",\"marquee\":true,\"channels\":[\"UCWJ2lWNubArHWmf3FIHbfcQ\"],\"roundups\":[\"nightly\",\"topPlays\"]},\"standings\":{\"groupOrder\":[\"Western Conference\",\"Eastern Conference\"]}},{\"id\":\"nfl\",\"name\":\"NFL\",\"sport\":\"football\",\"league\":\"nfl\",\"teams\":[\"sf\",\"kc\",\"phi\"],\"marquee\":{\"type\":\"divisionTop\",\"perDivision\":2,\"winningRecord\":true},\"news\":{\"limit\":5},\"highlights\":{\"matcher\":\"nfl\",\"marquee\":true,\"channels\":[\"UCDVYQ4Zhbm3S2dlz7P1GBDg\"],\"roundups\":[\"top15\"]},\"standings\":{\"level\":3}},{\"id\":\"cfb\",\"name\":\"NCAAF\",\"sport\":\"football\",\"league\":\"college-football\",\"teams\":[\"psu\"],\"scoreboardParams\":\"groups=80&limit=300\",\"marquee\":{\"type\":\"poll\",\"topN\":15,\"polls\":[\"cfp\",\"ap\"]},\"news\":{\"limit\":5},\"highlights\":{\"matcher\":\"cfb\",\"marquee\":true,\"channels\":[\"UCXnslB_TwYqScBRf4bPf3vA\",\"UCpwix-O6ceqMgdxhqIynzFA\"]},\"standings\":{\"polls\":[\"cfp\",\"ap\"]}},{\"id\":\"soccer\",\"name\":\"足球\",\"nameEn\":\"Soccer\",\"sport\":\"soccer\",\"teams\":[],\"competitions\":[{\"league\":\"eng.1\",\"name\":\"英超\",\"nameEn\":\"Premier League\",\"channels\":[\"UCqZQlzSHbVJrwrn5XvzrzcA\"]},{\"league\":\"esp.1\",\"name\":\"西甲\",\"nameEn\":\"LaLiga\",\"channels\":[\"UC6c1z7bA__85CIWZ_jpCK-Q\",\"UCTv-XvfzLX3i4IGWAm4sbmA\"]},{\"league\":\"uefa.champions\",\"name\":\"欧冠\",\"nameEn\":\"Champions League\",\"channels\":[\"UCET00YnetHT7tOpu12v8jxg\"]},{\"league\":\"eng.fa\",\"name\":\"足总杯\",\"nameEn\":\"FA Cup\",\"channels\":[\"UC6c1z7bA__85CIWZ_jpCK-Q\"]},{\"league\":\"esp.copa_del_rey\",\"name\":\"国王杯\",\"nameEn\":\"Copa del Rey\",\"channels\":[\"UC6c1z7bA__85CIWZ_jpCK-Q\"]}],\"marquee\":{\"type\":\"fixedList\",\"criteria\":\"豪门对决\",\"criteriaEn\":\"Big clubs\",\"clubs\":[\"382\",\"359\",\"364\",\"363\",\"86\",\"83\",\"1068\",\"132\",\"160\"],\"clubNames\":\"曼城 阿森纳 利物浦 切尔西 皇马 巴萨 马竞 拜仁 巴黎圣日耳曼\",\"lookupLeagues\":[\"ger.1\",\"fra.1\"]},\"news\":{\"limit\":3,\"teams\":[{\"league\":\"esp.1\",\"team\":\"83\"},{\"league\":\"eng.1\",\"team\":\"382\"}]},\"highlights\":{\"matcher\":\"soccer\",\"marquee\":true,\"aliases\":{\"83\":[\"Barcelona\",\"Barca\",\"FC Barcelona\"],\"86\":[\"Real Madrid\"],\"132\":[\"Bayern Munich\",\"Bayern Munchen\",\"FC Bayern\",\"Bayern\"],\"160\":[\"Paris Saint-Germain\",\"Paris Saint Germain\",\"PSG\",\"Paris\"],\"359\":[\"Arsenal\"],\"363\":[\"Chelsea\"],\"364\":[\"Liverpool\"],\"382\":[\"Man City\",\"Manchester City\"],\"1068\":[\"Atletico Madrid\",\"Atletico de Madrid\",\"Atletico\",\"Atleti\"]}}}]",
   "partial": false,
   "daysAhead": 7,
@@ -39,7 +39,7 @@
       "short": "Chiefs",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
       "record": "8-3",
-      "standing": "2nd in AFC West",
+      "standing": "1st in AFC West",
       "league": {
         "id": "nfl",
         "name": "NFL"
@@ -546,185 +546,6 @@
   ],
   "games": [
     {
-      "id": "401873081",
-      "date": "2026-11-26T18:00Z",
-      "timeValid": true,
-      "name": "Chicago Bears at Detroit Lions",
-      "shortName": "CHI @ DET",
-      "seasonYear": 2026,
-      "seasonTypeId": 2,
-      "week": 12,
-      "note": null,
-      "status": {
-        "state": "post",
-        "completed": true,
-        "detail": "Final"
-      },
-      "home": {
-        "side": "home",
-        "id": "8",
-        "abbr": "DET",
-        "name": "Detroit Lions",
-        "short": "Lions",
-        "location": "Detroit",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png",
-        "score": "35",
-        "winner": false,
-        "record": "8-3",
-        "rank": null
-      },
-      "away": {
-        "side": "away",
-        "id": "3",
-        "abbr": "CHI",
-        "name": "Chicago Bears",
-        "short": "Bears",
-        "location": "Chicago",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png",
-        "score": "39",
-        "winner": true,
-        "record": "9-2",
-        "rank": null
-      },
-      "venue": "Ford Field",
-      "broadcasts": [
-        "CBS"
-      ],
-      "link": "https://www.espn.com/nfl/game/_/gameId/401873081/bears-lions",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      },
-      "focusIds": [],
-      "tags": [
-        "marquee"
-      ],
-      "ranks": {
-        "home": "NFC北区第1",
-        "away": "NFC北区第2"
-      }
-    },
-    {
-      "id": "401873080",
-      "date": "2026-11-26T21:30Z",
-      "timeValid": true,
-      "name": "Philadelphia Eagles at Dallas Cowboys",
-      "shortName": "PHI @ DAL",
-      "seasonYear": 2026,
-      "seasonTypeId": 2,
-      "week": 12,
-      "note": null,
-      "status": {
-        "state": "post",
-        "completed": true,
-        "detail": "Final"
-      },
-      "home": {
-        "side": "home",
-        "id": "6",
-        "abbr": "DAL",
-        "name": "Dallas Cowboys",
-        "short": "Cowboys",
-        "location": "Dallas",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/dal.png",
-        "score": "38",
-        "winner": false,
-        "record": "5-7",
-        "rank": null
-      },
-      "away": {
-        "side": "away",
-        "id": "21",
-        "abbr": "PHI",
-        "name": "Philadelphia Eagles",
-        "short": "Eagles",
-        "location": "Philadelphia",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/phi.png",
-        "score": "39",
-        "winner": true,
-        "record": "4-7",
-        "rank": null
-      },
-      "venue": "AT&T Stadium",
-      "broadcasts": [
-        "Fox"
-      ],
-      "link": "https://www.espn.com/nfl/game/_/gameId/401873080/eagles-cowboys",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      },
-      "focusIds": [
-        "21"
-      ],
-      "tags": [
-        "follow"
-      ],
-      "ranks": null
-    },
-    {
-      "id": "401873082",
-      "date": "2026-11-27T01:20Z",
-      "timeValid": true,
-      "name": "Kansas City Chiefs at Buffalo Bills",
-      "shortName": "KC @ BUF",
-      "seasonYear": 2026,
-      "seasonTypeId": 2,
-      "week": 12,
-      "note": null,
-      "status": {
-        "state": "post",
-        "completed": true,
-        "detail": "Final"
-      },
-      "home": {
-        "side": "home",
-        "id": "2",
-        "abbr": "BUF",
-        "name": "Buffalo Bills",
-        "short": "Bills",
-        "location": "Buffalo",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png",
-        "score": "13",
-        "winner": true,
-        "record": "10-1",
-        "rank": null
-      },
-      "away": {
-        "side": "away",
-        "id": "12",
-        "abbr": "KC",
-        "name": "Kansas City Chiefs",
-        "short": "Chiefs",
-        "location": "Kansas City",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
-        "score": "10",
-        "winner": false,
-        "record": "8-3",
-        "rank": null
-      },
-      "venue": "Highmark Stadium",
-      "broadcasts": [
-        "NBC"
-      ],
-      "link": "https://www.espn.com/nfl/game/_/gameId/401873082/chiefs-bills",
-      "league": {
-        "id": "nfl",
-        "name": "NFL"
-      },
-      "focusIds": [
-        "12"
-      ],
-      "tags": [
-        "follow",
-        "marquee"
-      ],
-      "ranks": {
-        "home": "AFC东区第1",
-        "away": "AFC西区第2"
-      }
-    },
-    {
       "id": "401909331",
       "date": "2026-11-28T01:30Z",
       "timeValid": true,
@@ -735,9 +556,9 @@
       "week": null,
       "note": "NBA Cup - Group Play",
       "status": {
-        "state": "pre",
-        "completed": false,
-        "detail": "11/27 - 8:30 PM EST"
+        "state": "post",
+        "completed": true,
+        "detail": "Final"
       },
       "home": {
         "side": "home",
@@ -747,9 +568,9 @@
         "short": "Timberwolves",
         "location": "Minnesota",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
-        "score": "0",
-        "winner": null,
-        "record": "14-5",
+        "score": "109",
+        "winner": false,
+        "record": "14-6",
         "rank": null
       },
       "away": {
@@ -760,9 +581,9 @@
         "short": "Grizzlies",
         "location": "Memphis",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
-        "score": "0",
-        "winner": null,
-        "record": "14-5",
+        "score": "114",
+        "winner": true,
+        "record": "15-5",
         "rank": null
       },
       "venue": "Target Center",
@@ -795,9 +616,9 @@
       "week": null,
       "note": "NBA Cup - Group Play",
       "status": {
-        "state": "pre",
+        "state": "in",
         "completed": false,
-        "detail": "11/27 - 9:30 PM EST"
+        "detail": "1:04 - 4th"
       },
       "home": {
         "side": "home",
@@ -830,7 +651,7 @@
         "KUNP 16",
         "BlazerVision"
       ],
-      "link": "https://www.espn.com/nba/game/_/gameId/401909336/warriors-trail-blazers",
+      "link": "https://www.espn.com/nba/game?gameId=401909336",
       "league": {
         "id": "nba",
         "name": "NBA"
@@ -854,9 +675,9 @@
       "week": null,
       "note": "NBA Cup - Group Play",
       "status": {
-        "state": "pre",
+        "state": "in",
         "completed": false,
-        "detail": "11/27 - 9:30 PM EST"
+        "detail": "36.3 - 4th"
       },
       "home": {
         "side": "home",
@@ -866,7 +687,7 @@
         "short": "Spurs",
         "location": "San Antonio",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
-        "score": "0",
+        "score": "96",
         "winner": null,
         "record": "15-4",
         "rank": null
@@ -879,7 +700,7 @@
         "short": "Lakers",
         "location": "Los Angeles",
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
-        "score": "0",
+        "score": "90",
         "winner": null,
         "record": "15-3",
         "rank": null
@@ -888,7 +709,7 @@
       "broadcasts": [
         "Prime Video"
       ],
-      "link": "https://www.espn.com/nba/game/_/gameId/401909333/lakers-spurs",
+      "link": "https://www.espn.com/nba/game?gameId=401909333",
       "league": {
         "id": "nba",
         "name": "NBA"
@@ -1057,7 +878,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
         "score": "0",
         "winner": null,
-        "record": "15-4",
+        "record": "16-4",
         "rank": null
       },
       "venue": "Toyota Center (Houston)",
@@ -1165,7 +986,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
         "score": "0",
         "winner": null,
-        "record": "14-5",
+        "record": "15-5",
         "rank": null
       },
       "away": {
@@ -1405,7 +1226,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
         "score": "0",
         "winner": null,
-        "record": "15-4",
+        "record": "16-4",
         "rank": null
       },
       "away": {
@@ -1418,7 +1239,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
         "score": "0",
         "winner": null,
-        "record": "14-5",
+        "record": "15-5",
         "rank": null
       },
       "venue": "Xfinity Mobile Arena",
@@ -1586,7 +1407,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
         "score": "0",
         "winner": null,
-        "record": "15-4",
+        "record": "16-4",
         "rank": null
       },
       "away": {
@@ -1599,7 +1420,7 @@
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
         "score": "0",
         "winner": null,
-        "record": "10-6",
+        "record": "11-6",
         "rank": null
       },
       "venue": "Xfinity Mobile Arena",
@@ -1677,6 +1498,65 @@
         "follow"
       ],
       "ranks": null
+    },
+    {
+      "id": "401869533",
+      "date": "2026-12-05T01:00Z",
+      "timeValid": true,
+      "name": "Texas Tech Red Raiders at Utah Utes",
+      "shortName": "TTU VS UTAH",
+      "seasonYear": 2026,
+      "seasonTypeId": 2,
+      "week": 14,
+      "note": "Edward Jones Big 12 Championship",
+      "status": {
+        "state": "pre",
+        "completed": false,
+        "detail": "12/4 - 8:00 PM EST"
+      },
+      "home": {
+        "side": "home",
+        "id": "254",
+        "abbr": "UTAH",
+        "name": "Utah Utes",
+        "short": "Utah",
+        "location": "Utah",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/254.png",
+        "score": "0",
+        "winner": null,
+        "record": "11-0",
+        "rank": 2
+      },
+      "away": {
+        "side": "away",
+        "id": "2641",
+        "abbr": "TTU",
+        "name": "Texas Tech Red Raiders",
+        "short": "Texas Tech",
+        "location": "Texas Tech",
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2641.png",
+        "score": "0",
+        "winner": null,
+        "record": "11-1",
+        "rank": 11
+      },
+      "venue": "AT&T Stadium",
+      "broadcasts": [
+        "ABC"
+      ],
+      "link": "https://www.espn.com/college-football/game/_/gameId/401869533/texas-tech-utah",
+      "league": {
+        "id": "cfb",
+        "name": "NCAAF"
+      },
+      "focusIds": [],
+      "tags": [
+        "marquee"
+      ],
+      "ranks": {
+        "home": "#2",
+        "away": "#9"
+      }
     }
   ],
   "errors": []
